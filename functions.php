@@ -96,9 +96,6 @@ include get_theme_file_path('includes/mayecreate_responsive_media.php');
 /* Adds Mayecreate Theme Customizer */
 include get_theme_file_path('includes/mayecreate_theme_customizer.php');
 
-/* Adds Mayecreate Shortcode to Theme */
-include get_theme_file_path('includes/mayecreate_shortcodes.php');
-
 /* Adds Mayecreate Custom Blocks to Theme */
 include get_theme_file_path('includes/mayecreate_blocks.php');
 
@@ -209,8 +206,6 @@ function myplugin_enqueue() {
     // wp_register_script(...
     // wp_enqueue_script(...
 }
-
-add_filter('acf/format_value/type=textarea', 'do_shortcode');
 
 
 add_filter('style_loader_tag', 'myplugin_remove_type_attr', 10, 2);

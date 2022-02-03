@@ -206,7 +206,7 @@ function myplugin_enqueue() {
     // wp_register_script(...
     // wp_enqueue_script(...
 }
-
+ 
 
 add_filter('style_loader_tag', 'myplugin_remove_type_attr', 10, 2);
 add_filter('script_loader_tag', 'myplugin_remove_type_attr', 10, 2);

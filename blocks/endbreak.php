@@ -1,5 +1,5 @@
 <?php if (is_admin()) { ?>
-	<p class="center" style="color: #FF0004"><strong>============== End Page Break ==============</strong></p>
+	<h2 class="h5 center" style="border-top:1px dashed #ddd;padding-top:10px;border-bottom:1px dashed #ddd;padding-bottom:10px;">-- Your pagebreak content will END here. --</h2>
 <?php } else { ?>
 				</div>
 			</div>

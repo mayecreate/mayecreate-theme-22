@@ -49,7 +49,7 @@ get_header(); ?>
                 <?php endif; ?>
                 <?php else : ?>
                     <div class="col-md-12">
-						<h2>Sorry, nothing has been posted in this category yet.</h2>
+						<h2>Sorry, nothing has been posted yet.</h2>
 					</div>
                                             
                 <?php endif; ?>

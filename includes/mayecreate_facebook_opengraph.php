@@ -5,7 +5,7 @@ MayeCreate Facebook Open Graph
 ==========================================================
 */
 function mayecreate_facebook_opengraph() {
-$custom_share_image = get_theme_mod( 'facebook_image', '');
+$custom_share_image = get_field('facebook_opengraph_image', 'option');
 
 echo '<!-- START OPEN GRAPH-->';
 

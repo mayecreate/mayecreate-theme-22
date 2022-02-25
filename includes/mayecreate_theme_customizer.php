@@ -8,11 +8,10 @@ settings in your options table.
 ==================================================================
 */
 
-add_action('customize_register', 'mayecreate_customizer');
+/*add_action('customize_register', 'mayecreate_customizer');
 	function mayecreate_customizer($wp_customize) {
 	global $wp_customize;
 
-	/* Add a custom class for textarea */
 	class Example_Customize_Textarea_Control extends WP_Customize_Control {
 		public $type = 'textarea';
 	
@@ -26,7 +25,7 @@ add_action('customize_register', 'mayecreate_customizer');
 		}
 	}
 do_action('mayecreate_add_to_customizer');
-}
+}*/
 
 
 

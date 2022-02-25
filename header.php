@@ -35,36 +35,27 @@
 	echo '</title>';
 ?>
 
-
-<?php if (get_theme_mod('facebook_opengraph', 'not-include') == 'include') { 
-		mayecreate_facebook_opengraph();
-} ?>	
-
-
-
-
+<?php mayecreate_facebook_opengraph(); ?>	
 
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js"></script>
-<![endif]-->
-<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 
 <!-- Fonts -->
 	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet'>
+
+<?php $google_font_embed_links = (get_field('google_font_embed_links', 'option')); ?>
+<?php if ($google_font_embed_links) {
+	echo $google_font_embed_links;
+} else {
+	echo '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">';
+} ?>
+
 <?php wp_head(); ?>
     
-    
 
-    
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 
 </head>
@@ -75,50 +66,32 @@
 
 <body <?php body_class(); ?>>
 
-
 <div id="pagewrapper">
 <a id="top"></a>
-
-<?php  
-/**
- * ==========================================================
- * 	This conditional statement customizes the site navbar based on three settings in the customizer.
- *
- * 	Navbar Style: Changes the navbar to scroll with page (static) or stay attached to top of screen (fixed).
- * 	Top Navbar Visibility: Make a Second nav bar is display above the main menu.
- *	Navbar Stick On Scroll: Turns on the function that make the page swtich from scroll with screen to stick 
- * 	to top when the navbar reaches the top of the screen.
- *
- * ==========================================================
- *
- */
-
-if (get_theme_mod('navbar_stick_on_scroll', 'navbar-static-scroll') == 'navbar-static-scroll') { ?>
-		<?php get_template_part('partials/nav'); ?>	
-		
-		<?php if (is_front_page()) { ?>
-				<div id="homeContentWrap">
-		<?php } else { ?>
-        		<div id="contentwrap">
-        <?php } ?>	
+<?php $navbar_style_fixed = ('fixed' == get_field('navbar_style', 'option')); ?>
+<?php if ($navbar_style_fixed) {
+	$navbar_style = "fixed";
+} else {
+	$navbar_style = "static";
+} ?>
+<div id="navigation" class="<?php echo $navbar_style; ?>">
+	<?php get_template_part('partials/nav'); ?>	
+</div>	
 
 
-
-<?php }elseif (get_theme_mod('navbar_stick_on_scroll', 'navbar-static-scroll') == 'navbar-fix-scroll') { ?>
-		<?php get_template_part('partials/nav','scroll'); ?>
-        
-		<?php if (is_front_page()) { ?>
-				<div id="homeContentWrap" class="scroll">
-		<?php } else { ?>
-                <div id="contentwrap" class="scroll">
-        <?php } ?>		
-
-<?php }?>
-
+<?php if (is_front_page()) { ?>
+		<div id="homeContentWrap">
+<?php } else { ?>
+		<div id="contentwrap">
+<?php } ?>	
 
 <div class="clear"></div>
-
-
+<?php $default_header_image = get_field('default_header_image', 'option'); ?>
+<?php if ($default_header_image) {
+	$default_header_image = $default_header_image;
+} else {
+	$default_header_image = get_bloginfo('url') .'/wp-content/uploads/2015/12/86480546.jpg';
+} ?>
 <?php  
 /**
  * ==========================================================
@@ -135,34 +108,22 @@ if (get_theme_mod('navbar_stick_on_scroll', 'navbar-static-scroll') == 'navbar-s
  * ==========================================================
  */
 
-if ( (is_front_page()) || (is_page(211)) || (is_page(214)) || (is_page(217)) || (is_page(520)) ){ ?>
+if (is_front_page()){ ?>
 
 	<div id="homefeatured">
 	
-    	<?php if(get_theme_mod('carousel_type', 'standard-posts') == 'standard-posts') { 
-			
-			get_template_part('partials/content','carouselStandard');
-			
-		} elseif(get_theme_mod('carousel_type', 'standard-posts') == 'custom-post-types') {
-			
-			get_template_part('partials/content','carouselPosts');
-		
-		} elseif(get_theme_mod('carousel_type', 'standard-posts') == 'no-carousel') { 
-			
-			//echo nothing;
-		
-		} ?>
+    	<?php get_template_part('partials/content','carouselPosts'); ?>
         
     </div><!-- homefeatured -->
     
 <?php } elseif (is_home()) { ?>
-        <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php bloginfo('url'); ?>/wp-content/uploads/2015/12/86480546.jpg')">
+        <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php bloginfo('url'); ?>/wp-content/uploads/2015/12/86480546.jpg')">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -176,7 +137,7 @@ if ( (is_front_page()) || (is_page(211)) || (is_page(214)) || (is_page(217)) || 
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php bloginfo('url'); ?>/wp-content/uploads/2015/12/86480546.jpg')">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -186,7 +147,7 @@ if ( (is_front_page()) || (is_page(211)) || (is_page(214)) || (is_page(217)) || 
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php bloginfo('url'); ?>/wp-content/uploads/2015/12/86480546.jpg')">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -235,12 +196,6 @@ if ( (is_front_page()) || (is_page(211)) || (is_page(214)) || (is_page(217)) || 
 				</div>
 			</div>
 		</div>	
-<?php } elseif(is_page(1690)) { ?>
-    <div class="resources_header">
-        <div class="container">
-            <?php mayecreate_page_title();?>
-        </div>
-    </div>
 <?php } else { ?>
 	
 	<?php if (has_post_thumbnail() ) { ?>
@@ -251,18 +206,21 @@ if ( (is_front_page()) || (is_page(211)) || (is_page(214)) || (is_page(217)) || 
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php bloginfo('url'); ?>/wp-content/uploads/2015/12/86480546.jpg')">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
             </div>
         </div>
     <?php } ?>
            
+<?php } ?>
 
-		
-        <?php } ?>
-
+<main id="content">
 <div id="page"> <!--Begin Page -->
 <div class="pagebreak_fix">
 <div class="hfeed site <?php echo $containerWidth; ?>">
-<main id="content">
+
+<?php $show_breadcrumb_nav = ('yes' == get_field('show_breadcrumb_nav', 'option')); ?>
+<?php if ($show_breadcrumb_nav) {
+	mayecreate_breadcrumbs();
+} ?>

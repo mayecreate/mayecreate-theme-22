@@ -1,10 +1,6 @@
 <?php
 /**
- * The single file.
- *
- * This page template is setup so that you can modify the number of columns and there widths.  There are 12 available columns.
- * For example if you want to have them setup 2/3 you will set it up with two divs one
- * with the class of span8 and one with a class of span4
+ * The single post file.
 */
 get_header(); ?>
         

@@ -5,9 +5,27 @@
  */
 
 function mayecreate_custom_login_logo() {
+	//get the custom logo field
+	$custom_logo = get_field('site_logo', 'option');
+	//if you have the field, use it, else default to the one in the theme folder.
+	if ($custom_logo) { $custom_logo = $custom_logo; } else { $custom_logo = get_template_directory_uri().'/img/login-logo.png'; }
+
+	$body_background_color = (get_field('body_background_color', 'option'));
+
+	$primary_site_color = (get_field('primary_site_color', 'option'));
+	$secondary_color = (get_field('secondary_color', 'option'));
+
+	$link_color = (get_field('link_color', 'option'));
+	$link_hover_color = (get_field('link_hover_color', 'option'));
+	
+	$button_color = (get_field('button_color', 'option'));
+	$button_background_color = (get_field('button_background_color', 'option'));
+	$button_hover_color = (get_field('button_hover_color', 'option'));
+	$button_hover_background_color = (get_field('button_hover_background_color', 'option'));
+
 	echo '<style type="text/css">
 	body.login {
-		background: #ffffff;
+		background: '.$body_background_color.';
 	}
 	#login {
 		width: 95%;
@@ -16,12 +34,13 @@ function mayecreate_custom_login_logo() {
 		margin: auto;
 	}
 	.login h1 a {
-		max-width: 400px !important;
-		width:100% !important;
-		height: 300px !important;
-		background:url('.get_template_directory_uri().'/img/login-logo.png) !important;
+		max-width: 100% !important;
+		width: 100% !important;
+		height: 100px !important;
+		background:url('.$custom_logo.') !important;
 		background-repeat: no-repeat !important;
 		background-size: contain !important;
+		background-position: center center !important;
 		margin-bottom: 0;
 	}
 	.login form {
@@ -32,17 +51,22 @@ function mayecreate_custom_login_logo() {
 		border:0 none;
 	}
 	.login label {
-		/* Change the style of the login form labels here */
+		color: '.$primary_site_color.';
 	}	
 	.login form .forgetmenot label {
-   		/* Change the remember me checkbox label here */
+		color: '.$primary_site_color.';
 	}
-	
+	.login a:link, .login a:visited {
+		color: '.$link_color.' !important;
+	}
+	.login a:hover, .login a:active {
+		color: '.$link_hover_color.' !important;
+	}
 	input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus{
 		/* Style the form field focus state */
-		border-color: #6c9d30;
-		-webkit-box-shadow: 0 0 12px rgba(108,157,48,.8);
-		box-shadow: 0 0 12px rgba(108,157,48,.8);
+		border-color: '.$secondary_color.';
+		-webkit-box-shadow: 0 0 12px rgba(0,0,0,.25);
+		box-shadow: 0 0 12px rgba(0,0,0,.25);
 	}
 	.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large{
 		padding: 18px 40px;
@@ -50,43 +74,26 @@ function mayecreate_custom_login_logo() {
 		font-size: 18px;
 	}
 	.wp-core-ui .button-primary {
-		background: #6c9d30;
-		border-color: #5F9023;
+		background: '.$button_background_color.';
+		border-color: '.$button_background_color.';
 		-webkit-box-shadow: none;
 		box-shadow: none;
-		color: #fff;
+		color: '.$button_color.';
 		text-decoration: none;
 		text-shadow: none;
 	}
 	.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:active, .wp-core-ui .button-primary:focus {
-		background: #5F9023;
-		border-color: #5F9023;
+		background: '.$button_hover_background_color.';
+		border-color: '.$button_hover_background_color.';
 		-webkit-box-shadow: none;
 		box-shadow: none;
-		color: #fff;
+		color: '.$button_hover_color.';
 	}
 	
 </style>';
 }
 add_action('login_head', 'mayecreate_custom_login_logo'); 
 
-function wpb_custom_logo() {
-echo '
-<style type="text/css">
-#wpwrap h1 {
-background-image: url(' . get_template_directory_uri() . '/img/login-logo1.png) !important;
-background-position: left center !important;
-background-repeat: no-repeat !important;
-background-size: auto 100% !important;
-padding: 0 0 5px 52px !important;
-color: #23282d !important;
-font-weight: 400 !important;
-}
-</style>
-';
-}
-//hook into the administrative header output
-add_action('wp_before_admin_bar_render', 'wpb_custom_logo');
 
 add_action( 'wp_before_admin_bar_render', function() {
 global $wp_admin_bar;
@@ -115,3 +122,48 @@ add_filter('admin_footer_text', 'remove_footer_admin');
 remove_action('welcome_panel', 'wp_welcome_panel');
 
 
+function mayecreate_DBD() { 
+	echo '<!--
+	************
+	DONT BE DUMB
+	************
+												@@@@@@@                                                 
+											   @@@@@@@@@                                                
+							 ,@@@              &@@@@@@@#                                                
+						   @@@@@@@@,       /@            @@@@@@@@@@@@@@@                                
+						   @@@@@@@@@   @@@@@@@@@@.   #@@@@@@@@@@@@@@@@@@@@@@@@@                         
+							@@@@@@&   (@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&                    
+									 @@@@@@@@@@@@%                       ,@@@@@@@@@@@@@                 
+						@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@              
+			@@@@@@    @@@@@@@@@@@@@@@            (@@@@@@@@@@@@@@@@@@@@@@@@@.          @@@@@@@           
+		   @@@@@@@@@   @@@@@@@@@@          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*       @@@@@@         
+		   @@@@@@@@/   @@@@@@@        &@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(     #@@@@@       
+			 @@@@     @@@@@%       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@      
+					@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@@@@@@@@@.    @@@@@    
+		   @@@@@@@@@@@@,      @@@@@@@@@@@@@&.  @@@@@          @@@@@@             ,@@@@@@@@@@    @@@@@   
+		  @@@@@@@@@@@@      @@@@@@             @@@             @@@   @@@@@@@      @@@@@@@@@@@    @@@@&  
+		 @@@@@@@@@@@#     %@@@@@@@            ,@  @@@@@@@,     &@  @@@@@@@@@      @@@@@@@@@@@@   #@@@@  
+		@@@@@@@@@@@*     @@@@@@@@@@@@@@@      , &@@@@@@@@@       @@@@@@@@@@@      @@@@@@@@@@@@    @@@@@ 
+	   /@@@@@@@@@@@     @@@@@@@@@@@@@@@@       @@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@@    @@@@@ 
+	   @@@@@@@@@@@     /@@@@@@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@@@    @@@@@ 
+	   @@@@@@@@@@#     @@@@@@@@@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@@@    @@@@@ 
+	   @@@@@@@@@@      @@@@@@@@@@@@@@@@      @@@@@@@@@@@.     @@@@@@@@@@@       @@@@@@@@@@@@@,   %@@@@@ 
+	   @@@@@@@@@@     .@@@@@@@@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@@&    @@@@@( 
+	   @@@@@@@@@@      @@@@@@@@@@@@@@@      @@@@@@@@@@@.     @@@@@@@@@@@      %@@@@@@@@@@@@     @@@@@@  
+	   @@@@@@@@@@#     @@@@@@@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@    @@@@@@@   
+		@@@@@@@@@@     @@@@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@#     @@@@@@@    
+		%@@@@@@@@@(     @@@@@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@      @@@@@@@@     
+		 @@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@      @@@@@@@@@@@@      @@@@       %@@@@/          
+		  (@@@@@@@@@      @@@@@@@@@      @@@@@@@@@@@@      @@@@@@@@@@@@@             @@@@@@   @@@@@     
+			@@@@@@@@@@      @@@@@@@      @@@@@@@@@@@,     %@@@@@@@@@@@@@@@&. ,@@@@@@@@@@@    @@@@@@@    
+			 %@@@@@@@@@#      @@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@        @@@@@@@    
+			   @@@@@@@@@@@       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/        @@@             
+				  @@@@@@@@@@@         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,          /@@@@                
+					@@@@@@@@@@@@@                ,(&@@@@&/,                   @@@@@@@                   
+					   .@@@@@@@@@@@@@@@.                               @@@@@@@@@@.                      
+						   .@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                           
+								 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 
+										 (@@@@@@@@@@@@@@@@@@@@,                                         
+	-->
+	';
+}

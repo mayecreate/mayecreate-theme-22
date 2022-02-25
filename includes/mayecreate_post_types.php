@@ -16,13 +16,9 @@ function mayecreate_id_column_content( $column, $id ) {
   }
 }
 
-// WP Menu Categories
-add_action( 'init', 'build_taxonomies', 0 );
 
 function mayecreate_create_post_type() {
 
-	if(get_theme_mod('carousel_type', 'standard-posts') == 'custom-post-types') {
-	
 		// Register the "Carousel Slides" custom post type if the custom post type slider is used.
 		register_post_type( 'carousel_slides',
 			array(
@@ -41,7 +37,6 @@ function mayecreate_create_post_type() {
 			'menu_icon'         => 'dashicons-images-alt',
 			)
 		);	
-	}
 }
 add_action( 'init', 'mayecreate_create_post_type' );
 
@@ -56,71 +51,6 @@ function remove_thumbnail_box() {
 
 }
 
-
-
-
-/***
-  * Conditional to do stuff according to Admin page
-  * Based on http://wordpress.stackexchange.com/a/9095/12615
-*/
-
-//add_action('admin_init', 'mayecreate_theme_admin_init');
-
-//function mayecreate_theme_admin_init()
-//{
-    //global $pagenow;
-    //if ( 'edit.php' == $pagenow) 
-    //{
-       // if ( !isset($_GET['post_type']) )
-        //{
-		//	//echo '<div class="error fade">You are on the Post listings page</div>';
-        //}
-        //elseif ( isset($_GET['post_type']) && 'page' == $_GET['post_type'] )
-        //{
-         // echo '<div class="error fade">You are on the Pages listings page</div>';
-        //}
-        //elseif ( isset($_GET['post_type']) && 'carousel_slides' == $_GET['post_type'] )
-        //{
-          //echo '<div class="error fade">You are on the Carousel Slide listings page</div>';
-        //}
-    //}
-    //if ('post.php' == $pagenow && isset($_GET['post']) )
-    //{
-        // Will occur only in this kind of screen: /wp-admin/post.php?post=285&action=edit
-        // and it can be a Post, a Page or a CPT
-        //$post_type = get_post_type($_GET['post']);
-        //if ( 'post' == $post_type )
-        //{
-        	//echo '<div class="error fade">You are editing a Post</div>';
-        //}
-        //elseif ( 'page' == $post_type)
-        //{
-        	//echo '<div class="error fade">You are editing a Page</div>';
-        //}
-        //elseif ( 'carousel_slides' == $post_type)
-        //{
-        	//echo '<div class="error fade">You are editing a Carousel Slide</div>';
-        //}
-    //}
-
-    //if ('post-new.php' == $pagenow )
-    //{
-        // Will occur only in this kind of screen: /wp-admin/post-new.php
-        // or: /wp-admin/post-new.php?post_type=page
-        //if ( !isset($_GET['post_type']) ) 
-        //{
-            //echo '<div class="error fade">You are creating a new Post</div>';
-        //}
-        //elseif ( isset($_GET['post_type']) && 'page' == $_GET['post_type'] )
-        //{
-        	//echo '<div class="error fade">You are creating a new Page</div>';
-        //}
-        //elseif ( isset($_GET['post_type']) && 'carousel_slides' == $_GET['post_type'] )
-        //{            
-        	//echo '<div class="error fade">You are creating a new Carousel Slide</div>';
-        //}
-    //}   
-//}
 
 function mayecreate_change_featured_image_size_in_admin(){
   

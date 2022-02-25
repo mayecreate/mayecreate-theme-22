@@ -83,9 +83,9 @@ $(document.links).filter(function() {
   
 	// THIS SECTION MAKES THE PADDING AT THE TOP OF THE PAGE ADJUST TO THE NAV BAR HEIGHT
 	//$( window ).load(function() {
-		$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
-		$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')}); 
-        $("#navigation").addClass('affix-top')
+		$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+		$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')}); 
+        $("#navigation.fixed").addClass('affix-top')
 		
 		if($(window).width() >= 974){
 			
@@ -134,22 +134,22 @@ $(document.links).filter(function() {
 	
 	$(window).scroll(function() {
 		if($(this).scrollTop() >= 175){} else {
-			$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
-			$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
+			$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+			$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
 		}
 		if($(this).scrollTop() < 175){} else {
-			$("#navigation").addClass('affix');
-			$("#navigation").removeClass('affix-top');
+			$("#navigation.fixed").addClass('affix');
+			$("#navigation.fixed").removeClass('affix-top');
 		} 
 		if($(this).scrollTop() >= 175){} else {
-			$("#navigation").addClass('affix-top');
-			$("#navigation").removeClass('affix');
+			$("#navigation.fixed").addClass('affix-top');
+			$("#navigation.fixed").removeClass('affix');
 		}        
 	});
 	
 	$(window).resize(function() {
-		$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});	
-		$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')});	
+		$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});	
+		$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});	
 		if($(window).width() >= 974){
 			
 			$("#page .pagebreak_left:first-child .pagebreak_left_img").css({'height':($("#page .pagebreak_left:first-child .pagebreak_left_content").outerHeight()+'px')});

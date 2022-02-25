@@ -14,12 +14,7 @@
 		</div>
 	</div>
 <?php } ?>
-<?php if (is_admin()) { ?>
-	<p class="center" style="color: #FF0004"><strong>============== Featured post from your selected category will show here ==============</strong></p>
-	<?php if ($optional_button_link) { ?>
-		<span class="btn-mayecreate"><?php echo $optional_button_link_text; ?></span>
-	<?php } ?>
-<?php } else { ?>
+
 	<?php if ('one' == get_field('number_of_columns')) {
 		$bootstrap_columns = "col-md-12";
 		$post_number = "1";
@@ -52,16 +47,29 @@
 
 		?>
 			<div class="<?php echo $bootstrap_columns; ?>">
-				<?php if ('one' == get_field('number_of_columns')) { ?>
-					<?php get_template_part('partials/loop','blog'); ?>
+				<?php if (is_admin()) { ?>
+					<?php if ('one' == get_field('number_of_columns')) { ?>
+						<?php get_template_part('partials/loop','blog-admin'); ?>
+					<?php } else { ?>
+						<?php get_template_part('partials/loop','blog-card-admin'); ?>
+					<?php } ?>
 				<?php } else { ?>
-					<?php get_template_part('partials/loop','blog-card'); ?>
+					<?php if ('one' == get_field('number_of_columns')) { ?>
+						<?php get_template_part('partials/loop','blog'); ?>
+					<?php } else { ?>
+						<?php get_template_part('partials/loop','blog-card'); ?>
+					<?php } ?>
 				<?php } ?>
 			</div>
 		<?php } // end the loop ?>
 		<!--Reset Query-->
 		<?php wp_reset_query();?>
 	</div>
+<?php if (is_admin()) { ?>
+	<?php if ($optional_button_link) { ?>
+		<span class="btn-mayecreate"><?php echo $optional_button_link_text; ?></span>
+	<?php } ?>
+<?php } else { ?>	
 	<?php if ($optional_button_link) { ?>
 		<div class="row">
 			<div class="col-md-12">
@@ -69,5 +77,4 @@
 			</div>
 		</div>
 	<?php } ?>
-	
 <?php } ?>

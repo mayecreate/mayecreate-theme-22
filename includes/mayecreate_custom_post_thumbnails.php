@@ -17,7 +17,8 @@ function wpdocs_theme_setup() {
     add_image_size('blog', 700, 300, true); // (cropped)
     add_image_size('blog-card', 360, 300, true); // (cropped)
 	add_image_size('team', 300, 350, true); // (cropped)
-	add_image_size('slider', 1920, 450, true); // (cropped)
+	add_image_size('slider', 1920, 750, true); // (cropped)
+	add_image_size('header', 1920, 450, true); // (cropped)
     add_image_size('mailchimp',564, 280, true); // (cropped)
 	//add_image_size('featuredItemSlider', 175, 175, true); // (cropped)  Remeber to uncomment the corisponding line it the funtion below
 }

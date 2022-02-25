@@ -17,7 +17,6 @@ $before = '<li>';
 $after = '</li>';
 
 echo '<div id="breadcrumb">';
-echo '<div class="'. $containerWidth .'">';
 
 
 global $post;
@@ -66,7 +65,7 @@ if ( is_category() ) {
 			
 				$cat = get_the_category(); $cat = $cat[0];
 				echo $before . ' ' . get_category_parents($cat, TRUE, '<li>') . '';
-				echo 'You&apos;re currently reading "' . get_the_title() . '"';
+				echo '' . get_the_title() . '';
 			
 			}
 
@@ -88,12 +87,12 @@ if ( is_category() ) {
 		}
 		$breadcrumbs = array_reverse($breadcrumbs);
 			foreach ($breadcrumbs as $crumb) echo ' ' . $crumb . ' ';
-			echo $before . 'You&apos;re currently viewing the attachment "' . get_the_title() . '"' . $after;
+			echo $before . '' . get_the_title() . '' . $after;
 
 
 	} elseif ( is_page() && !$post->post_parent ) { // is page or does not have a parent page
 
-		echo $before . 'You&apos;re currently reading "' . get_the_title() . '"' . $after;
+		echo $before . '' . get_the_title() . '' . $after;
 
 
 	} elseif ( is_page() && $post->post_parent ) { // is standard page and is child page
@@ -107,10 +106,10 @@ if ( is_category() ) {
 		}
 		$breadcrumbs = array_reverse($breadcrumbs);
 			foreach ($breadcrumbs as $crumb) echo ' ' . $crumb . ' ';
-			echo $before . 'You&apos;re currently reading "' . get_the_title() . '"' . $after;
+			echo $before . '' . get_the_title() . '' . $after;
 
 	} elseif ( is_search() ) {
-		echo $before . 'Search results for "' . get_search_query() . '"' . $after;
+		echo $before . 'Search results for: ' . get_search_query() . '' . $after;
 
 	} elseif ( is_tag() ) {
 		echo $before . 'Archive by tag "' . single_tag_title('', false) . '"' . $after;
@@ -131,7 +130,6 @@ if ( is_category() ) {
 		if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' )';
 	}
 
-echo '</div><!-- / breadcrumb navigation container -->';
 echo '</div><!-- / breadcrumb navigation id -->';
 
        

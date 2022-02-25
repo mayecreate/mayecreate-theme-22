@@ -9,7 +9,7 @@
 function mayecreate_wp_bootstrap_scripts_styles() {
 	
     // Loads Bootstrap minified JavaScript file.
-	wp_enqueue_script('bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', false ,'4.5.0', true );
+	wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', false ,'5.1', true );
 	// Loads the LightSlider javascript for the featured image slider
 	wp_enqueue_script('featuredSlider', get_template_directory_uri() . '/js/lightslider.js', array('jquery'),'1.0.0', true );
 	// Loads the MayeCreate custom scripts.
@@ -17,7 +17,7 @@ function mayecreate_wp_bootstrap_scripts_styles() {
 	// Loads Javascript file for the  drawer menu
 	wp_enqueue_script('drawerMenu', get_template_directory_uri() . '/js/jquery.mmenu.all.min.js', array('jquery'),'1.0.0', true );
 	// Loads Bootstrap minified CSS file.
-	wp_enqueue_style('bootstrapwp', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css', false ,'4.5.0');	
+	wp_enqueue_style('bootstrapwp', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', false ,'5.1');	
 	// Loads the main stylesheet for the featured image slider
 	wp_enqueue_style('featuredSliderStyle', get_template_directory_uri() . '/css/lightslider.min.css', array('bootstrapwp') ,'1.0');
 	// Loads the stylesheet for the slideout menu.
@@ -28,27 +28,15 @@ function mayecreate_wp_bootstrap_scripts_styles() {
 	wp_enqueue_style('drawerMenuPosition', get_template_directory_uri() . '/css/jquery.mmenu.positioning.css', array('bootstrapwp') ,'1.0');		
 	// Loads our main stylesheet.
 	wp_register_style('style', get_template_directory_uri() . '/style.css', array('bootstrapwp') ,'1.0');
-	if (get_theme_mod('navbar_stick_on_scroll', 'navbar-static-scroll') == 'navbar-fix-scroll') {
-		wp_enqueue_script('drawerMenu', get_template_directory_uri() . '/js/menuScroll.js', array('jquery'),'4.5.0', true );
-	}
-    wp_enqueue_style('style');
-    wp_enqueue_script('mayecreatejs');
+	wp_register_style('style_compiled', get_template_directory_uri() . '/css/main.min.css', array('bootstrapwp') ,'1.0');
+
+	wp_enqueue_style('style');
+	wp_enqueue_style('style_compiled');
+	wp_enqueue_script('mayecreatejs');
      
 	  
 }
 add_action('wp_enqueue_scripts', 'mayecreate_wp_bootstrap_scripts_styles');
-
-
-/**
- * Load required files.
- *
- * @since MayeCreate Mini Site 2.0
- * @return void
- */
-
-/* Remove from site or comment out when site goes live */
-//include get_theme_file_path('includes/wordpress-theme-customizer-custom-controls-master/theme-customizer-demo.php');
-
  
 
 /* Instantiates the blog title block */
@@ -68,9 +56,6 @@ include get_theme_file_path('includes/mayecreate_page_title.php');
 
 /* Instantiates the custom post types */
 include get_theme_file_path('includes/mayecreate_post_types.php');
-
-/* Instantiates the widget areas of theme */
-include get_theme_file_path('includes/mayecreate_widgets.php');
 
 /* Instantiates the facebook opengraph code to be used in the head of the theme if turned on*/
 include get_theme_file_path('includes/mayecreate_facebook_opengraph.php');
@@ -99,18 +84,21 @@ include get_theme_file_path('includes/mayecreate_theme_customizer.php');
 /* Adds Mayecreate Custom Blocks to Theme */
 include get_theme_file_path('includes/mayecreate_blocks.php');
 
-/* Adds Mayecreate Columns to Theme */
-include get_theme_file_path('includes/mayecreate_columns.php');
-
 /* Removes responsive image functionality from site.  Will possibly remove after Wordpress 4.5 */
 include get_theme_file_path('includes/mayecreate_responsive_images.php');
 
 /* Removes responsive image functionality from site.  Will possibly remove after Wordpress 4.5 */
 include get_theme_file_path('includes/mayecreate_modify_capabilities.php');
 
-// Removes the ability to edit themes and plugins from the wordpress admin
+/*
+==========================================================
+Removing things in admin section that only mayecreate should have access to
+==========================================================
+*/
+$user_id = get_current_user_id();
+if ($user_id == '1') {} else { //User_id 1 is MayeCreate
 define( 'DISALLOW_FILE_EDIT', true );
-
+}
 
 /*
 ==========================================================
@@ -118,16 +106,18 @@ Loads the custom styles from the Theme Customizer
 ==========================================================
 */
 function mayecreate_theme_customize_css(){
-	require_once( get_template_directory() . '/includes/custom-style.php' );
+ 	require_once( get_template_directory() . '/includes/custom-style.php' );
 }
 add_action( 'wp_head', 'mayecreate_theme_customize_css');
+add_action( 'admin_menu', 'mayecreate_theme_customize_css');
 
 
-if(get_theme_mod('container_width', 'fixed-width') == 'full-width') { 
-			$containerWidth = 'container-fluid';
-		} else { 
-			$containerWidth = 'container';
-		}
+	$containerWidth = ('narrow' == get_field('container_width', 'option'));
+	if($containerWidth) { 
+		$containerWidth ='container container-narrow';
+	} else { 
+		$containerWidth ='container';
+	}
 
 /*
 ==========================================================
@@ -159,75 +149,6 @@ function prefix_meta_desc() {
 
 remove_action('wp_head', 'wp_generator');
 
-
-/*
-==========================================================
-WOOCOMMERCE STUFF
-==========================================================
-*/
-//add_action( 'init', 'jk_remove_wc_breadcrumbs' );
-//function jk_remove_wc_breadcrumbs() {
-    //remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-//}
-
-/*
-==========================================================
-Modifications to Wordpress Admin
-==========================================================
-*/
-function myplugin_tinymce_buttons($buttons)
- {
-      //Remove the text color selector
-      $remove = 'wp_adv';
-
-      //Find the array key and then unset
-      if ( ( $key = array_search($remove,$buttons) ) !== false )
-		unset($buttons[$key]);
-
-      
-	  
-	  return $buttons;
- }
-add_filter('mce_buttons_2','myplugin_tinymce_buttons');
-
-
-function unhide_kitchensink( $args ) { 
-	$args['wordpress_adv_hidden'] = false; 
-	return $args; 
-} 
-add_filter( 'tiny_mce_before_init', 'unhide_kitchensink' );
-
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
-
-add_action( 'wp_enqueue_scripts', 'myplugin_enqueue' );
-
-function myplugin_enqueue() {
-    // wp_register_script(...
-    // wp_enqueue_script(...
-}
- 
-
-add_filter('style_loader_tag', 'myplugin_remove_type_attr', 10, 2);
-add_filter('script_loader_tag', 'myplugin_remove_type_attr', 10, 2);
-
-function myplugin_remove_type_attr($tag, $handle) {
-    return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
-}
- 
-/*function rss_post_thumbnail($content) {
-global $post;
-if(has_post_thumbnail($post->ID)) {
-$content = '<p>' . get_the_post_thumbnail($post->ID) .
-'</p>' . get_the_content();
-}
-return $content;
-}
-add_filter('the_excerpt_rss', 'rss_post_thumbnail');
-add_filter('the_content_feed', 'rss_post_thumbnail');*/
-
-
-
 /**
  * Enqueue block editor JavaScript and CSS
 */
@@ -237,17 +158,25 @@ function jsforwpblocks_editor_scripts() {
   // Make paths variables so we don't write em twice
 	
   $blockPath = '/js/mayecreate_scripts.js';
-  $editorStylePath = '/style.css'; 
+  //$editorStylePath = '/style.css'; 
 	
   // Enqueue the bundled block JS file
   wp_enqueue_script( 'mc-block-editor-script', get_template_directory_uri() . '/js/mayecreate_scripts.js', false, '1.0', 'all' );
-	
-  // Enqueue optional editor only styles
-  wp_enqueue_style( 'mc-block-editor-styles', get_template_directory_uri() . '/style.css', false, '1.0', 'all' );
 
 }
 // Hook scripts function into block editor hook
 add_action( 'enqueue_block_editor_assets', 'jsforwpblocks_editor_scripts' );
+
+function editor_style_setup() {
+	// Add support for editor styles.
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
+	add_editor_style( '/css/main.min.css' );
+}
+add_action( 'after_setup_theme', 'editor_style_setup' );
+
+$primary_site_color = (get_field('primary_site_color', 'option'));
+$secondary_color = (get_field('secondary_color', 'option'));
 
 add_theme_support( 'editor-color-palette', array(
 	array(
@@ -271,7 +200,17 @@ add_theme_support( 'editor-color-palette', array(
 		'color'	=> '#fff',
 	),
 	array(
-		'name'	=> __( 'Hot Pink', 'mayecreate-theme' ),
+		'name'	=> __( 'Primary Site Color', 'mayecreate-theme' ),
+		'slug'	=> 'primary',
+		'color'	=> $primary_site_color,
+	),
+	array(
+		'name'	=> __( 'Secondary Site Color', 'mayecreate-theme' ),
+		'slug'	=> 'secondary',
+		'color'	=> $secondary_color,
+	),
+	array(
+		'name'	=> __( 'Hot Pink Error', 'mayecreate-theme' ),
 		'slug'	=> 'hotpink',
 		'color'	=> '#f542e6',
 	)
@@ -279,11 +218,6 @@ add_theme_support( 'editor-color-palette', array(
 
 add_theme_support( 'disable-custom-colors' );
 
-
-/*function block_frames() {
-header( 'X-FRAME-OPTIONS: SAMEORIGIN' );
-}
-add_action( 'send_headers', 'block_frames', 10 );*/
 
 /* Automatically set the image Title, Alt-Text, Caption & Description upon upload
 --------------------------------------------------------------------------------------*/
@@ -320,4 +254,43 @@ function mayecreate_set_image_meta_upon_image_upload( $post_ID ) {
 	} 
 }
 
+/*
+Change the default image settings
+*/
+add_action( 'after_setup_theme', 'wnd_default_image_settings' );
+function wnd_default_image_settings() {
+	update_option( 'image_default_align', 'center' );
+	update_option( 'image_default_link_type', 'none' );
+	update_option( 'image_default_size', 'large' );
+}
 
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'General Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Slider Settings',
+		'menu_title'	=> 'Carousel Slider',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}

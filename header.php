@@ -90,30 +90,12 @@
 <?php if ($default_header_image) {
 	$default_header_image = $default_header_image;
 } else {
-	$default_header_image = get_bloginfo('url') .'/wp-content/uploads/2015/12/86480546.jpg';
+	$default_header_image = get_bloginfo('url') .'/wp-content/themes/mayecreate-theme-22/img/default_header.jpg';
 } ?>
-<?php  
-/**
- * ==========================================================
- * This conditional statement customizes the page header based on the page.  If it is front page it loads the 
- * carousel for the carousel custom post type.  If it is and internal page it loads the featured
- * image for that page.
- *
- * For live template remove all of line 164 except the 'if (is_front_page()){' part
- *
- * The width of the carousel on the home page is determined by the size of it containing element and the 
- * height is detemined by the slide proportionally. 
- *
- *
- * ==========================================================
- */
-
-if (is_front_page()){ ?>
+<?php if (is_front_page()){ ?>
 
 	<div id="homefeatured">
-	
     	<?php get_template_part('partials/content','carouselPosts'); ?>
-        
     </div><!-- homefeatured -->
     
 <?php } elseif (is_home()) { ?>

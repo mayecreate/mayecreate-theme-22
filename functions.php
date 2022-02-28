@@ -75,17 +75,8 @@ include get_theme_file_path('includes/mayecreate_custom_post_thumbnails.php');
 /* Adds Theme Support for HTML5 Search Form */
 add_theme_support('html5', array('search-form'));
 
-/* Adds Responsive Wrapper Around oembed Media documents including You Tube and Vimeo */
-include get_theme_file_path('includes/mayecreate_responsive_media.php');
-
-/* Adds Mayecreate Theme Customizer */
-include get_theme_file_path('includes/mayecreate_theme_customizer.php');
-
 /* Adds Mayecreate Custom Blocks to Theme */
 include get_theme_file_path('includes/mayecreate_blocks.php');
-
-/* Removes responsive image functionality from site.  Will possibly remove after Wordpress 4.5 */
-include get_theme_file_path('includes/mayecreate_responsive_images.php');
 
 /* Removes responsive image functionality from site.  Will possibly remove after Wordpress 4.5 */
 include get_theme_file_path('includes/mayecreate_modify_capabilities.php');
@@ -106,10 +97,10 @@ Loads the custom styles from the Theme Customizer
 ==========================================================
 */
 function mayecreate_theme_customize_css(){
- 	require_once( get_template_directory() . '/includes/custom-style.php' );
+	include_once( get_template_directory() . '/includes/custom-style.php' );
 }
 add_action( 'wp_head', 'mayecreate_theme_customize_css');
-add_action( 'admin_menu', 'mayecreate_theme_customize_css');
+add_action( 'admin_head', 'mayecreate_theme_customize_css');
 
 
 	$containerWidth = ('narrow' == get_field('container_width', 'option'));

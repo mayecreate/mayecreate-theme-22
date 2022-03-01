@@ -10,26 +10,27 @@
 <?php $custom_background_color = esc_html(get_field("custom_background_color")); ?>
 <?php $custom_text_hover_color = esc_html(get_field("custom_text_hover_color")); ?>
 <?php $custom_background_hover_color = esc_html(get_field("custom_background_hover_color")); ?>
+<?php $button_id = generateRandomString(); ?>
 
 <?php if ($custom_text_color || $custom_background_color || $custom_text_hover_color || $custom_background_hover_color) {
-    $custom_color_class = 'custom_color';
+    $custom_color_class = 'custom_color_'.$button_id;
 } else {
     $custom_color_class = '';
 } ?>
-<?php if ($custom_text_color || $custom_background_color || $custom_text_hover_color || $custom_background_hover_color) { ?>
-    <style type="text/css">
-        .custom_color, .custom_color:link, .custom_color:visited {
-            background: <?php echo $custom_background_color; ?> !important;
-            color: <?php echo $custom_text_color; ?> !important;
-            border-color: <?php echo $custom_background_color; ?> !important;
+<?php if ($custom_text_color || $custom_background_color || $custom_text_hover_color || $custom_background_hover_color) {
+    echo '<style type="text/css">
+        .custom_color_'.$button_id.', .custom_color_'.$button_id.':link, .custom_color_'.$button_id.':visited {
+            background: '.$custom_background_color.' !important;
+            color: '.$custom_text_color.' !important;
+            border-color: '.$custom_background_color.' !important;
         }
-        .custom_color:hover, .custom_color:active {
-            background: <?php echo $custom_background_hover_color; ?> !important;
-            color: <?php echo $custom_text_hover_color; ?> !important;
-            border-color: <?php echo $custom_background_hover_color; ?> !important;
+        .custom_color_'.$button_id.':hover, .custom_color_'.$button_id.':active {
+            background: '.$custom_background_hover_color.' !important;
+            color: '.$custom_text_hover_color.' !important;
+            border-color: '.$custom_background_hover_color.' !important;
         }
-    </style>
-<?php } ?>
+    </style>';
+} ?>
 
 <?php if( have_rows('custom_margin') ): ?>
     <?php while( have_rows('custom_margin') ): the_row(); 
@@ -40,18 +41,18 @@
         $margin_bottom = get_sub_field('margin_bottom');
         $margin_left = get_sub_field('margin_left');
         if ($margin_top || $margin_right || $margin_bottom || $margin_left) {
-            $custom_margin_class = 'custom_margin_class';
+            $custom_margin_class = 'custom_margin_class_'.$button_id;
 
-            ?>
+            echo '
             <style type="text/css">
-                .btn-mayecreate.custom_margin_class, a.btn-mayecreate.custom_margin_class:link, a.btn-mayecreate.custom_margin_class:visited {
-                    margin-top: <?php echo $margin_top; ?><?php echo $unit_of_measurement; ?> !important;
-                    margin-right: <?php echo $margin_right; ?><?php echo $unit_of_measurement; ?> !important;
-                    margin-bottom: <?php echo $margin_bottom; ?><?php echo $unit_of_measurement; ?> !important;
-                    margin-left: <?php echo $margin_left; ?><?php echo $unit_of_measurement; ?> !important;
+                .btn-mayecreate.custom_margin_class_'.$button_id.', a.btn-mayecreate.custom_margin_class_'.$button_id.':link, a.btn-mayecreate.custom_margin_class_'.$button_id.':visited {
+                    margin-top: '.$margin_top.''.$unit_of_measurement.' !important;
+                    margin-right: '.$margin_right.''.$unit_of_measurement.' !important;
+                    margin-bottom: '.$margin_bottom.''.$unit_of_measurement.' !important;
+                    margin-left: '.$margin_left.''.$unit_of_measurement.' !important;
                 }
-            </style>
-        <?php } ?>
+            </style>' ;
+        } ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
@@ -64,18 +65,18 @@
         $padding_bottom = get_sub_field('padding_bottom');
         $padding_left = get_sub_field('padding_left');
         if ($padding_top || $padding_right || $padding_bottom || $padding_left) {
-            $custom_padding_class = 'custom_padding_class';
+            $custom_padding_class = 'custom_padding_class_'.$button_id;
 
-            ?>
+            echo '
             <style type="text/css">
-                .btn-mayecreate.custom_padding_class, a.btn-mayecreate.custom_padding_class:link, a.btn-mayecreate.custom_padding_class:visited {
-                    padding-top: <?php echo $padding_top; ?><?php echo $unit_of_measurement; ?> !important;
-                    padding-right: <?php echo $padding_right; ?><?php echo $unit_of_measurement; ?> !important;
-                    padding-bottom: <?php echo $padding_bottom; ?><?php echo $unit_of_measurement; ?> !important;
-                    padding-left: <?php echo $padding_left; ?><?php echo $unit_of_measurement; ?> !important;
+                .btn-mayecreate.custom_padding_class_'.$button_id.', a.btn-mayecreate.custom_padding_class_'.$button_id.':link, a.btn-mayecreate.custom_padding_class_'.$button_id.':visited {
+                    padding-top: '.$padding_top.''.$unit_of_measurement.' !important;
+                    padding-right: '.$padding_right.''.$unit_of_measurement.' !important;
+                    padding-bottom: '.$padding_bottom.''.$unit_of_measurement.' !important;
+                    padding-left: '.$padding_left.''.$unit_of_measurement.' !important;
                 }
-            </style>
-        <?php } ?>
+            </style>' ;
+        } ?>
     <?php endwhile; ?>
 <?php endif; ?>
 

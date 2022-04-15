@@ -1737,11 +1737,11 @@ img {
 				    	text-decoration:none;
 				    	font-size: 1.8rem;
 				    	padding: 0px 0 0 10px;
-						color: vars.$link_color;
+						color: vars.$footer_link_color;
 				    }
 				    #footer_nav a:hover, #footer_nav a:active, #footer_nav a:focus, #footer_nav > ul > li.active > a {
 				    	text-decoration:none;
-						color: vars.$link_hover_color;
+						color: vars.$footer_link_hover_color;
 				    }
 
 					

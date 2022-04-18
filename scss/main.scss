@@ -7,7 +7,7 @@ html {
 }
 body { 
 	font-family: vars.$main_font; 
-	font-size: clamp(1.6rem, 1rem + 1vw, vars.$body_font_size);
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
 	font-weight: 400; /* normal */
 	color: vars.$base_color;
 	margin:0;
@@ -216,7 +216,7 @@ h6, .h6 {
 /* TYPOGRAPHY: PARAGRAPHS
 ==========================================  */
 p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
-	font-size: clamp(1.6rem, 1rem + 1vw, vars.$body_font_size);
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
 	margin:0 0 20px 0;
 }
 

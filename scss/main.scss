@@ -72,6 +72,33 @@ iframe {
     } 
 }*/ 
 
+.narrow_p {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.narrower_p {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.margin_bottom {
+	margin-bottom: 60px;
+}
+.margin_bottom_30 {
+	margin-bottom: 30px;
+}
+.topless {
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+}
+.bottomless {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+} 
+
 
 /* PRINT STYLE SHEET
 ==========================================	*/

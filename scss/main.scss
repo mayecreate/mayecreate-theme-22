@@ -312,6 +312,7 @@ ul li {
 	cursor: pointer;
 	color:  vars.$button_color;
 	outline: none;
+	width: 100%;
 }
 .wp-block-button.aligncenter {
 	display: table;
@@ -1457,6 +1458,7 @@ img {
 					===========================================  */
 					.btn-mayecreate, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button, .wp-block-button.large, span.btn-mayecreate {
 						display: table;
+						width: fit-content;
 						margin: 0 15px 20px 0;
 					}
 					.col-md-4 a.btn-mayecreate.large:link, .col-md-4 a.btn-mayecreate.large:visited, .col-md-4 a.btn-mayecreate:link, .col-md-4 a.btn-mayecreate:visited, .col-md-3 a.btn-mayecreate.large:link, .col-md-3 a.btn-mayecreate.large:visited, .col-md-3 a.btn-mayecreate:link, .col-md-3 a.btn-mayecreate:visited, .col-md-4 .wp-block-button, .col-md-3 .wp-block-button  {
@@ -1465,13 +1467,15 @@ img {
 					}
 					.col-md-4 a.btn-mayecreate.large:link, .col-md-4 a.btn-mayecreate.large:visited, .col-md-3 a.btn-mayecreate.large:link, .col-md-3 a.btn-mayecreate.large:visited, .col-md-3 .wp-block-button.large, .col-md-4 .wp-block-button.large {
 						display: block;
+						width: 100%; 
 					}	
 					.btn-mayecreate.block, a.btn-mayecreate.block:link, a.btn-mayecreate.block:visited {
 						display: block !important;
+						width: 100%;
 					}
 					.btn-mayecreate.center, a.btn-mayecreate.center:link, a.btn-mayecreate.center:visited {
 						margin-left: auto !important;
-						margin-right: auto !important;
+						margin-right: auto !important; 
 					}
 
 					/* HEADER

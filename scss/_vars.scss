@@ -30,6 +30,13 @@ $heading_4_color: var(--heading_4_color);
 $heading_5_color: var(--heading_5_color); 
 $heading_6_color: var(--heading_6_color); 
 
+$heading_1_font_weight: var(--heading_1_font_weight); 
+$heading_2_font_weight: var(--heading_2_font_weight); 
+$heading_3_font_weight: var(--heading_3_font_weight); 
+$heading_4_font_weight: var(--heading_4_font_weight); 
+$heading_5_font_weight: var(--heading_5_font_weight); 
+$heading_6_font_weight: var(--heading_6_font_weight); 
+
 $body_background_color: var(--body_background_color);
 
 $black: #000000; 
@@ -77,3 +84,5 @@ $pagebreak_button_background_color: var(--pagebreak_button_background_color);
 $pagebreak_button_text_hover_color: var(--pagebreak_button_text_hover_color);
 $pagebreak_button_background_hover_color: var(--pagebreak_button_background_hover_color);
 $pagebreak_background_attachment: var(--pagebreak_background_attachment);
+
+$ul_li_bullet: var(--ul_li_bullet);

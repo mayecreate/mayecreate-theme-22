@@ -79,6 +79,19 @@ $heading_5_color = (get_field('heading_5_color', 'option'));
 $heading_6_color = (get_field('heading_6_color', 'option')); 
 	if($heading_6_color) { $heading_6_color = $heading_6_color; } else { $heading_6_color = $secondary_color; }
 
+$heading_1_font_weight = (get_field('heading_1_font_weight', 'option')); 
+	if($heading_1_font_weight) { $heading_1_font_weight = $heading_1_font_weight; } else { $heading_1_font_weight = '400'; }
+$heading_2_font_weight = (get_field('heading_2_font_weight', 'option')); 
+	if($heading_2_font_weight) { $heading_2_font_weight = $heading_2_font_weight; } else { $heading_2_font_weight = '400'; }
+$heading_3_font_weight = (get_field('heading_3_font_weight', 'option')); 
+	if($heading_3_font_weight) { $heading_3_font_weight = $heading_3_font_weight; } else { $heading_3_font_weight = '400'; }
+$heading_4_font_weight = (get_field('heading_4_font_weight', 'option')); 
+	if($heading_4_font_weight) { $heading_4_font_weight = $heading_4_font_weight; } else { $heading_4_font_weight = '400'; }
+$heading_5_font_weight = (get_field('heading_5_font_weight', 'option')); 
+	if($heading_5_font_weight) { $heading_5_font_weight = $heading_5_font_weight; } else { $heading_5_font_weight = '400'; }
+$heading_6_font_weight = (get_field('heading_6_font_weight', 'option')); 
+	if($heading_6_font_weight) { $heading_6_font_weight = $heading_6_font_weight; } else { $heading_6_font_weight = '400'; }
+
 $pagebreak_background_color = (get_field('pagebreak_background_color', 'option'));
 	if($pagebreak_background_color) { $pagebreak_background_color = $pagebreak_background_color; } else { $pagebreak_background_color = '#eee'; }
 $pagebreak_heading_color = (get_field('pagebreak_heading_color', 'option'));
@@ -105,6 +118,13 @@ if ($fixed_pagebreak_background == "Yes") {
 	$pagebreak_background_attachment = "fixed";
 } else {
 	$pagebreak_background_attachment = "local";
+}
+
+$ul_li_bullet = (get_field('ul_li_bullet', 'option'));
+if ($ul_li_bullet) {
+	$ul_li_bullet = "url('".$ul_li_bullet."')";
+} else {
+	$ul_li_bullet = "circle";
 }
 
 ?>
@@ -173,6 +193,13 @@ if ($fixed_pagebreak_background == "Yes") {
 	--heading_4_color: <?php echo $heading_4_color; ?>;
 	--heading_5_color: <?php echo $heading_5_color; ?>;
 	--heading_6_color: <?php echo $heading_6_color; ?>;
+	
+	--heading_1_font_weight: <?php echo $heading_1_font_weight; ?>;
+	--heading_2_font_weight: <?php echo $heading_2_font_weight; ?>;
+	--heading_3_font_weight: <?php echo $heading_3_font_weight; ?>;
+	--heading_4_font_weight: <?php echo $heading_4_font_weight; ?>;
+	--heading_5_font_weight: <?php echo $heading_5_font_weight; ?>;
+	--heading_6_font_weight: <?php echo $heading_6_font_weight; ?>;
 
 	--pagebreak_background_color: <?php echo $pagebreak_background_color; ?>; 
 	--pagebreak_heading_color: <?php echo $pagebreak_heading_color; ?>;
@@ -184,5 +211,7 @@ if ($fixed_pagebreak_background == "Yes") {
 	--pagebreak_button_text_hover_color: <?php echo $pagebreak_button_text_hover_color; ?>;
 	--pagebreak_button_background_hover_color: <?php echo $pagebreak_button_background_hover_color; ?>;
 	--pagebreak_background_attachment: <?php echo $pagebreak_background_attachment; ?>;
+
+	--ul_li_bullet: <?php echo $ul_li_bullet; ?>;
 }
 </style>

@@ -139,6 +139,27 @@
                 "step": ""
             },
             {
+                "key": "field_628bef6d7f31d",
+                "label": "Heading 1 Font Weight",
+                "name": "heading_1_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
                 "key": "field_620ed137c0d32",
                 "label": "Heading 2 Font",
                 "name": "heading_2_font",
@@ -188,6 +209,27 @@
                     "id": ""
                 },
                 "default_value": 40,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef922eae2",
+                "label": "Heading 2 Font Weight",
+                "name": "heading_2_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
@@ -253,6 +295,27 @@
                 "step": ""
             },
             {
+                "key": "field_628bef9e2eae3",
+                "label": "Heading 3 Font Weight",
+                "name": "heading_3_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
                 "key": "field_620ed14ac0d34",
                 "label": "Heading 4 Font",
                 "name": "heading_4_font",
@@ -302,6 +365,27 @@
                     "id": ""
                 },
                 "default_value": 30,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befa82eae4",
+                "label": "Heading 4 Font Weight",
+                "name": "heading_4_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
@@ -367,6 +451,27 @@
                 "step": ""
             },
             {
+                "key": "field_628befb32eae5",
+                "label": "Heading 5 Font Weight",
+                "name": "heading_5_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
                 "key": "field_620ed14dc0d36",
                 "label": "Heading 6 Font",
                 "name": "heading_6_font",
@@ -422,6 +527,27 @@
                 "min": "",
                 "max": "",
                 "step": ""
+            },
+            {
+                "key": "field_628befbc2eae6",
+                "label": "Heading 6 Font Weight",
+                "name": "heading_6_font_weight",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
             }
         ],
         "location": [
@@ -442,6 +568,672 @@
         "active": true,
         "description": "",
         "show_in_rest": 0
+    },
+    {
+        "key": "group_5b9fb9632a682",
+        "title": "Home Buttons",
+        "fields": [
+            {
+                "key": "field_54b05449f96b2",
+                "label": "Button 01 Content",
+                "name": "button_01_content",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b0546af96b3",
+                "label": "Button 01 Icon",
+                "name": "button_01_icon",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05491f96b4",
+                "label": "Button 01 Link",
+                "name": "button_01_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post",
+                    "page"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            },
+            {
+                "key": "field_54b054a0f96b5",
+                "label": "Additional Button",
+                "name": "additional_button_01",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_54b054c8f96b6",
+                "label": "Button 02 Content",
+                "name": "button_02_content",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b054a0f96b5",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b054e0f96b7",
+                "label": "Button 02 Icon",
+                "name": "button_02_icon",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b054a0f96b5",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b054fcf96b8",
+                "label": "Button 02 Link",
+                "name": "button_02_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b054a0f96b5",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post",
+                    "page"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            },
+            {
+                "key": "field_54b0550cf96b9",
+                "label": "Additional Button",
+                "name": "additional_button_02",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b054a0f96b5",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "allow_null": 0,
+                "return_format": "value"
+            },
+            {
+                "key": "field_54b05528f96ba",
+                "label": "Button 03 Content",
+                "name": "button_03_content",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05536f96bb",
+                "label": "Button 03 Icon",
+                "name": "button_03_icon",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b0550cf96b9",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05559f96bc",
+                "label": "Button 03 Link",
+                "name": "button_03_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54b0550cf96b9",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post",
+                    "page"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "front-page.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": false
+    },
+    {
+        "key": "group_5b9fb963f3415",
+        "title": "Page Callouts",
+        "fields": [
+            {
+                "key": "field_54b05a1a86d5c",
+                "label": "Callout 01 Title",
+                "name": "callout_01_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05a2d86d5d",
+                "label": "Callout 01 Title Icon",
+                "name": "callout_01_title_icon",
+                "type": "image",
+                "instructions": "Icon must be 36px wide and 36px tall",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05a0b86d5b",
+                "label": "Callout 01 Text",
+                "name": "callout_01_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b059f186d5a",
+                "label": "Callout 01 Image",
+                "name": "callout_01_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05d9766622",
+                "label": "Callout 01 Link",
+                "name": "callout_01_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "post",
+                    "page"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            },
+            {
+                "key": "field_54b05b07926ab",
+                "label": "Callout 02 Title",
+                "name": "callout_02_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05b29e2630",
+                "label": "Callout 02 Title Icon",
+                "name": "callout_02_title_icon",
+                "type": "image",
+                "instructions": "Icon must be 36px wide and 36px tall",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05ae61bdd5",
+                "label": "Callout 02 Text",
+                "name": "callout_02_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05ab8a9c6b",
+                "label": "Callout 02 Image",
+                "name": "callout_02_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05dafb83fb",
+                "label": "Callout 02 Link",
+                "name": "callout_02_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            },
+            {
+                "key": "field_54b05b171a3ef",
+                "label": "Callout 03 Title",
+                "name": "callout_03_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05b39345fa",
+                "label": "Callout 03 Title Icon",
+                "name": "callout_03_title_icon",
+                "type": "image",
+                "instructions": "Icon must be 36px wide and 36px tall",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05af443ee5",
+                "label": "Callout 03 Text",
+                "name": "callout_03_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "formatting": "html",
+                "maxlength": ""
+            },
+            {
+                "key": "field_54b05abda9c6c",
+                "label": "Callout 03 Image",
+                "name": "callout_03_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "preview_size": "thumbnail",
+                "library": "all",
+                "return_format": "url",
+                "min_width": 0,
+                "min_height": 0,
+                "min_size": 0,
+                "max_width": 0,
+                "max_height": 0,
+                "max_size": 0,
+                "mime_types": ""
+            },
+            {
+                "key": "field_54b05dc0b83fc",
+                "label": "Callout 03 Link",
+                "name": "callout_03_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "taxonomy": [],
+                "allow_archives": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "front-page-callouts.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": "",
+        "show_in_rest": false
     },
     {
         "key": "group_620eb6a70234a",
@@ -759,6 +1551,23 @@
                 "name": "pagebreak_button_background_hover_color",
                 "type": "color_picker",
                 "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_628beda5ddfd1",
+                "label": "Login Screen Background Color",
+                "name": "login_screen_background_color",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here this color will default to the body BG color.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -1673,6 +2482,30 @@
                 "layout": "horizontal",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_628bebeddad4a",
+                "label": "ul li bullet",
+                "name": "ul_li_bullet",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
             }
         ],
         "location": [

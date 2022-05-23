@@ -11,6 +11,12 @@ function mayecreate_custom_login_logo() {
 	if ($custom_logo) { $custom_logo = $custom_logo; } else { $custom_logo = get_template_directory_uri().'/img/login-logo.png'; }
 
 	$body_background_color = (get_field('body_background_color', 'option'));
+	$login_screen_background_color = (get_field('login_screen_background_color', 'option'));
+	if ($login_screen_background_color) {
+		$login_screen_background_color = $login_screen_background_color;
+	} else {
+		$login_screen_background_color = $body_background_color;
+	}
 
 	$primary_site_color = (get_field('primary_site_color', 'option'));
 	$secondary_color = (get_field('secondary_color', 'option'));
@@ -25,7 +31,7 @@ function mayecreate_custom_login_logo() {
 
 	echo '<style type="text/css">
 	body.login {
-		background: '.$body_background_color.';
+		background: '.$login_screen_background_color.';
 	}
 	#login {
 		width: 95%;

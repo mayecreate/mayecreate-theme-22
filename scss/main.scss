@@ -211,21 +211,25 @@ h1, h1.entry-title, .h1 {
 	font-size: clamp(3.5rem, 3rem + 1vw, vars.$header_1_font_size);
 	font-family: vars.$header_1_font;
 	color: vars.$heading_1_color;
+	font-weight: vars.$heading_1_font_weight;
 }
 h2, .h2 {
 	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size);
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
+	font-weight: vars.$heading_2_font_weight;
 }
 h3, .h3 {
 	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size);
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
+	font-weight: vars.$heading_3_font_weight;
 } 
 h4, .h4 {
 	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size);
 	font-family: vars.$header_4_font;
 	color: vars.$heading_4_color;
+	font-weight: vars.$heading_4_font_weight;
 }
 h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
 	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size);
@@ -233,11 +237,13 @@ h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.la
 }
 h5, .h5 {
 	color: vars.$heading_5_color;
+	font-weight: vars.$heading_5_font_weight;
 }
 h6, .h6 {
 	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$header_6_font_size);
 	font-family: vars.$header_6_font;
 	color: vars.$heading_6_color;
+	font-weight: vars.$heading_6_font_weight;
 }
 
 /* TYPOGRAPHY: PARAGRAPHS
@@ -293,7 +299,7 @@ li {
 	padding:0;
 }
 ul li {
-	list-style: circle;
+	list-style: vars.$ul_li_bullet;
 }
 
 

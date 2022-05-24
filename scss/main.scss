@@ -889,11 +889,11 @@ ul.social li {
 }
 ul.social li a:link, ul.social li a:visited {
     font-size: 3rem;
-    color: vars.$link_color;
+	color: vars.$footer_link_color;
 }
 ul.social li a:hover, ul.social li a:active {
     font-size: 3rem;
-    color: vars.$link_hover_color;
+	color: vars.$footer_link_hover_color; 
 }
 
 /* IMAGES

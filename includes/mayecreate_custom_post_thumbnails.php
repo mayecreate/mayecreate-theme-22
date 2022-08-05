@@ -14,9 +14,20 @@ if ( function_exists( 'add_theme_support' ) ) {
 //Activates Custom Featured Image Sizes
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
-    add_image_size('blog', 700, 300, true); // (cropped)
-    add_image_size('blog-card', 360, 300, true); // (cropped)
-	add_image_size('team', 300, 350, true); // (cropped)
+	$team_options = get_field('team_options', 'option');
+	if($team_options) {
+		$image_max_width = $team_options['image_max_width'];
+	}
+	if ($image_max_width) { $image_size = $image_max_width; } else { $image_size = "300"; }
+	$news_options = get_field('news_options', 'option');
+	if($news_options) {
+		$featured_image_width = $news_options['featured_image_width'];
+		$featured_image_height = $news_options['featured_image_height'];
+	}
+	if ($featured_image_width) { $featured_image_width = $featured_image_width; } else { $featured_image_width = "700"; }
+	if ($featured_image_height) { $featured_image_height = $featured_image_height; } else { $featured_image_height = "350"; }
+    add_image_size('blog', $featured_image_width, $featured_image_height, true); // (cropped)
+	add_image_size('team', $image_size, $image_size, array('center','top')); // (cropped)
 	add_image_size('slider', 1920, 750, true); // (cropped)
 	add_image_size('header', 1920, 450, true); // (cropped)
     add_image_size('mailchimp',564, 280, true); // (cropped)

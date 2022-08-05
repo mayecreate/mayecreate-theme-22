@@ -1,5 +1,192 @@
 [
     {
+        "key": "group_620e6ddb212be",
+        "title": "Theme Options - General",
+        "fields": [
+            {
+                "key": "field_620e6f933e165",
+                "label": "Container Width",
+                "name": "container_width",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "wide": "Wide (1640px)",
+                    "narrow": "Narrow (1024px)"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e6fca3e166",
+                "label": "Site Logo",
+                "name": "site_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_620e7c22fda7b",
+                "label": "Show Breadcrumb Nav",
+                "name": "show_breadcrumb_nav",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e7ab22a809",
+                "label": "Facebook Opengraph Image",
+                "name": "facebook_opengraph_image",
+                "type": "image",
+                "instructions": "This is the default image used in the facebook open graph code.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "mailchimp",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6219591c9cbca",
+                "label": "Fixed Pagebreak Background",
+                "name": "fixed_pagebreak_background",
+                "type": "radio",
+                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_628bebeddad4a",
+                "label": "ul li bullet",
+                "name": "ul_li_bullet",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62ed42a82ce8a",
+                "label": "GA Tag",
+                "name": "ga_tag",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
         "key": "group_620ece8100338",
         "title": "Theme Options - Fonts",
         "fields": [
@@ -559,7 +746,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 3,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -568,672 +755,6 @@
         "active": true,
         "description": "",
         "show_in_rest": 0
-    },
-    {
-        "key": "group_5b9fb9632a682",
-        "title": "Home Buttons",
-        "fields": [
-            {
-                "key": "field_54b05449f96b2",
-                "label": "Button 01 Content",
-                "name": "button_01_content",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b0546af96b3",
-                "label": "Button 01 Icon",
-                "name": "button_01_icon",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05491f96b4",
-                "label": "Button 01 Link",
-                "name": "button_01_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [
-                    "post",
-                    "page"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            },
-            {
-                "key": "field_54b054a0f96b5",
-                "label": "Additional Button",
-                "name": "additional_button_01",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "other_choice": 0,
-                "save_other_choice": 0,
-                "default_value": "",
-                "layout": "vertical",
-                "allow_null": 0,
-                "return_format": "value"
-            },
-            {
-                "key": "field_54b054c8f96b6",
-                "label": "Button 02 Content",
-                "name": "button_02_content",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b054a0f96b5",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b054e0f96b7",
-                "label": "Button 02 Icon",
-                "name": "button_02_icon",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b054a0f96b5",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b054fcf96b8",
-                "label": "Button 02 Link",
-                "name": "button_02_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b054a0f96b5",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [
-                    "post",
-                    "page"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            },
-            {
-                "key": "field_54b0550cf96b9",
-                "label": "Additional Button",
-                "name": "additional_button_02",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b054a0f96b5",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "other_choice": 0,
-                "save_other_choice": 0,
-                "default_value": "",
-                "layout": "vertical",
-                "allow_null": 0,
-                "return_format": "value"
-            },
-            {
-                "key": "field_54b05528f96ba",
-                "label": "Button 03 Content",
-                "name": "button_03_content",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05536f96bb",
-                "label": "Button 03 Icon",
-                "name": "button_03_icon",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b0550cf96b9",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05559f96bc",
-                "label": "Button 03 Link",
-                "name": "button_03_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_54b0550cf96b9",
-                            "operator": "==",
-                            "value": "Yes"
-                        }
-                    ]
-                ],
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [
-                    "post",
-                    "page"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "front-page.php"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "acf_after_title",
-        "style": "seamless",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": false
-    },
-    {
-        "key": "group_5b9fb963f3415",
-        "title": "Page Callouts",
-        "fields": [
-            {
-                "key": "field_54b05a1a86d5c",
-                "label": "Callout 01 Title",
-                "name": "callout_01_title",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05a2d86d5d",
-                "label": "Callout 01 Title Icon",
-                "name": "callout_01_title_icon",
-                "type": "image",
-                "instructions": "Icon must be 36px wide and 36px tall",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05a0b86d5b",
-                "label": "Callout 01 Text",
-                "name": "callout_01_text",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b059f186d5a",
-                "label": "Callout 01 Image",
-                "name": "callout_01_image",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05d9766622",
-                "label": "Callout 01 Link",
-                "name": "callout_01_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [
-                    "post",
-                    "page"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            },
-            {
-                "key": "field_54b05b07926ab",
-                "label": "Callout 02 Title",
-                "name": "callout_02_title",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05b29e2630",
-                "label": "Callout 02 Title Icon",
-                "name": "callout_02_title_icon",
-                "type": "image",
-                "instructions": "Icon must be 36px wide and 36px tall",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05ae61bdd5",
-                "label": "Callout 02 Text",
-                "name": "callout_02_text",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05ab8a9c6b",
-                "label": "Callout 02 Image",
-                "name": "callout_02_image",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05dafb83fb",
-                "label": "Callout 02 Link",
-                "name": "callout_02_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            },
-            {
-                "key": "field_54b05b171a3ef",
-                "label": "Callout 03 Title",
-                "name": "callout_03_title",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05b39345fa",
-                "label": "Callout 03 Title Icon",
-                "name": "callout_03_title_icon",
-                "type": "image",
-                "instructions": "Icon must be 36px wide and 36px tall",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05af443ee5",
-                "label": "Callout 03 Text",
-                "name": "callout_03_text",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "formatting": "html",
-                "maxlength": ""
-            },
-            {
-                "key": "field_54b05abda9c6c",
-                "label": "Callout 03 Image",
-                "name": "callout_03_image",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "preview_size": "thumbnail",
-                "library": "all",
-                "return_format": "url",
-                "min_width": 0,
-                "min_height": 0,
-                "min_size": 0,
-                "max_width": 0,
-                "max_height": 0,
-                "max_size": 0,
-                "mime_types": ""
-            },
-            {
-                "key": "field_54b05dc0b83fc",
-                "label": "Callout 03 Link",
-                "name": "callout_03_link",
-                "type": "page_link",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "post_type": [],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "front-page-callouts.php"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "seamless",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": [],
-        "active": true,
-        "description": "",
-        "show_in_rest": false
     },
     {
         "key": "group_620eb6a70234a",
@@ -1589,7 +1110,7 @@
                 }
             ]
         ],
-        "menu_order": 1,
+        "menu_order": 4,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -1597,6 +1118,228 @@
         "hide_on_screen": "",
         "active": true,
         "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_620e74e59d50a",
+        "title": "Theme Options - Header",
+        "fields": [
+            {
+                "key": "field_620e74f823e81",
+                "label": "Show Top Navbar",
+                "name": "show_top_navbar",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e757423e82",
+                "label": "Navbar Style",
+                "name": "navbar_style",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fixed": "Fixed (Sticky Nav)",
+                    "static": "Static"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e82b61168f",
+                "label": "Default Header Image",
+                "name": "default_header_image",
+                "type": "image",
+                "instructions": "This is the default header image if there is no featured image on the page or post. This is also the header image for the index, archive, 404, and search pages.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "header",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_621575865c14f",
+        "title": "Theme Options - Header Colors",
+        "fields": [
+            {
+                "key": "field_6215759639da0",
+                "label": "Top Nav Background Color",
+                "name": "top_nav_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(102,102,102,1)",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621575cb39da1",
+                "label": "Top Nav Link Color",
+                "name": "top_nav_link_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621575eb39da2",
+                "label": "Top Nav Link Hover Color",
+                "name": "top_nav_link_hover_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6215762e7a829",
+                "label": "Main Nav Background Color",
+                "name": "main_nav_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(255,255,255,1)",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6215763c7a82a",
+                "label": "Main Nav Link Color",
+                "name": "main_nav_link_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621576487a82b",
+                "label": "Main Nav Link Hover Color",
+                "name": "main_nav_link_hover_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 6,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
         "show_in_rest": 0
     },
     {
@@ -1870,7 +1613,7 @@
                 }
             ]
         ],
-        "menu_order": 2,
+        "menu_order": 7,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2030,7 +1773,7 @@
                 }
             ]
         ],
-        "menu_order": 3,
+        "menu_order": 8,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2127,7 +1870,7 @@
                 }
             ]
         ],
-        "menu_order": 4,
+        "menu_order": 9,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2138,14 +1881,14 @@
         "show_in_rest": 0
     },
     {
-        "key": "group_620e74e59d50a",
-        "title": "Theme Options - Header",
+        "key": "group_62cf0cd04c298",
+        "title": "Theme Options - Post Types",
         "fields": [
             {
-                "key": "field_620e74f823e81",
-                "label": "Show Top Navbar",
-                "name": "show_top_navbar",
-                "type": "radio",
+                "key": "field_62cf0d6b8b999",
+                "label": "Additional Post Types",
+                "name": "post_type_selector",
+                "type": "checkbox",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2155,63 +1898,2404 @@
                     "id": ""
                 },
                 "choices": {
-                    "yes": "Yes",
-                    "no": "No"
+                    "news": "News (Uses the Standard WP Post Type)",
+                    "team": "Team (Not a Post Type! This uses a custom Block)",
+                    "projects": "Projects",
+                    "resources": "Resources"
                 },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
+                "allow_custom": 0,
+                "default_value": [],
                 "layout": "horizontal",
+                "toggle": 0,
                 "return_format": "value",
-                "save_other_choice": 0
+                "save_custom": 0
             },
             {
-                "key": "field_620e757423e82",
-                "label": "Navbar Style",
-                "name": "navbar_style",
-                "type": "radio",
-                "instructions": "",
+                "key": "field_62cf41d123523",
+                "label": "Alternate Name for \"Posts\"",
+                "name": "alternate_name_for_posts",
+                "type": "text",
+                "instructions": "If you want to rename \"Posts\" to \"News\" or anything else put that here.",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62cf0d6b8b999",
+                            "operator": "==",
+                            "value": "news"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
-                "choices": {
-                    "fixed": "Fixed (Sticky Nav)",
-                    "static": "Static"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
                 "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             },
             {
-                "key": "field_620e82b61168f",
-                "label": "Default Header Image",
-                "name": "default_header_image",
-                "type": "image",
-                "instructions": "This is the default header image if there is no featured image on the page or post. This is also the header image for the index, archive, 404, and search pages.",
+                "key": "field_62cf0cf58b998",
+                "label": "News Options",
+                "name": "news_options",
+                "type": "group",
+                "instructions": "These are options that will change the Standard WP Post Type.",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62cf0d6b8b999",
+                            "operator": "==",
+                            "value": "news"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
-                "preview_size": "header",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62e3054a0e9e4",
+                        "label": "Background Color",
+                        "name": "background_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e308a40e9f3",
+                        "label": "Background Hover Color",
+                        "name": "background_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e3058a0e9e5",
+                        "label": "Vertical Alignment",
+                        "name": "vertical_alignment",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Top": "Top",
+                            "Middle": "Middle"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62ec229a853df",
+                        "label": "Post Padding",
+                        "name": "post_padding",
+                        "type": "number",
+                        "instructions": "This is a number in pixels.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e305b10e9e6",
+                        "label": "Border Radius",
+                        "name": "border_radius",
+                        "type": "number",
+                        "instructions": "This is a number in pixels.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e307ce0e9ea",
+                        "label": "Border Width",
+                        "name": "border_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank there will be no border.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e307b40e9e9",
+                        "label": "Border Color",
+                        "name": "border_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the color will be transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e307ce0e9ea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec2260853de",
+                        "label": "Border Color - Top",
+                        "name": "border_color_top",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e307ce0e9ea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec22bf853e0",
+                        "label": "Border Color - Right",
+                        "name": "border_color_right",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e307ce0e9ea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec22c7853e1",
+                        "label": "Border Color - Bottom",
+                        "name": "border_color_bottom",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e307ce0e9ea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec22d2853e2",
+                        "label": "Border Color - Left",
+                        "name": "border_color_left",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e307ce0e9ea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e305de0e9e7",
+                        "label": "Box Shadow",
+                        "name": "box_shadow",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No": "No",
+                            "Yes": "Yes"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e305f90e9e8",
+                        "label": "Box Shadow Color",
+                        "name": "box_shadow_color",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e305de0e9e7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "rgba(0,0,0,.15)",
+                        "enable_opacity": 1,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e2f60a6fc10",
+                        "label": "Show a Featured Image",
+                        "name": "show_a_featured_image",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e301ac0e9e2",
+                        "label": "Featured Image Placement",
+                        "name": "featured_image_placement",
+                        "type": "radio",
+                        "instructions": "Left and right will both be centered above the post on mobile.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Left": "Left",
+                            "Right": "Right",
+                            "Center": "Center"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e3013c0e9df",
+                        "label": "Featured Image Width",
+                        "name": "featured_image_width",
+                        "type": "number",
+                        "instructions": "Number in px. This is the MAX width of the featured image size. It will automatically scale with the post.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e301630e9e0",
+                        "label": "Featured Image Height",
+                        "name": "featured_image_height",
+                        "type": "number",
+                        "instructions": "Number in px. This is the MAX height of the featured image size. It will automatically scale with the post.",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e301720e9e1",
+                        "label": "Featured Image Border Radius",
+                        "name": "featured_image_border_radius",
+                        "type": "number",
+                        "instructions": "This is a number in percentage. This can be 0 through 50. 50% would make the image a circle.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 0,
+                        "max": 50,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec3a7beea05",
+                        "label": "Featured Image Overlay",
+                        "name": "featured_image_overlay",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the color will be transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 1,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec22e3853e3",
+                        "label": "Featured Image Border Width",
+                        "name": "featured_image_border_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank there will be no border.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f60a6fc10",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec2323853e4",
+                        "label": "Featured Image Border Color",
+                        "name": "featured_image_border_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the color will be transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec22e3853e3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec2345853e5",
+                        "label": "Featured Image Border Color - Top",
+                        "name": "featured_image_border_color_top",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec22e3853e3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec2387853e6",
+                        "label": "Featured Image Border Color - Right",
+                        "name": "featured_image_border_color_right",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec22e3853e3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec23a4853e7",
+                        "label": "Featured Image Border Color - Bottom",
+                        "name": "featured_image_border_color_bottom",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec22e3853e3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec23ad853e8",
+                        "label": "Featured Image Border Color - Left",
+                        "name": "featured_image_border_color_left",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the border color will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec22e3853e3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e2f6296fc11",
+                        "label": "Show Post Date",
+                        "name": "show_post_date",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e95133fcf96",
+                        "label": "Post Date Text",
+                        "name": "post_date_text",
+                        "type": "text",
+                        "instructions": "This text is optional. If nothing is filled in just the date will show.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e951848d349",
+                        "label": "Post Date Format",
+                        "name": "post_date_format",
+                        "type": "text",
+                        "instructions": "Select the format of your post date. You can see your options <a href=\"https:\/\/www.php.net\/manual\/en\/datetime.format.php\" target=\"_blank\">here<\/a>. If nothing is filled in the format will read \"m-d-y\"",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62ec42df54889",
+                        "label": "Post Date Color",
+                        "name": "post_date_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Primary Site Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec42f55488a",
+                        "label": "Post Date Hover Color",
+                        "name": "post_date_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Link Hover Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e2f6456fc12",
+                        "label": "List Categories",
+                        "name": "list_categories",
+                        "type": "radio",
+                        "instructions": "Should the post loop list categories each post is in?",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62ec43295488b",
+                        "label": "List Categories Color",
+                        "name": "list_categories_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Primary Site Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6456fc12",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec43325488d",
+                        "label": "List Categories Hover Color",
+                        "name": "list_categories_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Link Hover Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6456fc12",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e94f1805510",
+                        "label": "Excerpt Length",
+                        "name": "excerpt_length",
+                        "type": "text",
+                        "instructions": "This is the number of WORDS to show in the post loop. If nothing is filled in, the length will be 50 words.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e2f65b6fc13",
+                        "label": "Show a button in the post loop",
+                        "name": "show_a_button_in_the_post_loop",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e3022f0e9e3",
+                        "label": "Button Text",
+                        "name": "button_text",
+                        "type": "text",
+                        "instructions": "If nothing is filled in, the button will say \"Read More\"",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e308230e9eb",
+                        "label": "Button Text Color",
+                        "name": "button_text_color",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e3083c0e9ec",
+                        "label": "Button Background Color",
+                        "name": "button_background_color",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e308490e9ed",
+                        "label": "Button Text Color Hover",
+                        "name": "button_text_color_hover",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e308520e9ee",
+                        "label": "Button Background Color Hover",
+                        "name": "button_background_color_hover",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f65b6fc13",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec322deea03",
+                        "label": "Title Font",
+                        "name": "title_font",
+                        "type": "text",
+                        "instructions": "If you want to overwrite the \"Main Heading Font\" set in the general site settings, you can do that here. If nothing is filled in here, this field will default to the overall header font. This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e3086f0e9ef",
+                        "label": "Title Color",
+                        "name": "title_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Secondary Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e3087d0e9f0",
+                        "label": "Title Hover Color",
+                        "name": "title_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Link Hover Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec23c7853e9",
+                        "label": "Title Border Bottom Width",
+                        "name": "title_border_bottom_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank there will be no border.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec23f9853ea",
+                        "label": "Title Border Bottom Color",
+                        "name": "title_border_bottom_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is filled in the color will be transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec23c7853e9",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec3251eea04",
+                        "label": "Content Font",
+                        "name": "content_font",
+                        "type": "text",
+                        "instructions": "If you want to overwrite the \"Primary Font\" set in the general site settings, you can do that here. If nothing is filled in here, this field will default to the overall main site font. This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62ec4654034a4",
+                        "label": "Excerpt Length",
+                        "name": "excerpt_length",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e308850e9f1",
+                        "label": "Content Color",
+                        "name": "content_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Primary Site Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e308930e9f2",
+                        "label": "Content Hover Color",
+                        "name": "content_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Link Hover Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e30a47ce4bf",
+                        "label": "Single Page Content Width",
+                        "name": "single_page_content_width",
+                        "type": "number",
+                        "instructions": "Max width of the content in pixels. If nothing is filled in the content width will be the width of the site container.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e30a8dce4c0",
+                        "label": "Single Page - Show a Featured Image",
+                        "name": "single_page_show_a_featured_image",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e96f3520a86",
+                        "label": "Single Page - Featured Image Alignment",
+                        "name": "single_page_featured_image_alignment",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e30a8dce4c0",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Left": "Left",
+                            "Right": "Right",
+                            "Center": "Center"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e30ac1ce4c1",
+                        "label": "Single Page - Show Post Date",
+                        "name": "single_page_show_post_date",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e95c7ca564d",
+                        "label": "Single Page - Post Date Text",
+                        "name": "single_page_post_date_text",
+                        "type": "text",
+                        "instructions": "This text is optional. If nothing is filled in just the date will show.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e30ac1ce4c1",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e95c89a564e",
+                        "label": "Single Page - Post Date Format",
+                        "name": "single_page_post_date_format",
+                        "type": "text",
+                        "instructions": "Select the format of your post date. You can see your options <a href=\"https:\/\/www.php.net\/manual\/en\/datetime.format.php\" target=\"_blank\">here<\/a>. If nothing is filled in the format will read \"m-d-y\"",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e30ac1ce4c1",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e30b4fce4c2",
+                        "label": "Single Page - List Categories",
+                        "name": "single_page_list_categories",
+                        "type": "radio",
+                        "instructions": "Should the single post page list categories each post is in?",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e98dde29f62",
+                        "label": "Post Page Block Category",
+                        "name": "post_page_block_category",
+                        "type": "taxonomy",
+                        "instructions": "This will set the category for the post page block.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "taxonomy": "category",
+                        "field_type": "select",
+                        "allow_null": 1,
+                        "add_term": 0,
+                        "save_terms": 0,
+                        "load_terms": 0,
+                        "return_format": "id",
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_62e98e1029f63",
+                        "label": "Post Page Block Number of Posts",
+                        "name": "post_page_block_number_of_posts",
+                        "type": "number",
+                        "instructions": "This will set the number of posts to show with the post page block.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e98e3529f64",
+                        "label": "Post Page Block Number of Columns",
+                        "name": "post_page_block_number_of_columns",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "one": "One",
+                            "two": "Two",
+                            "three": "Three",
+                            "four": "Four"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_62e038b45aad8",
+                "label": "Team Options",
+                "name": "team_options",
+                "type": "group",
+                "instructions": "These options for a custom block. NOT a post type.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62cf0d6b8b999",
+                            "operator": "==",
+                            "value": "team"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62e18a9e5d5db",
+                        "label": "Layout Type",
+                        "name": "layout_type",
+                        "type": "radio",
+                        "instructions": "What layout should your team blocks be?",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "option_1": "Horizontal",
+                            "option_2": "Card",
+                            "option_3": "Vertical"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "horizontal",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e1bef7fce62",
+                        "label": "Vertical Alignment",
+                        "name": "vertical_alignment",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_1"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_2"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Top": "Top",
+                            "Middle": "Middle"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e2c68e05ff5",
+                        "label": "Block or Table",
+                        "name": "block_or_table",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_1"
+                                }
+                            ],
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_2"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "block": "Block (Fill the space)",
+                            "table": "Table (Fit the width of the content)"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e18fc9ca6d5",
+                        "label": "Background Color",
+                        "name": "background_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec14b2dfae9",
+                        "label": "Block Padding",
+                        "name": "block_padding",
+                        "type": "number",
+                        "instructions": "This is a number in pixels.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e1ac290d8b5",
+                        "label": "Divider Line Color",
+                        "name": "divider_line_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e19425db8af",
+                        "label": "Border Radius",
+                        "name": "border_radius",
+                        "type": "number",
+                        "instructions": "This is a number in pixels.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec135edfae3",
+                        "label": "Border Width",
+                        "name": "border_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If nothing is set here, there will be no border.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e18a9e5d5db",
+                                    "operator": "==",
+                                    "value": "option_1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec1396dfae4",
+                        "label": "Border Color",
+                        "name": "border_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec135edfae3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec145cdfae5",
+                        "label": "Border Color - Top",
+                        "name": "border_color_top",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec135edfae3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec147adfae6",
+                        "label": "Border Color - Right",
+                        "name": "border_color_right",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec135edfae3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec1491dfae7",
+                        "label": "Border Color - Bottom",
+                        "name": "border_color_bottom",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec135edfae3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec149ddfae8",
+                        "label": "Border Color - Left",
+                        "name": "border_color_left",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec135edfae3",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e19478db8b0",
+                        "label": "Box Shadow",
+                        "name": "box_shadow",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No": "No",
+                            "Yes": "Yes"
+                        },
+                        "allow_null": 1,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e19497db8b1",
+                        "label": "Box Shadow Color",
+                        "name": "box_shadow_color",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e19478db8b0",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "rgba(0,0,0,.15)",
+                        "enable_opacity": 1,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e18b355d5dc",
+                        "label": "Image Max Width",
+                        "name": "image_max_width",
+                        "type": "number",
+                        "instructions": "This is the number in pixels that will be height and width of the auto generated thumbnail for the image. (that means it will be a square). It will auto crop to the top center of the image, so keep that in mind when using the block.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62e18e8e5d5dd",
+                        "label": "Image Border Radius",
+                        "name": "image_border_radius",
+                        "type": "number",
+                        "instructions": "This is a number in percentage. This can be 0 through 50. 50% would make the image a circle.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 0,
+                        "max": 50,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec14d5dfaea",
+                        "label": "Image Border Width",
+                        "name": "image_border_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If nothing is set here, there will be no border.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 0,
+                        "max": 50,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec14f8dfaeb",
+                        "label": "Image Border Color",
+                        "name": "image_border_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec14d5dfaea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec150edfaec",
+                        "label": "Image Border Color - Top",
+                        "name": "image_border_color_top",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec14d5dfaea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec1578dfaed",
+                        "label": "Image Border Color - Right",
+                        "name": "image_border_color_right",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec14d5dfaea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec1582dfaee",
+                        "label": "Image Border Color - Bottom",
+                        "name": "image_border_color_bottom",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec14d5dfaea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec158cdfaef",
+                        "label": "Image Border Color - Left",
+                        "name": "image_border_color_left",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, each border will default to the overall border color.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec14d5dfaea",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e18f0e5d5de",
+                        "label": "Name Font",
+                        "name": "name_font",
+                        "type": "text",
+                        "instructions": "If you want to overwrite the \"Main Heading Font\" set in the general site settings, you can do that here. If nothing is filled in here, this field will default to the overall header font. This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e192c2ca6d7",
+                        "label": "Name Color",
+                        "name": "name_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Secondary Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62ec159fdfaf0",
+                        "label": "Name Border Bottom Width",
+                        "name": "name_border_bottom_width",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If nothing is set here, there will be no border.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": 0,
+                        "max": 50,
+                        "step": ""
+                    },
+                    {
+                        "key": "field_62ec15b7dfaf1",
+                        "label": "Name Border Bottom Color",
+                        "name": "name_border_bottom_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is set here, it will stay transparent.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62ec159fdfaf0",
+                                    "operator": "!=empty"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e18f725d5df",
+                        "label": "Content Font",
+                        "name": "content_font",
+                        "type": "text",
+                        "instructions": "If you want to overwrite the \"Primary Font\" set in the general site settings, you can do that here. If nothing is filled in here, this field will default to the overall main site font. This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e19395ca6d9",
+                        "label": "Content Color",
+                        "name": "content_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Primary Site Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e1c16a4924a",
+                        "label": "Link Hover Color",
+                        "name": "link_hover_color",
+                        "type": "color_picker",
+                        "instructions": "If nothing is selected, this will default to the Link Hover Color set in the general site settings.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e1a09b4ccd7",
+                        "label": "Expandable Bio",
+                        "name": "expandable_bio",
+                        "type": "radio",
+                        "instructions": "If the Bio field in the block is filled in, should it expand and collapse?",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Yes": "Yes",
+                            "No": "No"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical",
+                        "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_62e1a2e64ccd8",
+                        "label": "Expand Button Text",
+                        "name": "expand_button_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e1a09b4ccd7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Read More",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62e1a317ccba9",
+                        "label": "Expand Button Color",
+                        "name": "expand_button_color",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e1a09b4ccd7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e1a356ccbaa",
+                        "label": "Expand Button Background",
+                        "name": "expand_button_background",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e1a09b4ccd7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e1a35fccbab",
+                        "label": "Expand Button Color Hover",
+                        "name": "expand_button_color_hover",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e1a09b4ccd7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    },
+                    {
+                        "key": "field_62e1a367ccbac",
+                        "label": "Expand Button Background Hover",
+                        "name": "expand_button_background_hover",
+                        "type": "color_picker",
+                        "instructions": "If no color is selected this button will default to the sites button settings.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e1a09b4ccd7",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "enable_opacity": 0,
+                        "return_format": "string"
+                    }
+                ]
+            },
+            {
+                "key": "field_62e038d05aad9",
+                "label": "Projects Options",
+                "name": "projects_options",
+                "type": "group",
+                "instructions": "Coming Soon",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62cf0d6b8b999",
+                            "operator": "==",
+                            "value": "projects"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
+            },
+            {
+                "key": "field_62e0394f1b8d8",
+                "label": "Resource Options",
+                "name": "resource_options",
+                "type": "group",
+                "instructions": "Coming Soon",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62cf0d6b8b999",
+                            "operator": "==",
+                            "value": "resources"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": []
             }
         ],
         "location": [
@@ -2219,11 +4303,11 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "acf-options-header"
+                    "value": "acf-options-post-types"
                 }
             ]
         ],
-        "menu_order": 5,
+        "menu_order": 10,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2234,14 +4318,14 @@
         "show_in_rest": 0
     },
     {
-        "key": "group_621575865c14f",
-        "title": "Theme Options - Header Colors",
+        "key": "group_62e976160d436",
+        "title": "Posts Page Block",
         "fields": [
             {
-                "key": "field_6215759639da0",
-                "label": "Top Nav Background Color",
-                "name": "top_nav_background_color",
-                "type": "color_picker",
+                "key": "field_62e976160f325",
+                "label": "Optional Title",
+                "name": "optional_title",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2250,16 +4334,18 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "rgba(102,102,102,1)",
-                "enable_opacity": 1,
-                "return_format": "string"
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             },
             {
-                "key": "field_621575cb39da1",
-                "label": "Top Nav Link Color",
-                "name": "top_nav_link_color",
-                "type": "color_picker",
-                "instructions": "",
+                "key": "field_62e9a02e9d894",
+                "label": "Load More Text",
+                "name": "load_more_text",
+                "type": "text",
+                "instructions": "By default the load more button will say \"Load More\". You can change that here.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2267,15 +4353,17 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "#ffffff",
-                "enable_opacity": 0,
-                "return_format": "string"
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
             },
             {
-                "key": "field_621575eb39da2",
-                "label": "Top Nav Link Hover Color",
-                "name": "top_nav_link_hover_color",
-                "type": "color_picker",
+                "key": "field_62ec267121409",
+                "label": "Load More Button Alignment",
+                "name": "load_more_button_alignment",
+                "type": "radio",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2284,72 +4372,29 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "#cccccc",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_6215762e7a829",
-                "label": "Main Nav Background Color",
-                "name": "main_nav_background_color",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
+                "choices": {
+                    "Left": "Left",
+                    "Right": "Right",
+                    "Center": "Center"
                 },
-                "default_value": "rgba(255,255,255,1)",
-                "enable_opacity": 1,
-                "return_format": "string"
-            },
-            {
-                "key": "field_6215763c7a82a",
-                "label": "Main Nav Link Color",
-                "name": "main_nav_link_color",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#000000",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_621576487a82b",
-                "label": "Main Nav Link Hover Color",
-                "name": "main_nav_link_hover_color",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#cccccc",
-                "enable_opacity": 0,
-                "return_format": "string"
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
             }
         ],
         "location": [
             [
                 {
-                    "param": "options_page",
+                    "param": "block",
                     "operator": "==",
-                    "value": "acf-options-header"
+                    "value": "acf\/posts-page"
                 }
             ]
         ],
-        "menu_order": 6,
+        "menu_order": 11,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2360,14 +4405,14 @@
         "show_in_rest": 0
     },
     {
-        "key": "group_620e6ddb212be",
-        "title": "Theme Options - General",
+        "key": "group_60cba81326d85",
+        "title": "Featured Posts Block",
         "fields": [
             {
-                "key": "field_620e6f933e165",
-                "label": "Container Width",
-                "name": "container_width",
-                "type": "radio",
+                "key": "field_60cba822af2f7",
+                "label": "Optional Title",
+                "name": "optional_title",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2376,22 +4421,65 @@
                     "class": "",
                     "id": ""
                 },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60cba830af2f8",
+                "label": "Post Category",
+                "name": "post_category",
+                "type": "taxonomy",
+                "instructions": "Post Category to Display",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "category",
+                "field_type": "select",
+                "allow_null": 1,
+                "add_term": 0,
+                "save_terms": 0,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_60cba847af2f9",
+                "label": "Number of columns",
+                "name": "number_of_columns",
+                "type": "radio",
+                "instructions": "NOTE: The number of columns dictates the number of posts to show. If you wish to show more than one row of posts use the \"MC Posts Page\" block.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
                 "choices": {
-                    "wide": "Wide (1640px)",
-                    "narrow": "Narrow (1024px)"
+                    "one": "One",
+                    "two": "Two",
+                    "three": "Three",
+                    "four": "Four"
                 },
                 "allow_null": 0,
                 "other_choice": 0,
                 "default_value": "",
-                "layout": "horizontal",
+                "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
             },
             {
-                "key": "field_620e6fca3e166",
-                "label": "Site Logo",
-                "name": "site_logo",
-                "type": "image",
+                "key": "field_60cba8beaf2fb",
+                "label": "Optional Button Link",
+                "name": "optional_button_link",
+                "type": "url",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2400,124 +4488,78 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
-                "preview_size": "full",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
+                "default_value": "",
+                "placeholder": ""
             },
             {
-                "key": "field_620e7c22fda7b",
-                "label": "Show Breadcrumb Nav",
-                "name": "show_breadcrumb_nav",
+                "key": "field_60cba8c9af2fc",
+                "label": "Optional Button Link Text",
+                "name": "optional_button_link_text",
+                "type": "text",
+                "instructions": "If this is not filled in the button text will read \"Learn More\".",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60cba8beaf2fb",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62ec24b357fe2",
+                "label": "Optional Button Alignment",
+                "name": "optional_button_alignment",
                 "type": "radio",
                 "instructions": "",
                 "required": 0,
-                "conditional_logic": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60cba8beaf2fb",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
                 "choices": {
-                    "no": "No",
-                    "yes": "Yes"
+                    "Left": "Left",
+                    "Right": "Right",
+                    "Center": "Center"
                 },
                 "allow_null": 0,
                 "other_choice": 0,
                 "default_value": "",
-                "layout": "horizontal",
+                "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
-            },
-            {
-                "key": "field_620e7ab22a809",
-                "label": "Facebook Opengraph Image",
-                "name": "facebook_opengraph_image",
-                "type": "image",
-                "instructions": "This is the default image used in the facebook open graph code.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "mailchimp",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_6219591c9cbca",
-                "label": "Fixed Pagebreak Background",
-                "name": "fixed_pagebreak_background",
-                "type": "radio",
-                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_628bebeddad4a",
-                "label": "ul li bullet",
-                "name": "ul_li_bullet",
-                "type": "image",
-                "instructions": "This should be around 10px by 10px at the most.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
             }
         ],
         "location": [
             [
                 {
-                    "param": "options_page",
+                    "param": "block",
                     "operator": "==",
-                    "value": "theme-general-settings"
+                    "value": "acf\/featured-posts"
                 }
             ]
         ],
-        "menu_order": 7,
+        "menu_order": 12,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2634,7 +4676,7 @@
                 }
             ]
         ],
-        "menu_order": 8,
+        "menu_order": 13,
         "position": "normal",
         "style": "seamless",
         "label_placement": "top",
@@ -2645,54 +4687,13 @@
         "show_in_rest": false
     },
     {
-        "key": "group_60cba81326d85",
-        "title": "Featured Posts Block",
+        "key": "group_5d2389a5cb599",
+        "title": "Pagebreak Block Fields",
         "fields": [
             {
-                "key": "field_60cba822af2f7",
-                "label": "Optional Title",
-                "name": "optional_title",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_60cba830af2f8",
-                "label": "Post Category",
-                "name": "post_category",
-                "type": "taxonomy",
-                "instructions": "Post Category to Display",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "taxonomy": "category",
-                "field_type": "select",
-                "allow_null": 0,
-                "add_term": 0,
-                "save_terms": 0,
-                "load_terms": 0,
-                "return_format": "id",
-                "multiple": 0
-            },
-            {
-                "key": "field_60cba847af2f9",
-                "label": "Number of columns",
-                "name": "number_of_columns",
+                "key": "field_5d2389a60cfde",
+                "label": "Page Break Style",
+                "name": "page_break_style",
                 "type": "radio",
                 "instructions": "",
                 "required": 1,
@@ -2703,10 +4704,9 @@
                     "id": ""
                 },
                 "choices": {
-                    "one": "One",
-                    "two": "Two",
-                    "three": "Three",
-                    "four": "Four"
+                    "Full Width": "Full Width",
+                    "Left Image": "Left Image",
+                    "Right Image": "Right Image"
                 },
                 "allow_null": 0,
                 "other_choice": 0,
@@ -2716,10 +4716,51 @@
                 "save_other_choice": 0
             },
             {
-                "key": "field_60cba8beaf2fb",
-                "label": "Optional Button Link",
-                "name": "optional_button_link",
-                "type": "url",
+                "key": "field_5d2389a60d029",
+                "label": "Background Color",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "NOTE: If using the left image or right image layout, this color will be the background color of the content side of the page break. If you are using the full width layout AND a page break background image this color will overlay the image.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": false,
+                "return_format": "string"
+            },
+            {
+                "key": "field_5d2389a60d072",
+                "label": "Page Break Background",
+                "name": "page_break_background",
+                "type": "image",
+                "instructions": "NOTE: If using the left image or right image layout, it will look broken without an image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5d30b3636f7a5",
+                "label": "Additional Pagebreak Classes",
+                "name": "additional_pagebreak_classes",
+                "type": "radio",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2728,34 +4769,41 @@
                     "class": "",
                     "id": ""
                 },
+                "choices": {
+                    "class": "Class Goes Here",
+                    "additional": "Additional Class Here",
+                    "hide-background-tablet": "Hide Background On Tablet and Smaller"
+                },
+                "allow_null": 1,
+                "other_choice": 0,
                 "default_value": "",
-                "placeholder": ""
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
             },
             {
-                "key": "field_60cba8c9af2fc",
-                "label": "Optional Button Link Text",
-                "name": "optional_button_link_text",
-                "type": "text",
-                "instructions": "If this is not filled in the button text will read \"Learn More\".",
+                "key": "field_621958005cac3",
+                "label": "Fixed position background",
+                "name": "fixed_position_background",
+                "type": "radio",
+                "instructions": "Would you like this pagebreak to have a fixed background? aka parallax style.",
                 "required": 0,
-                "conditional_logic": [
-                    [
-                        {
-                            "field": "field_60cba8beaf2fb",
-                            "operator": "!=empty"
-                        }
-                    ]
-                ],
+                "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
                     "class": "",
                     "id": ""
                 },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
                 "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
             }
         ],
         "location": [
@@ -2763,11 +4811,11 @@
                 {
                     "param": "block",
                     "operator": "==",
-                    "value": "acf\/featured-posts"
+                    "value": "acf\/pagebreak-start"
                 }
             ]
         ],
-        "menu_order": 9,
+        "menu_order": 14,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -2775,17 +4823,17 @@
         "hide_on_screen": "",
         "active": true,
         "description": "",
-        "show_in_rest": false
+        "show_in_rest": 0
     },
     {
-        "key": "group_5de6c042644a2",
-        "title": "Team",
+        "key": "group_5b9fb963116c1",
+        "title": "Document Posts",
         "fields": [
             {
-                "key": "field_5de6c3fb98a05",
-                "label": "email",
-                "name": "email",
-                "type": "text",
+                "key": "field_56954391b70d8",
+                "label": "Alternate Link",
+                "name": "alternate_link",
+                "type": "file",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -2794,49 +4842,11 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5de6c40c98a06",
-                "label": "phone",
-                "name": "phone",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5de6c42a98a07",
-                "label": "Title",
-                "name": "teamtitle",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
             }
         ],
         "location": [
@@ -2844,17 +4854,17 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "team"
+                    "value": "post"
                 }
             ]
         ],
-        "menu_order": 10,
-        "position": "normal",
+        "menu_order": 15,
+        "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
-        "active": false,
+        "active": true,
         "description": "",
         "show_in_rest": 0
     },
@@ -3283,7 +5293,7 @@
                 }
             ]
         ],
-        "menu_order": 11,
+        "menu_order": 16,
         "position": "normal",
         "style": "default",
         "label_placement": "top",
@@ -3292,187 +5302,5 @@
         "active": true,
         "description": "",
         "show_in_rest": 0
-    },
-    {
-        "key": "group_5d2389a5cb599",
-        "title": "Pagebreak Block Fields",
-        "fields": [
-            {
-                "key": "field_5d2389a60cfde",
-                "label": "Page Break Style",
-                "name": "page_break_style",
-                "type": "radio",
-                "instructions": "",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "Full Width": "Full Width",
-                    "Left Image": "Left Image",
-                    "Right Image": "Right Image"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "vertical",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_5d2389a60d029",
-                "label": "Background Color",
-                "name": "background_color",
-                "type": "color_picker",
-                "instructions": "NOTE: If using the left image or right image layout, this color will be the background color of the content side of the page break. If you are using the full width layout AND a page break background image this color will overlay the image.",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": false,
-                "return_format": "string"
-            },
-            {
-                "key": "field_5d2389a60d072",
-                "label": "Page Break Background",
-                "name": "page_break_background",
-                "type": "image",
-                "instructions": "NOTE: If using the left image or right image layout, it will look broken without an image.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_5d30b3636f7a5",
-                "label": "Additional Pagebreak Classes",
-                "name": "additional_pagebreak_classes",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "class": "Class Goes Here",
-                    "additional": "Additional Class Here",
-                    "hide-background-tablet": "Hide Background On Tablet and Smaller"
-                },
-                "allow_null": 1,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "vertical",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_621958005cac3",
-                "label": "Fixed position background",
-                "name": "fixed_position_background",
-                "type": "radio",
-                "instructions": "Would you like this pagebreak to have a fixed background? aka parallax style.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "block",
-                    "operator": "==",
-                    "value": "acf\/pagebreak-start"
-                }
-            ]
-        ],
-        "menu_order": 12,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": 0
-    },
-    {
-        "key": "group_5b9fb963116c1",
-        "title": "Document Posts",
-        "fields": [
-            {
-                "key": "field_56954391b70d8",
-                "label": "Document Upload",
-                "name": "document_upload",
-                "type": "file",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "library": "all",
-                "return_format": "url",
-                "min_size": 0,
-                "max_size": 0,
-                "mime_types": ""
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
-                    "value": "document"
-                }
-            ]
-        ],
-        "menu_order": 12,
-        "position": "acf_after_title",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": [],
-        "active": true,
-        "description": "",
-        "show_in_rest": false
     }
 ]

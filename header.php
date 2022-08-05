@@ -55,6 +55,11 @@
 
 <?php wp_head(); ?>
     
+<?php $ga_tag = (get_field('ga_tag', 'option')); ?>
+<?php if ($google_font_embed_links) {
+echo $ga_tag;
+} ?>  
+    
 
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 
@@ -78,12 +83,12 @@
 	<?php get_template_part('partials/nav'); ?>	
 </div>	
 
-
 <?php if (is_front_page()) { ?>
 		<div id="homeContentWrap">
 <?php } else { ?>
 		<div id="contentwrap">
 <?php } ?>	
+
 
 <div class="clear"></div>
 <?php $default_header_image = get_field('default_header_image', 'option'); ?>
@@ -92,7 +97,7 @@
 } else {
 	$default_header_image = get_bloginfo('url') .'/wp-content/themes/mayecreate-theme-22/img/default_header.jpg';
 } ?>
-<?php if (is_front_page()){ ?>
+<?php  if (is_front_page()){ ?>
 
 	<div id="homefeatured">
     	<?php get_template_part('partials/content','carouselPosts'); ?>

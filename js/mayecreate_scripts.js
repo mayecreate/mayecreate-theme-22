@@ -211,7 +211,32 @@ $(document.links).filter(function() {
 		});	
 	});
 
-
+function loadMore(paged) {
+	$.ajax({
+	type: 'POST',
+	url: '/wp-admin/admin-ajax.php',
+	dataType: 'json',
+	data: {
+		action: 'mc_load_more',
+		paged,
+	},
+	success: function (res) {
+		if (paged >= res.max) { 
+			$('#load-more').addClass('hidden');
+			$('#load-more').removeClass('not-hidden');
+		} else {
+			$('#load-more').addClass('not-hidden');
+			$('#load-more').removeClass('hidden');
+		}
+		$('.publication-list').append(res.html); 
+	}
+	});
+}
+let newPage = 1;
+$('#load-more').on('click', function(){
+  loadMore(newPage + 1);
+  newPage++;
+});
   /* 
   *  Function calls the javascript and establishes settings for the featured image slider.
   * 

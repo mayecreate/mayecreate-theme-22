@@ -39,7 +39,7 @@ function register_acf_block_types() {
     acf_register_block_type(
 		array(
 			'name'              => 'pagebreak-start',
-			'title'             => __('Page Break'),
+			'title'             => __('MC Page Break'),
 			'description'       => __('Add a opening pagebreak block to your page. PLEASE NOTE: If this pagebreak is the last one on the page you DO NOT need the End Break block after. If this is not the last element on the page the you NEED to put the End Break block after.'),
 			'render_template'   => 'blocks/pagebreak.php',
 			'category'          => 'formatting',
@@ -52,7 +52,7 @@ function register_acf_block_types() {
     acf_register_block_type(
 		array(
 			'name'              => 'endbreak',
-			'title'             => __('End Break'),
+			'title'             => __('MC End Break'),
 			'description'       => __('Close a pagebreak block on your page.'),
 			'render_template'   => 'blocks/endbreak.php',
 			'category'          => 'formatting',
@@ -73,19 +73,47 @@ function register_acf_block_types() {
 			'keywords'          => array( 'button' ),
 		)
 	);
+	if (in_array('news', get_field('post_type_selector', 'option'))) {
+		// register a featured posts block.
+		acf_register_block_type(
+			array(
+				'name'              => 'featured-posts',
+				'title'             => __('MC Featured Posts'),
+				'description'       => __('Add a featured posts block to your page.'),
+				'render_template'   => 'blocks/featured-posts.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'featured', 'posts' ),
+			)
+		);
+		// register a posts page block.
+		acf_register_block_type(
+			array(
+				'name'              => 'posts-page',
+				'title'             => __('MC Posts Page'),
+				'description'       => __('Add a posts page block to your page.'),
+				'render_template'   => 'blocks/posts-page.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'page', 'posts', 'post' ),
+			)
+		);
+	}  
 
-    // register a featured posts block.
-    acf_register_block_type(
-		array(
-			'name'              => 'featured-posts',
-			'title'             => __('Featured Posts'),
-			'description'       => __('Add a featured posts block to your page.'),
-			'render_template'   => 'blocks/featured-posts.php',
-			'category'          => 'formatting',
-			'icon'              => 'admin-post',
-			'keywords'          => array( 'featured', 'posts' ),
-		)
-	);
+	if (in_array('team', get_field('post_type_selector', 'option'))) {
+		// register a team member block.
+		acf_register_block_type(
+			array(
+				'name'              => 'mc-team',
+				'title'             => __('MC Team'),
+				'description'       => __('Add a team block to your page.'),
+				'render_template'   => 'blocks/mc-team.php',
+				'category'          => 'formatting',
+				'icon'              => 'groups',
+				'keywords'          => array( 'featured', 'team', 'teams', 'people' ),
+			) 
+		); 
+	}  
 }
 
 // Check if function exists and hook into setup.

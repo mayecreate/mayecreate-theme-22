@@ -284,6 +284,12 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Post Settings', 
+		'menu_title'	=> 'Post Types',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
 }
 
 function generateRandomString($length = 20) {
@@ -295,3 +301,54 @@ function generateRandomString($length = 20) {
     }
     return $randomString;
 }
+
+function mc_load_more() {
+	$news_options = get_field('news_options', 'option');
+	if($news_options) {
+
+		$post_category = $news_options['post_page_block_category'];
+		$number_of_posts = $news_options['post_page_block_number_of_posts'];
+
+	}
+	if ($number_of_posts) {
+		$number_of_posts = $number_of_posts;
+	} else {
+		$number_of_posts = "-1";
+	}
+	if ($post_category) { 
+		$post_category = $post_category;
+	} else {
+		$post_category = "";
+	}
+	
+	$ajaxposts = new WP_Query([
+	  'post_type' => 'post',
+	  'posts_per_page' => $number_of_posts,
+	  'order' => 'DESC',
+	  'cat' => $post_category,
+	  'paged' => $_POST['paged'],
+	]);
+  
+	$response = '';
+	$max_pages = $ajaxposts->max_num_pages;
+  
+	if($ajaxposts->have_posts()) {
+		ob_start();
+	  while($ajaxposts->have_posts()) : $ajaxposts->the_post();
+		$response .= get_template_part('partials/loop','blog-page');
+	  endwhile;
+	  $output = ob_get_contents();
+	  ob_end_clean();
+	} else {
+	  $response = '';
+	}
+	$result = [
+		'max' => $max_pages,
+		'html' => $output,
+	];
+	
+	echo json_encode($result);
+	exit;
+  }
+  add_action('wp_ajax_mc_load_more', 'mc_load_more');
+  add_action('wp_ajax_nopriv_mc_load_more', 'mc_load_more');

@@ -2,11 +2,26 @@
 <?php $post_category = esc_html(get_field("post_category")); ?>
 <?php $optional_button_link = esc_html(get_field("optional_button_link")); ?>
 <?php $optional_button_link_text = esc_html(get_field("optional_button_link_text")); ?>
+<?php $load_more_button_alignment = esc_html(get_field("optional_button_alignment")); ?>
 <?php if ($optional_button_link_text) { 
 	$optional_button_link_text = $optional_button_link_text;
 } else {
 	$optional_button_link_text = "Learn More";
 } ?>
+<?php if ($post_category) { 
+	$post_category = $post_category;
+} else {
+	$post_category = "";
+} ?>
+<?php if ($load_more_button_alignment == "Left") { 
+	$load_more_button_alignment = "";
+} elseif ($load_more_button_alignment == "Right") {
+	$load_more_button_alignment = "pullright";
+} elseif ($load_more_button_alignment == "Center") {
+	$load_more_button_alignment = "center";
+} else { 
+	$load_more_button_alignment = "";
+ } ?>
 <?php if ($optional_title) { ?>
 	<div class="row">
 		<div class="col-md-12">
@@ -32,8 +47,10 @@
 		<?php // args
 		$args = array(
 		'posts_per_page'	=> $post_number,
-		'order'			=> 'DESC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
+		'order'			=> 'ASC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
+		'orderby' => 'menu_order',
 		'post_type' => 'post',
+		'cat' => $post_category,
 		'paged' => $paged,
 		); ?>
 
@@ -47,19 +64,7 @@
 
 		?>
 			<div class="<?php echo $bootstrap_columns; ?>">
-				<?php if (is_admin()) { ?>
-					<?php if ('one' == get_field('number_of_columns')) { ?>
-						<?php get_template_part('partials/loop','blog-admin'); ?>
-					<?php } else { ?>
-						<?php get_template_part('partials/loop','blog-card-admin'); ?>
-					<?php } ?>
-				<?php } else { ?>
-					<?php if ('one' == get_field('number_of_columns')) { ?>
-						<?php get_template_part('partials/loop','blog'); ?>
-					<?php } else { ?>
-						<?php get_template_part('partials/loop','blog-card'); ?>
-					<?php } ?>
-				<?php } ?>
+				<?php get_template_part('partials/loop','blog'); ?>
 			</div>
 		<?php } // end the loop ?>
 		<!--Reset Query-->
@@ -73,7 +78,7 @@
 	<?php if ($optional_button_link) { ?>
 		<div class="row">
 			<div class="col-md-12">
-				<a class="btn-mayecreate" href="<?php echo $optional_button_link; ?>" target="_blank"><?php echo $optional_button_link_text; ?></a>
+				<a class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" href="<?php echo $optional_button_link; ?>" target="_blank"><?php echo $optional_button_link_text; ?></a>
 			</div>
 		</div>
 	<?php } ?>

@@ -235,6 +235,13 @@ if($news_options) {
 	$news_list_categories_color = $news_options['list_categories_color'];
 	$news_list_categories_hover_color = $news_options['list_categories_hover_color'];
 
+	$news_post_date_font = $news_options['post_date_font'];
+	$news_post_date_size = $news_options['post_date_size'];
+	$news_list_categories_font = $news_options['list_categories_font'];
+	$news_list_categories_size = $news_options['list_categories_size'];
+	$news_title_font_size = $news_options['title_font_size'];
+	$news_content_font_size = $news_options['content_font_size'];
+
 }
 
 if ($news_background_color) { $news_background_color = $news_background_color; } else { $news_background_color = 'transparent'; }
@@ -280,6 +287,122 @@ if ($news_post_date_hover_color) { $news_post_date_hover_color = $news_post_date
 if ($news_list_categories_color) { $news_list_categories_color = $news_list_categories_color; } else { $news_list_categories_color = $primary_site_color; }
 if ($news_list_categories_hover_color) { $news_list_categories_hover_color = $news_list_categories_hover_color; } else { $news_list_categories_hover_color = $link_hover_color; }
 
+if ($news_post_date_font) { $news_post_date_font = $news_post_date_font; } else { $news_post_date_font = $main_heading_font; }
+if ($news_list_categories_font) { $news_list_categories_font = $news_list_categories_font; } else { $news_list_categories_font = $main_heading_font; }
+
+if ($news_title_font_size) { $news_title_font_size_use = $news_title_font_size; $news_title_font_size = $news_title_font_size; } else { $news_title_font_size_use = $heading_3_font_size; $news_title_font_size = $heading_3_font_size; }
+$news_title_font_size_use = $news_title_font_size / 10;
+if ($news_content_font_size) { $news_content_font_size_use = $news_content_font_size; $news_content_font_size = $news_content_font_size; } else { $news_content_font_size_use = $body_font_size; $news_content_font_size = $body_font_size; }
+$news_content_font_size_use = $news_content_font_size / 10;
+if ($news_post_date_size) { $news_post_date_size_use = $news_post_date_size; $news_post_date_size = $news_post_date_size; } else { $news_post_date_size_use = $heading_4_font_size; $news_post_date_size = $heading_4_font_size; }
+$news_post_date_size_use = $news_post_date_size / 10;
+if ($news_list_categories_size) { $news_list_categories_size_use = $news_list_categories_size; $news_list_categories_size = $news_list_categories_size; } else { $news_list_categories_size_use = $heading_6_font_size; $news_list_categories_size = $heading_6_font_size; }
+$news_list_categories_size_use = $news_list_categories_size / 10;
+
+$projects_options = get_field('projects_options', 'option');
+if($projects_options) {
+
+	$projects_background_color = $projects_options['background_color'];
+	$projects_background_hover_color = $projects_options['background_hover_color'];
+	$projects_post_padding = $projects_options['post_padding'];
+	$projects_border_radius = $projects_options['border_radius'];
+	$projects_border_width = $projects_options['border_width'];
+	$projects_border_color = $projects_options['border_color'];
+	$projects_border_color_top = $projects_options['border_color_top'];
+	$projects_border_color_right = $projects_options['border_color_right'];
+	$projects_border_color_bottom = $projects_options['border_color_bottom'];
+	$projects_border_color_left = $projects_options['border_color_left'];
+	$projects_box_shadow = $projects_options['box_shadow'];
+	$projects_box_shadow_color = $projects_options['box_shadow_color'];
+	$projects_featured_image_border_radius = $projects_options['featured_image_border_radius'];
+	$projects_featured_image_border_width = $projects_options['featured_image_border_width'];
+	$projects_featured_image_border_color = $projects_options['featured_image_border_color'];
+	$projects_featured_image_border_color_top = $projects_options['featured_image_border_color_top'];
+	$projects_featured_image_border_color_right = $projects_options['featured_image_border_color_right'];
+	$projects_featured_image_border_color_bottom = $projects_options['featured_image_border_color_bottom'];
+	$projects_featured_image_border_color_left = $projects_options['featured_image_border_color_left'];
+	$projects_button_text_color = $projects_options['button_text_color'];
+	$projects_button_background_color = $projects_options['button_background_color'];
+	$projects_button_text_color_hover = $projects_options['button_text_color_hover'];
+	$projects_button_background_color_hover = $projects_options['button_background_color_hover'];
+	$projects_title_font = $projects_options['title_font'];
+	$projects_title_color = $projects_options['title_color'];
+	$projects_title_hover_color = $projects_options['title_hover_color'];
+	$projects_title_border_bottom_width = $projects_options['title_border_bottom_width'];
+	$projects_title_border_bottom_color = $projects_options['title_border_bottom_color'];
+	$projects_content_font = $projects_options['content_font'];
+	$projects_content_color = $projects_options['content_color'];
+	$projects_content_hover_color = $projects_options['content_hover_color'];
+	$projects_featured_image_overlay = $projects_options['featured_image_overlay'];
+	$projects_post_date_color = $projects_options['post_date_color'];
+	$projects_post_date_hover_color = $projects_options['post_date_hover_color'];
+	$projects_list_categories_color = $projects_options['list_categories_color'];
+	$projects_list_categories_hover_color = $projects_options['list_categories_hover_color'];
+
+	$projects_post_date_font = $projects_options['post_date_font'];
+	$projects_post_date_size = $projects_options['post_date_size'];
+	$projects_list_categories_font = $projects_options['list_categories_font'];
+	$projects_list_categories_size = $projects_options['list_categories_size'];
+	$projects_title_font_size = $projects_options['title_font_size'];
+	$projects_content_font_size = $projects_options['content_font_size'];
+
+}
+
+if ($projects_background_color) { $projects_background_color = $projects_background_color; } else { $projects_background_color = 'transparent'; }
+if ($projects_background_hover_color) { $projects_background_hover_color = $projects_background_hover_color; } else { $projects_background_hover_color = $projects_background_color; }
+if ($projects_post_padding) { $projects_post_padding = $projects_post_padding; } else { $projects_post_padding = '20'; }
+
+if ($projects_border_radius) { $projects_border_radius = $projects_border_radius; } else { $projects_border_radius = '0'; }
+if ($projects_border_width) { $projects_border_width = $projects_border_width; } else { $projects_border_width = '0'; }
+if ($projects_border_color) { $projects_border_color = $projects_border_color; } else { $projects_border_color = 'transparent'; }
+if ($projects_border_color_top) { $projects_border_color_top = $projects_border_color_top; } else { $projects_border_color_top = $projects_border_color; }
+if ($projects_border_color_right) { $projects_border_color_right = $projects_border_color_right; } else { $projects_border_color_right = $projects_border_color; }
+if ($projects_border_color_bottom) { $projects_border_color_bottom = $projects_border_color_bottom; } else { $projects_border_color_bottom = $projects_border_color; }
+if ($projects_border_color_left) { $projects_border_color_left = $projects_border_color_left; } else { $projects_border_color_left = $projects_border_color; }
+
+if ($projects_box_shadow_color && $projects_box_shadow =='Yes') { $projects_box_shadow_color = $projects_box_shadow_color; } else { $projects_box_shadow_color = 'transparent'; }
+
+if ($projects_featured_image_overlay) { $projects_featured_image_overlay = $projects_featured_image_overlay; } else { $projects_featured_image_overlay = 'transparent'; }
+if ($projects_featured_image_border_radius) { $projects_featured_image_border_radius = $projects_featured_image_border_radius; } else { $projects_featured_image_border_radius = '0'; }
+if ($projects_featured_image_border_width) { $projects_featured_image_border_width = $projects_featured_image_border_width; } else { $projects_featured_image_border_width = '0'; }
+if ($projects_featured_image_border_color) { $projects_featured_image_border_color = $projects_featured_image_border_color; } else { $projects_featured_image_border_color = 'transparent'; }
+if ($projects_featured_image_border_color_top) { $projects_featured_image_border_color_top = $projects_featured_image_border_color_top; } else { $projects_featured_image_border_color_top = $projects_featured_image_border_color; }
+if ($projects_featured_image_border_color_right) { $projects_featured_image_border_color_right = $projects_featured_image_border_color_right; } else { $projects_featured_image_border_color_right = $projects_featured_image_border_color; }
+if ($projects_featured_image_border_color_bottom) { $projects_featured_image_border_color_bottom = $projects_featured_image_border_color_bottom; } else { $projects_featured_image_border_color_bottom = $projects_featured_image_border_color; }
+if ($projects_featured_image_border_color_left) { $projects_featured_image_border_color_left = $projects_featured_image_border_color_left; } else { $projects_featured_image_border_color_left = $projects_featured_image_border_color; }
+
+if ($projects_title_font) { $projects_title_font = $projects_title_font; } else { $projects_title_font = $main_heading_font; }
+if ($projects_title_color) { $projects_title_color = $projects_title_color; } else { $projects_title_color = $secondary_color; }
+if ($projects_title_hover_color) { $projects_title_hover_color = $projects_title_hover_color; } else { $projects_title_hover_color = $link_hover_color; }
+if ($projects_title_border_bottom_width) { $projects_title_border_bottom_width = $projects_title_border_bottom_width; } else { $projects_title_border_bottom_width = '0'; };
+if ($projects_title_border_bottom_color) { $projects_title_border_bottom_color = $projects_title_border_bottom_color; } else { $projects_title_border_bottom_color = 'transparent'; };
+
+if ($projects_content_font) { $projects_content_font = $projects_content_font; } else { $projects_content_font = $primary_font; }
+if ($projects_content_color) { $projects_content_color = $projects_content_color; } else { $projects_content_color = $primary_site_color; }
+if ($projects_content_hover_color) { $projects_content_hover_color = $projects_content_hover_color; } else { $projects_content_hover_color = $link_hover_color; }
+
+if ($projects_button_text_color) { $projects_button_text_color = $projects_button_text_color; } else { $projects_button_text_color = $button_color; }
+if ($projects_button_background_color) { $projects_button_background_color = $projects_button_background_color; } else { $projects_button_background_color = $button_background_color; }
+if ($projects_button_text_color_hover) { $projects_button_text_color_hover = $projects_button_text_color_hover; } else { $projects_button_text_color_hover = $button_hover_color; }
+if ($projects_button_background_color_hover) { $projects_button_background_color_hover = $projects_button_background_color_hover; } else { $projects_button_background_color_hover = $button_hover_background_color; }
+
+if ($projects_post_date_color) { $projects_post_date_color = $projects_post_date_color; } else { $projects_post_date_color = $primary_site_color; }
+if ($projects_post_date_hover_color) { $projects_post_date_hover_color = $projects_post_date_hover_color; } else { $projects_post_date_hover_color = $link_hover_color; }
+if ($projects_list_categories_color) { $projects_list_categories_color = $projects_list_categories_color; } else { $projects_list_categories_color = $primary_site_color; }
+if ($projects_list_categories_hover_color) { $projects_list_categories_hover_color = $projects_list_categories_hover_color; } else { $projects_list_categories_hover_color = $link_hover_color; }
+
+if ($projects_post_date_font) { $projects_post_date_font = $projects_post_date_font; } else { $projects_post_date_font = $main_heading_font; }
+if ($projects_list_categories_font) { $projects_list_categories_font = $projects_list_categories_font; } else { $projects_list_categories_font = $main_heading_font; }
+
+if ($projects_title_font_size) { $projects_title_font_size_use = $projects_title_font_size; $projects_title_font_size = $projects_title_font_size; } else { $projects_title_font_size_use = $heading_3_font_size; $projects_title_font_size = $heading_3_font_size; }
+$projects_title_font_size_use = $projects_title_font_size / 10;
+if ($projects_content_font_size) { $projects_content_font_size_use = $projects_content_font_size; $projects_content_font_size = $projects_content_font_size; } else { $projects_content_font_size_use = $body_font_size; $projects_content_font_size = $body_font_size; }
+$projects_content_font_size_use = $projects_content_font_size / 10;
+if ($projects_post_date_size) { $projects_post_date_size_use = $projects_post_date_size; $projects_post_date_size = $projects_post_date_size; } else { $projects_post_date_size_use = $heading_4_font_size; $projects_post_date_size = $heading_4_font_size; }
+$projects_post_date_size_use = $projects_post_date_size / 10;
+if ($projects_list_categories_size) { $projects_list_categories_size_use = $projects_list_categories_size; $projects_list_categories_size = $projects_list_categories_size; } else { $projects_list_categories_size_use = $heading_6_font_size; $projects_list_categories_size = $heading_6_font_size; }
+$projects_list_categories_size_use = $projects_list_categories_size / 10;
+		
 ?>
 :root {
 	--body_background_color: <?php echo $body_background_color; ?>;
@@ -440,5 +563,71 @@ if ($news_list_categories_hover_color) { $news_list_categories_hover_color = $ne
 	--news_post_date_hover_color: <?php echo $news_post_date_hover_color; ?>;
 	--news_list_categories_color: <?php echo $news_list_categories_color; ?>;
 	--news_list_categories_hover_color: <?php echo $news_list_categories_hover_color; ?>;
+
+	--news_title_font_size: <?php echo $news_title_font_size_use; ?>rem;
+	--news_title_font_size_admin: <?php echo $news_title_font_size; ?>px;
+	--news_content_font_size: <?php echo $news_content_font_size_use; ?>rem;
+	--news_content_font_size_admin: <?php echo $news_content_font_size; ?>px;
+	--news_post_date_size: <?php echo $news_post_date_size_use; ?>rem;
+	--news_post_date_size_admin: <?php echo $news_post_date_size; ?>px;
+	--news_list_categories_size: <?php echo $news_list_categories_size_use; ?>rem;
+	--news_list_categories_size_admin: <?php echo $news_list_categories_size; ?>px;
+
+	--news_post_date_font: <?php echo $news_post_date_font; ?>;
+	--news_list_categories_font: <?php echo $news_list_categories_font; ?>;
+	
+	--projects_background_color: <?php echo $projects_background_color; ?>;
+	--projects_background_hover_color: <?php echo $projects_background_hover_color; ?>;
+	--projects_post_padding: <?php echo $projects_post_padding; ?>px;
+
+	--projects_border_radius: <?php echo $projects_border_radius; ?>px;
+	--projects_border_width: <?php echo $projects_border_width; ?>px;
+	--projects_border_color: <?php echo $projects_border_color; ?>;
+	--projects_border_color_top: <?php echo $projects_border_color_top; ?>;
+	--projects_border_color_right: <?php echo $projects_border_color_right; ?>;
+	--projects_border_color_bottom: <?php echo $projects_border_color_bottom; ?>;
+	--projects_border_color_left: <?php echo $projects_border_color_left; ?>;
+	--projects_box_shadow_color: <?php echo $projects_box_shadow_color; ?>;
+	
+	--projects_featured_image_border_radius: <?php echo $projects_featured_image_border_radius; ?>%;
+	--projects_featured_image_border_width: <?php echo $projects_featured_image_border_width; ?>px;
+	--projects_featured_image_overlay: <?php echo $projects_featured_image_overlay; ?>;
+	--projects_featured_image_border_color: <?php echo $projects_featured_image_border_color; ?>;
+	--projects_featured_image_border_color_top: <?php echo $projects_featured_image_border_color_top; ?>;
+	--projects_featured_image_border_color_right: <?php echo $projects_featured_image_border_color_right; ?>;
+	--projects_featured_image_border_color_bottom: <?php echo $projects_featured_image_border_color_bottom; ?>;
+	--projects_featured_image_border_color_left: <?php echo $projects_featured_image_border_color_left; ?>;
+
+	--projects_button_text_color: <?php echo $projects_button_text_color; ?>;
+	--projects_button_background_color: <?php echo $projects_button_background_color; ?>;
+	--projects_button_text_color_hover: <?php echo $projects_button_text_color_hover; ?>;
+	--projects_button_background_color_hover: <?php echo $projects_button_background_color_hover; ?>;
+	
+	--projects_title_font: <?php echo $projects_title_font; ?>;
+	--projects_title_color: <?php echo $projects_title_color; ?>;
+	--projects_title_hover_color: <?php echo $projects_title_hover_color; ?>;
+	--projects_title_border_bottom_width: <?php echo $projects_title_border_bottom_width; ?>px;
+	--projects_title_border_bottom_color: <?php echo $projects_title_border_bottom_color; ?>;
+
+	--projects_content_font: <?php echo $projects_content_font; ?>;
+	--projects_content_color: <?php echo $projects_content_color; ?>;
+	--projects_content_hover_color: <?php echo $projects_content_hover_color; ?>;
+	
+	--projects_post_date_color: <?php echo $projects_post_date_color; ?>;
+	--projects_post_date_hover_color: <?php echo $projects_post_date_hover_color; ?>;
+	--projects_list_categories_color: <?php echo $projects_list_categories_color; ?>;
+	--projects_list_categories_hover_color: <?php echo $projects_list_categories_hover_color; ?>;
+
+	--projects_title_font_size: <?php echo $projects_title_font_size_use; ?>rem;
+	--projects_title_font_size_admin: <?php echo $projects_title_font_size; ?>px;
+	--projects_content_font_size: <?php echo $projects_content_font_size_use; ?>rem;
+	--projects_content_font_size_admin: <?php echo $projects_content_font_size; ?>px;
+	--projects_post_date_size: <?php echo $projects_post_date_size_use; ?>rem;
+	--projects_post_date_size_admin: <?php echo $projects_post_date_size; ?>px;
+	--projects_list_categories_size: <?php echo $projects_list_categories_size_use; ?>rem;
+	--projects_list_categories_size_admin: <?php echo $projects_list_categories_size; ?>px;
+
+	--projects_post_date_font: <?php echo $projects_post_date_font; ?>;
+	--projects_list_categories_font: <?php echo $projects_list_categories_font; ?>;
 }
 </style>

@@ -114,6 +114,33 @@ function register_acf_block_types() {
 			) 
 		); 
 	}  
+	
+	if (in_array('projects', get_field('post_type_selector', 'option'))) {
+		// register a featured posts block.
+		acf_register_block_type(
+			array(
+				'name'              => 'featured-projects',
+				'title'             => __('MC Featured Projects'),
+				'description'       => __('Add a featured projects block to your page.'),
+				'render_template'   => 'blocks/featured-projects.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'featured', 'project' , 'projects' ),
+			)
+		);
+		// register a posts page block.
+		acf_register_block_type(
+			array(
+				'name'              => 'projects-page',
+				'title'             => __('MC Projects Page'),
+				'description'       => __('Add a projects page block to your page.'),
+				'render_template'   => 'blocks/projects-page.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'page', 'projects', 'project' ),
+			)
+		);
+	}
 }
 
 // Check if function exists and hook into setup.

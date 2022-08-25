@@ -324,7 +324,8 @@ function mc_load_more() {
 	$ajaxposts = new WP_Query([
 	  'post_type' => 'post',
 	  'posts_per_page' => $number_of_posts,
-	  'order' => 'DESC',
+	  'order'	=> 'ASC', 
+	  'orderby' => 'menu_order',
 	  'cat' => $post_category,
 	  'paged' => $_POST['paged'],
 	]);
@@ -349,6 +350,76 @@ function mc_load_more() {
 	
 	echo json_encode($result);
 	exit;
-  }
-  add_action('wp_ajax_mc_load_more', 'mc_load_more');
-  add_action('wp_ajax_nopriv_mc_load_more', 'mc_load_more');
+}
+add_action('wp_ajax_mc_load_more', 'mc_load_more');
+add_action('wp_ajax_nopriv_mc_load_more', 'mc_load_more');
+
+  
+function mc_load_more_project() {
+$projects_options = get_field('projects_options', 'option');
+if($projects_options) {
+
+	$post_category_project = $projects_options['post_page_block_category'];
+	$number_of_posts_project = $projects_options['post_page_block_number_of_posts'];
+
+}
+if ($number_of_posts_project) {
+	$number_of_posts_project = $number_of_posts_project;
+} else {
+	$number_of_posts_project = "-1";
+}
+if ($post_category_project) { 
+	$post_category_project = $post_category_project;
+	$taxonomy_project = 'taxonomy';
+	$projectcategory_project = 'projectcategory';
+	$field_project = 'field';
+	$ID_project = 'ID';
+	$terms_project = 'terms';
+} else {
+	$post_category_project = "";
+	$taxonomy_project = '';
+	$projectcategory_project = '';
+	$field_project = '';
+	$ID_project = '';
+	$terms_project = '';
+}
+
+$ajaxposts_project = new WP_Query([
+	'post_type' => 'mc-projects',
+	'posts_per_page' => $number_of_posts_project,
+	'order'	=> 'ASC',
+	'orderby' => 'menu_order',
+	'paged' => $_POST['paged'],
+	'tax_query' => array(
+		'relation' => 'OR',
+			array (
+				$taxonomy_project  => $projectcategory_project,
+				$field_project     => $ID_project,
+				$terms_project     => $post_category_project
+			)
+		)
+]);
+
+$response_project = '';
+$max_pages_project = $ajaxposts_project->max_num_pages;
+
+if($ajaxposts_project->have_posts()) {
+	ob_start();
+	while($ajaxposts_project->have_posts()) : $ajaxposts_project->the_post();
+	$response_project .= get_template_part('partials/loop','project-page');
+	endwhile;
+	$output_project = ob_get_contents();
+	ob_end_clean();
+} else {
+	$response_project = '';
+}
+$result_project = [
+	'max' => $max_pages_project,
+	'html' => $output_project,
+];
+
+echo json_encode($result_project);
+exit;
+}
+add_action('wp_ajax_mc_load_more_project', 'mc_load_more_project'); 
+add_action('wp_ajax_nopriv_mc_load_more_project', 'mc_load_more_project');

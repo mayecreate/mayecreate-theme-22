@@ -16,11 +16,12 @@ function mayecreate_id_column_content( $column, $id ) {
   }
 }
 
-// /* NOTE: These functions are functions that don't need to be in the parent theme because not every site will have them. */
-// function build_taxonomies() {
-// 	register_taxonomy( 'projectcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) );
-//  }
-//  add_action( 'init', 'build_taxonomies', 0 );
+/* NOTE: These functions are functions that don't need to be in the parent theme because not every site will have them. */
+
+function build_taxonomies() {
+	register_taxonomy( 'projectcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Project Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) ); 
+}
+add_action( 'init', 'build_taxonomies', 0 );  
 
 function mayecreate_create_post_type() {
 		// Register the "Carousel Slides" custom post type if the custom post type slider is used.
@@ -43,7 +44,7 @@ function mayecreate_create_post_type() {
 		);	
 	if (in_array('projects', get_field('post_type_selector', 'option'))) {
 		// Register the "Project" custom post type if this is not needed, DELETE ME.
-		register_post_type( 'projects',
+		register_post_type( 'mc-projects',
 			array(
 				'labels' => array(
 					'name'              => __( 'Projects'),
@@ -66,7 +67,7 @@ function mayecreate_create_post_type() {
 	}
 	if (in_array('resources', get_field('post_type_selector', 'option'))) {
 		// Register the "Resources" custom post type if this is not needed, DELETE ME.
-		register_post_type( 'resources',
+		register_post_type( 'mc-resources',
 			array(
 				'labels' => array(
 					'name'              => __( 'Resources'),

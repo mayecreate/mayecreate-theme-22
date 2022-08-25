@@ -71,7 +71,7 @@ if($projects_options) { ?>
             <div class="<?php echo $featured_image_placement_class_1; ?>">
                 <span class="project_img_wrapper">
                     <?php $image_id = get_post_thumbnail_id();
-                    $image_url = wp_get_attachment_image_src($image_id,'blog', true); ?>
+                    $image_url = wp_get_attachment_image_src($image_id,'project', true); ?>
                     <img src="<?php echo $image_url[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
                     <?php if ($display_title_over_image == "Yes") { ?>
                         <h3 class="img_wrapper_title"><?php the_title(); ?></h3>

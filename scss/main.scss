@@ -1105,6 +1105,9 @@ img {
 .center {
 	text-align: center !important;
 }
+.right {
+	text-align: right !important;
+}
 .pagebreak {
 	padding: 60px 0;
 	background: vars.$pagebreak_background_color;
@@ -1285,7 +1288,7 @@ img {
 	opacity: 0 !important;
 	display: none !important;
 }
-.post_link_wrapper:link, .post_link_wrapper:visited {
+.post_link_wrapper, .post_link_wrapper:link, .post_link_wrapper:visited {
 	display: block;
 	margin-bottom: 40px;
 	padding: vars.$news_post_padding;
@@ -1297,41 +1300,46 @@ img {
 	border-bottom: vars.$news_border_width solid vars.$news_border_color_bottom;
 	border-left: vars.$news_border_width solid vars.$news_border_color_left;
 	box-shadow: 0 0 12px vars.$news_box_shadow_color; 
+	text-decoration: none !important;
 }
-.post_link_wrapper:hover, .post_link_wrapper:active {
+.post_link_wrapper:link:hover, .post_link_wrapper:active {
 	background: vars.$news_background_hover_color;
 }
 .post_link_wrapper h3 {
 	padding-bottom: 10px;
 	color: vars.$news_title_color;
 	font-family: vars.$news_title_font;
+	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$news_title_font_size);
 	border-bottom: vars.$news_title_border_bottom_width solid vars.$news_title_border_bottom_color;
 }
-.post_link_wrapper:hover h3 {
+.post_link_wrapper:link:hover h3 {
 	color: vars.$news_title_hover_color;
+}
+.post_link_wrapper h4 {
+	color: vars.$news_post_date_color;
+	font-family: vars.$news_post_date_font;
+	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$news_post_date_size); 
+}
+.post_link_wrapper:link:hover h4 {
+	color: vars.$news_post_date_hover_color;
+}
+.post_link_wrapper h5 {
+	color: vars.$news_list_categories_color;
+	font-family: vars.$news_list_categories_font;
+	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$news_list_categories_size);
+}
+.post_link_wrapper:link:hover h5 {
+	color: vars.$news_list_categories_hover_color;
 }
 .post_link_wrapper p {
 	color: vars.$news_content_color;
 	font-family: vars.$news_content_font;
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$news_content_font_size);
 }
-.post_link_wrapper:hover p {
+.post_link_wrapper:link:hover p {
 	color: vars.$news_content_hover_color;
 }
-.post_link_wrapper h5 {
-	color: vars.$news_post_date_color;
-	font-family: vars.$news_content_font;
-}
-.post_link_wrapper:hover h5 {
-	color: vars.$news_post_date_hover_color;
-}
-.post_link_wrapper h6 {
-	color: vars.$news_list_categories_color;
-	font-family: vars.$news_content_font;
-}
-.post_link_wrapper:hover h6 {
-	color: vars.$news_list_categories_hover_color;
-}
-.post_link_wrapper .post_loop_cats_sep:last-child {
+.post_loop_cats_sep:last-child {
 	display: none !important;
 }
 .post_link_wrapper .btn-mayecreate {
@@ -1339,7 +1347,7 @@ img {
 	color: vars.$news_button_text_color;
 	border:0 none;
 }
-.post_link_wrapper:hover .btn-mayecreate {
+.post_link_wrapper:link:hover .btn-mayecreate {
 	background: vars.$news_button_background_color_hover;
 	color: vars.$news_button_text_color_hover;
 	border:0 none;
@@ -1378,10 +1386,135 @@ img {
     -o-transition: all 0.14s ease-in-out;
     -ms-transition: all 0.14s ease-in-out;
 }
-.post_link_wrapper:hover .img_wrapper:after {
+.post_link_wrapper:link:hover .img_wrapper:after {
 	opacity: 1;
 }
-
+/*PROJECTS
+============================ */
+#load-more-project {
+	transition: all 0.14s ease-in-out;
+}
+#load-more-project.hidden { 
+	opacity: 0 !important;
+	display: none !important;
+}
+.project_link_wrapper, .project_link_wrapper:link, .project_link_wrapper:visited {
+	display: block;
+	margin-bottom: 40px;
+	padding: vars.$projects_post_padding;
+	background: vars.$projects_background_color;
+	border-radius: vars.$projects_border_radius;
+	border: vars.$projects_border_width solid vars.$projects_border_color;
+	border-top: vars.$projects_border_width solid vars.$projects_border_color_top;
+	border-right: vars.$projects_border_width solid vars.$projects_border_color_right;
+	border-bottom: vars.$projects_border_width solid vars.$projects_border_color_bottom;
+	border-left: vars.$projects_border_width solid vars.$projects_border_color_left;
+	box-shadow: 0 0 12px vars.$projects_box_shadow_color; 
+	text-decoration: none !important; 
+}
+.project_link_wrapper:link:hover, .project_link_wrapper:active {
+	background: vars.$projects_background_hover_color;
+}
+.project_link_wrapper h3 {
+	padding-bottom: 10px;
+	color: vars.$projects_title_color;
+	font-family: vars.$projects_title_font;
+	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$projects_title_font_size);
+	border-bottom: vars.$projects_title_border_bottom_width solid vars.$projects_title_border_bottom_color;
+}
+.project_link_wrapper:link:hover h3 {
+	color: vars.$projects_title_hover_color;
+}
+.project_link_wrapper h4 {
+	color: vars.$projects_post_date_color;
+	font-family: vars.$projects_post_date_font;
+	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$projects_post_date_size); 
+}
+.project_link_wrapper:link:hover h4 {
+	color: vars.$projects_post_date_hover_color;
+}
+.project_link_wrapper h5 {
+	color: vars.$projects_list_categories_color;
+	font-family: vars.$projects_list_categories_font;
+	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$projects_list_categories_size);
+}
+.project_link_wrapper:link:hover h5 {
+	color: vars.$projects_list_categories_hover_color;
+}
+.project_link_wrapper p {
+	color: vars.$projects_content_color;
+	font-family: vars.$projects_content_font;
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$projects_content_font_size);
+}
+.project_link_wrapper:link:hover p {
+	color: vars.$projects_content_hover_color;
+}
+.project_link_wrapper .btn-mayecreate {
+	background: vars.$projects_button_background_color;
+	color: vars.$projects_button_text_color;
+	border:0 none;
+}
+.project_link_wrapper:link:hover .btn-mayecreate {
+	background: vars.$projects_button_background_color_hover;
+	color: vars.$projects_button_text_color_hover;
+	border:0 none;
+}
+.project_img_wrapper {
+	display: table;
+	position: relative;
+	margin: 0 auto 20px auto;
+	overflow: hidden;
+	border-radius: vars.$projects_featured_image_border_radius;
+	border: vars.$projects_featured_image_border_width solid vars.$projects_featured_image_border_color;
+	border-top: vars.$projects_featured_image_border_width solid vars.$projects_featured_image_border_color_top;
+	border-right: vars.$projects_featured_image_border_width solid vars.$projects_featured_image_border_color_right;
+	border-bottom: vars.$projects_featured_image_border_width solid vars.$projects_featured_image_border_color_bottom;
+	border-left: vars.$projects_featured_image_border_width solid vars.$projects_featured_image_border_color_left;
+}
+.project_img_wrapper img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+.project_img_wrapper:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%; 
+	height: 100%;
+	background: vars.$projects_featured_image_overlay;
+	opacity: 0;
+	transition: all 0.14s ease-in-out;
+    -moz-transition: all 0.14s ease-in-out;
+    -o-transition: all 0.14s ease-in-out;
+    -ms-transition: all 0.14s ease-in-out;
+}
+.project_link_wrapper:link:hover .project_img_wrapper:after {
+	opacity: 1;
+}
+.project_img_wrapper .img_wrapper_title {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 95%;
+	height: 60px;
+	z-index: 2;
+	opacity: 0;
+	transition: all 0.14s ease-in-out;
+    -moz-transition: all 0.14s ease-in-out;
+    -o-transition: all 0.14s ease-in-out;
+    -ms-transition: all 0.14s ease-in-out;
+}
+.project_link_wrapper:hover .project_img_wrapper .img_wrapper_title {
+	opacity: 1;
+}
 /* ANIMATIONS
 ====================================  */
 .left_slide {
@@ -1583,7 +1716,7 @@ img {
 						margin-left: auto !important;
 						margin-right: auto !important; 
 					}
-					.btn-mayecreate.pullright {
+					.btn-mayecreate.pullright, .btn-mayecreate.right {
 						float: right;
 						clear: both;
 						margin: 0 0 20px 15px;
@@ -2031,6 +2164,30 @@ img {
 										p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
 											font-size: vars.$body_font_size;
 										}
+										.post_link_wrapper h3 {
+											font-size: vars.$news_title_font_size;
+										}
+										.post_link_wrapper h4 {
+											font-size: vars.$news_post_date_size;
+										}
+										.post_link_wrapper h5 {
+											font-size: vars.$news_list_categories_size;
+										}
+										.post_link_wrapper p {
+											font-size: vars.$news_content_font_size;
+										}
+										.project_link_wrapper h3 {
+											font-size: vars.$projects_title_font_size;
+										}
+										.project_link_wrapper h4 {
+											font-size: vars.$projects_post_date_size;
+										}
+										.project_link_wrapper h5 {
+											font-size: vars.$projects_list_categories_size;
+										}
+										.project_link_wrapper p {
+											font-size: vars.$projects_content_font_size;
+										}
 
 										/* Place to add stylesheets if you want to target monitors 
 										bigger than a desktop. */
@@ -2104,6 +2261,30 @@ img {
 }
 .block-editor-block-list__layout .btn-mayecreate.large {
     font-size: vars.$header_5_font_size_admin !important; 
+}
+.block-editor-block-list__layout .post_link_wrapper h3 {
+	font-size: vars.$news_title_font_size_admin !important;
+}
+.block-editor-block-list__layout .post_link_wrapper h4 {
+	font-size: vars.$news_post_date_size_admin !important;
+}
+.block-editor-block-list__layout .post_link_wrapper h5 {
+	font-size: vars.$news_list_categories_size_admin !important;
+}
+.block-editor-block-list__layout .post_link_wrapper p {
+	font-size: vars.$news_content_font_size_admin !important;
+}
+.block-editor-block-list__layout .project_link_wrapper h3 {
+	font-size: vars.$projects_title_font_size_admin !important;
+}
+.block-editor-block-list__layout .project_link_wrapper h4 {
+	font-size: vars.$projects_post_date_size_admin !important;
+}
+.block-editor-block-list__layout .project_link_wrapper h5 {
+	font-size: vars.$projects_list_categories_size_admin !important;
+}
+.block-editor-block-list__layout .project_link_wrapper p {
+	font-size: vars.$projects_content_font_size_admin !important;
 }
 
 

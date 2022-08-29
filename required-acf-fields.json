@@ -2002,6 +2002,22 @@
                 "maxlength": "",
                 "rows": "",
                 "new_lines": ""
+            },
+            {
+                "key": "field_630d19f551f24",
+                "label": "Optional Outside Link",
+                "name": "optional_outside_link",
+                "type": "url",
+                "instructions": "NOTE: this will overwrite the expandable bio if there is one filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
             }
         ],
         "location": [

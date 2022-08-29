@@ -1258,13 +1258,13 @@ img {
 .team_block_wrapper a:hover, .team_block_wrapper a:active {
 	color: vars.$team_link_hover_color;
 }
-.team_block_wrapper .btn-mayecreate {
+.team_block_wrapper .btn-mayecreate, .team_block_wrapper .btn-mayecreate:link, .team_block_wrapper .btn-mayecreate:visited {
 	color: vars.$team_expand_button_color;
 	background-color: vars.$team_expand_button_background;
 	border: 0 none;
 	margin-bottom: 0;
 }
-.team_block_wrapper .btn-mayecreate:hover {
+.team_block_wrapper .btn-mayecreate:hover, .team_block_wrapper .btn-mayecreate:active {
 	color: vars.$team_expand_button_color_hover;
 	background-color: vars.$team_expand_button_background_hover;
 }

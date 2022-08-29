@@ -15,6 +15,7 @@ if($team_options) { ?>
 <?php $phone = esc_html(get_field("phone_number", $post->ID)); ?>
 <?php $email = esc_html(get_field("email", $post->ID)); ?>
 <?php $bio = esc_html(get_field("bio", $post->ID)); ?>
+<?php $optional_outside_link = esc_html(get_field("optional_outside_link", $post->ID)); ?>
 <?php
 $image = get_field('headshot');
 $size = 'team';
@@ -64,9 +65,11 @@ $thumb = $image['sizes'][ $size ];
             <?php if ($email) { ?>
                 <p><a href="mailto:<?php echo $email; ?>"><?php echo $mail_icon; ?><?php echo $email; ?></a></p>
             <?php } ?>
-            <?php if ($bio) { ?>
+            <?php if ($optional_outside_link) { ?>
+                <a role="button" class="btn-mayecreate" href="<?php echo $optional_outside_link; ?>" title="This button links to <?php echo $button_link; ?>"><?php echo $expand_button_text; ?></a>
+            <?php } elseif ($bio) { ?>
                 <?php if ($expandable_bio == "Yes") { ?>
-                    <button class="btn-mayecreate" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeam_<?php echo $team_id; ?>" aria-expanded="false" aria-controls="collapseTeam_<?php echo $team_id; ?>"><?php echo $expand_button_text; ?></button>
+                    <button class="btn-mayecreate" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeam_<?php echo $team_id; ?>" aria-expanded="false" aria-controls="collapseTeam_<?php echo $team_id; ?>" title="Expand Information about <?php echo $name; ?>"><?php echo $expand_button_text; ?></button>
                     <div class="collapse" id="collapseTeam_<?php echo $team_id; ?>">
                 <?php } ?>
                         <p><?php echo $bio; ?></p>

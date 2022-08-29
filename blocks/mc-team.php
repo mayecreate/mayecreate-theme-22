@@ -66,7 +66,7 @@ $thumb = $image['sizes'][ $size ];
                 <p><a href="mailto:<?php echo $email; ?>"><?php echo $mail_icon; ?><?php echo $email; ?></a></p>
             <?php } ?>
             <?php if ($optional_outside_link) { ?>
-                <a role="button" class="btn-mayecreate" href="<?php echo $optional_outside_link; ?>" title="This button links to <?php echo $button_link; ?>"><?php echo $expand_button_text; ?></a>
+                <a role="button" class="btn-mayecreate" href="<?php echo $optional_outside_link; ?>" title="This button links to <?php echo $optional_outside_link; ?>"><?php echo $expand_button_text; ?></a>
             <?php } elseif ($bio) { ?>
                 <?php if ($expandable_bio == "Yes") { ?>
                     <button class="btn-mayecreate" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeam_<?php echo $team_id; ?>" aria-expanded="false" aria-controls="collapseTeam_<?php echo $team_id; ?>" title="Expand Information about <?php echo $name; ?>"><?php echo $expand_button_text; ?></button>

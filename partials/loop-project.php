@@ -52,9 +52,9 @@ if($projects_options) { ?>
 <?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 
 <?php if (is_admin()) { ?>
-<span class="post_link_wrapper wide">
+<span class="post_link_wrapper wide <?php echo $text_alignment; ?>">
 <?php } elseif ('' == get_post()->post_content) { ?>
-<span class="project_link_wrapper wide">
+<span class="project_link_wrapper wide <?php echo $text_alignment; ?>">
 <?php } else { ?>
 <a href="<?php the_permalink(); ?>" class="project_link_wrapper wide <?php echo $text_alignment; ?>">
 <?php } ?>

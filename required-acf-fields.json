@@ -7,8 +7,8 @@
                 "key": "field_620e6f933e165",
                 "label": "Container Width",
                 "name": "container_width",
-                "type": "radio",
-                "instructions": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -16,16 +16,55 @@
                     "class": "",
                     "id": ""
                 },
-                "choices": {
-                    "wide": "Wide (1640px)",
-                    "narrow": "Narrow (1024px)"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
                 "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bd17e4ed",
+                "label": "Home Container Width",
+                "name": "home_container_width",
+                "type": "number",
+                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bfbe0317",
+                "label": "Header\/Footer Container Width",
+                "name": "headerfooter_container_width",
+                "type": "number",
+                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
             },
             {
                 "key": "field_620e6fca3e166",

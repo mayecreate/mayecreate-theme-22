@@ -103,12 +103,15 @@ add_action( 'wp_head', 'mayecreate_theme_customize_css');
 add_action( 'admin_head', 'mayecreate_theme_customize_css');
 
 
-	$containerWidth = ('narrow' == get_field('container_width', 'option'));
-	if($containerWidth) { 
-		$containerWidth ='container container-narrow';
+function containerWidth() {
+	global $containerWidth;
+    if(is_front_page()) { 
+		$containerWidth ='container container-home';
 	} else { 
-		$containerWidth ='container';
+		$containerWidth ='container';  
 	}
+}
+add_action( 'get_header', 'containerWidth' );
 
 /*
 ==========================================================

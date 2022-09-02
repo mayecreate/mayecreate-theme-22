@@ -16,12 +16,14 @@ body {
 	background-color: vars.$body_background_color;
 } 
 .container {
-	max-width: 1640px;
+	max-width: vars.$container_width;
 	width: 90%; 
 }
-.container.container-narrow {
-	max-width: 1024px;
-	width: 90%;
+.container.container-home {
+	max-width: vars.$home_container_width;
+}
+#navigation .container, #navigation .container.container-home, footer.site-footer .container, footer.site-footer .container.container-home {
+	max-width: vars.$headerfooter_container_width;
 }
 .mobile_hide {
 	height: 0;

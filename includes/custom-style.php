@@ -1,6 +1,14 @@
 <style>
 /* Colors From Site Theme Options */
 <?php
+$container_width = (get_field('container_width', 'option'));
+$home_container_width = (get_field('home_container_width', 'option'));
+$headerfooter_container_width = (get_field('headerfooter_container_width', 'option'));
+
+if ($container_width) { $container_width = $container_width; } else { $container_width = '1640'; }
+if ($home_container_width) { $home_container_width = $home_container_width; } else { $home_container_width = $container_width; }
+if ($headerfooter_container_width) { $headerfooter_container_width = $headerfooter_container_width; } else { $headerfooter_container_width = $container_width; }
+
 $body_background_color = (get_field('body_background_color', 'option'));
 
 $primary_site_color = (get_field('primary_site_color', 'option'));
@@ -629,5 +637,9 @@ $projects_list_categories_size_use = $projects_list_categories_size / 10;
 
 	--projects_post_date_font: <?php echo $projects_post_date_font; ?>;
 	--projects_list_categories_font: <?php echo $projects_list_categories_font; ?>;
+
+	--container_width: <?php echo $container_width; ?>px;
+	--home_container_width: <?php echo $home_container_width; ?>px;
+	--headerfooter_container_width: <?php echo $headerfooter_container_width; ?>px;
 }
 </style>

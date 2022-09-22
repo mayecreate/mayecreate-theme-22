@@ -22,13 +22,13 @@ body {
 .container.container-home {
 	max-width: vars.$home_container_width;
 }
-#navigation .container, #navigation .container.container-home, footer.site-footer .container, footer.site-footer .container.container-home {
+#navigation .container, #navigation .container.container-home, footer.site-footer .container, footer.site-footer .container.container-home, #internalfeatured .container {
 	max-width: vars.$headerfooter_container_width;
-}
+} 
 .mobile_hide {
 	height: 0;
 	overflow: hidden;
-	visibility: hidden;
+	visibility: hidden; 
 }
 .mobile_show {
 	height: auto;
@@ -1131,8 +1131,6 @@ img {
 .pagebreak .container {
 	position: relative;
 	z-index: 2; 
-    max-width: 1640px;
-    width: 90%;
 	margin: 0 auto;
 }
 .pagebreak:after {

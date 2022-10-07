@@ -426,3 +426,73 @@ exit;
 }
 add_action('wp_ajax_mc_load_more_project', 'mc_load_more_project'); 
 add_action('wp_ajax_nopriv_mc_load_more_project', 'mc_load_more_project');
+
+  
+function mc_load_more_resource() {
+$resource_options = get_field('resource_options', 'option');
+if($resource_options) {
+
+	$post_category_resource = $resource_options['post_page_block_category'];
+	$number_of_posts_resource = $resource_options['post_page_block_number_of_posts'];
+
+}
+if ($number_of_posts_resource) {
+	$number_of_posts_resource = $number_of_posts_resource;
+} else {
+	$number_of_posts_resource = "-1";
+}
+if ($post_category_resource) { 
+	$post_category_resource = $post_category_resource;
+	$taxonomy_resource = 'taxonomy';
+	$resourcecategory_resource = 'resourcecategory';
+	$field_resource = 'field';
+	$ID_resource = 'ID';
+	$terms_resource = 'terms';
+} else {
+	$post_category_resource = "";
+	$taxonomy_resource = '';
+	$resourcecategory_resource = '';
+	$field_resource = '';
+	$ID_resource = '';
+	$terms_resource = '';
+}
+
+$ajaxposts_resource = new WP_Query([
+	'post_type' => 'mc-resources',
+	'posts_per_page' => $number_of_posts_resource,
+	'order'	=> 'ASC',
+	'orderby' => 'menu_order',
+	'paged' => $_POST['paged'],
+	'tax_query' => array(
+		'relation' => 'OR',
+			array (
+				$taxonomy_resource  => $resourcecategory_resource,
+				$field_resource     => $ID_resource,
+				$terms_resource     => $post_category_resource
+			)
+		)
+]);
+
+$response_resource = '';
+$max_pages_resource = $ajaxposts_resource->max_num_pages;
+
+if($ajaxposts_resource->have_posts()) {
+	ob_start();
+	while($ajaxposts_resource->have_posts()) : $ajaxposts_resource->the_post();
+	$response_resource .= get_template_part('partials/loop','resource-page');
+	endwhile;
+	$output_resource = ob_get_contents();
+	ob_end_clean();
+} else {
+	$response_resource = '';
+}
+$result_resource = [
+	'max' => $max_pages_resource,
+	'html' => $output_resource,
+];
+
+echo json_encode($result_resource);
+exit;
+}
+add_action('wp_ajax_mc_load_more_resource', 'mc_load_more_resource'); 
+add_action('wp_ajax_nopriv_mc_load_more_resource', 'mc_load_more_resource');

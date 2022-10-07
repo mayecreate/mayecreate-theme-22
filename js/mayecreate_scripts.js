@@ -265,6 +265,33 @@ $('#load-more-project').on('click', function(){
 	newPageProject++;
 });
 
+function loadMoreResource(paged) {
+	$.ajax({
+	type: 'POST',
+	url: '/wp-admin/admin-ajax.php',
+	dataType: 'json',
+	data: {
+		action: 'mc_load_more_resource',
+		paged,
+	},
+	success: function (res) {
+		if (paged >= res.max) { 
+			$('#load-more-resource').addClass('hidden');
+			$('#load-more-resource').removeClass('not-hidden');
+		} else {
+			$('#load-more-resource').addClass('not-hidden');
+			$('#load-more-resource').removeClass('hidden');
+		}
+		$('.resource-list').append(res.html); 
+	}
+	});
+}
+let newPageResource = 1;
+$('#load-more-resource').on('click', function(){
+	loadMoreResource(newPageResource + 1);
+	newPageResource++;
+});
+
   /* 
   *  Function calls the javascript and establishes settings for the featured image slider.
   * 

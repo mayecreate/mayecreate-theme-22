@@ -85,6 +85,7 @@ if($projects_options) { ?>
 	</div>
     
 <?php if ($number_of_posts) { ?>
+	<div id="?"></span>
 	<div class="row">
 		<div class="col-md-12">
 			<a href="#?" class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" id="load-more-project"><?php echo $load_more_text; ?></a>

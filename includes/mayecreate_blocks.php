@@ -83,7 +83,7 @@ function register_acf_block_types() {
 				'render_template'   => 'blocks/featured-posts.php',
 				'category'          => 'formatting',
 				'icon'              => 'admin-post',
-				'keywords'          => array( 'featured', 'posts' ),
+				'keywords'          => array( 'featured', 'posts', 'post' ),
 			)
 		);
 		// register a posts page block.
@@ -99,6 +99,32 @@ function register_acf_block_types() {
 			)
 		);
 	}  
+	if (in_array('resources', get_field('post_type_selector', 'option'))) {
+		// register a featured resources block.
+		acf_register_block_type(
+			array(
+				'name'              => 'featured-resources',
+				'title'             => __('MC Featured Resources'),
+				'description'       => __('Add a featured resources block to your page.'),
+				'render_template'   => 'blocks/featured-resources.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'featured', 'resources', 'resource' ),
+			)
+		);
+		// register a resources page block.
+		acf_register_block_type(
+			array(
+				'name'              => 'resources-page',
+				'title'             => __('MC Resources Page'),
+				'description'       => __('Add a resources page block to your page.'),
+				'render_template'   => 'blocks/resources-page.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'page', 'resources', 'resource' ),
+			)
+		);
+	} 
 
 	if (in_array('team', get_field('post_type_selector', 'option'))) {
 		// register a team member block.

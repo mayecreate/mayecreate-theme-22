@@ -410,6 +410,110 @@ if ($projects_post_date_size) { $projects_post_date_size_use = $projects_post_da
 $projects_post_date_size_use = $projects_post_date_size / 10;
 if ($projects_list_categories_size) { $projects_list_categories_size_use = $projects_list_categories_size; $projects_list_categories_size = $projects_list_categories_size; } else { $projects_list_categories_size_use = $heading_6_font_size; $projects_list_categories_size = $heading_6_font_size; }
 $projects_list_categories_size_use = $projects_list_categories_size / 10;
+
+$resource_options = get_field('resource_options', 'option');
+if($resource_options) {
+
+	$resource_background_color = $resource_options['background_color'];
+	$resource_background_hover_color = $resource_options['background_hover_color'];
+	$resource_post_padding = $resource_options['post_padding'];
+	$resource_border_radius = $resource_options['border_radius'];
+	$resource_border_width = $resource_options['border_width'];
+	$resource_border_color = $resource_options['border_color'];
+	$resource_border_color_top = $resource_options['border_color_top'];
+	$resource_border_color_right = $resource_options['border_color_right'];
+	$resource_border_color_bottom = $resource_options['border_color_bottom'];
+	$resource_border_color_left = $resource_options['border_color_left'];
+	$resource_box_shadow = $resource_options['box_shadow'];
+	$resource_box_shadow_color = $resource_options['box_shadow_color'];
+	$resource_featured_image_border_radius = $resource_options['featured_image_border_radius'];
+	$resource_featured_image_border_width = $resource_options['featured_image_border_width'];
+	$resource_featured_image_border_color = $resource_options['featured_image_border_color'];
+	$resource_featured_image_border_color_top = $resource_options['featured_image_border_color_top'];
+	$resource_featured_image_border_color_right = $resource_options['featured_image_border_color_right'];
+	$resource_featured_image_border_color_bottom = $resource_options['featured_image_border_color_bottom'];
+	$resource_featured_image_border_color_left = $resource_options['featured_image_border_color_left'];
+	$resource_button_text_color = $resource_options['button_text_color'];
+	$resource_button_background_color = $resource_options['button_background_color'];
+	$resource_button_text_color_hover = $resource_options['button_text_color_hover'];
+	$resource_button_background_color_hover = $resource_options['button_background_color_hover'];
+	$resource_title_font = $resource_options['title_font'];
+	$resource_title_color = $resource_options['title_color'];
+	$resource_title_hover_color = $resource_options['title_hover_color'];
+	$resource_title_border_bottom_width = $resource_options['title_border_bottom_width'];
+	$resource_title_border_bottom_color = $resource_options['title_border_bottom_color'];
+	$resource_content_font = $resource_options['content_font'];
+	$resource_content_color = $resource_options['content_color'];
+	$resource_content_hover_color = $resource_options['content_hover_color'];
+	$resource_featured_image_overlay = $resource_options['featured_image_overlay'];
+	$resource_post_date_color = $resource_options['post_date_color'];
+	$resource_post_date_hover_color = $resource_options['post_date_hover_color'];
+	$resource_list_categories_color = $resource_options['list_categories_color'];
+	$resource_list_categories_hover_color = $resource_options['list_categories_hover_color'];
+
+	$resource_post_date_font = $resource_options['post_date_font'];
+	$resource_post_date_size = $resource_options['post_date_size'];
+	$resource_list_categories_font = $resource_options['list_categories_font'];
+	$resource_list_categories_size = $resource_options['list_categories_size'];
+	$resource_title_font_size = $resource_options['title_font_size'];
+	$resource_content_font_size = $resource_options['content_font_size'];
+
+}
+
+if ($resource_background_color) { $resource_background_color = $resource_background_color; } else { $resource_background_color = 'transparent'; }
+if ($resource_background_hover_color) { $resource_background_hover_color = $resource_background_hover_color; } else { $resource_background_hover_color = $resource_background_color; }
+if ($resource_post_padding) { $resource_post_padding = $resource_post_padding; } else { $resource_post_padding = '20'; }
+
+if ($resource_border_radius) { $resource_border_radius = $resource_border_radius; } else { $resource_border_radius = '0'; }
+if ($resource_border_width) { $resource_border_width = $resource_border_width; } else { $resource_border_width = '0'; }
+if ($resource_border_color) { $resource_border_color = $resource_border_color; } else { $resource_border_color = 'transparent'; }
+if ($resource_border_color_top) { $resource_border_color_top = $resource_border_color_top; } else { $resource_border_color_top = $resource_border_color; }
+if ($resource_border_color_right) { $resource_border_color_right = $resource_border_color_right; } else { $resource_border_color_right = $resource_border_color; }
+if ($resource_border_color_bottom) { $resource_border_color_bottom = $resource_border_color_bottom; } else { $resource_border_color_bottom = $resource_border_color; }
+if ($resource_border_color_left) { $resource_border_color_left = $resource_border_color_left; } else { $resource_border_color_left = $resource_border_color; }
+
+if ($resource_box_shadow_color && $resource_box_shadow =='Yes') { $resource_box_shadow_color = $resource_box_shadow_color; } else { $resource_box_shadow_color = 'transparent'; }
+
+if ($resource_featured_image_overlay) { $resource_featured_image_overlay = $resource_featured_image_overlay; } else { $resource_featured_image_overlay = 'transparent'; }
+if ($resource_featured_image_border_radius) { $resource_featured_image_border_radius = $resource_featured_image_border_radius; } else { $resource_featured_image_border_radius = '0'; }
+if ($resource_featured_image_border_width) { $resource_featured_image_border_width = $resource_featured_image_border_width; } else { $resource_featured_image_border_width = '0'; }
+if ($resource_featured_image_border_color) { $resource_featured_image_border_color = $resource_featured_image_border_color; } else { $resource_featured_image_border_color = 'transparent'; }
+if ($resource_featured_image_border_color_top) { $resource_featured_image_border_color_top = $resource_featured_image_border_color_top; } else { $resource_featured_image_border_color_top = $resource_featured_image_border_color; }
+if ($resource_featured_image_border_color_right) { $resource_featured_image_border_color_right = $resource_featured_image_border_color_right; } else { $resource_featured_image_border_color_right = $resource_featured_image_border_color; }
+if ($resource_featured_image_border_color_bottom) { $resource_featured_image_border_color_bottom = $resource_featured_image_border_color_bottom; } else { $resource_featured_image_border_color_bottom = $resource_featured_image_border_color; }
+if ($resource_featured_image_border_color_left) { $resource_featured_image_border_color_left = $resource_featured_image_border_color_left; } else { $resource_featured_image_border_color_left = $resource_featured_image_border_color; }
+
+if ($resource_title_font) { $resource_title_font = $resource_title_font; } else { $resource_title_font = $main_heading_font; }
+if ($resource_title_color) { $resource_title_color = $resource_title_color; } else { $resource_title_color = $secondary_color; }
+if ($resource_title_hover_color) { $resource_title_hover_color = $resource_title_hover_color; } else { $resource_title_hover_color = $link_hover_color; }
+if ($resource_title_border_bottom_width) { $resource_title_border_bottom_width = $resource_title_border_bottom_width; } else { $resource_title_border_bottom_width = '0'; };
+if ($resource_title_border_bottom_color) { $resource_title_border_bottom_color = $resource_title_border_bottom_color; } else { $resource_title_border_bottom_color = 'transparent'; };
+
+if ($resource_content_font) { $resource_content_font = $resource_content_font; } else { $resource_content_font = $primary_font; }
+if ($resource_content_color) { $resource_content_color = $resource_content_color; } else { $resource_content_color = $primary_site_color; }
+if ($resource_content_hover_color) { $resource_content_hover_color = $resource_content_hover_color; } else { $resource_content_hover_color = $link_hover_color; }
+
+if ($resource_button_text_color) { $resource_button_text_color = $resource_button_text_color; } else { $resource_button_text_color = $button_color; }
+if ($resource_button_background_color) { $resource_button_background_color = $resource_button_background_color; } else { $resource_button_background_color = $button_background_color; }
+if ($resource_button_text_color_hover) { $resource_button_text_color_hover = $resource_button_text_color_hover; } else { $resource_button_text_color_hover = $button_hover_color; }
+if ($resource_button_background_color_hover) { $resource_button_background_color_hover = $resource_button_background_color_hover; } else { $resource_button_background_color_hover = $button_hover_background_color; }
+
+if ($resource_post_date_color) { $resource_post_date_color = $resource_post_date_color; } else { $resource_post_date_color = $primary_site_color; }
+if ($resource_post_date_hover_color) { $resource_post_date_hover_color = $resource_post_date_hover_color; } else { $resource_post_date_hover_color = $link_hover_color; }
+if ($resource_list_categories_color) { $resource_list_categories_color = $resource_list_categories_color; } else { $resource_list_categories_color = $primary_site_color; }
+if ($resource_list_categories_hover_color) { $resource_list_categories_hover_color = $resource_list_categories_hover_color; } else { $resource_list_categories_hover_color = $link_hover_color; }
+
+if ($resource_post_date_font) { $resource_post_date_font = $resource_post_date_font; } else { $resource_post_date_font = $main_heading_font; }
+if ($resource_list_categories_font) { $resource_list_categories_font = $resource_list_categories_font; } else { $resource_list_categories_font = $main_heading_font; }
+
+if ($resource_title_font_size) { $resource_title_font_size_use = $resource_title_font_size; $resource_title_font_size = $resource_title_font_size; } else { $resource_title_font_size_use = $heading_3_font_size; $resource_title_font_size = $heading_3_font_size; }
+$resource_title_font_size_use = $resource_title_font_size / 10;
+if ($resource_content_font_size) { $resource_content_font_size_use = $resource_content_font_size; $resource_content_font_size = $resource_content_font_size; } else { $resource_content_font_size_use = $body_font_size; $resource_content_font_size = $body_font_size; }
+$resource_content_font_size_use = $resource_content_font_size / 10;
+if ($resource_post_date_size) { $resource_post_date_size_use = $resource_post_date_size; $resource_post_date_size = $resource_post_date_size; } else { $resource_post_date_size_use = $heading_4_font_size; $resource_post_date_size = $heading_4_font_size; }
+$resource_post_date_size_use = $resource_post_date_size / 10;
+if ($resource_list_categories_size) { $resource_list_categories_size_use = $resource_list_categories_size; $resource_list_categories_size = $resource_list_categories_size; } else { $resource_list_categories_size_use = $heading_6_font_size; $resource_list_categories_size = $heading_6_font_size; }
+$resource_list_categories_size_use = $resource_list_categories_size / 10;
 		
 ?>
 :root {
@@ -641,5 +745,59 @@ $projects_list_categories_size_use = $projects_list_categories_size / 10;
 	--container_width: <?php echo $container_width; ?>px;
 	--home_container_width: <?php echo $home_container_width; ?>px;
 	--headerfooter_container_width: <?php echo $headerfooter_container_width; ?>px;
+	
+	--resource_background_color: <?php echo $resource_background_color; ?>;
+	--resource_background_hover_color: <?php echo $resource_background_hover_color; ?>;
+	--resource_post_padding: <?php echo $resource_post_padding; ?>px;
+
+	--resource_border_radius: <?php echo $resource_border_radius; ?>px;
+	--resource_border_width: <?php echo $resource_border_width; ?>px;
+	--resource_border_color: <?php echo $resource_border_color; ?>;
+	--resource_border_color_top: <?php echo $resource_border_color_top; ?>;
+	--resource_border_color_right: <?php echo $resource_border_color_right; ?>;
+	--resource_border_color_bottom: <?php echo $resource_border_color_bottom; ?>;
+	--resource_border_color_left: <?php echo $resource_border_color_left; ?>;
+	--resource_box_shadow_color: <?php echo $resource_box_shadow_color; ?>;
+	
+	--resource_featured_image_border_radius: <?php echo $resource_featured_image_border_radius; ?>%;
+	--resource_featured_image_border_width: <?php echo $resource_featured_image_border_width; ?>px;
+	--resource_featured_image_overlay: <?php echo $resource_featured_image_overlay; ?>;
+	--resource_featured_image_border_color: <?php echo $resource_featured_image_border_color; ?>;
+	--resource_featured_image_border_color_top: <?php echo $resource_featured_image_border_color_top; ?>;
+	--resource_featured_image_border_color_right: <?php echo $resource_featured_image_border_color_right; ?>;
+	--resource_featured_image_border_color_bottom: <?php echo $resource_featured_image_border_color_bottom; ?>;
+	--resource_featured_image_border_color_left: <?php echo $resource_featured_image_border_color_left; ?>;
+
+	--resource_button_text_color: <?php echo $resource_button_text_color; ?>;
+	--resource_button_background_color: <?php echo $resource_button_background_color; ?>;
+	--resource_button_text_color_hover: <?php echo $resource_button_text_color_hover; ?>;
+	--resource_button_background_color_hover: <?php echo $resource_button_background_color_hover; ?>;
+	
+	--resource_title_font: <?php echo $resource_title_font; ?>;
+	--resource_title_color: <?php echo $resource_title_color; ?>;
+	--resource_title_hover_color: <?php echo $resource_title_hover_color; ?>;
+	--resource_title_border_bottom_width: <?php echo $resource_title_border_bottom_width; ?>px;
+	--resource_title_border_bottom_color: <?php echo $resource_title_border_bottom_color; ?>;
+
+	--resource_content_font: <?php echo $resource_content_font; ?>;
+	--resource_content_color: <?php echo $resource_content_color; ?>;
+	--resource_content_hover_color: <?php echo $resource_content_hover_color; ?>;
+	
+	--resource_post_date_color: <?php echo $resource_post_date_color; ?>;
+	--resource_post_date_hover_color: <?php echo $resource_post_date_hover_color; ?>;
+	--resource_list_categories_color: <?php echo $resource_list_categories_color; ?>;
+	--resource_list_categories_hover_color: <?php echo $resource_list_categories_hover_color; ?>;
+
+	--resource_title_font_size: <?php echo $resource_title_font_size_use; ?>rem;
+	--resource_title_font_size_admin: <?php echo $resource_title_font_size; ?>px;
+	--resource_content_font_size: <?php echo $resource_content_font_size_use; ?>rem;
+	--resource_content_font_size_admin: <?php echo $resource_content_font_size; ?>px;
+	--resource_post_date_size: <?php echo $resource_post_date_size_use; ?>rem;
+	--resource_post_date_size_admin: <?php echo $resource_post_date_size; ?>px;
+	--resource_list_categories_size: <?php echo $resource_list_categories_size_use; ?>rem;
+	--resource_list_categories_size_admin: <?php echo $resource_list_categories_size; ?>px;
+
+	--resource_post_date_font: <?php echo $resource_post_date_font; ?>;
+	--resource_list_categories_font: <?php echo $resource_list_categories_font; ?>;
 }
 </style>

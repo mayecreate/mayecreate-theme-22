@@ -1,9 +1,9 @@
 <?php
-$news_options = get_field('news_options', 'option');
-if($news_options) { ?>
+$resource_options = get_field('resource_options', 'option');
+if($resource_options) { ?>
 
-        <?php $post_category = $news_options['post_page_block_category']; ?>
-        <?php $number_of_posts = $news_options['post_page_block_number_of_posts']; ?>
+        <?php $post_category = $resource_options['post_page_block_category']; ?>
+        <?php $number_of_posts = $resource_options['post_page_block_number_of_posts']; ?>
 
 <?php } ?>
 <?php $optional_title = esc_html(get_field("optional_title")); ?>
@@ -16,8 +16,18 @@ if($news_options) { ?>
 } ?>
 <?php if ($post_category) { 
 	$post_category = $post_category;
+	$taxonomy = 'taxonomy';
+	$resourcecategory = 'resourcecategory';
+	$field = 'field';
+	$ID = 'ID';
+	$terms = 'terms';
 } else {
 	$post_category = "";
+	$taxonomy = '';
+	$resourcecategory = '';
+	$field = '';
+	$ID = '';
+	$terms = '';
 } ?>
 <?php if ($load_more_text) { 
 	$load_more_text = $load_more_text;
@@ -41,15 +51,22 @@ if($news_options) { ?>
 	</div>
 <?php } ?>
 
-	<div class="row justify-content-center publication-list">
+	<div class="row justify-content-center resource-list">
 		<?php // args
 		$args = array(
 		'posts_per_page'	=> $number_of_posts,
 		'order'			=> 'ASC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
 		'orderby' => 'menu_order',
-		'post_type' => 'post',
-		'cat' => $post_category,
+		'post_type' => 'mc-resources',
 		'paged' => $paged,
+		'tax_query' => array(
+			'relation' => 'OR',
+				array (
+					$taxonomy  => $resourcecategory,
+					$field     => $ID,
+					$terms     => $post_category
+				)
+			)
 		); ?>
 
 		<?php // query
@@ -61,17 +78,17 @@ if($news_options) { ?>
 		$wp_query->the_post();
 
 		?>
-            <?php get_template_part('partials/loop','blog-page'); ?>
+            <?php get_template_part('partials/loop','resource-page'); ?>
 		<?php } // end the loop ?>
 		<!--Reset Query-->
 		<?php wp_reset_query();?>
 	</div>
     
 <?php if ($number_of_posts) { ?>
-	<div id="!"></span>
+	<div id="$"></span>
 	<div class="row">
 		<div class="col-md-12">
-			<a href="#!" class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" id="load-more"><?php echo $load_more_text; ?></a>
+			<a href="#$" class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" id="load-more-resource"><?php echo $load_more_text; ?></a>
 		</div>
     </div>
 <?php } ?>

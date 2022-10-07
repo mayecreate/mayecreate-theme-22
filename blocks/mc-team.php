@@ -14,7 +14,7 @@ if($team_options) { ?>
 <?php $title = esc_html(get_field("title", $post->ID)); ?>
 <?php $phone = esc_html(get_field("phone_number", $post->ID)); ?>
 <?php $email = esc_html(get_field("email", $post->ID)); ?>
-<?php $bio = esc_html(get_field("bio", $post->ID)); ?>
+<?php $bio = get_field("bio", $post->ID); ?>
 <?php $optional_outside_link = esc_html(get_field("optional_outside_link", $post->ID)); ?>
 <?php
 $image = get_field('headshot');

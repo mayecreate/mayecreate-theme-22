@@ -20,6 +20,7 @@ function mayecreate_id_column_content( $column, $id ) {
 
 function build_taxonomies() {
 	register_taxonomy( 'projectcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Project Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) ); 
+	register_taxonomy( 'resourcecategory', 'menu', array( 'hierarchical' => true, 'label' => 'Resource Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) ); 
 }
 add_action( 'init', 'build_taxonomies', 0 );  
 
@@ -43,20 +44,23 @@ function mayecreate_create_post_type() {
 			)
 		);	
 	if (in_array('projects', get_field('post_type_selector', 'option'))) {
+		$alt_project_name = get_field('alternate_name_for_projects', 'option');
+		if ($alt_project_name) { $alt_project_name = $alt_project_name; } else { $alt_project_name = "Projects"; }		
+		$alt_project_slug = str_replace(' ', '-', strtolower($alt_project_name));
 		// Register the "Project" custom post type if this is not needed, DELETE ME.
 		register_post_type( 'mc-projects',
 			array(
 				'labels' => array(
-					'name'              => __( 'Projects'),
-					'singular_name'     => __( 'Project' ),
-					'add_new'           => __( 'Add Project' ),
-					'add_new_item'      => __( 'Add New Project' ),
-					'edit_item'         => __( 'Edit Project' ),  
+					'name'              => __( $alt_project_name ),
+					'singular_name'     => __( $alt_project_name ),
+					'add_new'           => __( 'Add '.$alt_project_name.'' ),
+					'add_new_item'      => __( 'Add New '.$alt_project_name.'' ),
+					'edit_item'         => __( 'Edit '.$alt_project_name.'' ),  
 					
 				),
 			'public' => true,
 			'menu_position' => 10,
-			'rewrite' => array('slug' => 'project', 'with_front' => false),
+			'rewrite' => array('slug' => ''.$alt_project_slug.'', 'with_front' => false),
 			'supports' => array('title','thumbnail','revisions','editor'),
 			'menu_icon'         => 'dashicons-art',
 			'taxonomies' => array('projectcategory'),
@@ -66,22 +70,26 @@ function mayecreate_create_post_type() {
 		);
 	}
 	if (in_array('resources', get_field('post_type_selector', 'option'))) {
+		$alt_resources_name = get_field('alternate_name_for_resources', 'option');
+		if ($alt_resources_name) { $alt_resources_name = $alt_resources_name; } else { $alt_resources_name = "Resources"; }
+		$alt_resource_slug = str_replace(' ', '-', strtolower($alt_resources_name));
 		// Register the "Resources" custom post type if this is not needed, DELETE ME.
 		register_post_type( 'mc-resources',
 			array(
 				'labels' => array(
-					'name'              => __( 'Resources'),
-					'singular_name'     => __( 'Resource' ),
-					'add_new'           => __( 'Add Resource' ),
-					'add_new_item'      => __( 'Add New Resource' ),
-					'edit_item'         => __( 'Edit Resource' ),  
+					'name'              => __( $alt_resources_name ),
+					'singular_name'     => __( $alt_resources_name ),
+					'add_new'           => __( 'Add '.$alt_resources_name.'' ),
+					'add_new_item'      => __( 'Add New '.$alt_resources_name.'' ),
+					'edit_item'         => __( 'Edit '.$alt_resources_name.'' ),  
 					
 				),
 			'public' => true,
 			'menu_position' => 10,
-			'rewrite' => array('slug' => 'resource', 'with_front' => false),
+			'rewrite' => array('slug' => ''.$alt_resource_slug .'', 'with_front' => false),
 			'supports' => array('title','thumbnail','revisions','editor'),
 			'menu_icon'         => 'dashicons-format-aside',
+			'taxonomies' => array('resourcecategory'),
 			'show_in_rest' => true,
 			'has_archive' => true 
 			)

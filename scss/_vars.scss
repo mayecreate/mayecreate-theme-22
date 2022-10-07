@@ -228,6 +228,60 @@ $projects_list_categories_size_admin: var(--projects_list_categories_size_admin)
 $projects_post_date_font: var(--projects_post_date_font);
 $projects_list_categories_font: var(--projects_list_categories_font); 
 
+$resource_background_color: var(--resource_background_color);
+$resource_background_hover_color: var(--resource_background_hover_color);
+$resource_post_padding: var(--resource_post_padding);
+
+$resource_border_radius: var(--resource_border_radius);
+$resource_border_width: var(--resource_border_width);
+$resource_border_color: var(--resource_border_color);
+$resource_border_color_top: var(--resource_border_color_top);
+$resource_border_color_right: var(--resource_border_color_right);
+$resource_border_color_bottom: var(--resource_border_color_bottom);
+$resource_border_color_left: var(--resource_border_color_left);
+$resource_box_shadow_color: var(--resource_box_shadow_color);
+
+$resource_featured_image_border_radius: var(--resource_featured_image_border_radius);
+$resource_featured_image_border_width: var(--resource_featured_image_border_width);
+$resource_featured_image_border_color: var(--resource_featured_image_border_color);
+$resource_featured_image_overlay: var(--resource_featured_image_overlay);
+$resource_featured_image_border_color_top: var(--resource_featured_image_border_color_top);
+$resource_featured_image_border_color_right: var(--resource_featured_image_border_color_right);
+$resource_featured_image_border_color_bottom: var(--resource_featured_image_border_color_bottom);
+$resource_featured_image_border_color_left: var(--resource_featured_image_border_color_left);
+
+$resource_button_text_color: var(--resource_button_text_color);
+$resource_button_background_color: var(--resource_button_background_color);
+$resource_button_text_color_hover: var(--resource_button_text_color_hover);
+$resource_button_background_color_hover: var(--resource_button_background_color_hover);
+
+$resource_title_font: var(--resource_title_font);
+$resource_title_color: var(--resource_title_color);
+$resource_title_hover_color: var(--resource_title_hover_color);
+$resource_title_border_bottom_width: var(--resource_title_border_bottom_width);
+$resource_title_border_bottom_color: var(--resource_title_border_bottom_color);
+
+$resource_content_font: var(--resource_content_font);
+$resource_content_color: var(--resource_content_color);
+$resource_content_hover_color: var(--resource_content_hover_color);
+
+$resource_post_date_color: var(--resource_post_date_color);
+$resource_post_date_hover_color: var(--resource_post_date_hover_color);
+$resource_list_categories_color: var(--resource_list_categories_color);
+$resource_list_categories_hover_color: var(--resource_list_categories_hover_color); 
+
+$resource_title_font_size: var(--resource_title_font_size);
+$resource_title_font_size_admin: var(--resource_title_font_size_admin);
+$resource_content_font_size: var(--resource_content_font_size);
+$resource_content_font_size_admin: var(--resource_content_font_size_admin);
+$resource_post_date_size: var(--resource_post_date_size);
+$resource_post_date_size_admin: var(--resource_post_date_size_admin);
+$resource_list_categories_size: var(--resource_list_categories_size);
+$resource_list_categories_size_admin: var(--resource_list_categories_size_admin);
+
+$resource_post_date_font: var(--resource_post_date_font);
+$resource_list_categories_font: var(--resource_list_categories_font); 
+
 $container_width: var(--container_width); 
 $home_container_width: var(--home_container_width); 
 $headerfooter_container_width: var(--headerfooter_container_width); 

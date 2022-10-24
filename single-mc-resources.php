@@ -31,6 +31,7 @@ if($resource_options) { ?>
 	$featured_image_placement_class_1 = "col-12";
 	$featured_image_placement_class_2 = "col-12";
 } ?>
+<?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 
         <div class="row" style="max-width: <?php echo $single_page_content_width; ?>">
     
@@ -57,6 +58,9 @@ if($resource_options) { ?>
                         <?php } ?>
                     
                         <?php the_content(); ?>
+                        <?php if ($alternate_link) { ?>
+                            <a href="<?php echo $alternate_link; ?>" target="_blank" class="btn-mayecreate">More Information</a>
+                        <?php } ?>
                     </div>
                 
                 <?php endwhile; ?>

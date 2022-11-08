@@ -108,6 +108,7 @@ echo $ga_tag;
         <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
+			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
@@ -122,6 +123,7 @@ echo $ga_tag;
                         </div>
                     </div>
                 </div>
+			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
@@ -132,6 +134,7 @@ echo $ga_tag;
 						<h1 class="entry-title">Search Results for: <span><?php  echo get_search_query(); ?></span></h1>
 					</div>
 				</div>
+			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
@@ -182,21 +185,26 @@ echo $ga_tag;
 						</h1>
 					</div>
 				</div>
+			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
 			</div>
 		</div>	
 <?php } else { ?>
 	
 	<?php if (has_post_thumbnail() ) { ?>
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
+	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
               <?php mayecreate_page_title();?>
+			  <h2 class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></h2>
             </div>
         </div>
 	<?php } else { ?>
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
+			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
     <?php } ?>

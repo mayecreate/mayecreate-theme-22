@@ -1,6 +1,20 @@
 <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-
+<?php $slide_content_text_alignment = get_field('slide_content_text_alignment', 'option'); ?>
+<?php if ($slide_content_text_alignment == "Center") { 
+    $slide_content_text_alignment_class = "center";
+} elseif ($slide_content_text_alignment == "Right") { 
+    $slide_content_text_alignment_class = "right";
+} else {
+    $slide_content_text_alignment_class = "";
+} ?>
+<?php $slide_content_placement = get_field('slide_content_placement', 'option'); ?>
+<?php if ($slide_content_placement == "Bottom") { 
+    $slide_content_placement_class = "bottom_content";
+} elseif ($slide_content_placement == "Top") { 
+    $slide_content_placement_class = "top_content";
+} else {
+    $slide_content_placement_class = "center_content";
+} ?>
 <?php
 		
 		/* If Position Indicators are to be displayed, display them
@@ -35,7 +49,7 @@
 		?>
 		
         <!-- Carousel items -->
-        <div class="carousel-inner">
+        <div class="carousel-inner <?php echo $slide_content_placement_class; ?>">
     		
   			<?php $the_query = new WP_Query(array(
 				'post_type' => 'carousel_slides',
@@ -68,7 +82,7 @@
 							echo '<a href="' .$slideURL. '">';
 						}
 							if ($slideTitle || $slideText) {
-								echo '<div class="slideDesc"><div class="slideDesc_inner">';
+								echo '<div class="slideDesc"><div class="slideDesc_inner '. $slide_content_text_alignment_class .'">';
 									if($slideTitle){
 										echo '<h2 class="slideTitle">' .$slideTitle. '</h2>';
 									}

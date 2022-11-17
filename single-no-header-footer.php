@@ -1,3 +1,9 @@
+<?php
+/*
+ * Template Name: No Header or Footer
+ * Template Post Type: post
+ */
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -71,55 +77,13 @@ echo $ga_tag;
 <?php global $containerWidth; ?> 
 
 <body <?php body_class(); ?>>
-
-<div id="pagewrapper">
-<a id="top"></a>
-<?php $navbar_style_fixed = ('fixed' == get_field('navbar_style', 'option')); ?>
-<?php if ($navbar_style_fixed) {
-	$navbar_style = "fixed";
-} else {
-	$navbar_style = "static";
-} ?>
-<div id="navigation" class="<?php echo $navbar_style; ?>">
-	<?php get_template_part('partials/nav'); ?>	
-</div>	
-
-<?php if (is_front_page()) { ?>
-		<div id="homeContentWrap">
-<?php } else { ?>
-		<div id="contentwrap">
-<?php } ?>	
-
-
-<div class="clear"></div>
 <?php $default_header_image = get_field('default_header_image', 'option'); ?>
 <?php if ($default_header_image) {
 	$default_header_image = $default_header_image;
 } else {
 	$default_header_image = get_bloginfo('url') .'/wp-content/themes/mayecreate-theme-22/img/default_header.jpg';
 } ?>
-<?php  if (is_front_page()){ ?>
-
-	<div id="homefeatured">
-		<?php $homepage_header_type = get_field('homepage_header_type', 'option'); ?>
-		<?php $video_embed_link = get_field('video_embed_link', 'option'); ?>
-		<?php $video_height = get_field('video_height', 'option'); ?>
-		<?php if ($homepage_header_type == "Video") { ?>
-			<div class="video_outer_outer" style="position:relative; overflow:hidden;height:<?php echo $video_height; ?>vh;width:100%;z-index:1;">
-				<div style="position:absolute; overflow:hidden;height: 100%;width:100%;z-index:1;" class="video_outer_wrapper">
-					<div id="video_outer" style="position:absolute;width:100%;height:100%;">
-						<div id="video_wrapper">
-							<div class='embed-container'><iframe id="slider_video" src='<?php echo $video_embed_link; ?>' allow="autoplay; fullscreen" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<?php } else {
-			get_template_part('partials/content','carouselPosts');
-		} ?>
-    </div><!-- homefeatured -->
-    
-<?php } elseif (is_home()) { ?>
+<?php if (is_home()) { ?>
         <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
@@ -225,13 +189,15 @@ echo $ga_tag;
     <?php } ?>
            
 <?php } ?>
-
-<main id="content">
-<div id="page"> <!--Begin Page -->
 <div class="pagebreak_fix">
-<div class="hfeed site <?php echo $containerWidth; ?>">
+    <div class="hfeed site container">   
+		<div class="row">
+		    <?php get_template_part('partials/loop','standard'); ?>
+		</div>
+	</div><!-- / hfeed site container -->
+</div><!-- / page -->
+<?php wp_footer(); ?>
 
-<?php $show_breadcrumb_nav = ('yes' == get_field('show_breadcrumb_nav', 'option')); ?>
-<?php if ($show_breadcrumb_nav) {
-	mayecreate_breadcrumbs();
-} ?>
+<?php mayecreate_DBD(); ?>
+</body>
+</html>

@@ -851,6 +851,74 @@
                 "return_format": "string"
             },
             {
+                "key": "field_6373fc884af23",
+                "label": "Additional Theme Color 1",
+                "name": "additional_theme_color_1",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6373fcb74af24",
+                "label": "Additional Theme Color 2",
+                "name": "additional_theme_color_2",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6373fcba4af25",
+                "label": "Additional Theme Color 3",
+                "name": "additional_theme_color_3",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6373fcbc4af26",
+                "label": "Additional Theme Color 4",
+                "name": "additional_theme_color_4",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_620eb75691f80",
                 "label": "Link Color",
                 "name": "link_color",
@@ -885,8 +953,42 @@
                 "return_format": "string"
             },
             {
+                "key": "field_6375062179e99",
+                "label": "Link Background Color",
+                "name": "link_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6375063579e9a",
+                "label": "Link Background Color Hover",
+                "name": "link_background_color_hover",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
                 "key": "field_620ec7f6a0349",
-                "label": "Button Color",
+                "label": "Button Text Color",
                 "name": "button_color",
                 "type": "color_picker",
                 "instructions": "This is the button text color.",
@@ -919,8 +1021,32 @@
                 "return_format": "string"
             },
             {
+                "key": "field_637516dff6860",
+                "label": "Button Background Image",
+                "name": "button_background_image",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
                 "key": "field_620ec81aa034b",
-                "label": "Button Hover Color",
+                "label": "Button Text Hover Color",
                 "name": "button_hover_color",
                 "type": "color_picker",
                 "instructions": "This is the button text color on hover.",
@@ -951,6 +1077,30 @@
                 "default_value": "rgba(102,102,102,1)",
                 "enable_opacity": 1,
                 "return_format": "string"
+            },
+            {
+                "key": "field_63751776f6861",
+                "label": "Button Hover Background Image",
+                "name": "button_hover_background_image",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
             },
             {
                 "key": "field_620ecca22e5ff",
@@ -1055,6 +1205,40 @@
                 "return_format": "string"
             },
             {
+                "key": "field_63750d43a0afe",
+                "label": "Pagebreak Link Background Color",
+                "name": "pagebreak_link_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_63750d58a0aff",
+                "label": "Pagebreak Link Background Color Hover",
+                "name": "pagebreak_link_background_color_hover",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
                 "key": "field_62195307f2afd",
                 "label": "Pagebreak Button Text Color",
                 "name": "pagebreak_button_text_color",
@@ -1089,6 +1273,30 @@
                 "return_format": "string"
             },
             {
+                "key": "field_63753f9e335aa",
+                "label": "Pagebreak Button Background Image",
+                "name": "pagebreak_button_background_image",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
                 "key": "field_6219531ff2afe",
                 "label": "Pagebreak Button Text Hover Color",
                 "name": "pagebreak_button_text_hover_color",
@@ -1121,6 +1329,30 @@
                 "default_value": "",
                 "enable_opacity": 0,
                 "return_format": "string"
+            },
+            {
+                "key": "field_63753fa9335ab",
+                "label": "Pagebreak Button Hover Background Image",
+                "name": "pagebreak_button_hover_background_image",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
             },
             {
                 "key": "field_628beda5ddfd1",
@@ -1234,6 +1466,236 @@
                 "max_height": "",
                 "max_size": "",
                 "mime_types": ""
+            },
+            {
+                "key": "field_6375675ec4ce9",
+                "label": "Top Navbar Padding",
+                "name": "top_navbar_padding",
+                "type": "number",
+                "instructions": "This is optional top and bottom padding on the top navbar.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 15,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_637560f3852ea",
+                "label": "Top Nav Link Padding - Top",
+                "name": "top_nav_link_padding_top",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375618f852eb",
+                "label": "Top Nav Link Padding - Bottom",
+                "name": "top_nav_link_padding_bottom",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375634516323",
+                "label": "Top Nav - Tab Style Navigation",
+                "name": "top_nav_tab_style_navigation",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_63756790c4cea",
+                "label": "Main Navbar Padding",
+                "name": "main_navbar_padding",
+                "type": "number",
+                "instructions": "This is optional top and bottom padding on the top navbar.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 15,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375619c852ec",
+                "label": "Main Nav Link Padding - Top",
+                "name": "main_nav_link_padding_top",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_637561a9852ed",
+                "label": "Main Nav Link Padding - Bottom",
+                "name": "main_nav_link_padding_bottom",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375639e16324",
+                "label": "Main Nav - Tab Style Navigation",
+                "name": "main_nav_tab_style_navigation",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_63765c6e2b8cb",
+                "label": "Navigation Overlapping the Content",
+                "name": "navigation_overlapping_the_content",
+                "type": "radio",
+                "instructions": "If this option is set to YES, the content will move up under the nav. This will look weird if the nav doesn't have a transparent background.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
             }
         ],
         "location": [
@@ -1294,6 +1756,23 @@
                 "return_format": "string"
             },
             {
+                "key": "field_63755f78903e8",
+                "label": "Top Nav Link Background Color",
+                "name": "top_nav_link_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_621575eb39da2",
                 "label": "Top Nav Link Hover Color",
                 "name": "top_nav_link_hover_color",
@@ -1307,6 +1786,23 @@
                     "id": ""
                 },
                 "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_63755f86903e9",
+                "label": "Top Nav Link Background Hover Color",
+                "name": "top_nav_link_background_hover_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "enable_opacity": 0,
                 "return_format": "string"
             },
@@ -1345,6 +1841,23 @@
                 "return_format": "string"
             },
             {
+                "key": "field_63755ecdaf007",
+                "label": "Main Nav Link Background Color",
+                "name": "main_nav_link_background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_621576487a82b",
                 "label": "Main Nav Link Hover Color",
                 "name": "main_nav_link_hover_color",
@@ -1358,6 +1871,23 @@
                     "id": ""
                 },
                 "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_63755ee7af008",
+                "label": "Main Nav Link Background Hover Color",
+                "name": "main_nav_link_background_hover_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "enable_opacity": 0,
                 "return_format": "string"
             }
@@ -1804,6 +2334,31 @@
                 "default_value": "#6c9d30",
                 "enable_opacity": 0,
                 "return_format": "string"
+            },
+            {
+                "key": "field_63751265116c5",
+                "label": "Credits Text Alignment",
+                "name": "credits_text_alignment",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Left": "Left",
+                    "Right": "Right"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "layout": "vertical"
             }
         ],
         "location": [
@@ -7696,6 +8251,67 @@
         "title": "Theme Options - Carousel",
         "fields": [
             {
+                "key": "field_63769aa6c79ed",
+                "label": "Homepage Header Type",
+                "name": "homepage_header_type",
+                "type": "radio",
+                "instructions": "NOTE: Selecting \"Video\" will make all the slider options have no effect on the site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Slider": "Slider",
+                    "Video": "Video"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_63769b2bc79ee",
+                "label": "Video Embed Link",
+                "name": "video_embed_link",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_63769b8dc79ef",
+                "label": "Video Height",
+                "name": "video_height",
+                "type": "number",
+                "instructions": "This is a percentage of the screen you want the video height to be (1-100)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": 1,
+                "max": 100,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
                 "key": "field_620e9d27e1547",
                 "label": "Show Indicator Dots?",
                 "name": "show_indicator_dots",
@@ -7744,6 +8360,31 @@
                 "save_other_choice": 0
             },
             {
+                "key": "field_637679d12b2af",
+                "label": "Slide Navigation Background Color",
+                "name": "slide_navigation_background_color",
+                "type": "color_picker",
+                "instructions": "These will default to the primary site color if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e9dd3f81b4",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
                 "key": "field_620eaa20650d5",
                 "label": "Slide Linking",
                 "name": "slide_linking",
@@ -7767,6 +8408,187 @@
                 "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_637691e365443",
+                "label": "Slide Content Placement",
+                "name": "slide_content_placement",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Top": "Top",
+                    "Bottom": "Bottom"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_6376735c089fb",
+                "label": "Slide Content Text Alignment",
+                "name": "slide_content_text_alignment",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Left": "Left",
+                    "Right": "Right"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_637673b0089fc",
+                "label": "Slide Content Overlay Color",
+                "name": "slide_content_overlay_color",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, this color will default to the secondary color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_637673db089fd",
+                "label": "Slide Header Font",
+                "name": "slide_header_font",
+                "type": "text",
+                "instructions": "If nothing is filled in here. The font will default to the H2 font.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767408089fe",
+                "label": "Slide Header Size",
+                "name": "slide_header_size",
+                "type": "number",
+                "instructions": "If nothing is filled in here. The font size will default to the H2 font size. This measurement is in px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767647122e1",
+                "label": "Slide Header Color",
+                "name": "slide_header_color",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, the color will default to white.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6376743c089ff",
+                "label": "Slide Content Font",
+                "name": "slide_content_font",
+                "type": "text",
+                "instructions": "If nothing is filled in here. The font will default to the main body font.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6376745708a00",
+                "label": "Slide Content Size",
+                "name": "slide_content_size",
+                "type": "number",
+                "instructions": "If nothing is filled in here. The font size will default to the body font size. This measurement is in px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767689122e2",
+                "label": "Slide Content Color",
+                "name": "slide_content_color",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, the color will default to white.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
             }
         ],
         "location": [
@@ -8842,11 +9664,11 @@
                     "Left Image": "Left Image",
                     "Right Image": "Right Image"
                 },
+                "default_value": "",
+                "return_format": "value",
                 "allow_null": 0,
                 "other_choice": 0,
-                "default_value": "",
                 "layout": "vertical",
-                "return_format": "value",
                 "save_other_choice": 0
             },
             {
@@ -8895,7 +9717,7 @@
                 "label": "Additional Pagebreak Classes",
                 "name": "additional_pagebreak_classes",
                 "type": "radio",
-                "instructions": "",
+                "instructions": "NOTE: the overlap class only works in conjunction with left or right image page break style.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -8904,16 +9726,46 @@
                     "id": ""
                 },
                 "choices": {
+                    "overlap": "Overlap",
                     "class": "Class Goes Here",
                     "additional": "Additional Class Here",
                     "hide-background-tablet": "Hide Background On Tablet and Smaller"
                 },
+                "default_value": "",
+                "return_format": "value",
                 "allow_null": 1,
                 "other_choice": 0,
-                "default_value": "",
                 "layout": "vertical",
-                "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_6375352d26d6f",
+                "label": "Image Border Radius",
+                "name": "image_border_radius",
+                "type": "number",
+                "instructions": "This is a measurement in px of the border radius of the corners of the pagebreak image.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5d30b3636f7a5",
+                            "operator": "==",
+                            "value": "overlap"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_621958005cac3",
@@ -8938,6 +9790,122 @@
                 "layout": "horizontal",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_63752286cc0e5",
+                "label": "Pagebreak Container Option",
+                "name": "container_option",
+                "type": "radio",
+                "instructions": "Should the pagebreak have a container in it?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_637522b4cc0e6",
+                "label": "Border-Top Width",
+                "name": "border-top_width",
+                "type": "number",
+                "instructions": "This is a number in PX",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": 0,
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_637522edcc0e8",
+                "label": "Border-Top Color",
+                "name": "border-top_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_637522b4cc0e6",
+                            "operator": ">",
+                            "value": "0"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_637522d5cc0e7",
+                "label": "Border-Bottom Width",
+                "name": "border-bottom_width",
+                "type": "number",
+                "instructions": "This is a number in PX",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": 0,
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375230ccc0e9",
+                "label": "Border-Bottom Color",
+                "name": "border-bottom_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_637522d5cc0e7",
+                            "operator": ">",
+                            "value": "0"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
             }
         ],
         "location": [

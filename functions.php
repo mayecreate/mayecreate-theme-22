@@ -153,13 +153,13 @@ function jsforwpblocks_editor_scripts() {
 	
   $blockPath = '/js/mayecreate_scripts.js';
   //$editorStylePath = '/style.css'; 
-	
   // Enqueue the bundled block JS file
   wp_enqueue_script( 'mc-block-editor-script', get_template_directory_uri() . '/js/mayecreate_scripts.js', false, '1.0', 'all' );
 
 }
 // Hook scripts function into block editor hook
 add_action( 'enqueue_block_editor_assets', 'jsforwpblocks_editor_scripts' );
+
 
 function editor_style_setup() {
 	// Add support for editor styles.
@@ -171,6 +171,14 @@ add_action( 'after_setup_theme', 'editor_style_setup' );
 
 $primary_site_color = (get_field('primary_site_color', 'option'));
 $secondary_color = (get_field('secondary_color', 'option'));
+$additional_theme_color_1 = (get_field('additional_theme_color_1', 'option'));
+$additional_theme_color_2 = (get_field('additional_theme_color_2', 'option'));
+$additional_theme_color_3 = (get_field('additional_theme_color_3', 'option'));
+$additional_theme_color_4 = (get_field('additional_theme_color_4', 'option'));
+if ($additional_theme_color_1) { $additional_theme_color_1 = $additional_theme_color_1; } else { $additional_theme_color_1 = "#fff"; }
+if ($additional_theme_color_2) { $additional_theme_color_2 = $additional_theme_color_2; } else { $additional_theme_color_2 = "#fff"; }
+if ($additional_theme_color_3) { $additional_theme_color_3 = $additional_theme_color_3; } else { $additional_theme_color_3 = "#fff"; }
+if ($additional_theme_color_4) { $additional_theme_color_4 = $additional_theme_color_4; } else { $additional_theme_color_4 = "#fff"; }
 
 add_theme_support( 'editor-color-palette', array(
 	array(
@@ -202,6 +210,26 @@ add_theme_support( 'editor-color-palette', array(
 		'name'	=> __( 'Secondary Site Color', 'mayecreate-theme' ),
 		'slug'	=> 'secondary',
 		'color'	=> $secondary_color,
+	),
+	array(
+		'name'	=> __( 'Additional Theme Color 1', 'mayecreate-theme' ),
+		'slug'	=> 'theme-color-1',
+		'color'	=> $additional_theme_color_1,
+	),
+	array(
+		'name'	=> __( 'Additional Theme Color 2', 'mayecreate-theme' ),
+		'slug'	=> 'theme-color-2',
+		'color'	=> $additional_theme_color_2,
+	),
+	array(
+		'name'	=> __( 'Additional Theme Color 3', 'mayecreate-theme' ),
+		'slug'	=> 'theme-color-3',
+		'color'	=> $additional_theme_color_3,
+	),
+	array(
+		'name'	=> __( 'Additional Theme Color 4', 'mayecreate-theme' ),
+		'slug'	=> 'theme-color-4',
+		'color'	=> $additional_theme_color_4,
 	),
 	array(
 		'name'	=> __( 'Hot Pink Error', 'mayecreate-theme' ),
@@ -496,3 +524,31 @@ exit;
 }
 add_action('wp_ajax_mc_load_more_resource', 'mc_load_more_resource'); 
 add_action('wp_ajax_nopriv_mc_load_more_resource', 'mc_load_more_resource');
+
+function mc_optional_nav_overlap() {
+$navigation_overlapping_the_content = get_field('navigation_overlapping_the_content','option');
+
+if ($navigation_overlapping_the_content == 'no') { ?>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) { 
+		//initial page load
+		$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+		$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')}); 
+		//recalculate on scroll
+		$(window).scroll(function() {
+			setTimeout(function() {
+				if($(this).scrollTop() >= 175){} else {
+					$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+					$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+				}     
+			}, 50); 
+		});
+		//recalculate on screen re-size
+		$(window).resize(function() {
+			$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});	
+			$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+		}).resize();
+	});
+	</script>
+<?php }
+}

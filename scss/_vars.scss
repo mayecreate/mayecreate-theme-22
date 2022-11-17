@@ -45,17 +45,37 @@ $grey: #cccccc;
 $dark_grey: #666666;
 $base_color: var(--primary_site_color); 
 $secondary_color: var(--secondary_color);
+$additional_theme_color_1: var(--additional_theme_color_1);
+$additional_theme_color_2: var(--additional_theme_color_2);
+$additional_theme_color_3: var(--additional_theme_color_3);
+$additional_theme_color_4: var(--additional_theme_color_4);
 
 $link_color: var(--link_color);
 $link_hover_color: var(--link_hover_color);
+$link_background_color: var(--link_background_color);
+$link_background_color_hover: var(--link_background_color_hover);
 
+$main_navbar_padding: var(--main_navbar_padding); 
 $main_nav_background_color: var(--main_nav_background_color); 
 $main_nav_link_color: var(--main_nav_link_color);
 $main_nav_link_hover_color: var(--main_nav_link_hover_color);
+$main_nav_link_background_color: var(--main_nav_link_background_color);
+$main_nav_link_background_hover_color: var(--main_nav_link_background_hover_color);
+$main_nav_dropdown_background_color: var(--main_nav_dropdown_background_color);
+$main_nav_link_padding_top: var(--main_nav_link_padding_top);
+$main_nav_link_padding_bottom: var(--main_nav_link_padding_bottom);
+$main_nav_link_margin_bottom: var(--main_nav_link_margin_bottom);
 
+$top_navbar_padding: var(--top_navbar_padding);
 $top_nav_background_color: var(--top_nav_background_color); 
 $top_nav_link_color: var(--top_nav_link_color);
 $top_nav_link_hover_color: var(--top_nav_link_hover_color);
+$top_nav_link_background_color: var(--top_nav_link_background_color);
+$top_nav_link_background_hover_color: var(--top_nav_link_background_hover_color);
+$top_nav_dropdown_background_color: var(--top_nav_dropdown_background_color);
+$top_nav_link_padding_top: var(--top_nav_link_padding_top);
+$top_nav_link_padding_bottom: var(--top_nav_link_padding_bottom);
+$top_nav_link_margin_bottom: var(--top_nav_link_margin_bottom);
 
 $footer_background_color: var(--footer_background_color); 
 $footer_text_color: var(--footer_text_color);
@@ -71,6 +91,8 @@ $button_color: var(--button_color);
 $button_background_color: var(--button_background_color);
 $button_hover_color: var(--button_hover_color);
 $button_hover_background_color: var(--button_hover_background_color);
+$button_background_image: var(--button_background_image);
+$button_hover_background_image: var(--button_hover_background_image);
 
 $divider_color: var(--divider_color);
 
@@ -79,11 +101,16 @@ $pagebreak_heading_color: var(--pagebreak_heading_color);
 $pagebreak_text_color: var(--pagebreak_text_color);
 $pagebreak_link_color: var(--pagebreak_link_color);
 $pagebreak_link_hover_color: var(--pagebreak_link_hover_color);
+$pagebreak_link_background_color: var(--pagebreak_link_background_color);
+$pagebreak_link_background_color_hover: var(--pagebreak_link_background_color_hover);
+
 $pagebreak_button_text_color: var(--pagebreak_button_text_color);
 $pagebreak_button_background_color: var(--pagebreak_button_background_color);
 $pagebreak_button_text_hover_color: var(--pagebreak_button_text_hover_color);
 $pagebreak_button_background_hover_color: var(--pagebreak_button_background_hover_color);
 $pagebreak_background_attachment: var(--pagebreak_background_attachment);
+$pagebreak_button_background_image: var(--pagebreak_button_background_image);
+$pagebreak_button_hover_background_image: var(--pagebreak_button_hover_background_image);
 
 $ul_li_bullet: var(--ul_li_bullet);
 
@@ -285,3 +312,14 @@ $resource_list_categories_font: var(--resource_list_categories_font);
 $container_width: var(--container_width); 
 $home_container_width: var(--home_container_width); 
 $headerfooter_container_width: var(--headerfooter_container_width); 
+
+$slide_content_overlay_color: var(--slide_content_overlay_color);
+$slide_header_font: var(--slide_header_font);
+$slide_header_size_admin: var(--slide_header_size);
+$slide_header_size: var(--slide_header_size);
+$slide_content_font: var(--slide_content_font);
+$slide_content_size_admin: var(--slide_content_size);
+$slide_content_size: var(--slide_content_size); 
+$slide_header_color: var(--slide_header_color);
+$slide_content_color: var(--slide_content_color);
+$slide_navigation_background_color: var(--slide_navigation_background_color);

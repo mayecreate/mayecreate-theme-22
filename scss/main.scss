@@ -19,6 +19,10 @@ body {
 	max-width: vars.$container_width;
 	width: 90%; 
 }
+.no-container {
+	max-width: 100% !important;
+	overflow-x: hidden !important;
+}
 .container.container-home {
 	max-width: vars.$home_container_width;
 }
@@ -100,7 +104,9 @@ iframe {
 	padding-bottom: 0 !important;
 	margin-bottom: 0 !important;
 } 
-
+.caps {
+	text-transform: uppercase !important;
+}
 
 /* PRINT STYLE SHEET
 ==========================================	*/
@@ -166,6 +172,7 @@ form {
 a, a:link, a:visited {
 	color: vars.$link_color;
 	text-decoration:none; 
+	background: vars.$link_background_color;
 	transition: all 0.14s ease-in-out;
 	-moz-transition: all 0.14s ease-in-out;
 	-o-transition: all 0.14s ease-in-out;
@@ -173,6 +180,7 @@ a, a:link, a:visited {
 }
 a:hover, a:active, a:focus{
 	color: vars.$link_hover_color;
+	background: vars.$link_background_color_hover;
 	text-decoration:none; /* change to none if you don't want links to be underlined when hovered */
 }
 
@@ -263,6 +271,18 @@ p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-b
 .has-secondary-color {
 	color: vars.$secondary_color;
 }
+.has-theme-color-1-color {
+	color: vars.$additional_theme_color_1;
+}
+.has-theme-color-2-color {
+	color: vars.$additional_theme_color_2;
+}
+.has-theme-color-3-color {
+	color: vars.$additional_theme_color_3;
+}
+.has-theme-color-4-color {
+	color: vars.$additional_theme_color_4;
+}
 .has-black-color {
 	color: vars.$black;
 }
@@ -277,6 +297,42 @@ p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-b
 }
 .has-hotpink-color {
 	color: #f542e6;
+}
+
+/* BACKGROUNDS
+==========================================  */
+.has-primary-background-color {
+	background: vars.$base_color;
+}
+.has-secondary-background-color {
+	background: vars.$secondary_color;
+}
+.has-theme-color-1-background-color {
+	background: vars.$additional_theme_color_1;
+}
+.has-theme-color-2-background-color {
+	background: vars.$additional_theme_color_2;
+}
+.has-theme-color-3-background-color {
+	background: vars.$additional_theme_color_3;
+}
+.has-theme-color-4-background-color {
+	background: vars.$additional_theme_color_4;
+}
+.has-black-background-color {
+	background: vars.$black;
+}
+.has-white-background-color {
+	background: vars.$white;
+}
+.has-grey-background-color {
+	background: vars.$grey;
+}
+.has-dark-grey-background-color {
+	background: vars.$dark_grey;
+}
+.has-hotpink-background-color {
+	background: #f542e6;
 }
 
 /* TYPOGRAPHY: LIST ITEMS
@@ -308,27 +364,31 @@ ul li {
 /* BUTTONS: Styles for Custom Button Block
 ==========================================  */
 .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
-	background: vars.$button_background_color;
+	background: vars.$button_background_image;
+	background-color: vars.$button_background_color;
+	background-size: 100% 100%;
 	border-radius: 0;
-	border: 1px solid vars.$button_background_color;
+	border: 0 none;
 	display: block;
-	padding: 15px;
+	padding: 25px;
 	margin:0 auto 20px auto;
 	text-align: center;
 	line-height: 120%;
 	height: auto;
 	cursor: pointer;
-	color:  vars.$button_color;
-	outline: none;
+	color:  vars.$button_color; 
+	outline: none; 
 	width: 100%;
 }
 .wp-block-button.aligncenter {
 	display: table;
 }
 a.btn-mayecreate:hover, a.btn-mayecreate:active, a.btn-mayecreate:focus, .wp-block-button a:hover, .wp-block-button a:active, .btn-mayecreate:hover {
-	background: vars.$button_hover_background_color;
-	border: 1px solid vars.$button_hover_background_color;
-	color: vars.$button_hover_color;
+	background: vars.$button_hover_background_image;
+	background-color: vars.$button_hover_background_color;
+	background-size: 100% 100%;
+	border: 0 none;
+	color: vars.$button_hover_color; 
 	outline: none;
 }
 .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
@@ -344,8 +404,7 @@ span.btn-mayecreate {
 #branding-container {
 	margin: 0;
 	margin-left: 4%;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 0;
 	width: 70%;
 	max-width: 200px;
 }
@@ -353,6 +412,7 @@ span.btn-mayecreate {
 	text-transform: uppercase;
 	font-size: 20px;
 	color: vars.$base_color;
+	background: none;
 }
 #branding-container a.brand img.site-logo {
 	display: block;
@@ -422,28 +482,42 @@ div#homefeatured .carousel-inner>.item>a>img, div#homefeatured .carousel-inner>.
 div#homefeatured .slideDesc {
 	position: absolute; 
 	z-index: 4000;
-	top:0;
-	bottom: 0;
 	margin: auto;
 	height: 200px;
 	width: 100%;
-	text-align: center;
 	padding: 50px 0;
-	background: rgba(0,0,0,.25); 
+	background: vars.$slide_content_overlay_color; 
 	transition: all 0.14s ease-in-out;
 	-moz-transition: all 0.14s ease-in-out;
 	-o-transition: all 0.14s ease-in-out;
 	-ms-transition: all 0.14s ease-in-out;
 }
+div#homefeatured .center_content .slideDesc {
+	top: 0;
+	bottom: 0;
+}
+div#homefeatured .top_content .slideDesc {
+	top: 0;
+}
+div#homefeatured .bottom_content .slideDesc {
+	bottom: 0;
+}
+div#homefeatured .slideDesc .slideDesc_inner {
+	margin: 0 auto;
+	max-width: calc(vars.$container_width - 100px);
+	width: 98%;
+} 
 div#homefeatured .slideDesc .slideTitle {
 	display: block;
-	font-size: 4.5rem;
-	color: vars.$white;
+	font-family: vars.$slide_header_font;
+	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$slide_header_size);
+	color: vars.$slide_header_color; 
 }
 div#homefeatured .slideDesc .slideText {
 	display: block;
-	font-size: 2rem;
-	color: vars.$white;
+	font-family: vars.$slide_content_font;
+	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$slide_content_size);
+	color: vars.$slide_content_color; 
 }			
 div#homefeatured .slideDesc .btn.btn-mayecreate {
 	margin-top: 5vh;
@@ -455,8 +529,8 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	height: 40px;
 	padding: 5px;
 	border-radius: 50%;
-	background-color: vars.$secondary_color;
-	border: 5px solid vars.$secondary_color; 
+	background-color: vars.$slide_navigation_background_color;
+	border: 5px solid vars.$slide_navigation_background_color; 
 }
 .carousel-inner .item {
 	-webkit-transition-property: opacity;
@@ -483,6 +557,17 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 .carousel-control {
 	z-index: 2;
 }
+#video_wrapper iframe {
+    box-sizing: border-box;
+    height: 56.25vw;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    width: 177.77777778vh;
+}
 
 
 /* NAVIGATION
@@ -492,10 +577,12 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	position: relative;
     z-index: 9999;
 	background: vars.$top_nav_background_color;
+	padding: vars.$top_navbar_padding 0;
 }
 #navbarBottom {
 	display: block;
 	background: vars.$main_nav_background_color;
+	padding: vars.$main_navbar_padding 0;
 }
 #main_nav {
 	display: none;
@@ -690,7 +777,7 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	z-index: 100;
 	position: absolute;
 	width: 100%;
-	background: vars.$white;
+	background: none;
 }
 #navigation.affix {
 	/*animation: affixFadeIn 2s  ease-in;
@@ -728,7 +815,7 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 
 /* CONTENT SECTIONS
 ==========================================	*/
-#homeContentWrap, #contentwrap{
+body #homeContentWrap, body #contentwrap{
 	min-height: 500px;
 }
 #contentWrap, #page {
@@ -832,6 +919,9 @@ ul.archiveYearList .archive-sub-menu li a{
 
 /* FOOTER
 ==========================================  */
+#branding-container-footer a {
+	background: none;
+}
 footer.site-footer {
 	background-color: vars.$footer_background_color;
 	padding-top: 30px;
@@ -846,12 +936,12 @@ footer.site-footer p {
 }
 footer.site-footer a:link, footer.site-footer a:visited {
 	color: vars.$footer_link_color;
+	background: none;
 }
 footer.site-footer a:hover, footer.site-footer a:active {
 	color: vars.$footer_link_hover_color;
 }
 #credits {
-	text-align: center;
 	background-color: vars.$credits_background_color;
 	padding: 20px 0;
 }
@@ -867,6 +957,7 @@ footer.site-footer a:hover, footer.site-footer a:active {
 #credits a:link, #credits a:visited {
 	color: vars.$credits_link_color;
 	text-decoration: none;
+	background: none;
 }
 #credits a:hover {
 	color: vars.$credits_link_hover_color;
@@ -1129,7 +1220,7 @@ img {
 	z-index: 1;
 	opacity: .65;
 }
-.pagebreak .container {
+.pagebreak .container, .pagebreak .no-container {
 	position: relative;
 	z-index: 2; 
 	margin: 0 auto;
@@ -1173,16 +1264,22 @@ img {
 }
 .pagebreak a:link, .pagebreak a:visited {
 	color: vars.$pagebreak_link_color;
+	background: vars.$pagebreak_link_background_color;
 }
 .pagebreak a:hover, .pagebreak a:active {
 	color: vars.$pagebreak_link_hover_color;
+	background: vars.$pagebreak_link_background_color_hover;
 }
 .pagebreak .btn-mayecreate, .pagebreak .btn-mayecreate:link, .pagebreak .btn-mayecreate:visited {
-	background: vars.$pagebreak_button_background_color;
+	background: vars.$pagebreak_button_background_image;
+	background-size: 100% 100%;
+	background-color: vars.$pagebreak_button_background_color;
 	color: vars.$pagebreak_button_text_color;
 }
 .pagebreak .btn-mayecreate:hover, .pagebreak .btn-mayecreate:active, .pagebreak .btn-mayecreate:focus {
-	background: vars.$pagebreak_button_background_hover_color;
+	background: vars.$pagebreak_button_hover_background_image;
+	background-size: 100% 100%;
+	background-color: vars.$pagebreak_button_background_hover_color;
 	color: vars.$pagebreak_button_text_hover_color;
 }
 
@@ -1786,8 +1883,7 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				==========================================  */
 				#branding-container {
 					margin:0;
-					padding-top: 15px;
-					padding-bottom: 15px;
+					padding: 0;
 					width: auto;
 					max-width: 300px;
 				}
@@ -1823,8 +1919,6 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				}
 				#navigation.affix #branding-container {
 					max-width: 200px;
-					padding-top: 10px;
-					padding-bottom: 10px;
 				}
 				#navigation .navbar {
 					margin-bottom: 0;
@@ -1992,13 +2086,13 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				    	display: none;
 				    	position: absolute;
 				    	z-index: 9000;
-				    	background: vars.$white;
+				    	background: vars.$top_nav_dropdown_background_color;
 				    	margin: 0;
 				    	padding: 0;
 				    	width: 250px;
 				    	min-width: 150px;
 				    	max-width: 300px;
-				    	border: 1px solid vars.$grey;
+				    	border: 0 none;
 				    	border-top: none;
 						text-align: left;
 				    }
@@ -2023,30 +2117,30 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				    }
 				    #top_nav a:link, #top_nav a:visited {
 				    	display: inline-block;
+						background: vars.$top_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
 				    	font-size: 1.7rem;
-				    	padding: 15px 10px;
+				    	padding: vars.$top_nav_link_padding_top 10px vars.$top_nav_link_padding_bottom;
 				    	text-transform: uppercase;
 				    	color: vars.$top_nav_link_color;
 				    	font-weight: 400;
+						margin-bottom: vars.$top_nav_link_margin_bottom;
 				    	/* if you have different color for Nav links, change it here */
 				    }
 				    #top_nav a:hover, #top_nav a:active, #top_nav a:focus, #top_nav > ul > li.active > a {
 				    	color: vars.$top_nav_link_hover_color;
+						background: vars.$top_nav_link_background_hover_color;
 				    	text-decoration:none;
 				    	/* if you have different color for Nav link hover state, change it here */
 				    }  					
 					#top_nav ul ul li a:link, #top_nav ul ul li a:visited {
-						background: none;
-						text-align: left;
-						color: vars.$base_color;		
-						display: block;				
+						text-align: left;		
+						display: block;	
+				    	padding: 5px 15px;		
 					}					
 					#top_nav ul ul li a:hover, #top_nav ul ul li a:active {
-						background: vars.$base_color;
 						text-align: left;
-						color: vars.$white;
 					}	
 
 
@@ -2076,13 +2170,13 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				    	display: none;
 				    	position: absolute;
 				    	z-index: 9000;
-				    	background: vars.$white;
+				    	background: vars.$main_nav_dropdown_background_color;
 				    	margin: 0;
 				    	padding: 0;
 				    	width: 250px;
 				    	min-width: 150px;
 				    	max-width: 300px;
-				    	border: 1px solid vars.$grey;
+				    	border: 0 none;
 				    	border-top: none;
 				    }
 					#main_nav ul li:hover ul, #main_nav ul li:hover ul #main_nav ul ul li:hover ul {
@@ -2110,16 +2204,19 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 					
 				    #main_nav a:link, #main_nav a:visited {
 				    	display: inline-block;
+						background: vars.$main_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
 				    	font-size: 17px;
-				    	padding: 25px 10px;
+				    	padding: vars.$main_nav_link_padding_top 10px vars.$main_nav_link_padding_bottom;
 				    	text-transform: uppercase;
 				    	color: vars.$main_nav_link_color;
 				    	font-weight: 100;
+						margin-bottom: vars.$main_nav_link_margin_bottom;
 					}
 					#main_nav a:hover, #main_nav a:active, #main_nav a:focus, #main_nav > ul > li.active > a {
 				    	color: vars.$main_nav_link_hover_color;
+						background: vars.$main_nav_link_background_hover_color;
 				    	text-decoration:none;
 				    }
 				    #main_nav ul ul li a:link, #main_nav ul ul li a:visited {
@@ -2234,11 +2331,11 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 					
 					/* PAGEBREAKS
 					====================================  */
-					.pagebreak_left_content, .pagebreak_left_img {
+					.pagebreak_left_content, .pagebreak_left_img { 
 						float: left;
 						width: 50%;
 					}
-					.pagebreak_right_content, .pagebreak_right_img {
+					.pagebreak_right_content, .pagebreak_right_img { 
 						float: right;
 						width: 50%;
 					}
@@ -2337,6 +2434,43 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 									max-width: 1100px;
 									padding: 0 60px;
 								}
+								.pagebreak_left.overlap, .pagebreak_right.overlap {
+									background: none;
+								}
+								.overlap .pagebreak_left_content {
+									float: left;
+									width: 60%;
+									position: relative;
+									z-index: 2;
+									margin-left: -10%;
+									margin-top: 100px;
+									margin-bottom: 100px;
+									background: vars.$pagebreak_background_color;
+								}
+								.overlap .pagebreak_left_img {
+									float: left;
+									width: 60%;
+									position: relative;
+									z-index: 1;
+									margin-right: -10%;
+								}
+								.overlap .pagebreak_right_content {
+									float: right;
+									width: 60%;
+									position: relative;
+									z-index: 2;
+									margin-right: -10%;
+									margin-top: 100px;
+									margin-bottom: 100px;
+									background: vars.$pagebreak_background_color;
+								}
+								.overlap .pagebreak_right_img {
+									float: right;
+									width: 60%;
+									position: relative;
+									z-index: 1;
+									margin-left: -10%;
+								}
 
 
 								/* PAGE ITEMS
@@ -2400,6 +2534,12 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 										.project_link_wrapper p {
 											font-size: vars.$projects_content_font_size;
 										}
+										div#homefeatured .slideDesc .slideTitle {
+											font-size: vars.$slide_header_size;
+										}
+										div#homefeatured .slideDesc .slideText {
+											font-size: vars.$slide_content_size; 
+										}	
 
 										/* Place to add stylesheets if you want to target monitors 
 										bigger than a desktop. */
@@ -2443,27 +2583,50 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
     margin-bottom:10px;
     color: vars.$black !important;
     max-width: 1200px !important;
+	font-family: vars.$header_1_font;
+	font-weight: vars.$heading_1_font_weight;
 }
 .block-editor-block-list__layout h2, .block-editor-block-list__layout .h2 {
     font-size: vars.$header_2_font_size_admin !important;
+	font-family: vars.$header_2_font;
+	color: vars.$heading_2_color;
+	font-weight: vars.$heading_2_font_weight;
 }
 .block-editor-block-list__layout h3, .block-editor-block-list__layout .h3 {
     font-size: vars.$header_3_font_size_admin !important;
+	font-family: vars.$header_3_font;
+	color: vars.$heading_3_color;
+	font-weight: vars.$heading_3_font_weight;
 }
 .block-editor-block-list__layout h4, .block-editor-block-list__layout .h4 {
     font-size: vars.$header_4_font_size_admin !important;
+	font-family: vars.$header_4_font;
+	color: vars.$heading_4_color;
+	font-weight: vars.$heading_4_font_weight;
 }
 .block-editor-block-list__layout h5, .block-editor-block-list__layout .h5 {
     font-size: vars.$header_5_font_size_admin !important; 
+	font-family: vars.$header_5_font;
+	color: vars.$heading_5_color;
+	font-weight: vars.$heading_5_font_weight;
 }
 .block-editor-block-list__layout h6, .block-editor-block-list__layout .h6 {
     font-size: vars.$header_6_font_size_admin !important;
+	font-family: vars.$header_6_font;
+	color: vars.$heading_6_color;
+	font-weight: vars.$heading_6_font_weight;
+}
+.block-editor-block-list__layout .h2, .block-editor-block-list__layout .h3, .block-editor-block-list__layout .h4, .block-editor-block-list__layout .h5, .block-editor-block-list__layout .h6, .editor-styles-wrapper .h2, .editor-styles-wrapper .h3, .editor-styles-wrapper .h4, .editor-styles-wrapper .h5, .editor-styles-wrapper .h6 {
+	margin-left: auto !important; 
+	margin-right: auto !important;
 }
 .block-editor-block-list__layout {
 	background-color: vars.$body_background_color !important;
 }
 .block-editor-block-list__layout, .block-editor-block-list__layout p {
     font-size: vars.$body_font_size_admin !important; 
+	color: vars.$base_color; 
+	font-family: vars.$main_font !important;
 }
 .block-editor-block-list__layout ul, .block-editor-block-list__layout ol {
     margin-left: 45px !important;

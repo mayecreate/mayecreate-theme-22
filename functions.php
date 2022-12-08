@@ -294,6 +294,7 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'General Settings',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
+        'capability' => 'manage_options',
 		'redirect'		=> false
 	));
 	
@@ -301,24 +302,28 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Theme Header Settings',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
 	));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Slider Settings',
 		'menu_title'	=> 'Carousel Slider',
 		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
 	));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
 	));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Post Settings', 
 		'menu_title'	=> 'Post Types',
 		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
 	));
 	
 }

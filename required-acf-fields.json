@@ -204,6 +204,48 @@
                 "maxlength": "",
                 "rows": "",
                 "new_lines": ""
+            },
+            {
+                "key": "field_63a2246e80020",
+                "label": "Pagebreak Padding Top",
+                "name": "pagebreak_padding_top",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63a224c080021",
+                "label": "Pagebreak Padding Bottom",
+                "name": "pagebreak_padding_bottom",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
             }
         ],
         "location": [
@@ -9711,6 +9753,44 @@
                 "max_height": "",
                 "max_size": "",
                 "mime_types": ""
+            },
+            {
+                "key": "field_63a2182c69537",
+                "label": "Background Image Alignment",
+                "name": "background_image_alignment",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5d2389a60d072",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "top left": "top left",
+                    "top center": "top center",
+                    "top right": "top right",
+                    "center left": "center left",
+                    "center center": "center center",
+                    "center right": "center right",
+                    "bottom left": "bottom left",
+                    "bottom center": "bottom center",
+                    "bottom right": "bottom right"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 1,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
             },
             {
                 "key": "field_5d30b3636f7a5",

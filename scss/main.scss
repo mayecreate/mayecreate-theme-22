@@ -2426,12 +2426,12 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 								.pagebreak_left_content .container {
 									float: left;
 									max-width: 1100px;
-									padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+									padding: 0 60px;
 								}
 								.pagebreak_right_content .container {
 									float: right;
 									max-width: 1100px;
-									padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+									padding: 0 60px;
 								}
 								.pagebreak_left.overlap, .pagebreak_right.overlap {
 									background: none;

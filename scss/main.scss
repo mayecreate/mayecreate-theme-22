@@ -1203,12 +1203,11 @@ img {
 	text-align: right !important;
 }
 .pagebreak {
-	padding: 60px 0;
+	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 	background: vars.$pagebreak_background_color;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
 	background-attachment: vars.$pagebreak_background_attachment;
 }
 .pagebreak .pagebreak_inner {
@@ -1236,7 +1235,7 @@ img {
 	padding: 0;  
 } 
 .pagebreak_fix {
-	padding: 60px 0;
+	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 }
 .pagebreak_fix:first-child {
 	padding-top: 0;
@@ -1245,7 +1244,7 @@ img {
 	
 }*/
 .pagebreak_right_content, .pagebreak_left_content {
-	padding: 50px 0;
+	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 }
 .pagebreak .pagebreak_left_img, .pagebreak .pagebreak_right_img {
 	min-height: 200px;
@@ -1540,12 +1539,12 @@ a.post_link_wrapper:hover p {
 	display: none !important;
 }
 .post_link_wrapper .btn-mayecreate {
-	background: vars.$news_button_background_color;
+	background-color: vars.$news_button_background_color;
 	color: vars.$news_button_text_color;
 	border:0 none;
 }
 a.post_link_wrapper:hover .btn-mayecreate {
-	background: vars.$news_button_background_color_hover;
+	background-color: vars.$news_button_background_color_hover;
 	color: vars.$news_button_text_color_hover;
 	border:0 none;
 }
@@ -1647,12 +1646,12 @@ a.project_link_wrapper:hover p {
 	color: vars.$projects_content_hover_color;
 }
 .project_link_wrapper .btn-mayecreate {
-	background: vars.$projects_button_background_color;
+	background-color: vars.$projects_button_background_color;
 	color: vars.$projects_button_text_color;
 	border:0 none;
 }
 a.project_link_wrapper:hover .btn-mayecreate {
-	background: vars.$projects_button_background_color_hover;
+	background-color: vars.$projects_button_background_color_hover;
 	color: vars.$projects_button_text_color_hover;
 	border:0 none;
 }
@@ -1777,12 +1776,12 @@ a.resource_link_wrapper:hover p {
 	display: none !important;
 }
 .resource_link_wrapper .btn-mayecreate {
-	background: vars.$resource_button_background_color;
+	background-color: vars.$resource_button_background_color;
 	color: vars.$resource_button_text_color;
 	border:0 none;
 }
 a.resource_link_wrapper:hover .btn-mayecreate {
-	background: vars.$resource_button_background_color_hover;
+	background-color: vars.$resource_button_background_color_hover;
 	color: vars.$resource_button_text_color_hover;
 	border:0 none;
 }
@@ -2427,12 +2426,12 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 								.pagebreak_left_content .container {
 									float: left;
 									max-width: 1100px;
-									padding: 0 60px;
+									padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 								}
 								.pagebreak_right_content .container {
 									float: right;
 									max-width: 1100px;
-									padding: 0 60px;
+									padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 								}
 								.pagebreak_left.overlap, .pagebreak_right.overlap {
 									background: none;

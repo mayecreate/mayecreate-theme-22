@@ -193,6 +193,19 @@ if ($fixed_pagebreak_background == "Yes") {
 	$pagebreak_background_attachment = "local";
 }
 
+$pagebreak_padding_top = (get_field('pagebreak_padding_top', 'option'));
+if ($pagebreak_padding_top) {
+	$pagebreak_padding_top = $pagebreak_padding_top;
+} else {
+	$pagebreak_padding_top = "50";
+}
+$pagebreak_padding_bottom = (get_field('pagebreak_padding_bottom', 'option'));
+if ($pagebreak_padding_bottom) {
+	$pagebreak_padding_bottom = $pagebreak_padding_bottom;
+} else {
+	$pagebreak_padding_bottom = $pagebreak_padding_top;
+}
+
 $ul_li_bullet = (get_field('ul_li_bullet', 'option'));
 if ($ul_li_bullet) {
 	$ul_li_bullet = "url('".$ul_li_bullet."')";
@@ -710,6 +723,8 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--pagebreak_background_attachment: <?php echo $pagebreak_background_attachment; ?>;
 	--pagebreak_button_background_image: url("<?php echo $pagebreak_button_background_image; ?>") center center no-repeat;
 	--pagebreak_button_hover_background_image: url("<?php echo $pagebreak_button_hover_background_image; ?>") center center no-repeat;
+	--pagebreak_padding_top: <?php echo $pagebreak_padding_top; ?>px;
+	--pagebreak_padding_bottom: <?php echo $pagebreak_padding_bottom; ?>px;
 
 	--ul_li_bullet: <?php echo $ul_li_bullet; ?>;
 

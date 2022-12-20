@@ -8,6 +8,9 @@
 	<?php $page_break_background = esc_html(get_field("page_break_background")); ?>
 	<?php $additional_pagebreak_classes = get_field("additional_pagebreak_classes"); ?>
 
+	<?php $background_image_alignment = get_field("background_image_alignment");
+	if($background_image_alignment) { $background_image_alignment = $background_image_alignment; } else { $background_image_alignment = '#eee'; } ?>
+
 	<?php $container_option = get_field("container_option"); ?>
 	<?php $border_top_width = get_field("border-top_width"); ?>
 	<?php $border_top_color = get_field("border-top_color"); ?>
@@ -74,7 +77,7 @@ if ($fixed_pagebreak_background == "Yes") {
 		<?php if ($background_color && !$page_break_background) { ?>
 		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } elseif($page_break_background) { ?>
-		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?>" style="background-image:url(<?php echo $page_break_background; ?>);<?php echo $pagebreak_background_attachment; ?>border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
+		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?>" style="background-image:url(<?php echo $page_break_background; ?>);<?php echo $pagebreak_background_attachment; ?>border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;background-position: <?php echo $background_image_alignment; ?>;">
 		<?php } else { ?>
 		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?>" style="background-color:<?php echo $pagebreak_background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } ?>
@@ -99,7 +102,7 @@ if ($fixed_pagebreak_background == "Yes") {
 			<?php if ($background_color && !$page_break_background) { ?>
 			<div class="pagebreak_left_img" style="background-color:<?php echo $background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
 			<?php } elseif($page_break_background) { ?>
-			<div class="pagebreak_left_img" style="background-image:url(<?php echo $page_break_background; ?>);border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
+			<div class="pagebreak_left_img" style="background-image:url(<?php echo $page_break_background; ?>);border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;background-position: <?php echo $background_image_alignment; ?>;"></div>
 			<?php } else { ?>
 			<div class="pagebreak_left_img" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
 			<?php } ?>
@@ -123,7 +126,7 @@ if ($fixed_pagebreak_background == "Yes") {
 			<?php if ($background_color && !$page_break_background) { ?>
 			<div class="pagebreak_right_img" style="background-color:<?php echo $background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
 			<?php } elseif($page_break_background) { ?>
-			<div class="pagebreak_right_img" style="background-image:url(<?php echo $page_break_background; ?>);border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
+			<div class="pagebreak_right_img" style="background-image:url(<?php echo $page_break_background; ?>);border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;background-position: <?php echo $background_image_alignment; ?>;"></div>
 			<?php } else { ?>
 			<div class="pagebreak_right_img" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
 			<?php } ?>

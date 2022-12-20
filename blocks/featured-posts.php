@@ -78,7 +78,7 @@
 	<?php if ($optional_button_link) { ?>
 		<div class="row">
 			<div class="col-md-12">
-				<a class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" href="<?php echo $optional_button_link; ?>" target="_blank"><?php echo $optional_button_link_text; ?></a>
+				<a class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" href="<?php echo $optional_button_link; ?>"><?php echo $optional_button_link_text; ?></a>
 			</div>
 		</div>
 	<?php } ?>

@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 
-        <div class="row">
-                
-				<?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-            	
-                <div class="col-md-12">
-					<?php get_template_part('partials/loop','blog'); ?>
-				</div>
-			
-                <?php endwhile; ?>
-                
+<div class="row justify-content-center">
+        
+            	                
+        <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+        
+        <?php get_template_part('partials/loop','blog-page'); ?>
+    
+        <?php endwhile; ?>
+    
+
+    </div>
+<div class="row justify-content-center">
                 <?php
                     $prev_link = get_previous_posts_link(__('&laquo; Newer Entries', 'kubrick'));
                     $next_link = get_next_posts_link(__('Older Entries &raquo;', 'kubrick'));

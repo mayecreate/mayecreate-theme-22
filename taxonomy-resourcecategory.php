@@ -15,7 +15,7 @@ get_header();
 				<?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
             	
-                <?php get_template_part('partials/loop','blog-page'); ?>
+                <?php get_template_part('partials/loop','resource-page'); ?>
 			
 				<?php endwhile; ?>
             

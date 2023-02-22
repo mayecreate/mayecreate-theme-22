@@ -47,6 +47,32 @@ $button_hover_background_image = (get_field('button_hover_background_image', 'op
 if ($button_background_image) { $button_background_image = $button_background_image; } else { $button_background_image= ""; }
 if ($button_hover_background_image) { $button_hover_background_image = $button_hover_background_image; } else { $button_hover_background_image= $button_background_image; }
 
+$button_border_radius = (get_field('button_border_radius', 'option'));
+if ($button_border_radius) { $button_border_radius = $button_border_radius; } else { $button_border_radius = "0"; }
+$button_border_thickness = (get_field('button_border_thickness', 'option'));
+if ($button_border_thickness) { $button_border_thickness = $button_border_thickness; } else { $button_border_thickness = "0"; }
+$button_border_color = (get_field('button_border_color', 'option'));
+if ($button_border_color) { $button_border_color = $button_border_color; } else { $button_border_color = "transparent"; }
+$button_border_color_top = (get_field('button_border_color_top', 'option'));
+if ($button_border_color_top) { $button_border_color_top = $button_border_color_top; } else { $button_border_color_top = $button_border_color; }
+$button_border_color_right = (get_field('button_border_color_right', 'option'));
+if ($button_border_color_right) { $button_border_color_right = $button_border_color_right; } else { $button_border_color_right = $button_border_color; }
+$button_border_color_bottom = (get_field('button_border_color_bottom', 'option'));
+if ($button_border_color_bottom) { $button_border_color_bottom = $button_border_color_bottom; } else { $button_border_color_bottom = $button_border_color; }
+$button_border_color_left = (get_field('button_border_color_left', 'option'));
+if ($button_border_color_left) { $button_border_color_left = $button_border_color_left; } else { $button_border_color_left = $button_border_color; }
+
+$button_border_color_hover = (get_field('button_border_color_hover', 'option'));
+if ($button_border_color_hover) { $button_border_color_hover = $button_border_color_hover; } else { $button_border_color_hover = $button_border_color; }
+$button_border_color_top_hover = (get_field('button_border_color_top_hover', 'option'));
+if ($button_border_color_top_hover) { $button_border_color_top_hover = $button_border_color_top_hover; } else { $button_border_color_top_hover = $button_border_color_top; }
+$button_border_color_right_hover = (get_field('button_border_color_right_hover', 'option'));
+if ($button_border_color_right_hover) { $button_border_color_right_hover = $button_border_color_right_hover; } else { $button_border_color_right_hover = $button_border_color_right; }
+$button_border_color_bottom_hover = (get_field('button_border_color_bottom_hover', 'option'));
+if ($button_border_color_bottom_hover) { $button_border_color_bottom_hover = $button_border_color_bottom_hover; } else { $button_border_color_bottom_hover = $button_border_color_bottom; }
+$button_border_color_left_hover = (get_field('button_border_color_left_hover', 'option'));
+if ($button_border_color_left_hover) { $button_border_color_left_hover = $button_border_color_left_hover; } else { $button_border_color_left_hover = $button_border_color_left; }
+
 $top_nav_background_color = (get_field('top_nav_background_color', 'option'));
 $top_nav_link_color = (get_field('top_nav_link_color', 'option'));
 $top_nav_link_hover_color = (get_field('top_nav_link_hover_color', 'option'));
@@ -666,6 +692,20 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--button_hover_background_color: <?php echo $button_hover_background_color; ?>;
 	--button_background_image: url("<?php echo $button_background_image; ?>") center center no-repeat;
 	--button_hover_background_image: url("<?php echo $button_hover_background_image; ?>") center center no-repeat;
+
+	--button_border_radius: <?php echo $button_border_radius; ?>px;
+	--button_border_thickness: <?php echo $button_border_thickness; ?>px;
+	--button_border_color: <?php echo $button_border_color; ?>;
+	--button_border_color_top: <?php echo $button_border_color_top; ?>;
+	--button_border_color_right: <?php echo $button_border_color_right; ?>;
+	--button_border_color_bottom: <?php echo $button_border_color_bottom; ?>;
+	--button_border_color_left: <?php echo $button_border_color_left; ?>;
+
+	--button_border_color_hover: <?php echo $button_border_color_hover; ?>;
+	--button_border_color_top_hover: <?php echo $button_border_color_top_hover; ?>;
+	--button_border_color_right_hover: <?php echo $button_border_color_right_hover; ?>;
+	--button_border_color_bottom_hover: <?php echo $button_border_color_bottom_hover; ?>;
+	--button_border_color_left_hover: <?php echo $button_border_color_left_hover; ?>;
 
 	--divider_color: <?php echo $divider_color; ?>;
 

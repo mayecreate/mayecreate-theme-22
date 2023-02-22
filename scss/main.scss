@@ -367,12 +367,16 @@ ul li {
 	background: vars.$button_background_image;
 	background-color: vars.$button_background_color;
 	background-size: 100% 100%;
-	border-radius: 0;
-	border: 0 none;
+	border-radius: vars.$button_border_radius;
+	border: vars.$button_border_thickness solid vars.$button_border_color;
+	border-top: vars.$button_border_thickness solid vars.$button_border_color_top;
+	border-right: vars.$button_border_thickness solid vars.$button_border_color_right;
+	border-bottom: vars.$button_border_thickness solid vars.$button_border_color_bottom;
+	border-left: vars.$button_border_thickness solid vars.$button_border_color_left;
 	display: block;
 	padding: 25px;
 	margin:0 auto 20px auto;
-	text-align: center;
+	text-align: center; 
 	line-height: 120%;
 	height: auto;
 	cursor: pointer;
@@ -387,7 +391,11 @@ a.btn-mayecreate:hover, a.btn-mayecreate:active, a.btn-mayecreate:focus, .wp-blo
 	background: vars.$button_hover_background_image;
 	background-color: vars.$button_hover_background_color;
 	background-size: 100% 100%;
-	border: 0 none;
+	border: vars.$button_border_thickness solid vars.$button_border_color_hover;
+	border-top: vars.$button_border_thickness solid vars.$button_border_color_top_hover;
+	border-right: vars.$button_border_thickness solid vars.$button_border_color_right_hover;
+	border-bottom: vars.$button_border_thickness solid vars.$button_border_color_bottom_hover;
+	border-left: vars.$button_border_thickness solid vars.$button_border_color_left_hover;
 	color: vars.$button_hover_color; 
 	outline: none;
 }
@@ -925,7 +933,6 @@ ul.archiveYearList .archive-sub-menu li a{
 footer.site-footer {
 	background-color: vars.$footer_background_color;
 	padding-top: 30px;
-	padding-bottom: 30px;
 }
 footer.site-footer .aside{
 	padding-top: 20px;
@@ -942,6 +949,7 @@ footer.site-footer a:hover, footer.site-footer a:active {
 	color: vars.$footer_link_hover_color;
 }
 #credits {
+	margin-top: 30px;
 	background-color: vars.$credits_background_color;
 	padding: 20px 0;
 }

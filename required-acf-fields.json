@@ -403,6 +403,24 @@
                 "return_format": "string"
             },
             {
+                "key": "field_640a59751002f",
+                "label": "Heading 1 Shadow Color",
+                "name": "heading_1_shadow_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
                 "key": "field_6216908de0bc6",
                 "label": "Heading 1 Font Size",
                 "name": "heading_1_font_size",
@@ -1425,6 +1443,182 @@
                 "return_format": "string"
             },
             {
+                "key": "field_640a5c723b4f9",
+                "label": "Button Padding Top",
+                "name": "button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5c9f3b4fa",
+                "label": "Button Padding Right",
+                "name": "button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5ca63b4fb",
+                "label": "Button Padding Bottom",
+                "name": "button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5cae3b4fc",
+                "label": "Button Padding Left",
+                "name": "button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5cc43b4fd",
+                "label": "Big Button Padding Top",
+                "name": "big_button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d093b4fe",
+                "label": "Big Button Padding Right",
+                "name": "big_button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d113b4ff",
+                "label": "Big Button Padding Bottom",
+                "name": "big_button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d193b500",
+                "label": "Big Button Padding Left",
+                "name": "big_button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
                 "key": "field_620ecca22e5ff",
                 "label": "Divider Color",
                 "name": "divider_color",
@@ -2248,6 +2442,24 @@
                 },
                 "default_value": "",
                 "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_640a59183bdda",
+                "label": "Header Image Color Overlay",
+                "name": "header_image_color_overlay",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
                 "return_format": "string"
             }
         ],

@@ -197,16 +197,29 @@ a:hover, a:active, a:focus{
 	background-size: cover;
 	position: relative;
 }
+.pagehead:before {
+	background: vars.$header_image_color_overlay;
+	content: '';
+	display: block;
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
 .pagehead .page-header {
 	margin-top: 0;
 	border-color: transparent;
 	height: 30vh;
+	position: relative;
+	z-index: 2;
 }
  .pagehead .page-header .entry-title{
 	position: absolute;
 	top: 30%;
 	color: vars.$heading_1_color;
-	text-shadow: 0 0 15px vars.$base_color;
+	text-shadow: 0 0 15px vars.$heading_1_shadow_color;
 }
 
 h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
@@ -374,7 +387,7 @@ ul li {
 	border-bottom: vars.$button_border_thickness solid vars.$button_border_color_bottom;
 	border-left: vars.$button_border_thickness solid vars.$button_border_color_left;
 	display: block;
-	padding: 25px;
+	padding: vars.$button_padding_top vars.$button_padding_right vars.$button_padding_bottom vars.$button_padding_left;
 	margin:0 auto 20px auto;
 	text-align: center; 
 	line-height: 120%;
@@ -400,7 +413,8 @@ a.btn-mayecreate:hover, a.btn-mayecreate:active, a.btn-mayecreate:focus, .wp-blo
 	outline: none;
 }
 .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
-	display: block;
+	display: block;	
+	padding: vars.$big_button_padding_top vars.$big_button_padding_right vars.$big_button_padding_bottom vars.$big_button_padding_left;
 }
 span.btn-mayecreate {
 	display: table;
@@ -586,6 +600,7 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
     z-index: 9999;
 	background: vars.$top_nav_background_color;
 	padding: vars.$top_navbar_padding 0;
+	border:0 none;
 }
 #navbarBottom {
 	display: block;
@@ -1931,12 +1946,14 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 					margin-bottom: 0;
 				}
 				#navigation.affix #navbarTop{
-					background-color: vars.$dark_grey;
-					border-color: vars.$grey;
+					background-color: vars.$top_nav_background_color;
+					border: 0 none;
+					padding: 10px 0;
 				}
 				#navigation.affix #navbarBottom {
-					background-color: vars.$white;
-					border-bottom: 5px solid  vars.$grey;
+					background-color: vars.$main_nav_background_color;
+					border-bottom: 5px solid  vars.$top_nav_background_color;
+					padding: 10px 0;
 				}
 				#navigation.affix #main_nav a {
 					font-size: 17px;

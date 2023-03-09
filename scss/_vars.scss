@@ -24,6 +24,7 @@ $header_5_font_size_admin: var(--heading_5_font_size_admin);
 $header_6_font_size_admin: var(--heading_6_font_size_admin);
 
 $heading_1_color: var(--heading_1_color); 
+$heading_1_shadow_color: var(--heading_1_shadow_color); 
 $heading_2_color: var(--heading_2_color); 
 $heading_3_color: var(--heading_3_color); 
 $heading_4_color: var(--heading_4_color); 
@@ -66,6 +67,8 @@ $main_nav_link_padding_top: var(--main_nav_link_padding_top);
 $main_nav_link_padding_bottom: var(--main_nav_link_padding_bottom);
 $main_nav_link_margin_bottom: var(--main_nav_link_margin_bottom);
 
+$header_image_color_overlay: var(--header_image_color_overlay);
+
 $top_navbar_padding: var(--top_navbar_padding);
 $top_nav_background_color: var(--top_nav_background_color); 
 $top_nav_link_color: var(--top_nav_link_color);
@@ -106,6 +109,15 @@ $button_border_color_top_hover: var(--button_border_color_top_hover);
 $button_border_color_right_hover: var(--button_border_color_right_hover);
 $button_border_color_bottom_hover: var(--button_border_color_bottom_hover);
 $button_border_color_left_hover: var(--button_border_color_left_hover);
+
+$button_padding_top: var(--button_padding_top);
+$button_padding_bottom: var(--button_padding_bottom);
+$button_padding_right: var(--button_padding_right);
+$button_padding_left: var(--button_padding_left);
+$big_button_padding_top: var(--big_button_padding_top);
+$big_button_padding_bottom: var(--big_button_padding_bottom);
+$big_button_padding_right: var(--big_button_padding_right);
+$big_button_padding_left: var(--big_button_padding_left);
 
 $divider_color: var(--divider_color);
 

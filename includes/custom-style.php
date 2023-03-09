@@ -73,6 +73,24 @@ if ($button_border_color_bottom_hover) { $button_border_color_bottom_hover = $bu
 $button_border_color_left_hover = (get_field('button_border_color_left_hover', 'option'));
 if ($button_border_color_left_hover) { $button_border_color_left_hover = $button_border_color_left_hover; } else { $button_border_color_left_hover = $button_border_color_left; }
 
+$button_padding_top = (get_field('button_padding_top', 'option'));
+if ($button_padding_top) { $button_padding_top = $button_padding_top; } else { $button_padding_top = '10'; }
+$button_padding_right = (get_field('button_padding_right', 'option'));
+if ($button_padding_right) { $button_padding_right = $button_padding_right; } else { $button_padding_right = '10'; }
+$button_padding_bottom = (get_field('button_padding_bottom', 'option'));
+if ($button_padding_bottom) { $button_padding_bottom = $button_padding_bottom; } else { $button_padding_bottom = '10'; }
+$button_padding_left = (get_field('button_padding_left', 'option'));
+if ($button_padding_left) { $button_padding_left = $button_padding_left; } else { $button_padding_left = '10'; }
+
+$big_button_padding_top = (get_field('big_button_padding_top', 'option'));
+if ($big_button_padding_top) { $big_button_padding_top = $big_button_padding_top; } else { $big_button_padding_top = $button_padding_top; }
+$big_button_padding_right = (get_field('big_button_padding_right', 'option'));
+if ($big_button_padding_right) { $big_button_padding_right = $big_button_padding_right; } else { $big_button_padding_right = $button_padding_right; }
+$big_button_padding_bottom = (get_field('big_button_padding_bottom', 'option'));
+if ($big_button_padding_bottom) { $big_button_padding_bottom = $big_button_padding_bottom; } else { $big_button_padding_bottom = $button_padding_bottom; }
+$big_button_padding_left = (get_field('big_button_padding_left', 'option'));
+if ($big_button_padding_left) { $big_button_padding_left = $big_button_padding_left; } else { $big_button_padding_left = $button_padding_left; }
+
 $top_nav_background_color = (get_field('top_nav_background_color', 'option'));
 $top_nav_link_color = (get_field('top_nav_link_color', 'option'));
 $top_nav_link_hover_color = (get_field('top_nav_link_hover_color', 'option'));
@@ -157,6 +175,8 @@ $heading_6_font_size_use = $heading_6_font_size / 10;
 
 $heading_1_color = (get_field('heading_1_color', 'option')); 
 	if($heading_1_color) { $heading_1_color = $heading_1_color; } else { $heading_1_color = '#fff'; }
+$heading_1_shadow_color = (get_field('heading_1_shadow_color', 'option')); 
+	if($heading_1_shadow_color) { $heading_1_shadow_color = $heading_1_shadow_color; } else { $heading_1_shadow_color = 'transparent'; }
 $heading_2_color = (get_field('heading_2_color', 'option')); 
 	if($heading_2_color) { $heading_2_color = $heading_2_color; } else { $heading_2_color = $secondary_color; }
 $heading_3_color = (get_field('heading_3_color', 'option')); 
@@ -257,6 +277,10 @@ $slide_content_color = (get_field('slide_content_color', 'option'));
 if($slide_content_color) { $slide_content_color = $slide_content_color; } else { $slide_content_color = "#fff"; }
 $slide_navigation_background_color = (get_field('slide_navigation_background_color', 'option'));
 if($slide_navigation_background_color) { $slide_navigation_background_color = $slide_navigation_background_color; } else { $slide_navigation_background_color = $primary_site_color; }
+
+
+$header_image_color_overlay = (get_field('header_image_color_overlay', 'option'));
+if($header_image_color_overlay) { $header_image_color_overlay = $header_image_color_overlay; } else { $header_image_color_overlay = "transparent"; }
 
 $team_options = get_field('team_options', 'option');
 if($team_options) {
@@ -675,6 +699,8 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--main_nav_link_padding_top: <?php echo $main_nav_link_padding_top; ?>;
 	--main_nav_link_padding_bottom: <?php echo $main_nav_link_padding_bottom; ?>;
 	--main_nav_link_margin_bottom: -<?php echo $main_nav_link_margin_bottom; ?>px;
+	
+	--header_image_color_overlay: <?php echo $header_image_color_overlay; ?>;
 
 	--footer_background_color: <?php echo $footer_background_color; ?>;
 	--footer_text_color: <?php echo $footer_text_color; ?>;
@@ -707,6 +733,15 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--button_border_color_bottom_hover: <?php echo $button_border_color_bottom_hover; ?>;
 	--button_border_color_left_hover: <?php echo $button_border_color_left_hover; ?>;
 
+	--button_padding_top: <?php echo $button_padding_top; ?>px;
+	--button_padding_bottom: <?php echo $button_padding_bottom; ?>px;
+	--button_padding_right: <?php echo $button_padding_right; ?>px;
+	--button_padding_left: <?php echo $button_padding_left; ?>px;
+	--big_button_padding_top: <?php echo $big_button_padding_top; ?>px;
+	--big_button_padding_bottom: <?php echo $big_button_padding_bottom; ?>px;
+	--big_button_padding_right: <?php echo $big_button_padding_right; ?>px;
+	--big_button_padding_left: <?php echo $big_button_padding_left; ?>px;
+
 	--divider_color: <?php echo $divider_color; ?>;
 
 	--primary_font: <?php echo $primary_font; ?>;
@@ -735,6 +770,7 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--heading_6_font_size_admin: <?php echo $heading_6_font_size; ?>px;
 	
 	--heading_1_color: <?php echo $heading_1_color; ?>;
+	--heading_1_shadow_color: <?php echo $heading_1_shadow_color; ?>;
 	--heading_2_color: <?php echo $heading_2_color; ?>;
 	--heading_3_color: <?php echo $heading_3_color; ?>;
 	--heading_4_color: <?php echo $heading_4_color; ?>;

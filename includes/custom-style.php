@@ -206,7 +206,7 @@ $pagebreak_background_color = (get_field('pagebreak_background_color', 'option')
 $pagebreak_heading_color = (get_field('pagebreak_heading_color', 'option'));
 	if($pagebreak_heading_color) { $pagebreak_heading_color = $pagebreak_heading_color; } else { $pagebreak_heading_color = $secondary_color; }
 $pagebreak_text_color = (get_field('pagebreak_text_color', 'option'));
-	if($pagebreak_text_color) { $pagebreak_text_color = $pagebreak_text_color; } else { $pagebreak_text_color = $primary_color; }
+	if($pagebreak_text_color) { $pagebreak_text_color = $pagebreak_text_color; } else { $pagebreak_text_color = $primary_site_color; }
 $pagebreak_link_color = (get_field('pagebreak_link_color', 'option'));
 	if($pagebreak_link_color) { $pagebreak_link_color = $pagebreak_link_color; } else { $pagebreak_link_color = $link_color; }
 $pagebreak_link_hover_color = (get_field('pagebreak_link_hover_color', 'option'));

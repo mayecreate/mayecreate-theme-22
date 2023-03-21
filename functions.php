@@ -360,6 +360,7 @@ function mc_load_more() {
 	$ajaxposts = new WP_Query([
 	  'post_type' => 'post',
 	  'posts_per_page' => $number_of_posts,
+	  'post_status' => 'publish',
 	  'order'	=> 'ASC', 
 	  'orderby' => 'menu_order',
 	  'cat' => $post_category,
@@ -423,6 +424,7 @@ if ($post_category_project) {
 $ajaxposts_project = new WP_Query([
 	'post_type' => 'mc-projects',
 	'posts_per_page' => $number_of_posts_project,
+	'post_status' => 'publish',
 	'order'	=> 'ASC',
 	'orderby' => 'menu_order',
 	'paged' => $_POST['paged'],
@@ -493,6 +495,7 @@ if ($post_category_resource) {
 $ajaxposts_resource = new WP_Query([
 	'post_type' => 'mc-resources',
 	'posts_per_page' => $number_of_posts_resource,
+	'post_status' => 'publish',
 	'order'	=> 'ASC',
 	'orderby' => 'menu_order',
 	'paged' => $_POST['paged'],

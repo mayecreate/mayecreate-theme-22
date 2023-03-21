@@ -27,7 +27,10 @@ echo '<meta property="og:title" content="' . $openGraphTitle . '"/>';
 echo '<meta property="og:type" content="website"/>';
 echo '<meta property="og:url" content="' . $openGraphUrl . '"/>';
 echo '<meta property="og:image" content="'. $openGraphImage .'"/>';
+
+if (is_search()) {} else {
 echo '<meta property="og:description" content="'. $openGraphDescript .'"/>';
+}
 
 echo '<!-- END OPEN GRAPH -->';
 

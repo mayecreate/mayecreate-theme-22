@@ -45,6 +45,7 @@ if($news_options) { ?>
 		<?php // args
 		$args = array(
 		'posts_per_page'	=> $number_of_posts,
+		'post_status' => 'publish',
 		'order'			=> 'ASC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
 		'orderby' => 'menu_order',
 		'post_type' => 'post',

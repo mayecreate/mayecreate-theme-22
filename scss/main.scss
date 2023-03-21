@@ -809,6 +809,12 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	width: 100%;
 	position: absolute;
 }
+#top_nav:focus-within ul li:focus-within ul.sub-menu {
+	display: list-item;
+}
+#main_nav:focus-within ul li:focus-within ul.sub-menu {
+	display: list-item;
+}
 
 /* NAVIGATION: BREADCRUMB
 ==========================================  */
@@ -1386,9 +1392,6 @@ img {
 }
 #tribe-events-content a:hover {
 	text-decoration: underline;
-}
-.tribe-events-schedule__datetime {
-	text-align:center;
 }
 .tribe-events-schedule__date, .tribe-events-schedule__separator, .tribe-events-schedule__time  {
     font-size: 3.0rem;

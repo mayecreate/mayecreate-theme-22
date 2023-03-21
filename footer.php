@@ -1,5 +1,4 @@
 </div><!-- #page -->
-</div><!-- homeContentWrap / contentwrap -->
 </main>
 <?php global $containerWidth; ?>
 <footer id="colophon" class="site-footer">

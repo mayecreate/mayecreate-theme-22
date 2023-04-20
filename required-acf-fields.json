@@ -2283,6 +2283,24 @@
                 "return_format": "string"
             },
             {
+                "key": "field_6441accc5e779",
+                "label": "Top Nav Dropdown Background Color",
+                "name": "top_nav_dropdown_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here, the dropdown background color will default to the top nav background color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
                 "key": "field_621575cb39da1",
                 "label": "Top Nav Link Color",
                 "name": "top_nav_link_color",
@@ -2369,6 +2387,24 @@
                     "id": ""
                 },
                 "default_value": "rgba(255,255,255,1)",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6441acae5e778",
+                "label": "Main Nav Dropdown Background Color",
+                "name": "main_nav_dropdown_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here, the dropdown background color will default to the main nav background color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "enable_opacity": 1,
                 "return_format": "string"
             },
@@ -2721,7 +2757,7 @@
                         "aria-label": "",
                         "type": "url",
                         "instructions": "",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -2739,7 +2775,7 @@
                         "aria-label": "",
                         "type": "text",
                         "instructions": "You can find your icon options <a href=\"https:\/\/fontawesome.com\/v5\/cheatsheet\/free\/brands\">here.<\/a> Just find the icon you want and paste the text for that icon here.",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -2747,10 +2783,31 @@
                             "id": ""
                         },
                         "default_value": "",
+                        "maxlength": "",
                         "placeholder": "",
                         "prepend": "",
                         "append": "",
+                        "parent_repeater": "field_62156190a5488"
+                    },
+                    {
+                        "key": "field_6441af24e010b",
+                        "label": "Social Title",
+                        "name": "social_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "This is for ADA purposes.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
                         "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
                         "parent_repeater": "field_62156190a5488"
                     }
                 ]
@@ -2998,7 +3055,8 @@
                 "layout": "horizontal",
                 "toggle": 0,
                 "return_format": "value",
-                "save_custom": 0
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
             },
             {
                 "key": "field_62cf41d123523",
@@ -10460,7 +10518,7 @@
                 "label": "Link for Slide",
                 "name": "link_for_slide",
                 "aria-label": "",
-                "type": "page_link",
+                "type": "url",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": [
@@ -10477,14 +10535,8 @@
                     "class": "",
                     "id": ""
                 },
-                "post_type": [
-                    "post",
-                    "page"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "taxonomy": [],
-                "allow_archives": 1
+                "default_value": "",
+                "placeholder": ""
             },
             {
                 "key": "field_54b05f1b2273d",
@@ -10524,7 +10576,7 @@
         "hide_on_screen": "",
         "active": true,
         "description": "",
-        "show_in_rest": false
+        "show_in_rest": 0
     },
     {
         "key": "group_5d2389a5cb599",
@@ -11016,7 +11068,8 @@
                 "layout": "vertical",
                 "toggle": 0,
                 "return_format": "value",
-                "save_custom": 0
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
             },
             {
                 "key": "field_62180bcd277bb",

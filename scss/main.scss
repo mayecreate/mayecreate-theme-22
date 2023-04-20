@@ -809,13 +809,22 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	width: 100%;
 	position: absolute;
 }
-#top_nav:focus-within ul li:focus-within ul.sub-menu {
+#top_nav:focus-within > ul > li:focus-within > ul.sub-menu {
 	display: list-item;
 }
-#main_nav:focus-within ul li:focus-within ul.sub-menu {
+#main_nav:focus-within > ul > li:focus-within > ul.sub-menu {
 	display: list-item;
 }
-
+#top_nav:focus-within > ul > li > ul.sub-menu > li.menu-item-has-children:focus-within > ul.sub-menu {
+	display: list-item;
+	opacity: 1;
+	display: block;
+}
+#main_nav:focus-within > ul > li > ul.sub-menu > li.menu-item-has-children:focus-within > ul.sub-menu {
+	display: list-item;
+	opacity: 1;
+	display: block;
+} 
 /* NAVIGATION: BREADCRUMB
 ==========================================  */
 .breadcrumb {

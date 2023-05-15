@@ -57,8 +57,8 @@
 		<?php // args
 		$args = array(
 		'posts_per_page'	=> $post_number,
-		'order'			=> 'ASC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
-		'orderby' => 'menu_order',
+		'order'			=> 'DESC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
+		'orderby' => 'date',
 		'post_type' => 'mc-projects',
 		'paged' => $paged,
 		'tax_query' => array(

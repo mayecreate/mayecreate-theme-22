@@ -56,8 +56,8 @@ if($projects_options) { ?>
 		$args = array(
 		'posts_per_page'	=> $number_of_posts,
 		'post_status' => 'publish',
-		'order'			=> 'ASC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
-		'orderby' => 'menu_order',
+		'order'			=> 'DESC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
+		'orderby' => 'date',
 		'post_type' => 'mc-projects',
 		'paged' => $paged,
 		'tax_query' => array(

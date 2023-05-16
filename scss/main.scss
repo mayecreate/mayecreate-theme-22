@@ -279,37 +279,37 @@ p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-b
 /* COLORS
 ==========================================  */
 .has-primary-color {
-	color: vars.$base_color;
+	color: vars.$base_color !important;
 }
 .has-secondary-color {
-	color: vars.$secondary_color;
+	color: vars.$secondary_color !important;
 }
 .has-theme-color-1-color {
-	color: vars.$additional_theme_color_1;
+	color: vars.$additional_theme_color_1 !important;
 }
 .has-theme-color-2-color {
-	color: vars.$additional_theme_color_2;
+	color: vars.$additional_theme_color_2 !important;
 }
 .has-theme-color-3-color {
-	color: vars.$additional_theme_color_3;
+	color: vars.$additional_theme_color_3 !important;
 }
 .has-theme-color-4-color {
-	color: vars.$additional_theme_color_4;
+	color: vars.$additional_theme_color_4 !important;
 }
 .has-black-color {
-	color: vars.$black;
+	color: vars.$black !important;
 }
 .has-white-color {
-	color: vars.$white;
+	color: vars.$white !important;
 }
 .has-grey-color {
-	color: vars.$grey;
+	color: vars.$grey !important;
 }
 .has-dark-grey-color {
-	color: vars.$dark_grey;
+	color: vars.$dark_grey !important;
 }
 .has-hotpink-color {
-	color: #f542e6;
+	color: #f542e6 !important;
 }
 
 /* BACKGROUNDS
@@ -2656,7 +2656,11 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 	margin-left: auto !important; 
 	margin-right: auto !important;
 }
-.block-editor-block-list__layout {
+.wp-block-kadence-column>.kadence-inner-column-direction-vertical.kadence-inner-column-vertical-align-middle>.wp-block {
+    margin-left: unset !important;
+    margin-right: unset !important;
+}
+.is-root-container.block-editor-block-list__layout {
 	background-color: vars.$body_background_color !important;
 }
 .block-editor-block-list__layout, .block-editor-block-list__layout p {
@@ -2697,6 +2701,9 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 .block-editor-block-list__layout .project_link_wrapper p {
 	font-size: vars.$projects_content_font_size_admin !important;
 }
-
+.block-editor-block-list__layout.is-root-container>.wp-block[data-align=full] {
+	margin-left: auto !important;
+	margin-right: auto !important; 
+}
 
 

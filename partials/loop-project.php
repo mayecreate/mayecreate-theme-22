@@ -72,26 +72,28 @@ if($projects_options) { ?>
 		</div>
 	<?php } ?>
 		<div class="<?php echo $featured_image_placement_class_2; ?>">
-			<?php if ($display_title_over_image == "No") { ?>
-				<h3><?php the_title(); ?></h3>
-			<?php } ?>
-			<?php if ($show_post_date == "Yes") { ?>
-				<h4><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></h4>
-			<?php } ?>
-			<?php if ($list_categories == "Yes") { ?>
-				<h5 class="post_loop_cats h6">
-				<?php $terms = get_the_terms( $post->ID , 'projectcategory'); ?>
-				<?php foreach ($terms as $cat) { ?>
-					<span><?php echo $cat->name; ?></span><span class="post_loop_cats_sep">, </span>
+			<div class="loop_content">
+				<?php if ($display_title_over_image == "No") { ?>
+					<h3><?php the_title(); ?></h3>
 				<?php } ?>
-				</h5> 
-			<?php } ?>
-			<?php if ($show_content == "Yes") { ?> 
-				<?php echo '<p>'. excerpt($excerpt_length) . '</p>'; ?>
-			<?php } ?>
-			<?php if ($show_a_button_in_the_post_loop == "Yes" && '' !== get_post()->post_content) { ?>
-				<span class="btn-mayecreate <?php echo $text_alignment; ?>"><?php echo $button_text; ?></span>
-			<?php } ?>
+				<?php if ($show_post_date == "Yes") { ?>
+					<h4><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></h4>
+				<?php } ?>
+				<?php if ($list_categories == "Yes") { ?>
+					<h5 class="post_loop_cats h6">
+					<?php $terms = get_the_terms( $post->ID , 'projectcategory'); ?>
+					<?php foreach ($terms as $cat) { ?>
+						<span><?php echo $cat->name; ?></span><span class="post_loop_cats_sep">, </span>
+					<?php } ?>
+					</h5> 
+				<?php } ?>
+				<?php if ($show_content == "Yes") { ?> 
+					<?php echo '<p>'. excerpt($excerpt_length) . '</p>'; ?>
+				<?php } ?>
+				<?php if ($show_a_button_in_the_post_loop == "Yes" && '' !== get_post()->post_content) { ?>
+					<span class="btn-mayecreate <?php echo $text_alignment; ?>"><?php echo $button_text; ?></span>
+				<?php } ?>
+			</div>
 		</div>
 	</div>
 <?php if ('' == get_post()->post_content || is_admin()) { ?>

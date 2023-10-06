@@ -48,6 +48,9 @@ body {
 #cookie-notice {
     background: rgba(0,0,0,.8) !important;
 }
+#cookie-notice.cookie-notice-hidden {
+	display: none !important;
+}
 .cookie-notice-container {
     padding: 20px 0; 
 }
@@ -108,6 +111,49 @@ iframe {
 	text-transform: uppercase !important;
 }
 
+/* COOKIE NOTICE
+========================================== */
+#cookie-notice {
+	position: fixed;
+	max-width: 500px !important;
+	min-width: auto;
+	padding: 10px;
+	font-size: 14px;
+	right: 0;
+	left:0;
+	margin-left: auto;
+	margin-right: 0;
+	text-align: center;
+	font-weight: 300;
+	font-family: vars.$main_font;
+}
+#cookie-notice {
+	background: vars.$body_background_color !important;
+	border: 2px solid vars.$base_color !important;
+}
+#cn-notice-text {
+	color: vars.$base_color;
+}
+#cookie-notice-container {
+	color: vars.$base_color;
+}
+a.cn-button-custom.btn-mayecreate.outline {
+	border-color: vars.$base_color !important;
+	background: vars.$body_background_color !important;
+	color: vars.$base_color !important;
+}
+a.cn-button-custom.btn-mayecreate.outline:hover {
+	border-color: vars.$button_background_color !important;
+	background: vars.$button_background_color !important;
+	color: vars.$button_color !important;
+}
+.cn-close-icon { 
+	top: 20px;
+}
+.cn-close-icon:before, .cn-close-icon:after {
+	background-color: vars.$secondary_color !important;
+}
+
 /* PRINT STYLE SHEET
 ==========================================	*/
 @media print {
@@ -139,6 +185,7 @@ form {
 .divider, .wp-block-separator {
 	margin: 30px auto;
 	border-bottom: 2px solid vars.$divider_color;
+	border-top: 0 none;
 	clear: both;
 	display: block;
 	float: none;
@@ -171,7 +218,7 @@ form {
 ==========================================	*/
 a, a:link, a:visited {
 	color: vars.$link_color;
-	text-decoration:none; 
+	text-decoration: vars.$underline_hyperlinks; 
 	background: vars.$link_background_color;
 	transition: all 0.14s ease-in-out;
 	-moz-transition: all 0.14s ease-in-out;
@@ -181,7 +228,7 @@ a, a:link, a:visited {
 a:hover, a:active, a:focus{
 	color: vars.$link_hover_color;
 	background: vars.$link_background_color_hover;
-	text-decoration:none; /* change to none if you don't want links to be underlined when hovered */
+	text-decoration: vars.$underline_hyperlinks;  /* change to none if you don't want links to be underlined when hovered */
 }
 
 /* TYPOGRAPHY: HEADINGS
@@ -217,7 +264,7 @@ a:hover, a:active, a:focus{
 }
  .pagehead .page-header .entry-title{
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	color: vars.$heading_1_color;
 	text-shadow: 0 0 15px vars.$heading_1_shadow_color;
 }
@@ -427,8 +474,8 @@ span.btn-mayecreate {
 	margin: 0;
 	margin-left: 4%;
 	padding: 0;
-	width: 70%;
-	max-width: 200px;
+	width: 95%;
+	max-width: 300px;
 }
 #branding-container a.brand {
 	text-transform: uppercase;
@@ -853,9 +900,6 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 
 /* CONTENT SECTIONS
 ==========================================	*/
-body #homeContentWrap, body #contentwrap{
-	min-height: 500px;
-}
 #contentWrap, #page {
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -1969,7 +2013,6 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				}
 				#navigation.affix #main_nav a {
 					font-size: 17px;
-					padding: 15px 10px;
 				}
 				/* BREADCRUMB NAVIGATION
 				==========================================  */
@@ -2173,7 +2216,8 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 					#top_nav ul ul li a:link, #top_nav ul ul li a:visited {
 						text-align: left;		
 						display: block;	
-				    	padding: 5px 15px;		
+						line-height: 120%;
+				    	padding: 10px 15px;		
 					}					
 					#top_nav ul ul li a:hover, #top_nav ul ul li a:active {
 						text-align: left;
@@ -2256,9 +2300,10 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 				    	text-decoration:none;
 				    }
 				    #main_nav ul ul li a:link, #main_nav ul ul li a:visited {
-				    	padding: 5px 15px;
+				    	padding: 10px 15px;
 				    	width: 100%;
 						display: block;
+						line-height: 120%;
 				    } 
 					#mobile_menu {
 				    	display: none;
@@ -2593,10 +2638,6 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 											height: 45vh;
 										}
 										
-										 .pagehead .page-header .entry-title{
-											position: absolute;
-											top: 40%;
-										}
 										
 									}
 										/* Specialized Xtra-Xtra-Xtra-Xtra-Large devices (desktops, 1700px and up). This is NOT a breakpoint in bootstrap. */

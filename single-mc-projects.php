@@ -12,6 +12,8 @@ if($projects_options) { ?>
     <?php $single_page_list_categories = $projects_options['single_page_list_categories']; ?>
     <?php $post_date_text = $projects_options['single_page_post_date_text']; ?>
     <?php $post_date_format = $projects_options['single_page_post_date_format']; ?>
+    <?php $show_related_posts = $projects_options['single_page_show_related_posts']; ?>
+    <?php $number_of_related_posts = $projects_options['single_page_number_of_related_posts']; ?>
 <?php } ?>  
 
 <?php if ($single_page_content_width) { $single_page_content_width = $single_page_content_width.'px;margin-left:auto;margin-right:auto;'; } else { $single_page_content_width = "100%"; } ?> 
@@ -66,6 +68,54 @@ if($projects_options) { ?>
                 <?php endwhile; ?>
                                             
                 <?php endif; ?>
+
+                <?php if ($show_related_posts) { ?>
+                    <?php if ($number_of_related_posts) { $number_of_related_posts = $number_of_related_posts; } else { $number_of_related_posts = '1'; } ?>
+                    <?php $terms = get_the_terms( $post->ID , 'projectcategory', array('fields' => 'ids')); ?>
+                    <?php foreach ($terms as $cat) { ?>
+                        <?php $querry_cat .= $cat->term_id.','; ?>
+                    <?php } ?>
+                    <?php // args
+                    $args = array(
+                    'posts_per_page'	=> $number_of_related_posts,
+                    'order'			=> 'DESC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
+                    'orderby' => 'date',
+                    'post_type' => 'mc-projects',
+                    'post__not_in' => array( $post->ID ),
+                    'paged' => $paged,
+                    'tax_query' => array(
+                        'relation' => 'OR',
+                            array (
+                                'taxonomy'  => 'projectcategory',
+                                'field'    => 'ID',
+                                'terms'     => array($querry_cat)
+                            )
+                        )
+                    ); ?>
+
+                    <?php // query
+                    $wp_query = new WP_Query( $args );
+                    if( $wp_query->have_posts() )
+                    { ?>
+                    <div class="col-12"><div class="divider"></div></div>
+                    <?php // loop
+                    while( $wp_query->have_posts() )
+                    {
+                    $wp_query->the_post();
+
+                    ?>
+                        <div class="col">
+                            <?php get_template_part('partials/loop','project'); ?> 
+                        </div>
+                    <?php } // end the loop ?>
+                    <!--Reset Query-->
+                    <?php wp_reset_query();?> 
+                    
+                    <?php } ?>
+
+
+
+                <?php } ?>
 
         </div>
         </div>

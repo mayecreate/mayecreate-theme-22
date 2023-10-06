@@ -96,8 +96,9 @@ $top_nav_link_color = (get_field('top_nav_link_color', 'option'));
 $top_nav_link_hover_color = (get_field('top_nav_link_hover_color', 'option'));
 $top_nav_link_background_color = (get_field('top_nav_link_background_color', 'option'));
 $top_nav_link_background_hover_color = (get_field('top_nav_link_background_hover_color', 'option'));
-if ($top_nav_link_background_color) { $top_nav_dropdown_background_color = $top_nav_link_background_color; } else { $top_nav_dropdown_background_color= "#fff"; }
+$top_nav_dropdown_background_color = (get_field('top_nav_dropdown_background_color', 'option'));
 if ($top_nav_link_background_color) { $top_nav_link_background_color = $top_nav_link_background_color; } else { $top_nav_link_background_color= "transparent"; }
+if ($top_nav_dropdown_background_color) { $top_nav_dropdown_background_color = $top_nav_dropdown_background_color; } else { $top_nav_dropdown_background_color= $top_nav_background_color; }
 if ($top_nav_link_background_hover_color) { $top_nav_link_background_hover_color = $top_nav_link_background_hover_color; } else { $top_nav_link_background_hover_color= "transparent"; }
 
 $top_nav_link_padding_top = (get_field('top_nav_link_padding_top', 'option'));
@@ -115,8 +116,9 @@ $main_nav_link_color = (get_field('main_nav_link_color', 'option'));
 $main_nav_link_hover_color = (get_field('main_nav_link_hover_color', 'option'));
 $main_nav_link_background_color = (get_field('main_nav_link_background_color', 'option')); 
 $main_nav_link_background_hover_color = (get_field('main_nav_link_background_hover_color', 'option'));
-if ($main_nav_link_background_color) { $main_nav_dropdown_background_color = $main_nav_link_background_color; } else { $main_nav_dropdown_background_color= "#fff"; }
+$main_nav_dropdown_background_color = (get_field('main_nav_dropdown_background_color', 'option'));
 if ($main_nav_link_background_color) { $main_nav_link_background_color = $main_nav_link_background_color; } else { $main_nav_link_background_color= "transparent"; }
+if ($main_nav_dropdown_background_color) { $main_nav_dropdown_background_color = $main_nav_dropdown_background_color; } else { $main_nav_dropdown_background_color= $main_nav_background_color; }
 if ($main_nav_link_background_hover_color) { $main_nav_link_background_hover_color = $main_nav_link_background_hover_color; } else { $main_nav_link_background_hover_color= "transparent"; }
 
 $main_nav_link_padding_top = (get_field('main_nav_link_padding_top', 'option'));
@@ -237,6 +239,13 @@ if ($fixed_pagebreak_background == "Yes") {
 	$pagebreak_background_attachment = "fixed";
 } else {
 	$pagebreak_background_attachment = "local";
+}
+
+$underline_hyperlinks = (get_field('underline_hyperlinks', 'option'));
+if ($underline_hyperlinks == "Yes") {
+	$underline_hyperlinks = "underline";
+} else {
+	$underline_hyperlinks = "none";
 }
 
 $pagebreak_padding_top = (get_field('pagebreak_padding_top', 'option'));
@@ -803,6 +812,7 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--pagebreak_padding_bottom: <?php echo $pagebreak_padding_bottom; ?>px;
 
 	--ul_li_bullet: <?php echo $ul_li_bullet; ?>;
+	--underline_hyperlinks: <?php echo $underline_hyperlinks; ?>;
 
 	--team_background_color: <?php echo $team_background_color; ?>;
 	--team_divider_line_color: <?php echo $team_divider_line_color; ?>;

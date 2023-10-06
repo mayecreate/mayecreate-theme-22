@@ -195,6 +195,31 @@
                 "mime_types": ""
             },
             {
+                "key": "field_65207682250f7",
+                "label": "Underline Hyperlinks",
+                "name": "underline_hyperlinks",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
                 "key": "field_62ed42a82ce8a",
                 "label": "GA Tag",
                 "name": "ga_tag",
@@ -4721,6 +4746,61 @@
                         "save_other_choice": 0
                     },
                     {
+                        "key": "field_65207b53a8767",
+                        "label": "Single Page - Show Related Posts",
+                        "name": "single_page_show_related_posts",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No": "No",
+                            "Yes": "Yes"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_65207bf7e9ba5",
+                        "label": "Single Page - Number of Related Posts",
+                        "name": "single_page_number_of_related_posts",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_65207b53a8767",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": 1,
+                        "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_62e98dde29f62",
                         "label": "Post Page Block Category",
                         "name": "post_page_block_category",
@@ -4741,7 +4821,8 @@
                         "save_terms": 0,
                         "load_terms": 0,
                         "return_format": "id",
-                        "multiple": 0
+                        "multiple": 0,
+                        "bidirectional_target": []
                     },
                     {
                         "key": "field_62e98e1029f63",
@@ -4750,7 +4831,7 @@
                         "aria-label": "",
                         "type": "number",
                         "instructions": "This will set the number of posts to show with the post page block.",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -4758,12 +4839,12 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "min": "",
+                        "min": 1,
                         "max": "",
-                        "step": ""
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_62e98e3529f64",
@@ -7389,6 +7470,61 @@
                         "return_format": "value"
                     },
                     {
+                        "key": "field_65207b85a8768",
+                        "label": "Single Page - Show Related Posts",
+                        "name": "single_page_show_related_posts",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No": "No",
+                            "Yes": "Yes"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_65207c34e9ba6",
+                        "label": "Single Page - Number of Related Posts",
+                        "name": "single_page_number_of_related_posts",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_65207b85a8768",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": 1,
+                        "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_62fc0cad9e618",
                         "label": "Post Page Block Category",
                         "name": "post_page_block_category",
@@ -7409,7 +7545,8 @@
                         "save_terms": 0,
                         "load_terms": 0,
                         "return_format": "id",
-                        "multiple": 0
+                        "multiple": 0,
+                        "bidirectional_target": []
                     },
                     {
                         "key": "field_62fc0cad9e619",
@@ -7418,7 +7555,7 @@
                         "aria-label": "",
                         "type": "number",
                         "instructions": "This will set the number of posts to show with the post page block.",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -7426,12 +7563,12 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "min": "",
+                        "min": 1,
                         "max": "",
-                        "step": ""
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_62fc0cad9e61a",
@@ -9041,6 +9178,61 @@
                         "save_other_choice": 0
                     },
                     {
+                        "key": "field_65207bb6a8769",
+                        "label": "Single Page - Show Related Posts",
+                        "name": "single_page_show_related_posts",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "No": "No",
+                            "Yes": "Yes"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_65207c59e9ba7",
+                        "label": "Single Page - Number of Related Posts",
+                        "name": "single_page_number_of_related_posts",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_65207bb6a8769",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": 1,
+                        "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_633f03ab4409e",
                         "label": "Post Page Block Category",
                         "name": "post_page_block_category",
@@ -9061,7 +9253,8 @@
                         "return_format": "id",
                         "field_type": "select",
                         "allow_null": 1,
-                        "multiple": 0
+                        "multiple": 0,
+                        "bidirectional_target": []
                     },
                     {
                         "key": "field_633f03ab4409f",
@@ -9070,7 +9263,7 @@
                         "aria-label": "",
                         "type": "number",
                         "instructions": "This will set the number of posts to show with the post page block.",
-                        "required": 0,
+                        "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
                             "width": "",
@@ -9078,7 +9271,7 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "min": "",
+                        "min": 1,
                         "max": "",
                         "placeholder": "",
                         "step": "",
@@ -9995,7 +10188,8 @@
                 "save_terms": 0,
                 "load_terms": 0,
                 "return_format": "id",
-                "multiple": 0
+                "multiple": 0,
+                "bidirectional_target": []
             },
             {
                 "key": "field_60cba847af2f9",
@@ -10166,7 +10360,8 @@
                 "save_terms": 0,
                 "load_terms": 0,
                 "return_format": "id",
-                "multiple": 0
+                "multiple": 0,
+                "bidirectional_target": []
             },
             {
                 "key": "field_62fc102063ec0",
@@ -10337,7 +10532,8 @@
                 "return_format": "id",
                 "field_type": "select",
                 "allow_null": 1,
-                "multiple": 0
+                "multiple": 0,
+                "bidirectional_target": []
             },
             {
                 "key": "field_633f04e0493cb",

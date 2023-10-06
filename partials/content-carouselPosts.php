@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
 <?php $slide_content_text_alignment = get_field('slide_content_text_alignment', 'option'); ?>
 <?php if ($slide_content_text_alignment == "Center") { 
     $slide_content_text_alignment_class = "center";

@@ -44,8 +44,9 @@
 <!-- Fonts -->
 	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous" async></script>
 
 <?php $google_font_embed_links = (get_field('google_font_embed_links', 'option')); ?>
 <?php if ($google_font_embed_links) {
@@ -108,7 +109,7 @@ echo $ga_tag;
 				<div style="position:absolute; overflow:hidden;height: 100%;width:100%;z-index:1;" class="video_outer_wrapper">
 					<div id="video_outer" style="position:absolute;width:100%;height:100%;">
 						<div id="video_wrapper">
-							<div class='embed-container'><iframe id="slider_video" src='<?php echo $video_embed_link; ?>' allow="autoplay; fullscreen" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+							<div class='embed-container'><iframe id="slider_video" src='<?php echo $video_embed_link; ?>' allow="autoplay; fullscreen" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow=fullscreen allow=autoplay></iframe></div>
 						</div>
 					</div>
 				</div>

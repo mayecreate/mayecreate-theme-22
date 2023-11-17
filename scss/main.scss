@@ -443,6 +443,7 @@ ul li {
 	color:  vars.$button_color; 
 	outline: none; 
 	width: 100%;
+	text-decoration: none;
 }
 .wp-block-button.aligncenter {
 	display: table;
@@ -458,6 +459,7 @@ a.btn-mayecreate:hover, a.btn-mayecreate:active, a.btn-mayecreate:focus, .wp-blo
 	border-left: vars.$button_border_thickness solid vars.$button_border_color_left_hover;
 	color: vars.$button_hover_color; 
 	outline: none;
+	text-decoration: none;
 }
 .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
 	display: block;	
@@ -1781,14 +1783,14 @@ a.project_link_wrapper:hover .project_img_wrapper:after {
 	width: 95%;
 	height: 60px;
 	z-index: 2;
-	opacity: 0;
+	color: vars.$projects_title_color;
 	transition: all 0.14s ease-in-out;
     -moz-transition: all 0.14s ease-in-out;
     -o-transition: all 0.14s ease-in-out;
     -ms-transition: all 0.14s ease-in-out;
 }
 .project_link_wrapper:hover .project_img_wrapper .img_wrapper_title {
-	opacity: 1; 
+	color: vars.$projects_title_hover_color;
 }
 
 /*RESOURCES

@@ -7048,7 +7048,7 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "enable_opacity": 0,
+                        "enable_opacity": 1,
                         "return_format": "string"
                     },
                     {
@@ -7066,7 +7066,7 @@
                             "id": ""
                         },
                         "default_value": "",
-                        "enable_opacity": 0,
+                        "enable_opacity": 1,
                         "return_format": "string"
                     },
                     {

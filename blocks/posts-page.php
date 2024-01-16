@@ -69,7 +69,7 @@ if($news_options) { ?>
 	</div>
     
 <?php if ($number_of_posts) { ?>
-	<div id="!"></span>
+	<div id="!"></div>
 	<div class="row">
 		<div class="col-md-12">
 			<a href="#!" class="btn-mayecreate <?php echo $load_more_button_alignment; ?>" id="load-more"><?php echo $load_more_text; ?></a>

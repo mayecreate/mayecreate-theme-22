@@ -203,6 +203,7 @@ echo $ga_tag;
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
 			</div>
 		</div>	
+<?php } elseif(is_page_template( 'page-reading.php' )) { ?>
 <?php } else { ?>
 	
 	<?php if (has_post_thumbnail() ) { ?>

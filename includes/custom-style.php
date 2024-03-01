@@ -11,10 +11,12 @@
 $container_width = (get_field('container_width', 'option'));
 $home_container_width = (get_field('home_container_width', 'option'));
 $headerfooter_container_width = (get_field('headerfooter_container_width', 'option'));
+$container_width_reading = (get_field('max_content_width', 'option'));
 
 if ($container_width) { $container_width = $container_width; } else { $container_width = '1640'; }
 if ($home_container_width) { $home_container_width = $home_container_width; } else { $home_container_width = $container_width; }
 if ($headerfooter_container_width) { $headerfooter_container_width = $headerfooter_container_width; } else { $headerfooter_container_width = $container_width; }
+if ($container_width_reading) { $container_width_reading = $container_width_reading; } else { $container_width_reading = $container_width; }
 
 $body_background_color = (get_field('body_background_color', 'option'));
 
@@ -161,19 +163,63 @@ $heading_6_font = (get_field('heading_6_font', 'option'));
     if($heading_6_font) { $heading_6_font = $heading_6_font; } else { $heading_6_font = $main_heading_font; }
 
 $body_font_size = (get_field('body_font_size', 'option')); 
+if($body_font_size) { $body_font_size = $body_font_size; } else { $body_font_size = "20"; }
 $body_font_size_use = $body_font_size / 10; 
 $heading_1_font_size = (get_field('heading_1_font_size', 'option')); 
+if($heading_1_font_size) { $heading_1_font_size = $heading_1_font_size; } else { $heading_1_font_size = "60"; }
 $heading_1_font_size_use = $heading_1_font_size / 10;
 $heading_2_font_size = (get_field('heading_2_font_size', 'option')); 
+if($heading_2_font_size) { $heading_2_font_size = $heading_2_font_size; } else { $heading_2_font_size = "50"; }
 $heading_2_font_size_use = $heading_2_font_size / 10;
 $heading_3_font_size = (get_field('heading_3_font_size', 'option')); 
+if($heading_3_font_size) { $heading_3_font_size = $heading_3_font_size; } else { $heading_3_font_size = "50"; }
 $heading_3_font_size_use = $heading_3_font_size / 10;
 $heading_4_font_size = (get_field('heading_4_font_size', 'option')); 
+if($heading_4_font_size) { $heading_4_font_size = $heading_4_font_size; } else { $heading_4_font_size = "40"; }
 $heading_4_font_size_use = $heading_4_font_size / 10;
 $heading_5_font_size = (get_field('heading_5_font_size', 'option')); 
+if($heading_5_font_size) { $heading_5_font_size = $heading_5_font_size; } else { $heading_5_font_size = "30"; }
 $heading_5_font_size_use = $heading_5_font_size / 10;
 $heading_6_font_size = (get_field('heading_6_font_size', 'option')); 
+if($heading_6_font_size) { $heading_6_font_size = $heading_6_font_size; } else { $heading_6_font_size = "28"; }
 $heading_6_font_size_use = $heading_6_font_size / 10;
+
+$body_font_size_reading = (get_field('body_font_size_reading', 'option')); 
+if($body_font_size_reading) { $body_font_size_reading = $body_font_size_reading; } else { $body_font_size_reading = $body_font_size; }
+$body_font_size_use_reading = $body_font_size_reading / 10; 
+$heading_1_font_size_reading = (get_field('heading_1_font_size_reading', 'option')); 
+if($heading_1_font_size_reading) { $heading_1_font_size_reading = $heading_1_font_size_reading; } else { $heading_1_font_size_reading = $heading_1_font_size; }
+$heading_1_font_size_use_reading = $heading_1_font_size_reading / 10;
+$heading_2_font_size_reading = (get_field('heading_2_font_size_reading', 'option'));
+if($heading_2_font_size_reading) { $heading_2_font_size_reading = $heading_2_font_size_reading; } else { $heading_2_font_size_reading = $heading_2_font_size; } 
+$heading_2_font_size_use_reading = $heading_2_font_size_reading / 10;
+$heading_3_font_size_reading = (get_field('heading_3_font_size_reading', 'option')); 
+if($heading_3_font_size_reading) { $heading_3_font_size_reading = $heading_3_font_size_reading; } else { $heading_3_font_size_reading = $heading_3_font_size; }
+$heading_3_font_size_use_reading = $heading_3_font_size_reading / 10;
+$heading_4_font_size_reading = (get_field('heading_4_font_size_reading', 'option'));
+if($heading_4_font_size_reading) { $heading_4_font_size_reading = $heading_4_font_size_reading; } else { $heading_4_font_size_reading = $heading_4_font_size; } 
+$heading_4_font_size_use_reading = $heading_4_font_size_reading / 10;
+$heading_5_font_size_reading = (get_field('heading_5_font_size_reading', 'option'));
+if($heading_5_font_size_reading) { $heading_5_font_size_reading = $heading_5_font_size_reading; } else { $heading_5_font_size_reading = $heading_5_font_size; } 
+$heading_5_font_size_use_reading = $heading_5_font_size_reading / 10;
+$heading_6_font_size_reading = (get_field('heading_6_font_size_reading', 'option')); 
+if($heading_6_font_size_reading) { $heading_6_font_size_reading = $heading_6_font_size_reading; } else { $heading_6_font_size_reading = $heading_6_font_size; }
+$heading_6_font_size_use_reading = $heading_6_font_size_reading / 10;
+
+$paragraph_margin_bottom_reading = (get_field('paragraph_margin_bottom_reading', 'option')); 
+if($paragraph_margin_bottom_reading) { $paragraph_margin_bottom_reading = $paragraph_margin_bottom_reading; } else { $paragraph_margin_bottom_reading = '10'; }
+$heading_1_margin_bottom_reading = (get_field('heading_1_margin_bottom_reading', 'option')); 
+if($heading_1_margin_bottom_reading) { $heading_1_margin_bottom_reading = $heading_1_margin_bottom_reading; } else { $heading_1_margin_bottom_reading = '30'; }
+$heading_2_margin_bottom_reading = (get_field('heading_2_margin_bottom_reading', 'option')); 
+if($heading_2_margin_bottom_reading) { $heading_2_margin_bottom_reading = $heading_2_margin_bottom_reading; } else { $heading_2_margin_bottom_reading = '20'; }
+$heading_3_margin_bottom_reading = (get_field('heading_3_margin_bottom_reading', 'option')); 
+if($heading_3_margin_bottom_reading) { $heading_3_margin_bottom_reading = $heading_3_margin_bottom_reading; } else { $heading_3_margin_bottom_reading = '20'; }
+$heading_4_margin_bottom_reading = (get_field('heading_4_margin_bottom_reading', 'option')); 
+if($heading_4_margin_bottom_reading) { $heading_4_margin_bottom_reading = $heading_4_margin_bottom_reading; } else { $heading_4_margin_bottom_reading = '20'; }
+$heading_5_margin_bottom_reading = (get_field('heading_5_margin_bottom_reading', 'option')); 
+if($heading_5_margin_bottom_reading) { $heading_5_margin_bottom_reading = $heading_5_margin_bottom_reading; } else { $heading_5_margin_bottom_reading = '20'; }
+$heading_6_margin_bottom_reading = (get_field('heading_6_margin_bottom_reading', 'option')); 
+if($heading_6_margin_bottom_reading) { $heading_6_margin_bottom_reading = $heading_6_margin_bottom_reading; } else { $heading_6_margin_bottom_reading = '20'; }
 
 $heading_1_color = (get_field('heading_1_color', 'option')); 
 	if($heading_1_color) { $heading_1_color = $heading_1_color; } else { $heading_1_color = '#fff'; }
@@ -777,6 +823,30 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--heading_4_font_size_admin: <?php echo $heading_4_font_size; ?>px;
 	--heading_5_font_size_admin: <?php echo $heading_5_font_size; ?>px;
 	--heading_6_font_size_admin: <?php echo $heading_6_font_size; ?>px;
+
+	--body_font_size_reading: <?php echo $body_font_size_use_reading; ?>rem; /* 10 ÷ $rembase */
+	--heading_1_font_size_reading: <?php echo $heading_1_font_size_use_reading; ?>rem;
+	--heading_2_font_size_reading: <?php echo $heading_2_font_size_use_reading; ?>rem;
+	--heading_3_font_size_reading: <?php echo $heading_3_font_size_use_reading; ?>rem;
+	--heading_4_font_size_reading: <?php echo $heading_4_font_size_use_reading; ?>rem;
+	--heading_5_font_size_reading: <?php echo $heading_5_font_size_use_reading; ?>rem;
+	--heading_6_font_size_reading: <?php echo $heading_6_font_size_use_reading; ?>rem;
+
+	--body_font_size_admin_reading: <?php echo $body_font_size_reading; ?>px;
+	--heading_1_font_size_admin_reading: <?php echo $heading_1_font_size_reading; ?>px;
+	--heading_2_font_size_admin_reading: <?php echo $heading_2_font_size_reading; ?>px;
+	--heading_3_font_size_admin_reading: <?php echo $heading_3_font_size_reading; ?>px;
+	--heading_4_font_size_admin_reading: <?php echo $heading_4_font_size_reading; ?>px;
+	--heading_5_font_size_admin_reading: <?php echo $heading_5_font_size_reading; ?>px;
+	--heading_6_font_size_admin_reading: <?php echo $heading_6_font_size_reading; ?>px;
+	
+	--paragraph_margin_bottom_reading: <?php echo $paragraph_margin_bottom_reading; ?>px;
+	--heading_1_margin_bottom_reading: <?php echo $heading_1_margin_bottom_reading; ?>px;
+	--heading_2_margin_bottom_reading: <?php echo $heading_2_margin_bottom_reading; ?>px;
+	--heading_3_margin_bottom_reading: <?php echo $heading_3_margin_bottom_reading; ?>px;
+	--heading_4_margin_bottom_reading: <?php echo $heading_4_margin_bottom_reading; ?>px;
+	--heading_5_margin_bottom_reading: <?php echo $heading_5_margin_bottom_reading; ?>px;
+	--heading_6_margin_bottom_reading: <?php echo $heading_6_margin_bottom_reading; ?>px;
 	
 	--heading_1_color: <?php echo $heading_1_color; ?>;
 	--heading_1_shadow_color: <?php echo $heading_1_shadow_color; ?>;
@@ -957,6 +1027,7 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--container_width: <?php echo $container_width; ?>px;
 	--home_container_width: <?php echo $home_container_width; ?>px;
 	--headerfooter_container_width: <?php echo $headerfooter_container_width; ?>px;
+	--container_width_reading: <?php echo $container_width_reading; ?>px;
 	
 	--resource_background_color: <?php echo $resource_background_color; ?>;
 	--resource_background_hover_color: <?php echo $resource_background_hover_color; ?>;

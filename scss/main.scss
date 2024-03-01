@@ -15,8 +15,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	background-color: vars.$body_background_color;
 } 
+body.page-template-page-reading {
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size_reading);
+}
 .container {
 	max-width: vars.$container_width;
+	width: 90%; 
+}
+.page-template-page-reading #page .container {
+	max-width: vars.$container_width_reading;
 	width: 90%; 
 }
 .no-container {
@@ -110,6 +117,9 @@ iframe {
 .caps {
 	text-transform: uppercase !important;
 }
+.title_font {
+	font-family: vars.$header_font !important;
+}
 
 /* COOKIE NOTICE
 ========================================== */
@@ -190,6 +200,9 @@ form {
 	display: block;
 	float: none;
 	max-width: 100%;
+	opacity: 1;
+}
+.kt-block-spacer .kt-divider {
 	opacity: 1;
 }
 .skip a, #skip a { 
@@ -315,12 +328,41 @@ h6, .h6 {
 	color: vars.$heading_6_color;
 	font-weight: vars.$heading_6_font_weight;
 }
+.page-template-page-reading h1, .page-template-page-reading h1.entry-title, .page-template-page-reading .h1 {
+	font-size: clamp(3.5rem, 3rem + 1vw, vars.$header_1_font_size_reading);
+	color: vars.$heading_2_color;
+	margin-bottom: vars.$heading_1_margin_bottom_reading;
+}
+.page-template-page-reading h2, .page-template-page-reading .h2 {
+	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size_reading);
+	margin-bottom: vars.$heading_2_margin_bottom_reading;
+}
+.page-template-page-reading h3, .page-template-page-reading .h3 {
+	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size_reading);
+	margin-bottom: vars.$heading_3_margin_bottom_reading;
+}
+.page-template-page-reading h4, .page-template-page-reading .h4 {
+	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size_reading);
+	margin-bottom: vars.$heading_4_margin_bottom_reading;
+}
+.page-template-page-reading h5, .page-template-page-reading .h5 {
+	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size_reading);
+	margin-bottom: vars.$heading_5_margin_bottom_reading;
+}
+.page-template-page-reading h6, .page-template-page-reading .h6 {
+	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$header_6_font_size_reading);
+	margin-bottom: vars.$heading_6_margin_bottom_reading;
+}
 
 /* TYPOGRAPHY: PARAGRAPHS
 ==========================================  */
 p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
 	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
 	margin:0 0 20px 0;
+}
+.page-template-page-reading p {
+	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size_reading);
+	margin-bottom: vars.$paragraph_margin_bottom_reading;
 }
 
 /* COLORS
@@ -1067,11 +1109,11 @@ ul.social li {
 }
 ul.social li a:link, ul.social li a:visited {
     font-size: 3rem;
-    color: vars.$link_color;
+    color: vars.$footer_link_color;
 }
 ul.social li a:hover, ul.social li a:active {
     font-size: 3rem;
-    color: vars.$link_hover_color;
+    color: vars.$footer_link_hover_color;
 }
 
 /* IMAGES
@@ -1324,9 +1366,9 @@ img {
 .pagebreak_fix:first-child {
 	padding-top: 0;
 }
-/*.page > .pagebreak_fix:last-child, .page > .pagebreak:last-child {
-	
-}*/
+.page-template-page-reading .pagebreak_fix:first-child {
+	padding-top: vars.$pagebreak_padding_top;
+}
 .pagebreak_right_content, .pagebreak_left_content {
 	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 }
@@ -2623,6 +2665,27 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 										div#homefeatured .slideDesc .slideText {
 											font-size: vars.$slide_content_size; 
 										}	
+										body.page-template-page-reading, .page-template-page-reading p {
+											font-size: vars.$body_font_size_reading;
+										}
+										.page-template-page-reading h1, .page-template-page-reading h1.entry-title {
+											font-size: vars.$header_1_font_size_reading;
+										}
+										.page-template-page-reading h2, .page-template-page-reading .h2 {
+											font-size: vars.$header_2_font_size_reading;
+										}
+										.page-template-page-reading h3, .page-template-page-reading .h3 {
+											font-size: vars.$header_3_font_size_reading;
+										}
+										.page-template-page-reading h4, .page-template-page-reading .h4 {
+											font-size: vars.$header_4_font_size_reading;
+										}
+										.page-template-page-reading h5, .page-template-page-reading .h5 {
+											font-size: vars.$header_5_font_size_reading;
+										}
+										.page-template-page-reading h6, .page-template-page-reading .h6 { 
+											font-size: vars.$header_6_font_size_reading;
+										}
 
 										/* Place to add stylesheets if you want to target monitors 
 										bigger than a desktop. */

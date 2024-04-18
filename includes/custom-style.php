@@ -206,6 +206,19 @@ $heading_6_font_size_reading = (get_field('heading_6_font_size_reading', 'option
 if($heading_6_font_size_reading) { $heading_6_font_size_reading = $heading_6_font_size_reading; } else { $heading_6_font_size_reading = $heading_6_font_size; }
 $heading_6_font_size_use_reading = $heading_6_font_size_reading / 10;
 
+$paragraph_margin_bottom = (get_field('paragraph_margin_bottom', 'option')); 
+if($paragraph_margin_bottom) { $paragraph_margin_bottom = $paragraph_margin_bottom; } else { $paragraph_margin_bottom = '20'; }
+$heading_2_margin_bottom = (get_field('heading_2_margin_bottom', 'option')); 
+if($heading_2_margin_bottom) { $heading_2_margin_bottom = $heading_2_margin_bottom; } else { $heading_2_margin_bottom = '20'; }
+$heading_3_margin_bottom = (get_field('heading_3_margin_bottom', 'option')); 
+if($heading_3_margin_bottom) { $heading_3_margin_bottom = $heading_3_margin_bottom; } else { $heading_3_margin_bottom = '20'; }
+$heading_4_margin_bottom = (get_field('heading_4_margin_bottom', 'option')); 
+if($heading_4_margin_bottom) { $heading_4_margin_bottom = $heading_4_margin_bottom; } else { $heading_4_margin_bottom = '20'; }
+$heading_5_margin_bottom = (get_field('heading_5_margin_bottom', 'option')); 
+if($heading_5_margin_bottom) { $heading_5_margin_bottom = $heading_5_margin_bottom; } else { $heading_5_margin_bottom = '20'; }
+$heading_6_margin_bottom = (get_field('heading_6_margin_bottom', 'option')); 
+if($heading_6_margin_bottom) { $heading_6_margin_bottom = $heading_6_margin_bottom; } else { $heading_6_margin_bottom = '20'; }
+
 $paragraph_margin_bottom_reading = (get_field('paragraph_margin_bottom_reading', 'option')); 
 if($paragraph_margin_bottom_reading) { $paragraph_margin_bottom_reading = $paragraph_margin_bottom_reading; } else { $paragraph_margin_bottom_reading = '10'; }
 $heading_1_margin_bottom_reading = (get_field('heading_1_margin_bottom_reading', 'option')); 
@@ -823,6 +836,13 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--heading_4_font_size_admin: <?php echo $heading_4_font_size; ?>px;
 	--heading_5_font_size_admin: <?php echo $heading_5_font_size; ?>px;
 	--heading_6_font_size_admin: <?php echo $heading_6_font_size; ?>px;
+	
+	--paragraph_margin_bottom: <?php echo $paragraph_margin_bottom; ?>px;
+	--heading_2_margin_bottom: <?php echo $heading_2_margin_bottom; ?>px;
+	--heading_3_margin_bottom: <?php echo $heading_3_margin_bottom; ?>px;
+	--heading_4_margin_bottom: <?php echo $heading_4_margin_bottom; ?>px;
+	--heading_5_margin_bottom: <?php echo $heading_5_margin_bottom; ?>px;
+	--heading_6_margin_bottom: <?php echo $heading_6_margin_bottom; ?>px;
 
 	--body_font_size_reading: <?php echo $body_font_size_use_reading; ?>rem; /* 10 ÷ $rembase */
 	--heading_1_font_size_reading: <?php echo $heading_1_font_size_use_reading; ?>rem;

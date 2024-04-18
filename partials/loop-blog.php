@@ -65,17 +65,17 @@ if($news_options) { ?>
 	<?php } ?>
 		<div class="<?php echo $featured_image_placement_class_2; ?>">
 			<div class="loop_content">
-				<h3><?php the_title(); ?></h3>
+				<h2 class="post_loop_title"><?php the_title(); ?></h2>
 				<?php if ($show_post_date == "Yes") { ?>
-					<h4><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></h4>
+					<p class="h4 post_loop_date"><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></p>
 				<?php } ?>
 				<?php if ($list_categories == "Yes") { ?>
-					<h5 class="post_loop_cats h6">
+					<p class="post_loop_cats h6">
 					<?php $terms = get_the_terms( $post->ID , 'category'); ?>
 					<?php foreach ($terms as $cat) { ?>
 						<span><?php echo $cat->name; ?></span><span class="post_loop_cats_sep">, </span>
 					<?php } ?>
-					</h5> 
+					</p>
 				<?php } ?>
 				<?php echo '<p>'. excerpt($excerpt_length) . '</p>'; ?>
 				<?php if ($show_a_button_in_the_post_loop == "Yes") { ?>

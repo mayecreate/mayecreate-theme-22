@@ -304,360 +304,6 @@
         "show_in_rest": 0
     },
     {
-        "key": "group_65e230f08a799",
-        "title": "Theme Options – Reading Page",
-        "fields": [
-            {
-                "key": "field_65e247012774d",
-                "label": "Max Content Width",
-                "name": "max_content_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width in pixels. If nothing is set here.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e231ff4322d",
-                "label": "Body Font Size",
-                "name": "body_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2460727746",
-                "label": "Paragraph Margin Bottom",
-                "name": "paragraph_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e230f1dbfe2",
-                "label": "Heading 1 Font Size",
-                "name": "heading_1_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2463627747",
-                "label": "Heading 1 Margin Bottom",
-                "name": "heading_1_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2318043228",
-                "label": "Heading 2 Font Size",
-                "name": "heading_2_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2465127748",
-                "label": "Heading 2 Margin Bottom",
-                "name": "heading_2_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2319043229",
-                "label": "Heading 3 Font Size",
-                "name": "heading_3_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2465327749",
-                "label": "Heading 3 Margin Bottom",
-                "name": "heading_3_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2319f4322a",
-                "label": "Heading 4 Font Size",
-                "name": "heading_4_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e246592774a",
-                "label": "Heading 4 Margin Bottom",
-                "name": "heading_4_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e231ab4322b",
-                "label": "Heading 5 Font Size",
-                "name": "heading_5_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2465c2774b",
-                "label": "Heading 5 Margin Bottom",
-                "name": "heading_5_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e231f34322c",
-                "label": "Heading 6 Font Size",
-                "name": "heading_6_font_size_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_65e2465e2774c",
-                "label": "Heading 6 Margin Bottom",
-                "name": "heading_6_margin_bottom_reading",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "options_page",
-                    "operator": "==",
-                    "value": "theme-general-settings"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
-        "show_in_rest": 0
-    },
-    {
         "key": "group_620ece8100338",
         "title": "Theme Options - Fonts",
         "fields": [
@@ -926,6 +572,28 @@
                 "step": ""
             },
             {
+                "key": "field_662183eac32e6",
+                "label": "Heading 2 Margin Bottom",
+                "name": "heading_2_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
                 "key": "field_620ed146c0d33",
                 "label": "Heading 3 Font",
                 "name": "heading_3_font",
@@ -1006,6 +674,28 @@
                 "min": "",
                 "max": "",
                 "step": ""
+            },
+            {
+                "key": "field_6621842bc32e7",
+                "label": "Heading 3 Margin Bottom",
+                "name": "heading_3_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
             },
             {
                 "key": "field_620ed14ac0d34",
@@ -1090,6 +780,28 @@
                 "step": ""
             },
             {
+                "key": "field_6621843dc32e8",
+                "label": "Heading 4 Margin Bottom",
+                "name": "heading_4_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
                 "key": "field_620ed14bc0d35",
                 "label": "Heading 5 Font",
                 "name": "heading_5_font",
@@ -1172,6 +884,28 @@
                 "step": ""
             },
             {
+                "key": "field_6621844bc32e9",
+                "label": "Heading 5 Margin Bottom",
+                "name": "heading_5_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
                 "key": "field_620ed14dc0d36",
                 "label": "Heading 6 Font",
                 "name": "heading_6_font",
@@ -1252,6 +986,50 @@
                 "min": "",
                 "max": "",
                 "step": ""
+            },
+            {
+                "key": "field_6621845dc32ea",
+                "label": "Heading 6 Margin Bottom",
+                "name": "heading_6_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_662186c97d6a3",
+                "label": "Paragraph Margin Bottom",
+                "name": "paragraph_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
             }
         ],
         "location": [
@@ -2299,6 +2077,360 @@
         "hide_on_screen": "",
         "active": true,
         "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_65e230f08a799",
+        "title": "Theme Options – Reading Page",
+        "fields": [
+            {
+                "key": "field_65e247012774d",
+                "label": "Max Content Width",
+                "name": "max_content_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231ff4322d",
+                "label": "Body Font Size",
+                "name": "body_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2460727746",
+                "label": "Paragraph Margin Bottom",
+                "name": "paragraph_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e230f1dbfe2",
+                "label": "Heading 1 Font Size",
+                "name": "heading_1_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2463627747",
+                "label": "Heading 1 Margin Bottom",
+                "name": "heading_1_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2318043228",
+                "label": "Heading 2 Font Size",
+                "name": "heading_2_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465127748",
+                "label": "Heading 2 Margin Bottom",
+                "name": "heading_2_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2319043229",
+                "label": "Heading 3 Font Size",
+                "name": "heading_3_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465327749",
+                "label": "Heading 3 Margin Bottom",
+                "name": "heading_3_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2319f4322a",
+                "label": "Heading 4 Font Size",
+                "name": "heading_4_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e246592774a",
+                "label": "Heading 4 Margin Bottom",
+                "name": "heading_4_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231ab4322b",
+                "label": "Heading 5 Font Size",
+                "name": "heading_5_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465c2774b",
+                "label": "Heading 5 Margin Bottom",
+                "name": "heading_5_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231f34322c",
+                "label": "Heading 6 Font Size",
+                "name": "heading_6_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465e2774c",
+                "label": "Heading 6 Margin Bottom",
+                "name": "heading_6_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
         "show_in_rest": 0
     },
     {

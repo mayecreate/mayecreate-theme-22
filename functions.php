@@ -338,6 +338,21 @@ function generateRandomString($length = 20) {
     return $randomString;
 }
 
+/*
+ * Add template class to admin body based on current page's template.
+ */
+function mc_theme_add_template_class($classes)
+{
+    $template = get_page_template_slug();
+    if ($template) {
+        $class = preg_replace('/\.php$/', '', $template);
+        $classes .= ' template-' . sanitize_html_class($class);
+    }
+    return $classes;
+}
+add_filter('admin_body_class', 'mc_theme_add_template_class');
+
+
 function mc_load_more() {
 	$news_options = get_field('news_options', 'option');
 	if($news_options) {

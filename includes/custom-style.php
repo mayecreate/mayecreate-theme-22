@@ -219,6 +219,9 @@ if($heading_5_margin_bottom) { $heading_5_margin_bottom = $heading_5_margin_bott
 $heading_6_margin_bottom = (get_field('heading_6_margin_bottom', 'option')); 
 if($heading_6_margin_bottom) { $heading_6_margin_bottom = $heading_6_margin_bottom; } else { $heading_6_margin_bottom = '20'; }
 
+$paragraph_max_width = (get_field('paragraph_max_width', 'option')); 
+if($paragraph_max_width) { $paragraph_max_width = $paragraph_max_width; } else { $paragraph_max_width = '99999'; }
+
 $paragraph_margin_bottom_reading = (get_field('paragraph_margin_bottom_reading', 'option')); 
 if($paragraph_margin_bottom_reading) { $paragraph_margin_bottom_reading = $paragraph_margin_bottom_reading; } else { $paragraph_margin_bottom_reading = '10'; }
 $heading_1_margin_bottom_reading = (get_field('heading_1_margin_bottom_reading', 'option')); 
@@ -843,6 +846,7 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--heading_4_margin_bottom: <?php echo $heading_4_margin_bottom; ?>px;
 	--heading_5_margin_bottom: <?php echo $heading_5_margin_bottom; ?>px;
 	--heading_6_margin_bottom: <?php echo $heading_6_margin_bottom; ?>px;
+	--paragraph_max_width: <?php echo $paragraph_max_width; ?>px;
 
 	--body_font_size_reading: <?php echo $body_font_size_use_reading; ?>rem; /* 10 ÷ $rembase */
 	--heading_1_font_size_reading: <?php echo $heading_1_font_size_use_reading; ?>rem;

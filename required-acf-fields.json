@@ -1030,6 +1030,28 @@
                 "step": "",
                 "prepend": "",
                 "append": "px"
+            },
+            {
+                "key": "field_6622cdea8c694",
+                "label": "Paragraph Max Width",
+                "name": "paragraph_max_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to set a max width on paragraph tags you can do that here. If nothing is filled in here paragraphs will act normal and be 100% width of whatever div they are in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
             }
         ],
         "location": [

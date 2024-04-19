@@ -367,10 +367,11 @@ p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-b
 }
 p {
 	margin-bottom: vars.$paragraph_margin_bottom;
+	max-width: vars.$paragraph_max_width;
 }
 .page-template-page-reading p {
 	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size_reading);
-	margin-bottom: vars.$paragraph_margin_bottom_reading;
+	margin-bottom: vars.$paragraph_margin_bottom_reading; 
 }
 
 /* COLORS
@@ -2744,45 +2745,55 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
 	font-weight: vars.$heading_2_font_weight;
+	margin-bottom: vars.$heading_2_margin_bottom;
 }
 .block-editor-block-list__layout h3, .block-editor-block-list__layout .h3 {
     font-size: vars.$header_3_font_size_admin !important;
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
 	font-weight: vars.$heading_3_font_weight;
+	margin-bottom: vars.$heading_3_margin_bottom;
 }
 .block-editor-block-list__layout h4, .block-editor-block-list__layout .h4 {
     font-size: vars.$header_4_font_size_admin !important;
 	font-family: vars.$header_4_font;
 	color: vars.$heading_4_color;
 	font-weight: vars.$heading_4_font_weight;
+	margin-bottom: vars.$heading_4_margin_bottom;
 }
 .block-editor-block-list__layout h5, .block-editor-block-list__layout .h5 {
     font-size: vars.$header_5_font_size_admin !important; 
 	font-family: vars.$header_5_font;
 	color: vars.$heading_5_color;
 	font-weight: vars.$heading_5_font_weight;
+	margin-bottom: vars.$heading_5_margin_bottom;
 }
 .block-editor-block-list__layout h6, .block-editor-block-list__layout .h6 {
     font-size: vars.$header_6_font_size_admin !important;
 	font-family: vars.$header_6_font;
 	color: vars.$heading_6_color;
 	font-weight: vars.$heading_6_font_weight;
+	margin-bottom: vars.$heading_6_margin_bottom;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout h2, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout .h2 {
     font-size: vars.$header_2_font_size_admin_reading !important;
+	margin-bottom: vars.$heading_2_margin_bottom_reading !important;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout h3, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout .h3 {
     font-size: vars.$header_3_font_size_admin_reading !important;
+	margin-bottom: vars.$heading_3_margin_bottom_reading !important;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout h4, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout .h4 {
     font-size: vars.$header_4_font_size_admin_reading !important;
+	margin-bottom: vars.$heading_4_margin_bottom_reading !important;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout h5, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout .h5 {
     font-size: vars.$header_5_font_size_admin_reading !important; 
+	margin-bottom: vars.$heading_5_margin_bottom_reading !important;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout h6, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout .h6 {
     font-size: vars.$header_6_font_size_admin_reading !important;
+	margin-bottom: vars.$heading_6_margin_bottom_reading !important;
 }
 .block-editor-block-list__layout .h2, .block-editor-block-list__layout .h3, .block-editor-block-list__layout .h4, .block-editor-block-list__layout .h5, .block-editor-block-list__layout .h6, .editor-styles-wrapper .h2, .editor-styles-wrapper .h3, .editor-styles-wrapper .h4, .editor-styles-wrapper .h5, .editor-styles-wrapper .h6 {
 	margin-left: auto !important; 
@@ -2799,6 +2810,10 @@ a.resource_link_wrapper:hover .resource_img_wrapper:after {
     font-size: vars.$body_font_size_admin !important; 
 	color: vars.$base_color; 
 	font-family: vars.$main_font !important;
+	margin-bottom: vars.$paragraph_margin_bottom;
+}
+.template-page-reading .editor-styles-wrapper .block-editor-block-list__layout p {
+	margin-bottom: vars.$paragraph_margin_bottom_reading !important;
 }
 .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout, .template-page-reading .editor-styles-wrapper .block-editor-block-list__layout p {
     font-size: vars.$body_font_size_admin_reading !important; 

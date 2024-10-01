@@ -43,7 +43,7 @@ function mayecreate_create_post_type() {
 			'menu_icon'         => 'dashicons-images-alt',
 			)
 		);	
-	if (in_array('projects', get_field('post_type_selector', 'option'))) {
+	if ((in_array('projects', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
 		$alt_project_name = get_field('alternate_name_for_projects', 'option');
 		if ($alt_project_name) { $alt_project_name = $alt_project_name; } else { $alt_project_name = "Projects"; }		
 		$alt_project_slug = str_replace(' ', '-', strtolower($alt_project_name));
@@ -69,7 +69,7 @@ function mayecreate_create_post_type() {
 			)
 		);
 	}
-	if (in_array('resources', get_field('post_type_selector', 'option'))) {
+	if ((in_array('resources', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
 		$alt_resources_name = get_field('alternate_name_for_resources', 'option');
 		if ($alt_resources_name) { $alt_resources_name = $alt_resources_name; } else { $alt_resources_name = "Resources"; }
 		$alt_resource_slug = str_replace(' ', '-', strtolower($alt_resources_name));
@@ -113,7 +113,7 @@ function remove_thumbnail_box() {
 add_action( 'admin_menu', 'remove_default_post_type' );
 
 function remove_default_post_type() {
-	if (!in_array('news', get_field('post_type_selector', 'option'))) {
+	if ((!in_array('news', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
 		remove_menu_page( 'edit.php' );
 	}
 }
@@ -121,7 +121,7 @@ function remove_default_post_type() {
 add_action( 'init', 'mc_change_post_object' );
 // Change dashboard Posts to News
 function mc_change_post_object() {
-	if (in_array('news', get_field('post_type_selector', 'option'))) {
+	if ((in_array('news', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
 		$alt_post_name = get_field('alternate_name_for_posts', 'option');
 		if ($alt_post_name) { $alt_post_name = $alt_post_name; } else { $alt_post_name = "Post"; }
 		$get_post_type = get_post_type_object('post');

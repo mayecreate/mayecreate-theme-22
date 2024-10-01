@@ -69,7 +69,7 @@ if($news_options) { ?>
                                             
                 <?php endif; ?>
 
-                <?php if ($show_related_posts) { ?>
+                <?php if ($show_related_posts == "Yes") { ?> 
                     <?php if ($number_of_related_posts) { $number_of_related_posts = $number_of_related_posts; } else { $number_of_related_posts = '1'; } ?>
                     <?php $terms = get_the_terms( $post->ID , 'category', array('fields' => 'ids')); ?>
                     <?php foreach ($terms as $cat) { ?>

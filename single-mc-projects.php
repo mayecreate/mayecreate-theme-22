@@ -69,7 +69,7 @@ if($projects_options) { ?>
                                             
                 <?php endif; ?>
 
-                <?php if ($show_related_posts) { ?>
+                <?php if ($show_related_posts == "Yes") { ?> 
                     <?php if ($number_of_related_posts) { $number_of_related_posts = $number_of_related_posts; } else { $number_of_related_posts = '1'; } ?>
                     <?php $terms = get_the_terms( $post->ID , 'projectcategory', array('fields' => 'ids')); ?>
                     <?php foreach ($terms as $cat) { ?>
@@ -80,7 +80,7 @@ if($projects_options) { ?>
                     'posts_per_page'	=> $number_of_related_posts,
                     'order'			=> 'DESC', // ASC = OLDEST EVENT FIRST, DESC= NEWEST EVENT FIRST 
                     'orderby' => 'date',
-                    'post_type' => 'mc-projects',
+                    'post_type' => 'mc-projects', 
                     'post__not_in' => array( $post->ID ),
                     'paged' => $paged,
                     'tax_query' => array(

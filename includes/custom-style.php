@@ -49,6 +49,19 @@ $button_hover_background_image = (get_field('button_hover_background_image', 'op
 if ($button_background_image) { $button_background_image = $button_background_image; } else { $button_background_image= ""; }
 if ($button_hover_background_image) { $button_hover_background_image = $button_hover_background_image; } else { $button_hover_background_image= $button_background_image; }
 
+$big_button_color = (get_field('big_button_text_color', 'option'));
+if ($big_button_color) { $big_button_color = $big_button_color; } else { $big_button_color = $button_color; }
+$big_button_background_color = (get_field('big_button_background_color', 'option'));
+if ($big_button_background_color) { $big_button_background_color = $big_button_background_color; } else { $big_button_background_color = $button_background_color; }
+$big_button_hover_color = (get_field('big_button_text_hover_color', 'option'));
+if ($big_button_hover_color) { $big_button_hover_color = $big_button_hover_color; } else { $big_button_hover_color = $button_hover_color; }
+$big_button_hover_background_color = (get_field('big_button_hover_background_color', 'option'));
+if ($big_button_hover_background_color) { $big_button_hover_background_color = $big_button_hover_background_color; } else { $big_button_hover_background_color = $button_hover_background_color; }
+$big_button_background_image = (get_field('big_button_background_image', 'option'));
+$big_button_hover_background_image = (get_field('big_button_hover_background_image', 'option'));
+if ($big_button_background_image) { $big_button_background_image = $big_button_background_image; } else { $big_button_background_image= ""; }
+if ($big_button_hover_background_image) { $big_button_hover_background_image = $big_button_hover_background_image; } else { $big_button_hover_background_image= $big_button_background_image; }
+
 $button_border_radius = (get_field('button_border_radius', 'option'));
 if ($button_border_radius) { $button_border_radius = $button_border_radius; } else { $button_border_radius = "0"; }
 $button_border_thickness = (get_field('button_border_thickness', 'option'));
@@ -67,13 +80,13 @@ if ($button_border_color_left) { $button_border_color_left = $button_border_colo
 $button_border_color_hover = (get_field('button_border_color_hover', 'option'));
 if ($button_border_color_hover) { $button_border_color_hover = $button_border_color_hover; } else { $button_border_color_hover = $button_border_color; }
 $button_border_color_top_hover = (get_field('button_border_color_top_hover', 'option'));
-if ($button_border_color_top_hover) { $button_border_color_top_hover = $button_border_color_top_hover; } else { $button_border_color_top_hover = $button_border_color_top; }
+if ($button_border_color_top_hover) { $button_border_color_top_hover = $button_border_color_top_hover; } else { $button_border_color_top_hover = $button_border_color_hover; }
 $button_border_color_right_hover = (get_field('button_border_color_right_hover', 'option'));
-if ($button_border_color_right_hover) { $button_border_color_right_hover = $button_border_color_right_hover; } else { $button_border_color_right_hover = $button_border_color_right; }
+if ($button_border_color_right_hover) { $button_border_color_right_hover = $button_border_color_right_hover; } else { $button_border_color_right_hover = $button_border_color_hover; } 
 $button_border_color_bottom_hover = (get_field('button_border_color_bottom_hover', 'option'));
-if ($button_border_color_bottom_hover) { $button_border_color_bottom_hover = $button_border_color_bottom_hover; } else { $button_border_color_bottom_hover = $button_border_color_bottom; }
+if ($button_border_color_bottom_hover) { $button_border_color_bottom_hover = $button_border_color_bottom_hover; } else { $button_border_color_bottom_hover = $button_border_color_hover; }
 $button_border_color_left_hover = (get_field('button_border_color_left_hover', 'option'));
-if ($button_border_color_left_hover) { $button_border_color_left_hover = $button_border_color_left_hover; } else { $button_border_color_left_hover = $button_border_color_left; }
+if ($button_border_color_left_hover) { $button_border_color_left_hover = $button_border_color_left_hover; } else { $button_border_color_left_hover = $button_border_color_hover; }
 
 $button_padding_top = (get_field('button_padding_top', 'option'));
 if ($button_padding_top) { $button_padding_top = $button_padding_top; } else { $button_padding_top = '10'; }
@@ -328,6 +341,12 @@ if ($ul_li_bullet) {
 	$ul_li_bullet = "url('".$ul_li_bullet."')";
 } else {
 	$ul_li_bullet = "circle";
+}
+$pagebreak_ul_li_bullet = (get_field('pagebreak_ul_li_bullet', 'option'));
+if ($pagebreak_ul_li_bullet) {
+	$pagebreak_ul_li_bullet = "url('".$pagebreak_ul_li_bullet."')";
+} else {
+	$pagebreak_ul_li_bullet = $ul_li_bullet;
 }
 
 $slide_content_overlay_color = (get_field('slide_content_overlay_color', 'option'));
@@ -790,6 +809,13 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--button_background_image: url("<?php echo $button_background_image; ?>") center center no-repeat;
 	--button_hover_background_image: url("<?php echo $button_hover_background_image; ?>") center center no-repeat;
 
+	--big_button_color: <?php echo $big_button_color; ?>;
+	--big_button_background_color: <?php echo $big_button_background_color; ?>;
+	--big_button_hover_color: <?php echo $big_button_hover_color; ?>;
+	--big_button_hover_background_color: <?php echo $big_button_hover_background_color; ?>;
+	--big_button_background_image: url("<?php echo $big_button_background_image; ?>") center center no-repeat;
+	--big_button_hover_background_image: url("<?php echo $big_button_hover_background_image; ?>") center center no-repeat;
+
 	--button_border_radius: <?php echo $button_border_radius; ?>px;
 	--button_border_thickness: <?php echo $button_border_thickness; ?>px;
 	--button_border_color: <?php echo $button_border_color; ?>;
@@ -906,6 +932,7 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 	--pagebreak_padding_bottom: <?php echo $pagebreak_padding_bottom; ?>px;
 
 	--ul_li_bullet: <?php echo $ul_li_bullet; ?>;
+	--pagebreak_ul_li_bullet: <?php echo $pagebreak_ul_li_bullet; ?>;
 	--underline_hyperlinks: <?php echo $underline_hyperlinks; ?>;
 
 	--team_background_color: <?php echo $team_background_color; ?>;

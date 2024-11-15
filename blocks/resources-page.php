@@ -32,7 +32,7 @@ if($resource_options) { ?>
 <?php if ($load_more_text) { 
 	$load_more_text = $load_more_text;
 } else {
-	$load_more_text = "Learn More";
+	$load_more_text = "Load More";
 } ?>
 <?php if ($load_more_button_alignment == "Left") { 
 	$load_more_button_alignment = "";

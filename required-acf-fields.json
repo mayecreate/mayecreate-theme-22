@@ -282,6 +282,78 @@
                 "step": "",
                 "prepend": "",
                 "append": ""
+            },
+            {
+                "key": "field_673798d56f7be",
+                "label": "Pagebreak Image Width",
+                "name": "pagebreak_image_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673799136f7bf",
+                "label": "Pagebreak Image Height",
+                "name": "pagebreak_image_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_67379cbc39aa0",
+                "label": "Pagebreak ul li bullet",
+                "name": "pagebreak_ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
             }
         ],
         "location": [
@@ -1395,6 +1467,134 @@
                 "max_height": "",
                 "max_size": "",
                 "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6737a39bd970f",
+                "label": "Big Button Text Color",
+                "name": "big_button_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the big button text color, it will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1
+            },
+            {
+                "key": "field_6737a3d5d9710",
+                "label": "Big Button Background Color",
+                "name": "big_button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1
+            },
+            {
+                "key": "field_6737a3f4d9711",
+                "label": "Big Button Background Image",
+                "name": "big_button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6737a411d9712",
+                "label": "Big Button Text Hover Color",
+                "name": "big_button_text_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color on hover. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1
+            },
+            {
+                "key": "field_6737a423d9713",
+                "label": "Big Button Hover Background Color",
+                "name": "big_button_hover_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1
+            },
+            {
+                "key": "field_6737a435d9714",
+                "label": "Big Button Hover Background Image",
+                "name": "big_button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
                 "preview_size": "medium"
             },
             {
@@ -9854,13 +10054,16 @@
                     "id": ""
                 },
                 "choices": {
-                    "Slider": "Slider",
-                    "Video": "Video"
+                    "slider": "Slider",
+                    "video": "Video",
+                    "both": "Video with Slider Content",
+                    "none": "No Slider or Video"
                 },
                 "default_value": "",
                 "return_format": "value",
                 "allow_null": 0,
                 "other_choice": 0,
+                "allow_in_bindings": 1,
                 "layout": "vertical",
                 "save_other_choice": 0
             },
@@ -10749,7 +10952,7 @@
                 "name": "optional_button_link_text",
                 "aria-label": "",
                 "type": "text",
-                "instructions": "If this is not filled in the button text will read \"Learn More\".",
+                "instructions": "If this is not filled in the button text will read \"View More\".",
                 "required": 0,
                 "conditional_logic": [
                     [
@@ -10765,10 +10968,11 @@
                     "id": ""
                 },
                 "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
                 "placeholder": "",
                 "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "append": ""
             },
             {
                 "key": "field_62ec24b357fe2",
@@ -10921,7 +11125,7 @@
                 "name": "optional_button_link_text",
                 "aria-label": "",
                 "type": "text",
-                "instructions": "If this is not filled in the button text will read \"Learn More\".",
+                "instructions": "If this is not filled in the button text will read \"View More\".",
                 "required": 0,
                 "conditional_logic": [
                     [
@@ -10937,10 +11141,11 @@
                     "id": ""
                 },
                 "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
                 "placeholder": "",
                 "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "append": ""
             },
             {
                 "key": "field_62fc102063f70",
@@ -11093,7 +11298,7 @@
                 "name": "optional_button_link_text",
                 "aria-label": "",
                 "type": "text",
-                "instructions": "If this is not filled in the button text will read \"Learn More\".",
+                "instructions": "If this is not filled in the button text will read \"View More\".",
                 "required": 0,
                 "conditional_logic": [
                     [
@@ -11109,10 +11314,11 @@
                     "id": ""
                 },
                 "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 1,
                 "placeholder": "",
                 "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "append": ""
             },
             {
                 "key": "field_633f04e0494a8",
@@ -11344,8 +11550,7 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
-                "preview_size": "medium",
+                "return_format": "array",
                 "library": "all",
                 "min_width": "",
                 "min_height": "",
@@ -11353,7 +11558,9 @@
                 "max_width": "",
                 "max_height": "",
                 "max_size": "",
-                "mime_types": ""
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
             },
             {
                 "key": "field_63a2182c69537",
@@ -11705,12 +11912,12 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5d239528415a7",
-                "label": "Button Link",
-                "name": "button_link",
+                "key": "field_6737ab1901714",
+                "label": "Link Type",
+                "name": "link_type",
                 "aria-label": "",
-                "type": "url",
-                "instructions": "Don't forget the https:\/\/ in your link.",
+                "type": "radio",
+                "instructions": "",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -11718,8 +11925,75 @@
                     "class": "",
                     "id": ""
                 },
+                "choices": {
+                    "Internal Site Link": "Internal Site Link",
+                    "External Link": "External Link"
+                },
                 "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_5d239528415a7",
+                "label": "Button Link - External",
+                "name": "button_link",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "Don't forget the https:\/\/ in your link.",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6737ab1901714",
+                            "operator": "==",
+                            "value": "External Link"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "allow_in_bindings": 1,
                 "placeholder": ""
+            },
+            {
+                "key": "field_6737ab4e01715",
+                "label": "Button Link - Internal",
+                "name": "button_link_internal",
+                "aria-label": "",
+                "type": "page_link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_6737ab1901714",
+                            "operator": "==",
+                            "value": "Internal Site Link"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "post_status": [
+                    "publish"
+                ],
+                "taxonomy": "",
+                "allow_archives": 1,
+                "multiple": 0,
+                "allow_null": 0,
+                "allow_in_bindings": 1
             },
             {
                 "key": "field_5d239549415a8",

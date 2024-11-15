@@ -40,10 +40,18 @@ function wpdocs_theme_setup() {
 	}
 	if ($resource_featured_image_width) { $resource_featured_image_width = $resource_featured_image_width; } else { $resource_featured_image_width = $featured_image_width; }
 	if ($resource_featured_image_height) { $resource_featured_image_height = $resource_featured_image_height; } else { $resource_featured_image_height = $featured_image_height; }
+
+	$pagebreak_image_width = (get_field('pagebreak_image_width', 'option'));
+	$pagebreak_image_height = (get_field('pagebreak_image_height', 'option'));
+	if ($pagebreak_image_width) { $pagebreak_image_width = $pagebreak_image_width; } else { $pagebreak_image_width = "1920"; }
+	if ($pagebreak_image_height) { $pagebreak_image_height = $pagebreak_image_height; } else { $pagebreak_image_height = "750"; }
+
     add_image_size('blog', $featured_image_width, $featured_image_height, true); // (cropped)
 	add_image_size('team', $image_size, $image_size, array('center','top')); // (cropped)
     add_image_size('project', $project_featured_image_width, $project_featured_image_height, true); // (cropped)
     add_image_size('resource', $resource_featured_image_width, $resource_featured_image_height, true); // (cropped)
+	add_image_size('pbimage', $pagebreak_image_width, $pagebreak_image_height, true); // (cropped)
+	add_image_size('schmedium', 600, 600); // (cropped)
 	add_image_size('slider', 1920, 750, true); // (cropped)
 	add_image_size('header', 1920, 450, true); // (cropped)
     add_image_size('mailchimp',564, 280, true); // (cropped)

@@ -6,7 +6,7 @@
 <?php if ($optional_button_link_text) { 
 	$optional_button_link_text = $optional_button_link_text;
 } else {
-	$optional_button_link_text = "Learn More";
+	$optional_button_link_text = "View More";
 } ?>
 <?php if ($post_category) { 
 	$post_category = $post_category;

@@ -104,7 +104,7 @@ echo $ga_tag;
 		<?php $homepage_header_type = get_field('homepage_header_type', 'option'); ?>
 		<?php $video_embed_link = get_field('video_embed_link', 'option'); ?>
 		<?php $video_height = get_field('video_height', 'option'); ?>
-		<?php if ($homepage_header_type == "Video") { ?>
+		<?php if (($homepage_header_type == "video") || ($homepage_header_type == "both")) { ?>
 			<div class="video_outer_outer" style="position:relative; overflow:hidden;height:<?php echo $video_height; ?>vh;width:100%;z-index:1;">
 				<div style="position:absolute; overflow:hidden;height: 100%;width:100%;z-index:1;" class="video_outer_wrapper">
 					<div id="video_outer" style="position:absolute;width:100%;height:100%;">
@@ -113,21 +113,25 @@ echo $ga_tag;
 						</div>
 					</div>
 				</div>
+				<?php if ($homepage_header_type == "both") {
+					get_template_part('partials/content','carouselPosts');
+				} ?>
 			</div>
-		<?php } else {
+		<?php } ?>
+		<?php if ($homepage_header_type == "slider") {
 			get_template_part('partials/content','carouselPosts');
 		} ?>
     </div><!-- homefeatured -->
     
 <?php } elseif (is_home()) { ?>
-        <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')" role="banner">
+        <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')" role="banner">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -142,7 +146,7 @@ echo $ga_tag;
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')" role="banner">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -153,7 +157,7 @@ echo $ga_tag;
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')" role="banner">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -210,14 +214,14 @@ echo $ga_tag;
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')" role="banner">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
               <?php mayecreate_page_title();?>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')" role="banner">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>

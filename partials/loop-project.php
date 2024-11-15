@@ -66,7 +66,7 @@ if($projects_options) { ?>
 				$image_url = wp_get_attachment_image_src($image_id,'project', true); ?>
 				<img src="<?php echo $image_url[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
 				<?php if ($display_title_over_image == "Yes") { ?>
-					<h3 class="img_wrapper_title"><?php the_title(); ?></h3>
+					<h2 class="img_wrapper_title"><?php the_title(); ?></h2>
 				<?php } ?>
 			</span>
 		</div>

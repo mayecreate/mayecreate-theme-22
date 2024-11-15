@@ -1,5 +1,12 @@
 <?php $button_text = esc_html(get_field("button_text")); ?>
+<?php $link_type = esc_html(get_field("link_type")); ?>
 <?php $button_link = esc_html(get_field("button_link")); ?>
+<?php $button_link_internal = esc_html(get_field("button_link_internal")); ?>
+<?php if ($link_type == "Internal Site Link") {
+    $button_link = $button_link_internal;
+} else {
+    $button_link = $button_link;
+} ?>
 
 <?php $large_button = ('Large' == get_field('button_type')); ?>
 <?php $_blank = ('_blank' == get_field('target')); ?>

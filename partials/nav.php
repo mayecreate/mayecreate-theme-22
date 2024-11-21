@@ -21,6 +21,7 @@
                         'link_after'      => '</span>',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 3,
+						'container_aria_label'	=> 'Main Navigation Top',
                         'walker'          => ''
                         ); ?>
     
@@ -64,6 +65,7 @@
 			'link_after'      => '</span>',
 			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 			'depth'           => 3,
+			'container_aria_label'	=> 'Main Navigation',
 			'walker'          => ''
 			); ?>
 

@@ -111,7 +111,8 @@ function register_acf_block_types() {
 			'keywords'          => array( 'button' ),
 		)
 	);
-	if (in_array('news', get_field('post_type_selector', 'option'))) {
+	$post_type_selector = get_field('post_type_selector', 'option');
+	if ($post_type_selector == 'news') {
 		// register a featured posts block.
 		acf_register_block_type(
 			array(
@@ -137,7 +138,8 @@ function register_acf_block_types() {
 			)
 		);
 	}  
-	if (in_array('resources', get_field('post_type_selector', 'option'))) {
+	$post_type_selector_resource = get_field('post_type_selector_resource', 'option');
+	if ($post_type_selector_resource == 'resources') {
 		// register a featured resources block.
 		acf_register_block_type(
 			array(
@@ -163,8 +165,35 @@ function register_acf_block_types() {
 			)
 		);
 	} 
-
-	if (in_array('team', get_field('post_type_selector', 'option'))) {
+	$post_type_selector_events = get_field('post_type_selector_events', 'option');
+	if ($post_type_selector_events == 'events') {
+		// register a featured events block.
+		acf_register_block_type(
+			array(
+				'name'              => 'featured-events',
+				'title'             => __('MC Featured Events'),
+				'description'       => __('Add a featured events block to your page.'),
+				'render_template'   => 'blocks/featured-events.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'featured', 'events', 'event' ),
+			)
+		);
+		// register a events page block.
+		acf_register_block_type(
+			array(
+				'name'              => 'events-page',
+				'title'             => __('MC Events Page'),
+				'description'       => __('Add a events page block to your page.'),
+				'render_template'   => 'blocks/events-page.php',
+				'category'          => 'formatting',
+				'icon'              => 'admin-post',
+				'keywords'          => array( 'page', 'events', 'event' ),
+			)
+		);
+	} 
+	$post_type_selector_team = get_field('post_type_selector_team', 'option');
+	if ($post_type_selector_team == 'team') {
 		// register a team member block.
 		acf_register_block_type(
 			array(
@@ -178,8 +207,8 @@ function register_acf_block_types() {
 			) 
 		); 
 	}  
-	
-	if (in_array('projects', get_field('post_type_selector', 'option'))) {
+	$post_type_selector_project = get_field('post_type_selector_project', 'option');
+	if ($post_type_selector_project == 'projects') {
 		// register a featured posts block.
 		acf_register_block_type(
 			array(

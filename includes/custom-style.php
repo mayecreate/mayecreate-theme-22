@@ -751,6 +751,110 @@ if ($resource_post_date_size) { $resource_post_date_size_use = $resource_post_da
 $resource_post_date_size_use = $resource_post_date_size / 10;
 if ($resource_list_categories_size) { $resource_list_categories_size_use = $resource_list_categories_size; $resource_list_categories_size = $resource_list_categories_size; } else { $resource_list_categories_size_use = $heading_6_font_size; $resource_list_categories_size = $heading_6_font_size; }
 $resource_list_categories_size_use = $resource_list_categories_size / 10;
+
+$event_options = get_field('event_options', 'option');
+if($event_options) {
+
+	$event_background_color = $event_options['background_color'];
+	$event_background_hover_color = $event_options['background_hover_color'];
+	$event_post_padding = $event_options['post_padding'];
+	$event_border_radius = $event_options['border_radius'];
+	$event_border_width = $event_options['border_width'];
+	$event_border_color = $event_options['border_color'];
+	$event_border_color_top = $event_options['border_color_top'];
+	$event_border_color_right = $event_options['border_color_right'];
+	$event_border_color_bottom = $event_options['border_color_bottom'];
+	$event_border_color_left = $event_options['border_color_left'];
+	$event_box_shadow = $event_options['box_shadow'];
+	$event_box_shadow_color = $event_options['box_shadow_color'];
+	$event_featured_image_border_radius = $event_options['featured_image_border_radius'];
+	$event_featured_image_border_width = $event_options['featured_image_border_width'];
+	$event_featured_image_border_color = $event_options['featured_image_border_color'];
+	$event_featured_image_border_color_top = $event_options['featured_image_border_color_top'];
+	$event_featured_image_border_color_right = $event_options['featured_image_border_color_right'];
+	$event_featured_image_border_color_bottom = $event_options['featured_image_border_color_bottom'];
+	$event_featured_image_border_color_left = $event_options['featured_image_border_color_left'];
+	$event_button_text_color = $event_options['button_text_color'];
+	$event_button_background_color = $event_options['button_background_color'];
+	$event_button_text_color_hover = $event_options['button_text_color_hover'];
+	$event_button_background_color_hover = $event_options['button_background_color_hover'];
+	$event_title_font = $event_options['title_font'];
+	$event_title_color = $event_options['title_color'];
+	$event_title_hover_color = $event_options['title_hover_color'];
+	$event_title_border_bottom_width = $event_options['title_border_bottom_width'];
+	$event_title_border_bottom_color = $event_options['title_border_bottom_color'];
+	$event_content_font = $event_options['content_font'];
+	$event_content_color = $event_options['content_color'];
+	$event_content_hover_color = $event_options['content_hover_color'];
+	$event_featured_image_overlay = $event_options['featured_image_overlay'];
+	$event_post_date_color = $event_options['post_date_color'];
+	$event_post_date_hover_color = $event_options['post_date_hover_color'];
+	$event_list_categories_color = $event_options['list_categories_color'];
+	$event_list_categories_hover_color = $event_options['list_categories_hover_color'];
+
+	$event_post_date_font = $event_options['post_date_font'];
+	$event_post_date_size = $event_options['post_date_size'];
+	$event_list_categories_font = $event_options['list_categories_font'];
+	$event_list_categories_size = $event_options['list_categories_size'];
+	$event_title_font_size = $event_options['title_font_size'];
+	$event_content_font_size = $event_options['content_font_size'];
+
+}
+
+if ($event_background_color) { $event_background_color = $event_background_color; } else { $event_background_color = 'transparent'; }
+if ($event_background_hover_color) { $event_background_hover_color = $event_background_hover_color; } else { $event_background_hover_color = $event_background_color; }
+if ($event_post_padding) { $event_post_padding = $event_post_padding; } else { $event_post_padding = '20'; }
+
+if ($event_border_radius) { $event_border_radius = $event_border_radius; } else { $event_border_radius = '0'; }
+if ($event_border_width) { $event_border_width = $event_border_width; } else { $event_border_width = '0'; }
+if ($event_border_color) { $event_border_color = $event_border_color; } else { $event_border_color = 'transparent'; }
+if ($event_border_color_top) { $event_border_color_top = $event_border_color_top; } else { $event_border_color_top = $event_border_color; }
+if ($event_border_color_right) { $event_border_color_right = $event_border_color_right; } else { $event_border_color_right = $event_border_color; }
+if ($event_border_color_bottom) { $event_border_color_bottom = $event_border_color_bottom; } else { $event_border_color_bottom = $event_border_color; }
+if ($event_border_color_left) { $event_border_color_left = $event_border_color_left; } else { $event_border_color_left = $event_border_color; }
+
+if ($event_box_shadow_color && $event_box_shadow =='Yes') { $event_box_shadow_color = $event_box_shadow_color; } else { $event_box_shadow_color = 'transparent'; }
+
+if ($event_featured_image_overlay) { $event_featured_image_overlay = $event_featured_image_overlay; } else { $event_featured_image_overlay = 'transparent'; }
+if ($event_featured_image_border_radius) { $event_featured_image_border_radius = $event_featured_image_border_radius; } else { $event_featured_image_border_radius = '0'; }
+if ($event_featured_image_border_width) { $event_featured_image_border_width = $event_featured_image_border_width; } else { $event_featured_image_border_width = '0'; }
+if ($event_featured_image_border_color) { $event_featured_image_border_color = $event_featured_image_border_color; } else { $event_featured_image_border_color = 'transparent'; }
+if ($event_featured_image_border_color_top) { $event_featured_image_border_color_top = $event_featured_image_border_color_top; } else { $event_featured_image_border_color_top = $event_featured_image_border_color; }
+if ($event_featured_image_border_color_right) { $event_featured_image_border_color_right = $event_featured_image_border_color_right; } else { $event_featured_image_border_color_right = $event_featured_image_border_color; }
+if ($event_featured_image_border_color_bottom) { $event_featured_image_border_color_bottom = $event_featured_image_border_color_bottom; } else { $event_featured_image_border_color_bottom = $event_featured_image_border_color; }
+if ($event_featured_image_border_color_left) { $event_featured_image_border_color_left = $event_featured_image_border_color_left; } else { $event_featured_image_border_color_left = $event_featured_image_border_color; }
+
+if ($event_title_font) { $event_title_font = $event_title_font; } else { $event_title_font = $main_heading_font; }
+if ($event_title_color) { $event_title_color = $event_title_color; } else { $event_title_color = $secondary_color; }
+if ($event_title_hover_color) { $event_title_hover_color = $event_title_hover_color; } else { $event_title_hover_color = $link_hover_color; }
+if ($event_title_border_bottom_width) { $event_title_border_bottom_width = $event_title_border_bottom_width; } else { $event_title_border_bottom_width = '0'; };
+if ($event_title_border_bottom_color) { $event_title_border_bottom_color = $event_title_border_bottom_color; } else { $event_title_border_bottom_color = 'transparent'; };
+
+if ($event_content_font) { $event_content_font = $event_content_font; } else { $event_content_font = $primary_font; }
+if ($event_content_color) { $event_content_color = $event_content_color; } else { $event_content_color = $primary_site_color; }
+if ($event_content_hover_color) { $event_content_hover_color = $event_content_hover_color; } else { $event_content_hover_color = $link_hover_color; }
+
+if ($event_button_text_color) { $event_button_text_color = $event_button_text_color; } else { $event_button_text_color = $button_color; }
+if ($event_button_background_color) { $event_button_background_color = $event_button_background_color; } else { $event_button_background_color = $button_background_color; }
+if ($event_button_text_color_hover) { $event_button_text_color_hover = $event_button_text_color_hover; } else { $event_button_text_color_hover = $button_hover_color; }
+if ($event_button_background_color_hover) { $event_button_background_color_hover = $event_button_background_color_hover; } else { $event_button_background_color_hover = $button_hover_background_color; }
+
+if ($event_post_date_color) { $event_post_date_color = $event_post_date_color; } else { $event_post_date_color = $primary_site_color; }
+if ($event_post_date_hover_color) { $event_post_date_hover_color = $event_post_date_hover_color; } else { $event_post_date_hover_color = $link_hover_color; }
+if ($event_list_categories_color) { $event_list_categories_color = $event_list_categories_color; } else { $event_list_categories_color = $primary_site_color; }
+if ($event_list_categories_hover_color) { $event_list_categories_hover_color = $event_list_categories_hover_color; } else { $event_list_categories_hover_color = $link_hover_color; }
+
+if ($event_post_date_font) { $event_post_date_font = $event_post_date_font; } else { $event_post_date_font = $main_heading_font; }
+if ($event_list_categories_font) { $event_list_categories_font = $event_list_categories_font; } else { $event_list_categories_font = $main_heading_font; }
+
+if ($event_title_font_size) { $event_title_font_size_use = $event_title_font_size; $event_title_font_size = $event_title_font_size; } else { $event_title_font_size_use = $heading_3_font_size; $event_title_font_size = $heading_3_font_size; }
+$event_title_font_size_use = $event_title_font_size / 10;
+if ($event_content_font_size) { $event_content_font_size_use = $event_content_font_size; $event_content_font_size = $event_content_font_size; } else { $event_content_font_size_use = $body_font_size; $event_content_font_size = $body_font_size; }
+$event_content_font_size_use = $event_content_font_size / 10;
+if ($event_post_date_size) { $event_post_date_size_use = $event_post_date_size; $event_post_date_size = $event_post_date_size; } else { $event_post_date_size_use = $heading_4_font_size; $event_post_date_size = $heading_4_font_size; }
+$event_post_date_size_use = $event_post_date_size / 10;
+if ($event_list_categories_size) { $event_list_categories_size_use = $event_list_categories_size; $event_list_categories_size = $event_list_categories_size; } else { $event_list_categories_size_use = $heading_6_font_size; $event_list_categories_size = $heading_6_font_size; }
+$event_list_categories_size_use = $event_list_categories_size / 10;
 		
 ?>
 :root {
@@ -1133,6 +1237,60 @@ $resource_list_categories_size_use = $resource_list_categories_size / 10;
 
 	--resource_post_date_font: <?php echo $resource_post_date_font; ?>;
 	--resource_list_categories_font: <?php echo $resource_list_categories_font; ?>;
+	
+	--event_background_color: <?php echo $event_background_color; ?>;
+	--event_background_hover_color: <?php echo $event_background_hover_color; ?>;
+	--event_post_padding: <?php echo $event_post_padding; ?>px;
+
+	--event_border_radius: <?php echo $event_border_radius; ?>px;
+	--event_border_width: <?php echo $event_border_width; ?>px;
+	--event_border_color: <?php echo $event_border_color; ?>;
+	--event_border_color_top: <?php echo $event_border_color_top; ?>;
+	--event_border_color_right: <?php echo $event_border_color_right; ?>;
+	--event_border_color_bottom: <?php echo $event_border_color_bottom; ?>;
+	--event_border_color_left: <?php echo $event_border_color_left; ?>;
+	--event_box_shadow_color: <?php echo $event_box_shadow_color; ?>;
+	
+	--event_featured_image_border_radius: <?php echo $event_featured_image_border_radius; ?>%;
+	--event_featured_image_border_width: <?php echo $event_featured_image_border_width; ?>px;
+	--event_featured_image_overlay: <?php echo $event_featured_image_overlay; ?>;
+	--event_featured_image_border_color: <?php echo $event_featured_image_border_color; ?>;
+	--event_featured_image_border_color_top: <?php echo $event_featured_image_border_color_top; ?>;
+	--event_featured_image_border_color_right: <?php echo $event_featured_image_border_color_right; ?>;
+	--event_featured_image_border_color_bottom: <?php echo $event_featured_image_border_color_bottom; ?>;
+	--event_featured_image_border_color_left: <?php echo $event_featured_image_border_color_left; ?>;
+
+	--event_button_text_color: <?php echo $event_button_text_color; ?>;
+	--event_button_background_color: <?php echo $event_button_background_color; ?>;
+	--event_button_text_color_hover: <?php echo $event_button_text_color_hover; ?>;
+	--event_button_background_color_hover: <?php echo $event_button_background_color_hover; ?>;
+	
+	--event_title_font: <?php echo $event_title_font; ?>;
+	--event_title_color: <?php echo $event_title_color; ?>;
+	--event_title_hover_color: <?php echo $event_title_hover_color; ?>;
+	--event_title_border_bottom_width: <?php echo $event_title_border_bottom_width; ?>px;
+	--event_title_border_bottom_color: <?php echo $event_title_border_bottom_color; ?>;
+
+	--event_content_font: <?php echo $event_content_font; ?>;
+	--event_content_color: <?php echo $event_content_color; ?>;
+	--event_content_hover_color: <?php echo $event_content_hover_color; ?>;
+	
+	--event_post_date_color: <?php echo $event_post_date_color; ?>;
+	--event_post_date_hover_color: <?php echo $event_post_date_hover_color; ?>;
+	--event_list_categories_color: <?php echo $event_list_categories_color; ?>;
+	--event_list_categories_hover_color: <?php echo $event_list_categories_hover_color; ?>;
+
+	--event_title_font_size: <?php echo $event_title_font_size_use; ?>rem;
+	--event_title_font_size_admin: <?php echo $event_title_font_size; ?>px;
+	--event_content_font_size: <?php echo $event_content_font_size_use; ?>rem;
+	--event_content_font_size_admin: <?php echo $event_content_font_size; ?>px;
+	--event_post_date_size: <?php echo $event_post_date_size_use; ?>rem;
+	--event_post_date_size_admin: <?php echo $event_post_date_size; ?>px;
+	--event_list_categories_size: <?php echo $event_list_categories_size_use; ?>rem;
+	--event_list_categories_size_admin: <?php echo $event_list_categories_size; ?>px;
+
+	--event_post_date_font: <?php echo $event_post_date_font; ?>;
+	--event_list_categories_font: <?php echo $event_list_categories_font; ?>;
 	
 	--slide_content_overlay_color: <?php echo $slide_content_overlay_color; ?>;
 	--slide_header_font: <?php echo $slide_header_font; ?>;

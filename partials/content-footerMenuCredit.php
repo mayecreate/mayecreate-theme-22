@@ -33,6 +33,7 @@ global $containerWidth;
 				'link_after'      => '</span>',
 				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 				'depth'           => 1,
+				'container_aria_label'	=> 'Footer Navigation',
 				'walker'          => ''
 				); ?>
 

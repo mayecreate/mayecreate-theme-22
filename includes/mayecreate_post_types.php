@@ -21,6 +21,7 @@ function mayecreate_id_column_content( $column, $id ) {
 function build_taxonomies() {
 	register_taxonomy( 'projectcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Project Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) ); 
 	register_taxonomy( 'resourcecategory', 'menu', array( 'hierarchical' => true, 'label' => 'Resource Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) ); 
+	register_taxonomy( 'eventcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Event Categories', 'query_var' => true, 'rewrite' => true, 'show_in_rest' => true ) );
 }
 add_action( 'init', 'build_taxonomies', 0 );  
 
@@ -43,7 +44,8 @@ function mayecreate_create_post_type() {
 			'menu_icon'         => 'dashicons-images-alt',
 			)
 		);	
-	if ((in_array('projects', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
+	$post_type_selector_project = get_field('post_type_selector_project', 'option');
+	if ($post_type_selector_project == 'projects') {
 		$alt_project_name = get_field('alternate_name_for_projects', 'option');
 		if ($alt_project_name) { $alt_project_name = $alt_project_name; } else { $alt_project_name = "Projects"; }		
 		$alt_project_slug = str_replace(' ', '-', strtolower($alt_project_name));
@@ -69,7 +71,8 @@ function mayecreate_create_post_type() {
 			)
 		);
 	}
-	if ((in_array('resources', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
+	$post_type_selector_resource = get_field('post_type_selector_resource', 'option');
+	if ($post_type_selector_resource == 'resources') {
 		$alt_resources_name = get_field('alternate_name_for_resources', 'option');
 		if ($alt_resources_name) { $alt_resources_name = $alt_resources_name; } else { $alt_resources_name = "Resources"; }
 		$alt_resource_slug = str_replace(' ', '-', strtolower($alt_resources_name));
@@ -95,6 +98,33 @@ function mayecreate_create_post_type() {
 			)
 		);
 	}
+	$post_type_selector_events = get_field('post_type_selector_events', 'option');
+	if ($post_type_selector_events == 'events') {
+		$alt_events_name = get_field('alternate_name_for_events', 'option');
+		if ($alt_events_name) { $alt_events_name = $alt_events_name; } else { $alt_events_name = "Events"; }
+		$alt_events_slug = str_replace(' ', '-', strtolower($alt_events_name));
+		// Register the "Events" custom post type if this is not needed, DELETE ME.
+		register_post_type( 'mc-event',
+			array(
+				'labels' => array(
+					'name'              => __( $alt_events_name ),
+					'singular_name'     => __( $alt_events_name ),
+					'add_new'           => __( 'Add '.$alt_events_name.'' ),
+					'add_new_item'      => __( 'Add New '.$alt_events_name.'' ),
+					'edit_item'         => __( 'Edit '.$alt_events_name.'' ),  
+					
+				),
+			'public' => true,
+			'menu_position' => 10,
+			'rewrite' => array('slug' => ''.$alt_events_slug .'', 'with_front' => false),
+			'supports' => array('title','thumbnail','revisions','editor'),
+			'menu_icon'         => 'dashicons-calendar',
+			'taxonomies' => array('eventcategory'),
+			'show_in_rest' => true,
+			'has_archive' => true 
+			)
+		);
+	}
 }
 add_action( 'init', 'mayecreate_create_post_type' );
 
@@ -113,7 +143,8 @@ function remove_thumbnail_box() {
 add_action( 'admin_menu', 'remove_default_post_type' );
 
 function remove_default_post_type() {
-	if ((!in_array('news', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
+	$post_type_selector = get_field('post_type_selector', 'option');
+	if ($post_type_selector == "" || $post_type_selector == "no") {
 		remove_menu_page( 'edit.php' );
 	}
 }
@@ -121,7 +152,8 @@ function remove_default_post_type() {
 add_action( 'init', 'mc_change_post_object' );
 // Change dashboard Posts to News
 function mc_change_post_object() {
-	if ((in_array('news', get_field('post_type_selector', 'option'))) && (get_field('post_type_selector', 'option') !== "")) {
+	$post_type_selector = get_field('post_type_selector', 'option');
+	if ($post_type_selector == "news") {
 		$alt_post_name = get_field('alternate_name_for_posts', 'option');
 		if ($alt_post_name) { $alt_post_name = $alt_post_name; } else { $alt_post_name = "Post"; }
 		$get_post_type = get_post_type_object('post');

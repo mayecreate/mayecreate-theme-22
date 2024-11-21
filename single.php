@@ -48,15 +48,15 @@ if($news_options) { ?>
                     <?php } ?>
                     <div class="<?php echo $featured_image_placement_class_2; ?>">
                         <?php if ($single_page_show_post_date == "Yes") { ?>
-                            <h5><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></h5>
+                            <p class="post_loop_date"><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></p>
                         <?php } ?>
                         <?php if ($single_page_list_categories == "Yes") { ?>
-                            <h6 class="post_loop_cats">
+                            <p class="post_loop_cats">
                             <?php $terms = get_the_terms( $post->ID , 'category'); ?>
                             <?php foreach ($terms as $cat) { ?>
                                 <span><?php echo $cat->name; ?></span><span class="post_loop_cats_sep">, </span>
                             <?php } ?>
-                            </h6>
+                            </p>
                         <?php } ?>
                     
                         <?php the_content(); ?>

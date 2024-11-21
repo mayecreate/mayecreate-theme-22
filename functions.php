@@ -81,6 +81,12 @@ include get_theme_file_path('includes/mayecreate_blocks.php');
 /* Removes responsive image functionality from site.  Will possibly remove after Wordpress 4.5 */
 include get_theme_file_path('includes/mayecreate_modify_capabilities.php');
 
+/* Locks down the wp rest api to only show the users and posts api results to logged in users */
+include get_theme_file_path('includes/mayecreate_rest_api.php');
+
+/* Custom code to set events to draft automatically after event date. */
+include get_theme_file_path('includes/mayecreate_event_draft.php');
+
 /*
 ==========================================================
 Removing things in admin section that only mayecreate should have access to
@@ -562,6 +568,78 @@ exit;
 }
 add_action('wp_ajax_mc_load_more_resource', 'mc_load_more_resource'); 
 add_action('wp_ajax_nopriv_mc_load_more_resource', 'mc_load_more_resource');
+
+  
+function mc_load_more_event() {
+	$event_options = get_field('event_options', 'option');
+	if($event_options) {
+	
+		$post_category_event = $event_options['post_page_block_category'];
+		$number_of_posts_event = $event_options['post_page_block_number_of_posts'];
+	
+	}
+	if ($number_of_posts_event) {
+		$number_of_posts_event = $number_of_posts_event;
+	} else {
+		$number_of_posts_event = "-1";
+	}
+	if ($post_category_event) { 
+		$post_category_event = $post_category_event;
+		$taxonomy_event = 'taxonomy';
+		$eventcategory_event = 'eventcategory';
+		$field_event = 'field';
+		$ID_event = 'ID';
+		$terms_event = 'terms';
+	} else {
+		$post_category_event = "";
+		$taxonomy_event = '';
+		$eventcategory_event = '';
+		$field_event = '';
+		$ID_event = '';
+		$terms_event = '';
+	}
+	
+	$ajaxposts_event = new WP_Query([
+		'post_type' => 'mc-event',
+		'posts_per_page' => $number_of_posts_event,
+		'post_status' => 'publish',
+		'orderby' => 'meta_value_num',
+		'meta_key'	=> 'event_start_date',
+		'order'	=> 'ASC',
+		'paged' => $_POST['paged'],
+		'tax_query' => array(
+			'relation' => 'OR',
+				array (
+					$taxonomy_event  => $eventcategory_event,
+					$field_event     => $ID_event,
+					$terms_event     => $post_category_event
+				)
+			)
+	]);
+	
+	$response_event = '';
+	$max_pages_event = $ajaxposts_event->max_num_pages;
+	
+	if($ajaxposts_event->have_posts()) {
+		ob_start();
+		while($ajaxposts_event->have_posts()) : $ajaxposts_event->the_post();
+		$response_event .= get_template_part('partials/loop','event-page');
+		endwhile;
+		$output_event = ob_get_contents();
+		ob_end_clean();
+	} else {
+		$response_event = '';
+	}
+	$result_event = [
+		'max' => $max_pages_event,
+		'html' => $output_event,
+	];
+	
+	echo json_encode($result_event);
+	exit;
+	}
+	add_action('wp_ajax_mc_load_more_event', 'mc_load_more_event'); 
+	add_action('wp_ajax_nopriv_mc_load_more_event', 'mc_load_more_event');
 
 function mc_optional_nav_overlap() {
 $navigation_overlapping_the_content = get_field('navigation_overlapping_the_content','option');

@@ -37,6 +37,7 @@ $mobileMenu = array(
 					'link_after'      => '</span>',
 					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					'depth'           => 0,
+					'container_aria_label'	=> 'Mobile Navigation',
 					'walker'          => ''
 					); ?>
 

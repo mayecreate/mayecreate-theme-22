@@ -5668,6 +5668,32 @@
                         "save_other_choice": 0
                     },
                     {
+                        "key": "field_676999483db0e",
+                        "label": "Single Page - Header Image",
+                        "name": "single_page_header_image",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "featured": "Use Featured Image",
+                            "default": "Use Default Image"
+                        },
+                        "default_value": "featured",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 0,
+                        "layout": "vertical",
+                        "save_other_choice": 0
+                    },
+                    {
                         "key": "field_673f717595644",
                         "label": "Single Page - Show Related Posts",
                         "name": "single_page_show_related_posts",
@@ -7456,6 +7482,32 @@
                         "save_other_choice": 0
                     },
                     {
+                        "key": "field_67699a0b117a8",
+                        "label": "Single Page - Header Image",
+                        "name": "single_page_header_image",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "featured": "Use Featured Image",
+                            "default": "Use Default Image"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 0,
+                        "layout": "vertical",
+                        "save_other_choice": 0
+                    },
+                    {
                         "key": "field_65207b53a8767",
                         "label": "Single Page - Show Related Posts",
                         "name": "single_page_show_related_posts",
@@ -7584,6 +7636,58 @@
                         "save_other_choice": 0
                     }
                 ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-post-types"
+                }
+            ]
+        ],
+        "menu_order": 7,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_67509779f2e3f",
+        "title": "Theme Options - OLD Post Types (DELETE ME)",
+        "fields": [
+            {
+                "key": "field_6750977a011a8",
+                "label": "Additional Post Types",
+                "name": "post_type_selector",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "news": "News (Uses the Standard WP Post Type)",
+                    "team": "Team (Not a Post Type! This uses a custom Block)",
+                    "projects": "Projects",
+                    "resources": "Resources"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "horizontal",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
             }
         ],
         "location": [
@@ -9342,6 +9446,32 @@
                         "default_value": "",
                         "layout": "horizontal",
                         "return_format": "value"
+                    },
+                    {
+                        "key": "field_67699a37c1e12",
+                        "label": "Single Page - Header Image",
+                        "name": "single_page_header_image",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "featured": "Use Featured Image",
+                            "default": "Use Default Image"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 0,
+                        "layout": "vertical",
+                        "save_other_choice": 0
                     },
                     {
                         "key": "field_673f6ce8101fe",
@@ -11127,6 +11257,32 @@
                         "allow_null": 0,
                         "other_choice": 0,
                         "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_67699a9603a98",
+                        "label": "Single Page - Header Image",
+                        "name": "single_page_header_image",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "featured": "Use Featured Image",
+                            "default": "Use Default Image"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 0,
+                        "layout": "vertical",
                         "save_other_choice": 0
                     },
                     {

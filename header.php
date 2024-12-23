@@ -208,6 +208,138 @@ echo $ga_tag;
 			</div>
 		</div>	
 <?php } elseif(is_page_template( 'page-reading.php' )) { ?>
+<?php } elseif(is_singular('mc-projects')) { ?>
+	<?php $alt_project_name = get_field('alternate_name_for_projects', 'option');
+	if ($alt_project_name) { $alt_project_name = $alt_project_name; } else { $alt_project_name = "Projects"; } ?>
+	<?php $projects_options = get_field('projects_options', 'option');
+	if($projects_options) { ?>
+		<?php $single_page_header_image = $projects_options['single_page_header_image']; ?>
+	<?php } ?>  
+	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
+	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_project_name; ?></h2>
+					</div>
+				</div>
+			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+            </div>
+        </div>
+	<?php } else { ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_project_name; ?></h2>
+					</div>
+				</div>
+			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+            </div>
+        </div>
+    <?php } ?>
+<?php } elseif(is_singular('mc-resources')) { ?>
+	<?php $alt_resources_name = get_field('alternate_name_for_resources', 'option');
+	if ($alt_resources_name) { $alt_resources_name = $alt_resources_name; } else { $alt_resources_name = "Resources"; } ?>
+	<?php $resource_options = get_field('resource_options', 'option');
+	if($resource_options) { ?>
+		<?php $single_page_header_image = $resource_options['single_page_header_image']; ?>
+	<?php } ?>  
+	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
+	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_resources_name; ?></h2>
+					</div>
+				</div>
+			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+            </div>
+        </div>
+	<?php } else { ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_resources_name; ?></h2>
+					</div>
+				</div>
+			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+            </div>
+        </div>
+    <?php } ?>
+<?php } elseif(is_singular('mc-event')) { ?>
+	<?php $alt_events_name = get_field('alternate_name_for_events', 'option');
+	if ($alt_events_name) { $alt_events_name = $alt_events_name; } else { $alt_events_name = "Events"; } ?>
+	<?php $event_options = get_field('event_options', 'option');
+	if($event_options) { ?>
+		<?php $single_page_header_image = $event_options['single_page_header_image']; ?>
+	<?php } ?>  
+	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
+	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_events_name; ?></h2>
+					</div>
+				</div>
+			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+            </div>
+        </div>
+	<?php } else { ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_events_name; ?></h2>
+					</div>
+				</div>
+			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+            </div>
+        </div>
+    <?php } ?>
+<?php } elseif(is_single()) { ?>
+	<?php $alt_post_name = get_field('alternate_name_for_posts', 'option');
+	if ($alt_post_name) { $alt_post_name = $alt_post_name; } else { $alt_post_name = "Blog"; } ?>
+	<?php $news_options = get_field('news_options', 'option');
+	if($news_options) { ?>
+		<?php $single_page_header_image = $news_options['single_page_header_image']; ?>
+	<?php } ?>  
+	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
+	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_post_name; ?></h2>
+					</div>
+				</div>
+			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+            </div>
+        </div>
+	<?php } else { ?>
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+            <div class="container">
+				<div class="row">
+					<div class="col-md-12 page-header">
+						<h2 class="entry-title h1"><?php echo $alt_post_name; ?></h2>
+					</div>
+				</div>
+			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+            </div>
+        </div>
+    <?php } ?>
 <?php } else { ?>
 	
 	<?php if (has_post_thumbnail() ) { ?>

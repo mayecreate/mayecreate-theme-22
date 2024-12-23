@@ -92,7 +92,7 @@
 <?php } else { ?>
     <a class="btn-mayecreate<?php if ($large_button) { ?> large<?php } ?><?php if (in_array('block', get_field('additional_class_options'))) { ?> block<?php } ?><?php if (in_array('center', get_field('additional_class_options'))) { ?> center<?php } ?> <?php echo $custom_color_class; ?> <?php echo $custom_margin_class; ?> <?php echo $custom_padding_class; ?> <?php echo $block['className']; ?>" href="<?php echo $button_link; ?>" <?php if ($_blank) { ?> target="_blank" title="This links out to <?php echo $button_link; ?>" <?php } else { ?> title="This button links to <?php echo $button_link; ?>" <?php } ?>>
 <?php } ?>
-    <?php echo $button_text; ?></a> 
+    <span><?php echo $button_text; ?></span> 
 <?php if (is_admin()) { ?>
     </span> 
 <?php } else { ?>

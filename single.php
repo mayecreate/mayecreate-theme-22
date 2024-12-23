@@ -47,6 +47,7 @@ if($news_options) { ?>
                         </div>
                     <?php } ?>
                     <div class="<?php echo $featured_image_placement_class_2; ?>">
+                        <h1 class="h2"><?php the_title(); ?></h1>
                         <?php if ($single_page_show_post_date == "Yes") { ?>
                             <p class="post_loop_date"><?php echo $post_date_text; ?><?php the_time($post_date_format); ?></p>
                         <?php } ?>

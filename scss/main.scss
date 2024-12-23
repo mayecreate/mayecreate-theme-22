@@ -1038,6 +1038,7 @@ ul.archiveYearList .archive-sub-menu li a{
 footer.site-footer {
 	background-color: vars.$footer_background_color;
 	padding-top: 30px;
+	content-visibility: visible !important;
 }
 footer.site-footer .aside{
 	padding-top: 20px;
@@ -2428,7 +2429,9 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 						overflow: auto;
 						visibility: visible;
 					}
-					
+					#drawer-menu {
+						display: none !important;
+					}
 					/* BUTTONS
 					===========================================  */
 					.btn-mayecreate, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button, .wp-block-button.large, span.btn-mayecreate {
@@ -2927,7 +2930,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 										body {
 											font-size: vars.$body_font_size;
 										}
-										h1, h1.entry-title {
+										h1, h1.entry-title, .h1 {
 											font-size: vars.$header_1_font_size;
 										}
 										h2, .h2 {
@@ -2981,7 +2984,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 										body.page-template-page-reading, .page-template-page-reading p {
 											font-size: vars.$body_font_size_reading;
 										}
-										.page-template-page-reading h1, .page-template-page-reading h1.entry-title {
+										.page-template-page-reading h1, .page-template-page-reading h1.entry-title, .page-template-page-reading .h1 {
 											font-size: vars.$header_1_font_size_reading;
 										}
 										.page-template-page-reading h2, .page-template-page-reading .h2 {

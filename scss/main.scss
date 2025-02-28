@@ -552,6 +552,7 @@ div#homefeatured #myCarousel {
 }
 div#homefeatured #myCarousel, div#homefeatured .carousel, div#homefeatured .carousel-inner {
 	height: 75vh;
+	max-height: 350px;
 }
 div#homefeatured #myCarousel:hover {
 	box-shadow: none;
@@ -835,7 +836,13 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 }
 .mm-menu .mm-header > a {
  	color: vars.$secondary_color;
-	text-transform: uppercase;
+	text-transform: uppercase; 
+}
+.mm-listview>ul>li.active>a {
+	color: vars.$white;
+}
+.mm-menu .mm-listview>li.active .mm-arrow:after, .mm-menu .mm-listview>li.active .mm-next:after {
+	border-color: vars.$white;
 }
 
 /* NAVIGATION:: Slide Out Drawer Searcch Box
@@ -2289,7 +2296,11 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     from { opacity: 0; }
     to   { opacity: 1;}
 }
-
+@media (max-width: 992px) {
+    .pagebreak {
+        background-attachment: scroll !important;
+    }
+}
 
 		/* Small devices (576px and up). This is anything labeled "sm" in bootstrap. */
 		@media (min-width: 576px) {
@@ -2307,6 +2318,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 				div#homefeatured #myCarousel, div#homefeatured .carousel, div#homefeatured .carousel-inner {
 					height: 75vh;
 					display: block;
+					max-height: 500px;
 				}
 
 				/* HEADER
@@ -2845,6 +2857,10 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 
 								/* HOME SLIDER
 								==========================================  */
+
+								div#homefeatured #myCarousel, div#homefeatured .carousel, div#homefeatured .carousel-inner {
+									max-height: 650px;
+								}
 								div#homefeatured .carousel-control {
 									height: 125px;
 									width: 35px;
@@ -3018,6 +3034,10 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 											height: 45vh;
 										}
 										
+
+										div#homefeatured #myCarousel, div#homefeatured .carousel, div#homefeatured .carousel-inner {
+											max-height: 750px;
+										}
 										
 									}
 										/* Specialized Xtra-Xtra-Xtra-Xtra-Large devices (desktops, 1700px and up). This is NOT a breakpoint in bootstrap. */

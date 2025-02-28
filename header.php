@@ -223,7 +223,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_project_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_project_name; ?></span>
 					</div>
 				</div>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
@@ -234,7 +234,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_project_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_project_name; ?></span>
 					</div>
 				</div>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
@@ -256,7 +256,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_resources_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_resources_name; ?></span>
 					</div>
 				</div>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
@@ -267,7 +267,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_resources_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_resources_name; ?></span>
 					</div>
 				</div>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
@@ -289,7 +289,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_events_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_events_name; ?></span>
 					</div>
 				</div>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
@@ -300,7 +300,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_events_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_events_name; ?></span>
 					</div>
 				</div>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
@@ -322,7 +322,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_post_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_post_name; ?></span>
 					</div>
 				</div>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
@@ -333,7 +333,7 @@ echo $ga_tag;
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
-						<h2 class="entry-title h1"><?php echo $alt_post_name; ?></h2>
+						<span class="entry-title h1"><?php echo $alt_post_name; ?></span>
 					</div>
 				</div>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>

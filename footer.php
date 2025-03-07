@@ -1,4 +1,6 @@
+<?php if(is_page_template( 'page-no-container.php' )) {} else { ?>
 </div><!-- #page -->
+<?php } ?>
 </main>
 <?php global $containerWidth; ?>
 <footer id="colophon" class="site-footer">

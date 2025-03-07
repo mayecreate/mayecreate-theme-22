@@ -108,7 +108,8 @@ if($(window).width() >= 974){
 	$("#page .pagebreak_right:nth-child(8) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(8) .pagebreak_right_content").outerHeight()+'px')});
 	$("#page .pagebreak_right:nth-child(9) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(9) .pagebreak_right_content").outerHeight()+'px')});
 	$("#page .pagebreak_right:nth-child(10) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(10) .pagebreak_right_content").outerHeight()+'px')});	
-	
+}
+if($(window).width() >= 1200){	
 	$("#page .pagebreak_left.overlap:first-child .pagebreak_left_img").css({'height':($("#page .pagebreak_left:first-child .pagebreak_left_content").outerHeight()+ 200 +'px')});
 	$("#page .pagebreak_left.overlap:nth-child(2) .pagebreak_left_img").css({'height':($("#page .pagebreak_left:nth-child(2) .pagebreak_left_content").outerHeight()+ 200 +'px')});
 	$("#page .pagebreak_left.overlap:nth-child(3) .pagebreak_left_img").css({'height':($("#page .pagebreak_left:nth-child(3) .pagebreak_left_content").outerHeight()+ 200 +'px')});
@@ -186,7 +187,8 @@ $(window).resize(function() {
 		$("#page .pagebreak_right:nth-child(8) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(8) .pagebreak_right_content").outerHeight()+'px')});
 		$("#page .pagebreak_right:nth-child(9) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(9) .pagebreak_right_content").outerHeight()+'px')});
 		$("#page .pagebreak_right:nth-child(10) .pagebreak_right_img").css({'height':($("#page .pagebreak_right:nth-child(10) .pagebreak_right_content").outerHeight()+'px')});	
-		
+	}
+	if($(window).width() >= 1200){	
 		$("#page .pagebreak_left.overlap:first-child .pagebreak_left_img").css({'height':($("#page .pagebreak_left:first-child .pagebreak_left_content").outerHeight()+ 200 +'px')});
 		$("#page .pagebreak_left.overlap:nth-child(2) .pagebreak_left_img").css({'height':($("#page .pagebreak_left:nth-child(2) .pagebreak_left_content").outerHeight()+ 200 +'px')});
 		$("#page .pagebreak_left.overlap:nth-child(3) .pagebreak_left_img").css({'height':($("#page .pagebreak_left:nth-child(3) .pagebreak_left_content").outerHeight()+ 200 +'px')});

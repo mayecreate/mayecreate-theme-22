@@ -2551,6 +2551,63 @@
                 "default_value": "",
                 "enable_opacity": 0,
                 "return_format": "string"
+            },
+            {
+                "key": "field_67cb466957ce1",
+                "label": "Login Page Text Color",
+                "name": "login_page_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page text lighter if you have a dark login page. If nothing is filled in, the text color will default to the body font color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0
+            },
+            {
+                "key": "field_67cb46f602ec2",
+                "label": "Login Page Link Color",
+                "name": "login_page_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page link color lighter if you have a dark login page. If nothing is filled in, the color will default to the normal link color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0
+            },
+            {
+                "key": "field_67cb470d02ec3",
+                "label": "Login Page Link Hover Color",
+                "name": "login_page_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page link hover color lighter if you have a dark login page. If nothing is filled in, the color will default to the normal link hover color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0
             }
         ],
         "location": [
@@ -12851,6 +12908,29 @@
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
+            },
+            {
+                "key": "field_67cb44bbba7f3",
+                "label": "Start Year",
+                "name": "start_year",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "The block will auto calculate the number of years with the company based on this field.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_62e1a3d7e3762",

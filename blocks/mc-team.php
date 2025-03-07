@@ -16,6 +16,9 @@ if($team_options) { ?>
 <?php $email = esc_html(get_field("email", $post->ID)); ?>
 <?php $bio = get_field("bio", $post->ID); ?>
 <?php $optional_outside_link = esc_html(get_field("optional_outside_link", $post->ID)); ?>
+<?php $start_year = esc_html(get_field("start_year", $post->ID)); ?>
+<?php $today = date("Y"); ?>
+<?php if ($start_year) { $years_use = $today-$start_year; } else {$years_use = $today; } ?>
 <?php
 $image = get_field('headshot');
 $size = 'team';
@@ -65,6 +68,7 @@ $thumb = $image['sizes'][ $size ];
             <?php if ($email) { ?>
                 <p><a href="mailto:<?php echo $email; ?>"><?php echo $mail_icon; ?><?php echo $email; ?></a></p>
             <?php } ?>
+            <?php if ($start_year) { ?><p><span>Years of Experience:</span> <?php echo $years_use; ?></p><?php } ?>
             <?php if ($optional_outside_link) { ?>
                 <a role="button" class="btn-mayecreate" href="<?php echo $optional_outside_link; ?>" title="This button links to <?php echo $optional_outside_link; ?>"><?php echo $expand_button_text; ?></a>
             <?php } elseif ($bio) { ?>

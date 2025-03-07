@@ -20,9 +20,28 @@ function mayecreate_custom_login_logo() {
 
 	$primary_site_color = (get_field('primary_site_color', 'option'));
 	$secondary_color = (get_field('secondary_color', 'option'));
+	$login_page_text_color= (get_field('login_page_text_color', 'option'));
+	if ($login_page_text_color) {
+		$login_page_text_color = $login_page_text_color;
+	} else {
+		$login_page_text_color = $primary_site_color;
+	}
 
 	$link_color = (get_field('link_color', 'option'));
+	$login_page_link_color= (get_field('login_page_link_color', 'option'));
+	if ($login_page_link_color) {
+		$login_page_link_color = $login_page_link_color;
+	} else {
+		$login_page_link_color = $link_color;
+	}
+
 	$link_hover_color = (get_field('link_hover_color', 'option'));
+	$login_page_link_hover_color= (get_field('login_page_link_hover_color', 'option'));
+	if ($login_page_link_hover_color) {
+		$login_page_link_hover_color = $login_page_link_hover_color;
+	} else {
+		$login_page_link_hover_color = $link_hover_color;
+	}
 	
 	$button_color = (get_field('button_color', 'option'));
 	$button_background_color = (get_field('button_background_color', 'option'));
@@ -57,16 +76,16 @@ function mayecreate_custom_login_logo() {
 		border:0 none;
 	}
 	.login label {
-		color: '.$primary_site_color.';
+		color: '.$login_page_text_color.';
 	}	
 	.login form .forgetmenot label {
-		color: '.$primary_site_color.';
+		color: '.$login_page_text_color.';
 	}
 	.login a:link, .login a:visited {
-		color: '.$link_color.' !important;
+		color: '.$login_page_link_color.' !important;
 	}
 	.login a:hover, .login a:active {
-		color: '.$link_hover_color.' !important;
+		color: '.$login_page_link_hover_color.' !important;
 	}
 	input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus{
 		/* Style the form field focus state */

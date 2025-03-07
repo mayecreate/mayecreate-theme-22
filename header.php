@@ -368,7 +368,9 @@ echo $ga_tag;
 <main id="content">
 <div id="page"> <!--Begin Page -->
 <div class="pagebreak_fix">
+<?php if(is_page_template( 'page-no-container.php' )) {} else { ?>
 <div class="hfeed site <?php echo $containerWidth; ?>">
+<?php } ?>
 
 <?php $show_breadcrumb_nav = ('yes' == get_field('show_breadcrumb_nav', 'option')); ?>
 <?php if ($show_breadcrumb_nav) {

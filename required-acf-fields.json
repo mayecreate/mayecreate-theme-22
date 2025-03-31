@@ -271,1152 +271,6 @@
         "show_in_rest": 0
     },
     {
-        "key": "group_620e6ddb212be",
-        "title": "Theme Options - General",
-        "fields": [
-            {
-                "key": "field_620e6f933e165",
-                "label": "Container Width",
-                "name": "container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_63127bd17e4ed",
-                "label": "Home Container Width",
-                "name": "home_container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_63127bfbe0317",
-                "label": "Header\/Footer Container Width",
-                "name": "headerfooter_container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_620e6fca3e166",
-                "label": "Site Logo",
-                "name": "site_logo",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "full",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_620e7c22fda7b",
-                "label": "Show Breadcrumb Nav",
-                "name": "show_breadcrumb_nav",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "no": "No",
-                    "yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_620e7ab22a809",
-                "label": "Facebook Opengraph Image",
-                "name": "facebook_opengraph_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This is the default image used in the facebook open graph code.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "mailchimp",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_6219591c9cbca",
-                "label": "Fixed Pagebreak Background",
-                "name": "fixed_pagebreak_background",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_628bebeddad4a",
-                "label": "ul li bullet",
-                "name": "ul_li_bullet",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This should be around 10px by 10px at the most.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_65207682250f7",
-                "label": "Underline Hyperlinks",
-                "name": "underline_hyperlinks",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "default_value": "",
-                "return_format": "value",
-                "allow_null": 0,
-                "other_choice": 0,
-                "layout": "horizontal",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_62ed42a82ce8a",
-                "label": "GA Tag",
-                "name": "ga_tag",
-                "aria-label": "",
-                "type": "textarea",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
-            },
-            {
-                "key": "field_63a2246e80020",
-                "label": "Pagebreak Padding Top",
-                "name": "pagebreak_padding_top",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_63a224c080021",
-                "label": "Pagebreak Padding Bottom",
-                "name": "pagebreak_padding_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_673798d56f7be",
-                "label": "Pagebreak Image Width",
-                "name": "pagebreak_image_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_673799136f7bf",
-                "label": "Pagebreak Image Height",
-                "name": "pagebreak_image_height",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_67379cbc39aa0",
-                "label": "Pagebreak ul li bullet",
-                "name": "pagebreak_ul_li_bullet",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "allow_in_bindings": 1,
-                "preview_size": "medium"
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "options_page",
-                    "operator": "==",
-                    "value": "theme-general-settings"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": 0
-    },
-    {
-        "key": "group_620ece8100338",
-        "title": "Theme Options - Fonts",
-        "fields": [
-            {
-                "key": "field_620ece8bc2b2f",
-                "label": "Google Font embed Link(s)",
-                "name": "google_font_embed_links",
-                "aria-label": "",
-                "type": "textarea",
-                "instructions": "This is the \"link\" option in google webfonts. Just paste that whole box of stuff here. This will add your desired google webfont into the site.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\r\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\r\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
-            },
-            {
-                "key": "field_620ed067c2b30",
-                "label": "Primary Font",
-                "name": "primary_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "'Roboto', sans-serif",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6216900a2e51f",
-                "label": "Body Font Size",
-                "name": "body_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 18,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_620ed0d75391d",
-                "label": "Main Heading Font",
-                "name": "main_heading_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "If you want to use the same font for all headings, paste it here. This is JUST the font string. DO NOT include the \"font-family:\" portion.\r\nEach individual heading font can be overwritten with the following fields.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "'Roboto', sans-serif",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_620ed09fc2b31",
-                "label": "Heading 1 Font",
-                "name": "heading_1_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc134614b",
-                "label": "Heading 1 Color",
-                "name": "heading_1_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_640a59751002f",
-                "label": "Heading 1 Shadow Color",
-                "name": "heading_1_shadow_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string"
-            },
-            {
-                "key": "field_6216908de0bc6",
-                "label": "Heading 1 Font Size",
-                "name": "heading_1_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 70,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628bef6d7f31d",
-                "label": "Heading 1 Font Weight",
-                "name": "heading_1_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_620ed137c0d32",
-                "label": "Heading 2 Font",
-                "name": "heading_2_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc5fb00a8",
-                "label": "Heading 2 Color",
-                "name": "heading_2_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_6216909fe0bc7",
-                "label": "Heading 2 Font Size",
-                "name": "heading_2_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 40,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628bef922eae2",
-                "label": "Heading 2 Font Weight",
-                "name": "heading_2_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_662183eac32e6",
-                "label": "Heading 2 Margin Bottom",
-                "name": "heading_2_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_620ed146c0d33",
-                "label": "Heading 3 Font",
-                "name": "heading_3_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc63b00a9",
-                "label": "Heading 3 Color",
-                "name": "heading_3_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_621690a8e0bc8",
-                "label": "Heading 3 Font Size",
-                "name": "heading_3_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 35,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628bef9e2eae3",
-                "label": "Heading 3 Font Weight",
-                "name": "heading_3_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_6621842bc32e7",
-                "label": "Heading 3 Margin Bottom",
-                "name": "heading_3_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_620ed14ac0d34",
-                "label": "Heading 4 Font",
-                "name": "heading_4_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc64b00aa",
-                "label": "Heading 4 Color",
-                "name": "heading_4_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_621690b4e0bc9",
-                "label": "Heading 4 Font Size",
-                "name": "heading_4_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 30,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628befa82eae4",
-                "label": "Heading 4 Font Weight",
-                "name": "heading_4_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_6621843dc32e8",
-                "label": "Heading 4 Margin Bottom",
-                "name": "heading_4_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_620ed14bc0d35",
-                "label": "Heading 5 Font",
-                "name": "heading_5_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc65b00ab",
-                "label": "Heading 5 Color",
-                "name": "heading_5_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_621690bfe0bca",
-                "label": "Heading 5 Font Size",
-                "name": "heading_5_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 28,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628befb32eae5",
-                "label": "Heading 5 Font Weight",
-                "name": "heading_5_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_6621844bc32e9",
-                "label": "Heading 5 Margin Bottom",
-                "name": "heading_5_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_620ed14dc0d36",
-                "label": "Heading 6 Font",
-                "name": "heading_6_font",
-                "aria-label": "",
-                "type": "text",
-                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_6217dc66b00ac",
-                "label": "Heading 6 Color",
-                "name": "heading_6_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string"
-            },
-            {
-                "key": "field_621690cae0bcb",
-                "label": "Heading 6 Font Size",
-                "name": "heading_6_font_size",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the max size that will be used on full width screens.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 22,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_628befbc2eae6",
-                "label": "Heading 6 Font Weight",
-                "name": "heading_6_font_weight",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_6621845dc32ea",
-                "label": "Heading 6 Margin Bottom",
-                "name": "heading_6_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_662186c97d6a3",
-                "label": "Paragraph Margin Bottom",
-                "name": "paragraph_margin_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If nothing is filled in, this will default to 20px.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            },
-            {
-                "key": "field_6622cdea8c694",
-                "label": "Paragraph Max Width",
-                "name": "paragraph_max_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "If you want to set a max width on paragraph tags you can do that here. If nothing is filled in here paragraphs will act normal and be 100% width of whatever div they are in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": "px"
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "options_page",
-                    "operator": "==",
-                    "value": "theme-general-settings"
-                }
-            ]
-        ],
-        "menu_order": 1,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
-        "show_in_rest": 0
-    },
-    {
         "key": "group_620eb6a70234a",
         "title": "Theme Options - Colors",
         "fields": [
@@ -2619,14 +1473,1160 @@
                 }
             ]
         ],
-        "menu_order": 2,
-        "position": "normal",
+        "menu_order": 0,
+        "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
         "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_620e6ddb212be",
+        "title": "Theme Options - General",
+        "fields": [
+            {
+                "key": "field_620e6f933e165",
+                "label": "Container Width",
+                "name": "container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bd17e4ed",
+                "label": "Home Container Width",
+                "name": "home_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bfbe0317",
+                "label": "Header\/Footer Container Width",
+                "name": "headerfooter_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620e6fca3e166",
+                "label": "Site Logo",
+                "name": "site_logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_620e7c22fda7b",
+                "label": "Show Breadcrumb Nav",
+                "name": "show_breadcrumb_nav",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e7ab22a809",
+                "label": "Facebook Opengraph Image",
+                "name": "facebook_opengraph_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the default image used in the facebook open graph code.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "mailchimp",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6219591c9cbca",
+                "label": "Fixed Pagebreak Background",
+                "name": "fixed_pagebreak_background",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_628bebeddad4a",
+                "label": "ul li bullet",
+                "name": "ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_65207682250f7",
+                "label": "Underline Hyperlinks",
+                "name": "underline_hyperlinks",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_62ed42a82ce8a",
+                "label": "GA Tag",
+                "name": "ga_tag",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_63a2246e80020",
+                "label": "Pagebreak Padding Top",
+                "name": "pagebreak_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63a224c080021",
+                "label": "Pagebreak Padding Bottom",
+                "name": "pagebreak_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673798d56f7be",
+                "label": "Pagebreak Image Width",
+                "name": "pagebreak_image_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673799136f7bf",
+                "label": "Pagebreak Image Height",
+                "name": "pagebreak_image_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_67379cbc39aa0",
+                "label": "Pagebreak ul li bullet",
+                "name": "pagebreak_ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_620ece8100338",
+        "title": "Theme Options - Fonts",
+        "fields": [
+            {
+                "key": "field_620ece8bc2b2f",
+                "label": "Google Font embed Link(s)",
+                "name": "google_font_embed_links",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "This is the \"link\" option in google webfonts. Just paste that whole box of stuff here. This will add your desired google webfont into the site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\r\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\r\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_620ed067c2b30",
+                "label": "Primary Font",
+                "name": "primary_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "'Roboto', sans-serif",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6216900a2e51f",
+                "label": "Body Font Size",
+                "name": "body_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 18,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620ed0d75391d",
+                "label": "Main Heading Font",
+                "name": "main_heading_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "If you want to use the same font for all headings, paste it here. This is JUST the font string. DO NOT include the \"font-family:\" portion.\r\nEach individual heading font can be overwritten with the following fields.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "'Roboto', sans-serif",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_620ed09fc2b31",
+                "label": "Heading 1 Font",
+                "name": "heading_1_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc134614b",
+                "label": "Heading 1 Color",
+                "name": "heading_1_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_640a59751002f",
+                "label": "Heading 1 Shadow Color",
+                "name": "heading_1_shadow_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6216908de0bc6",
+                "label": "Heading 1 Font Size",
+                "name": "heading_1_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 70,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef6d7f31d",
+                "label": "Heading 1 Font Weight",
+                "name": "heading_1_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620ed137c0d32",
+                "label": "Heading 2 Font",
+                "name": "heading_2_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc5fb00a8",
+                "label": "Heading 2 Color",
+                "name": "heading_2_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_6216909fe0bc7",
+                "label": "Heading 2 Font Size",
+                "name": "heading_2_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 40,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef922eae2",
+                "label": "Heading 2 Font Weight",
+                "name": "heading_2_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_662183eac32e6",
+                "label": "Heading 2 Margin Bottom",
+                "name": "heading_2_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed146c0d33",
+                "label": "Heading 3 Font",
+                "name": "heading_3_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc63b00a9",
+                "label": "Heading 3 Color",
+                "name": "heading_3_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621690a8e0bc8",
+                "label": "Heading 3 Font Size",
+                "name": "heading_3_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 35,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef9e2eae3",
+                "label": "Heading 3 Font Weight",
+                "name": "heading_3_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621842bc32e7",
+                "label": "Heading 3 Margin Bottom",
+                "name": "heading_3_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14ac0d34",
+                "label": "Heading 4 Font",
+                "name": "heading_4_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc64b00aa",
+                "label": "Heading 4 Color",
+                "name": "heading_4_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621690b4e0bc9",
+                "label": "Heading 4 Font Size",
+                "name": "heading_4_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 30,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befa82eae4",
+                "label": "Heading 4 Font Weight",
+                "name": "heading_4_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621843dc32e8",
+                "label": "Heading 4 Margin Bottom",
+                "name": "heading_4_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14bc0d35",
+                "label": "Heading 5 Font",
+                "name": "heading_5_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc65b00ab",
+                "label": "Heading 5 Color",
+                "name": "heading_5_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621690bfe0bca",
+                "label": "Heading 5 Font Size",
+                "name": "heading_5_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 28,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befb32eae5",
+                "label": "Heading 5 Font Weight",
+                "name": "heading_5_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621844bc32e9",
+                "label": "Heading 5 Margin Bottom",
+                "name": "heading_5_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14dc0d36",
+                "label": "Heading 6 Font",
+                "name": "heading_6_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc66b00ac",
+                "label": "Heading 6 Color",
+                "name": "heading_6_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string"
+            },
+            {
+                "key": "field_621690cae0bcb",
+                "label": "Heading 6 Font Size",
+                "name": "heading_6_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 22,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befbc2eae6",
+                "label": "Heading 6 Font Weight",
+                "name": "heading_6_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621845dc32ea",
+                "label": "Heading 6 Margin Bottom",
+                "name": "heading_6_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_662186c97d6a3",
+                "label": "Paragraph Margin Bottom",
+                "name": "paragraph_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_6622cdea8c694",
+                "label": "Paragraph Max Width",
+                "name": "paragraph_max_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to set a max width on paragraph tags you can do that here. If nothing is filled in here paragraphs will act normal and be 100% width of whatever div they are in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
         "show_in_rest": 0
     },
     {

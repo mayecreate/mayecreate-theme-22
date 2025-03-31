@@ -73,8 +73,11 @@ echo $ga_tag;
 <div id="pagewrapper">
 <a id="top"></a>
 <?php $navbar_style_fixed = ('fixed' == get_field('navbar_style', 'option')); ?>
+<?php $navigation_overlapping_the_content = get_field('navigation_overlapping_the_content','option'); ?>
 <?php if ($navbar_style_fixed) {
 	$navbar_style = "fixed";
+} elseif ($navigation_overlapping_the_content) { 
+	$navbar_style = "absolute";
 } else {
 	$navbar_style = "static";
 } ?>

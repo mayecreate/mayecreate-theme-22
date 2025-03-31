@@ -271,6 +271,382 @@
         "show_in_rest": 0
     },
     {
+        "key": "group_620e6ddb212be",
+        "title": "Theme Options - General",
+        "fields": [
+            {
+                "key": "field_620e6f933e165",
+                "label": "Container Width",
+                "name": "container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bd17e4ed",
+                "label": "Home Container Width",
+                "name": "home_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bfbe0317",
+                "label": "Header\/Footer Container Width",
+                "name": "headerfooter_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620e6fca3e166",
+                "label": "Site Logo",
+                "name": "site_logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_620e7c22fda7b",
+                "label": "Show Breadcrumb Nav",
+                "name": "show_breadcrumb_nav",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e7ab22a809",
+                "label": "Facebook Opengraph Image",
+                "name": "facebook_opengraph_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the default image used in the facebook open graph code.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "mailchimp",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6219591c9cbca",
+                "label": "Fixed Pagebreak Background",
+                "name": "fixed_pagebreak_background",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_628bebeddad4a",
+                "label": "ul li bullet",
+                "name": "ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_65207682250f7",
+                "label": "Underline Hyperlinks",
+                "name": "underline_hyperlinks",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_62ed42a82ce8a",
+                "label": "GA Tag",
+                "name": "ga_tag",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_63a2246e80020",
+                "label": "Pagebreak Padding Top",
+                "name": "pagebreak_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63a224c080021",
+                "label": "Pagebreak Padding Bottom",
+                "name": "pagebreak_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673798d56f7be",
+                "label": "Pagebreak Image Width",
+                "name": "pagebreak_image_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673799136f7bf",
+                "label": "Pagebreak Image Height",
+                "name": "pagebreak_image_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_67379cbc39aa0",
+                "label": "Pagebreak ul li bullet",
+                "name": "pagebreak_ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
         "key": "group_620eb6a70234a",
         "title": "Theme Options - Colors",
         "fields": [
@@ -1473,7 +1849,7 @@
                 }
             ]
         ],
-        "menu_order": 0,
+        "menu_order": 1,
         "position": "acf_after_title",
         "style": "default",
         "label_placement": "top",
@@ -1481,382 +1857,6 @@
         "hide_on_screen": "",
         "active": true,
         "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
-        "show_in_rest": 0
-    },
-    {
-        "key": "group_620e6ddb212be",
-        "title": "Theme Options - General",
-        "fields": [
-            {
-                "key": "field_620e6f933e165",
-                "label": "Container Width",
-                "name": "container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_63127bd17e4ed",
-                "label": "Home Container Width",
-                "name": "home_container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_63127bfbe0317",
-                "label": "Header\/Footer Container Width",
-                "name": "headerfooter_container_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "min": "",
-                "max": "",
-                "step": ""
-            },
-            {
-                "key": "field_620e6fca3e166",
-                "label": "Site Logo",
-                "name": "site_logo",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "full",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_620e7c22fda7b",
-                "label": "Show Breadcrumb Nav",
-                "name": "show_breadcrumb_nav",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "no": "No",
-                    "yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_620e7ab22a809",
-                "label": "Facebook Opengraph Image",
-                "name": "facebook_opengraph_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This is the default image used in the facebook open graph code.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "mailchimp",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_6219591c9cbca",
-                "label": "Fixed Pagebreak Background",
-                "name": "fixed_pagebreak_background",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "allow_null": 0,
-                "other_choice": 0,
-                "default_value": "",
-                "layout": "horizontal",
-                "return_format": "value",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_628bebeddad4a",
-                "label": "ul li bullet",
-                "name": "ul_li_bullet",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This should be around 10px by 10px at the most.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_65207682250f7",
-                "label": "Underline Hyperlinks",
-                "name": "underline_hyperlinks",
-                "aria-label": "",
-                "type": "radio",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "No": "No",
-                    "Yes": "Yes"
-                },
-                "default_value": "",
-                "return_format": "value",
-                "allow_null": 0,
-                "other_choice": 0,
-                "layout": "horizontal",
-                "save_other_choice": 0
-            },
-            {
-                "key": "field_62ed42a82ce8a",
-                "label": "GA Tag",
-                "name": "ga_tag",
-                "aria-label": "",
-                "type": "textarea",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
-            },
-            {
-                "key": "field_63a2246e80020",
-                "label": "Pagebreak Padding Top",
-                "name": "pagebreak_padding_top",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_63a224c080021",
-                "label": "Pagebreak Padding Bottom",
-                "name": "pagebreak_padding_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_673798d56f7be",
-                "label": "Pagebreak Image Width",
-                "name": "pagebreak_image_width",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_673799136f7bf",
-                "label": "Pagebreak Image Height",
-                "name": "pagebreak_image_height",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "allow_in_bindings": 0,
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_67379cbc39aa0",
-                "label": "Pagebreak ul li bullet",
-                "name": "pagebreak_ul_li_bullet",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "allow_in_bindings": 1,
-                "preview_size": "medium"
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "options_page",
-                    "operator": "==",
-                    "value": "theme-general-settings"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "normal",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": "",
         "show_in_rest": 0
     },
     {

@@ -887,6 +887,12 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	width: 100%;
 	background: none;
 }
+#navigation.absolute {
+	z-index: 100; 
+	position: absolute;
+	width: 100%;
+	background: none;
+}
 #navigation.affix {
 	/*animation: affixFadeIn 2s  ease-in;
 	-webkit-animation: affixFadeIn 2s;*/

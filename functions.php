@@ -648,21 +648,21 @@ if ($navigation_overlapping_the_content == 'no') { ?>
 	<script type="text/javascript">
 	jQuery(document).ready(function($) { 
 		//initial page load
-		$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
-		$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')}); 
+		$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
+		$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')}); 
 		//recalculate on scroll
 		$(window).scroll(function() {
 			setTimeout(function() {
 				if($(this).scrollTop() >= 175){} else {
-					$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
-					$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+					$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
+					$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
 				}     
 			}, 50); 
 		});
 		//recalculate on screen re-size
 		$(window).resize(function() {
-			$("#contentwrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});	
-			$("#homeContentWrap").css({'padding-top':($("#navigation.fixed").outerHeight()+'px')});
+			$("#contentwrap").css({'padding-top':($("#navigation").outerHeight()+'px')});	
+			$("#homeContentWrap").css({'padding-top':($("#navigation").outerHeight()+'px')});
 		}).resize();
 	});
 	</script>

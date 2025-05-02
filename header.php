@@ -100,6 +100,12 @@ echo $ga_tag;
 } else {
 	$default_header_image = get_bloginfo('url') .'/wp-content/themes/mayecreate-theme-22/img/default_header.jpg';
 } ?>
+<?php $header_image_fixed = get_field('header_image_fixed', 'option'); ?>
+<?php if ($header_image_fixed == "Fixed") {
+	$header_image_fixed = 'fixed';
+} else {
+	$header_image_fixed = 'static';
+} ?>
 
 <?php  if (is_front_page()){ ?>
 
@@ -127,14 +133,14 @@ echo $ga_tag;
     </div><!-- homefeatured -->
     
 <?php } elseif (is_home()) { ?>
-        <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+        <div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -149,7 +155,7 @@ echo $ga_tag;
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -160,7 +166,7 @@ echo $ga_tag;
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -219,10 +225,10 @@ echo $ga_tag;
 		<?php $single_page_header_image = $projects_options['single_page_header_image']; ?>
 	<?php } ?>  
 	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'header' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -233,7 +239,7 @@ echo $ga_tag;
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -252,10 +258,10 @@ echo $ga_tag;
 		<?php $single_page_header_image = $resource_options['single_page_header_image']; ?>
 	<?php } ?>  
 	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'header' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -266,7 +272,7 @@ echo $ga_tag;
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -285,10 +291,10 @@ echo $ga_tag;
 		<?php $single_page_header_image = $event_options['single_page_header_image']; ?>
 	<?php } ?>  
 	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'header' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -299,7 +305,7 @@ echo $ga_tag;
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -318,10 +324,10 @@ echo $ga_tag;
 		<?php $single_page_header_image = $news_options['single_page_header_image']; ?>
 	<?php } ?>  
 	<?php if (has_post_thumbnail() && $single_page_header_image == "featured") { ?>
-	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'header' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -332,7 +338,7 @@ echo $ga_tag;
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
 				<div class="row">
 					<div class="col-md-12 page-header">
@@ -349,14 +355,14 @@ echo $ga_tag;
 	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'head' ); ?>
 	<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 	<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
+		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
               <?php mayecreate_page_title();?>
 			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
-		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
+		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
 			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>

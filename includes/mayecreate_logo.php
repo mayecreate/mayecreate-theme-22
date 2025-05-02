@@ -11,7 +11,7 @@ function mayecreate_custom_logo() {
 	if ($custom_logo) {
 		echo '<div id="branding-container">';
 		echo '<a class="brand" href="' . home_url() . '" title=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
-		echo '<img class="site-logo" src="'. $custom_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" />';
+		echo '<img class="site-logo" src="'. $custom_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" width="" height="" />';
 		echo '</a>'; 
 		echo '</div>';
 	} else { 
@@ -29,13 +29,13 @@ function mayecreate_custom_footer_logo() {
 	if ($optional_footer_logo) {
 		echo '<div id="branding-container-footer">';
 		echo '<a class="brand" href="' . home_url() . '" title=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
-		echo '<img class="site-logo" src="'. $optional_footer_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" />';
+		echo '<img class="site-logo" src="'. $optional_footer_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" width="" height="" />';
 		echo '</a>'; 
 		echo '</div>';
 	} elseif ($custom_logo) {
 		echo '<div id="branding-container-footer">';
 		echo '<a class="brand" href="' . home_url() . '" title=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '">';
-		echo '<img class="site-logo" src="'. $custom_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" />';
+		echo '<img class="site-logo" src="'. $custom_logo . '" alt=" ' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" width="" height="" />';
 		echo '</a>'; 
 		echo '</div>';
 	} else { 

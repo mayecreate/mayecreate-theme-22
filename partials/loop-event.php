@@ -58,7 +58,7 @@ if($event_options) { ?>
 <?php } else { ?>
 <a href="<?php the_permalink(); ?>" class="event_link_wrapper wide <?php echo $text_alignment; ?>">
 <?php } ?>
-	<div class="row <?php echo $vertical_alignment; ?>">
+	<div class="row g-5 <?php echo $vertical_alignment; ?>">
 	<?php if ($show_a_featured_image == "Yes" && has_post_thumbnail()) { ?>
 		<div class="<?php echo $featured_image_placement_class_1; ?>">
 			<span class="event_img_wrapper">

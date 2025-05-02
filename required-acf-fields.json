@@ -14613,7 +14613,7 @@
                     "Internal Site Link": "Internal Site Link",
                     "External Link": "External Link"
                 },
-                "default_value": "",
+                "default_value": "External Link",
                 "return_format": "value",
                 "allow_null": 0,
                 "other_choice": 0,

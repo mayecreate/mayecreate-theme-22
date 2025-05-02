@@ -658,6 +658,9 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 .carousel-control {
 	z-index: 2;
 }
+.video_outer_outer {
+    max-height: 230px;
+}
 #video_wrapper iframe {
     box-sizing: border-box;
     height: 56.25vw;
@@ -737,16 +740,16 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
     right: 7px;
     height: 2px;
     width: 20px;
-    background: vars.$secondary_color;
+    background: vars.$main_nav_link_color;
 }
 .nav-button span::before,
-.nav-button span::after {
+.nav-button span::after { 
 	position: absolute;
-	display: block;
+	display: block; 
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: vars.$secondary_color;
+	background-color: vars.$main_nav_link_color;
 	content: "";
 }
 .nav-button span::before {
@@ -2267,6 +2270,54 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 .title_font {
 	font-family: vars.$header_font !important;
 }
+/* LIGHTSLIDER FIX
+====================================  */
+#goToNextSlide, #goToPrevSlide {
+	border: 0 none;
+	text-indent: -999em;
+	background: none;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+} 
+#goToNextSlide {
+	display: none;
+}
+#goToPrevSlide {
+	display: none;
+}
+#lightSlider li {
+	list-style: none;
+	background: none; 
+	vertical-align: middle;
+	background-size: contain !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+    min-width: 150px !important;
+	max-height: 130px !important;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+#lightSlider li img {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+#lightSlider {
+	min-height: 140px;
+    display: flex;
+}
+#lightSlider_custom_outer {
+    position: relative; 
+}
 
 /* ANIMATIONS
 ====================================  */
@@ -2450,6 +2501,16 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 					#drawer-menu {
 						display: none !important;
 					}
+					#goToNextSlide {
+						background: url(../img/nextimg.jpg) center center no-repeat;
+						right: -80px;
+						display: block;
+					}
+					#goToPrevSlide {
+						background: url(../img/previmg.jpg) center center no-repeat;
+						left: -80px;
+						display: block;
+					}
 					/* BUTTONS
 					===========================================  */
 					.btn-mayecreate, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button, .wp-block-button.large, span.btn-mayecreate {
@@ -2501,7 +2562,9 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 					div#homefeatured .carousel-control.right {
 						right: 7%;
 					}
-				    
+					.video_outer_outer {
+						max-height: 500px;
+					}				    
 
 				    /* TOP NAVIGATION
 				    ==========================================  */
@@ -2943,7 +3006,9 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 							}
 								/* Xtra-Xtra-Large devices (desktops, 1400px and up). This is anything labeled "xxl" in bootstrap. */
 								@media (min-width: 1400px) {
-
+									.video_outer_outer {
+										max-height: 650px;
+									}
 								}
 									/* Specialized Xtra-Xtra-Xtra-Large devices (desktops, 1550px and up). This is NOT a breakpoint in bootstrap. */
 									@media (min-width: 1550px) {

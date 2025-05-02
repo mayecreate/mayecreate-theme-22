@@ -35,7 +35,7 @@ if($resource_options) { ?>
 } ?>
 <?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 
-        <div class="row" style="max-width: <?php echo $single_page_content_width; ?>">
+        <div class="row g-5" style="max-width: <?php echo $single_page_content_width; ?>">
     
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>

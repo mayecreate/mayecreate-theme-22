@@ -46,7 +46,7 @@ if($event_options) { ?>
 <?php if ($register_title) { $register_title_use = $register_title; } else { $register_title_use = "Register"; } ?>
 <?php if ($registration_button_text) { $registration_button_text_use = $registration_button_text; } else { $registration_button_text_use = "Register Here"; } ?>
 
-        <div class="row" style="max-width: <?php echo $single_page_content_width; ?>">
+        <div class="row g-5" style="max-width: <?php echo $single_page_content_width; ?>">
     
                 <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>

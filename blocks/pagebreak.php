@@ -10,8 +10,16 @@ if ($page_break_background) {
 	$size = 'pbimage';
 	$pb_thumb = $page_break_background['sizes'][ $size ];
 }
-?>				
-
+?>			
+<?php $page_break_background_mobile = get_field("page_break_background_mobile"); ?>
+<?php
+if ($page_break_background_mobile) {
+	// Thumbnail size attributes.
+	$size = 'large';
+	$pb_thumb_mobile = $page_break_background_mobile['sizes'][ $size ];
+}
+?>		
+<?php if ($pb_thumb_mobile) { $pb_thumb_mobile = $pb_thumb_mobile; } else { $pb_thumb_mobile = $pb_thumb; } ?>
 
 <?php $additional_pagebreak_classes = get_field("additional_pagebreak_classes"); ?>
 
@@ -67,7 +75,7 @@ if ($fixed_pagebreak_background == "Yes") {
 } else {
 	$image_border_radius = "0px";
 } ?>
-
+<?php $pagebreak_id = generateRandomString(); ?>
 <?php if (is_admin()) { ?>	
 	<h2 class="h5 center" style="border-top:1px dashed #ddd;padding-top:10px;border-bottom:1px dashed #ddd;padding-bottom:10px;">-- Your pagebreak content will START here. --</h2>
 <?php } else { ?>
@@ -76,7 +84,17 @@ if ($fixed_pagebreak_background == "Yes") {
 	</div>
 	</div>
 	</div>
-			
+	
+<style type="text/css">
+	.pagebreak_full_background_<?php echo $pagebreak_id; ?>, .pagebreak_background_<?php echo $pagebreak_id; ?> {
+		background-image:url(<?php echo esc_url($pb_thumb_mobile); ?>);
+	}
+	@media (min-width: 992px) {
+		.pagebreak_full_background_<?php echo $pagebreak_id; ?>, .pagebreak_background_<?php echo $pagebreak_id; ?> {
+			background-image:url(<?php echo esc_url($pb_thumb); ?>);
+		}
+	}
+</style>		
 <?php } ?>
 
 	<?php if ($full_width) { ?>
@@ -84,7 +102,7 @@ if ($fixed_pagebreak_background == "Yes") {
 		<?php if ($background_color && !$page_break_background) { ?>
 		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } elseif($page_break_background) { ?>
-		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-image:url(<?php echo esc_url($pb_thumb); ?>);<?php echo $pagebreak_background_attachment; ?>border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;background-position: <?php echo $background_image_alignment; ?>;">
+		<div class="pagebreak pagebreak_full_background_<?php echo $pagebreak_id; ?> <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="<?php echo $pagebreak_background_attachment; ?>border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;background-position: <?php echo $background_image_alignment; ?>;">
 		<?php } else { ?>
 		<div class="pagebreak <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $pagebreak_background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } ?>
@@ -100,23 +118,23 @@ if ($fixed_pagebreak_background == "Yes") {
 	<?php } elseif ($left_img) { ?>
 
 		<?php if ($additional_pagebreak_classes == "overlap") { ?>
-		<div class="pagebreak pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>">
+		<div class="pagebreak row g-0 pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>">
 		<?php } elseif ($background_color) { ?>
-		<div class="pagebreak pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
+		<div class="pagebreak row g-0 pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } else { ?>
-		<div class="pagebreak pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
+		<div class="pagebreak row g-0 pagebreak_left <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } ?>
 			<?php if ($background_color && !$page_break_background) { ?>
-			<div class="pagebreak_left_img" style="background-color:<?php echo $background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
+			<div class="pagebreak_left_img d-lg-flex" style="background-color:<?php echo $background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
 			<?php } elseif($page_break_background) { ?>
-			<div class="pagebreak_left_img" style="background-image:url(<?php echo esc_url($pb_thumb); ?>);border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;background-position: <?php echo $background_image_alignment; ?>;"></div>
+			<div class="pagebreak_left_img pagebreak_background_<?php echo $pagebreak_id; ?> d-lg-flex" style="border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;background-position: <?php echo $background_image_alignment; ?>;"></div>
 			<?php } else { ?>
-			<div class="pagebreak_left_img" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
+			<div class="pagebreak_left_img d-lg-flex" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;"></div>
 			<?php } ?>
 			<?php if ($additional_pagebreak_classes == "overlap") { ?>
-			<div class="pagebreak_left_content" style="background-color:<?php echo $background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;">
+			<div class="pagebreak_left_content d-lg-flex" style="background-color:<?php echo $background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;">
 			<?php } else { ?>
-			<div class="pagebreak_left_content">
+			<div class="pagebreak_left_content d-lg-flex">
 			<?php } ?>
 				<div class="<?php echo $container_class; ?>">
 					<div class="pagebreak_container_inner">
@@ -124,23 +142,23 @@ if ($fixed_pagebreak_background == "Yes") {
 	<?php } elseif ($right_img) { ?>
 
 		<?php if ($additional_pagebreak_classes == "overlap") { ?>
-		<div class="pagebreak pagebreak_right <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>">
+		<div class="pagebreak row g-0 pagebreak_right <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>">
 		<?php } elseif ($background_color) { ?>
-		<div class="pagebreak pagebreak_right  <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
+		<div class="pagebreak row g-0 pagebreak_right  <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="background-color:<?php echo $background_color; ?>;border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } else { ?>
-		<div class="pagebreak pagebreak_right <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
+		<div class="pagebreak row g-0 pagebreak_right <?php if ($additional_pagebreak_classes) { echo $additional_pagebreak_classes; } ?> <?php echo $block['className']; ?>" style="border-top:<?php echo $border_top_width; ?> solid <?php echo $border_top_color; ?>;border-bottom:<?php echo $border_bottom_width; ?> solid <?php echo $border_bottom_color; ?>;">
 		<?php } ?>
 			<?php if ($background_color && !$page_break_background) { ?>
-			<div class="pagebreak_right_img" style="background-color:<?php echo $background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
+			<div class="pagebreak_right_img d-lg-flex order-lg-2" style="background-color:<?php echo $background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
 			<?php } elseif($page_break_background) { ?>
-			<div class="pagebreak_right_img" style="background-image:url(<?php echo esc_url($pb_thumb); ?>);border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;background-position: <?php echo $background_image_alignment; ?>;"></div>
+			<div class="pagebreak_right_img pagebreak_background_<?php echo $pagebreak_id; ?> d-lg-flex order-lg-2" style="border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;background-position: <?php echo $background_image_alignment; ?>;"></div>
 			<?php } else { ?>
-			<div class="pagebreak_right_img" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
+			<div class="pagebreak_right_img d-lg-flex order-lg-2" style="background-color:<?php echo $pagebreak_background_color; ?>;border-radius: <?php echo $image_border_radius; ?> 0px 0px <?php echo $image_border_radius; ?>;"></div>
 			<?php } ?>
 			<?php if ($additional_pagebreak_classes == "overlap") { ?>
-			<div class="pagebreak_right_content" style="background-color:<?php echo $background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;">
+			<div class="pagebreak_right_content d-lg-flex order-lg-1" style="background-color:<?php echo $background_color; ?>;border-radius: 0px <?php echo $image_border_radius; ?> <?php echo $image_border_radius; ?> 0px;">
 			<?php } else { ?>
-			<div class="pagebreak_right_content">
+			<div class="pagebreak_right_content d-lg-flex order-lg-1">
 			<?php } ?>
 				<div class="<?php echo $container_class; ?>">
 					<div class="pagebreak_container_inner">

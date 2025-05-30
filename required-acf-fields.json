@@ -555,6 +555,52 @@
                 "append": ""
             },
             {
+                "key": "field_6839eb8aaaa35",
+                "label": "Pagebreak Padding Top - Mobile",
+                "name": "pagebreak_padding_top_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this field will default to the Pagebreak Padding Top field above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6839ebacaaa36",
+                "label": "Pagebreak Padding Bottom - Mobile",
+                "name": "pagebreak_padding_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this field will default to the Pagebreak Padding Bottom field above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
                 "key": "field_673798d56f7be",
                 "label": "Pagebreak Image Width",
                 "name": "pagebreak_image_width",
@@ -13439,6 +13485,29 @@
                 "save_other_choice": 0
             },
             {
+                "key": "field_6839e64cd55b8",
+                "label": "Number of Posts to Show",
+                "name": "number_of_posts_to_show",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to show all posts from the selected category, type -1 here.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 4,
+                "min": -1,
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
                 "key": "field_60cba8beaf2fb",
                 "label": "Optional Button Link",
                 "name": "optional_button_link",
@@ -13688,6 +13757,29 @@
                 "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_6839e75fb865c",
+                "label": "Number of Posts to Show",
+                "name": "number_of_posts_to_show",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to show all posts from the selected category, type -1 here.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 4,
+                "min": -1,
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
             }
         ],
         "location": [
@@ -13785,6 +13877,29 @@
                 "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_6839e7c489283",
+                "label": "Number of Posts to Show",
+                "name": "number_of_posts_to_show",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to show all posts from the selected category, type -1 here.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 4,
+                "min": -1,
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_673f88673739d",
@@ -13958,6 +14073,29 @@
                 "layout": "vertical",
                 "return_format": "value",
                 "save_other_choice": 0
+            },
+            {
+                "key": "field_6839e7f3acde0",
+                "label": "Number of Posts to Show",
+                "name": "number_of_posts_to_show",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to show all posts from the selected category, type -1 here.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 4,
+                "min": -1,
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_633f04e049406",
@@ -14227,6 +14365,32 @@
                 "aria-label": "",
                 "type": "image",
                 "instructions": "NOTE: If using the left image or right image layout, it will look broken without an image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_683a07d8316f4",
+                "label": "Page Break Background - Mobile",
+                "name": "page_break_background_mobile",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the image to use on mobile for the pagebreak, if nothing is filled in here it will default to the above image.\r\nNOTE: If using the left image or right image layout, it will look broken without an image.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {

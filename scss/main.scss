@@ -4,7 +4,7 @@ html {
 	background: none;
 	font-size:62.5%;
 	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden; 
+	overflow-x: hidden;  
 }
 body { 
 	font-family: vars.$main_font; 
@@ -259,34 +259,34 @@ h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
 	color: vars.$secondary_color;
 }
 h1, h1.entry-title, .h1 {
-	font-size: clamp(3.5rem, 3rem + 1vw, vars.$header_1_font_size);
+	font-size: clamp(4.5rem, 4rem + 1vw, vars.$header_1_font_size);
 	font-family: vars.$header_1_font;
 	color: vars.$heading_1_color;
 	font-weight: vars.$heading_1_font_weight;
 }
 h2, .h2 {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size);
+	font-size: clamp(3.5rem, 3.2rem + 1vw, vars.$header_2_font_size);
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
 	font-weight: vars.$heading_2_font_weight;
 	margin-bottom: vars.$heading_2_margin_bottom;
 }
 h3, .h3 {
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size);
+	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_3_font_size);
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
 	font-weight: vars.$heading_3_font_weight;
 	margin-bottom: vars.$heading_3_margin_bottom;
 } 
 h4, .h4 {
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size);
+	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_4_font_size);
 	font-family: vars.$header_4_font;
 	color: vars.$heading_4_color;
 	font-weight: vars.$heading_4_font_weight;
 	margin-bottom: vars.$heading_4_margin_bottom;
 }
 h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
-	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size);
+	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_5_font_size);
 	font-family: vars.$header_5_font;
 }
 h5, .h5 {
@@ -295,7 +295,7 @@ h5, .h5 {
 	margin-bottom: vars.$heading_5_margin_bottom;
 }
 h6, .h6 {
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$header_6_font_size);
+	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_6_font_size);
 	font-family: vars.$header_6_font;
 	color: vars.$heading_6_color;
 	font-weight: vars.$heading_6_font_weight;
@@ -330,7 +330,7 @@ h6, .h6 {
 /* TYPOGRAPHY: PARAGRAPHS
 ==========================================  */
 p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
+	font-size: clamp(2rem, 1.6rem + 1vw, vars.$body_font_size);
 	margin:0 0 20px 0;
 }
 p {
@@ -1333,7 +1333,7 @@ img {
 	text-align: right !important;
 }
 .pagebreak {
-	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+	padding: vars.$pagebreak_padding_top_mobile 0 vars.$pagebreak_padding_bottom_mobile 0;
 	background: vars.$pagebreak_background_color;
 	position: relative;
 	background-size: cover;
@@ -1365,10 +1365,10 @@ img {
 	padding: 0;  
 } 
 .pagebreak_fix {
-	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+	padding: vars.$pagebreak_padding_top_mobile 0 vars.$pagebreak_padding_bottom_mobile 0;
 }
 .pagebreak_right_content, .pagebreak_left_content {
-	padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+	padding: vars.$pagebreak_padding_top_mobile 0 vars.$pagebreak_padding_bottom_mobile 0;
 }
 .pagebreak .pagebreak_left_img, .pagebreak .pagebreak_right_img {
 	min-height: 200px;
@@ -2637,7 +2637,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 						background: vars.$top_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: 1.7rem;
+				    	font-size: 1.7rem; 
 				    	padding: vars.$top_nav_link_padding_top 10px vars.$top_nav_link_padding_bottom;
 				    	text-transform: uppercase;
 				    	color: vars.$top_nav_link_color;
@@ -2728,7 +2728,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 						background: vars.$main_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: 17px;
+				    	font-size: 1.7rem;
 				    	padding: vars.$main_nav_link_padding_top 10px vars.$main_nav_link_padding_bottom;
 				    	text-transform: uppercase;
 				    	color: vars.$main_nav_link_color;
@@ -2853,12 +2853,22 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 					
 					/* PAGEBREAKS
 					====================================  */
+					.pagebreak { 
+						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+					}
+					.pagebreak_left, .pagebreak_right {
+						padding: 0;  
+					} 
+					.pagebreak_fix {
+						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+					}
+					.pagebreak_right_content, .pagebreak_left_content {
+						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+					}
 					.pagebreak_left_content, .pagebreak_left_img { 
-						float: left;
 						width: 50%;
 					}
 					.pagebreak_right_content, .pagebreak_right_img { 
-						float: right;
 						width: 50%;
 					}
 					
@@ -2964,7 +2974,6 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 									background: none;
 								}
 								.overlap .pagebreak_left_content {
-									float: left;
 									width: 60%;
 									position: relative;
 									z-index: 2;
@@ -2974,14 +2983,12 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 									background: vars.$pagebreak_background_color;
 								}
 								.overlap .pagebreak_left_img {
-									float: left;
 									width: 60%;
 									position: relative;
 									z-index: 1;
 									margin-right: -10%;
 								}
 								.overlap .pagebreak_right_content {
-									float: right;
 									width: 60%;
 									position: relative;
 									z-index: 2;
@@ -2991,7 +2998,6 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 									background: vars.$pagebreak_background_color;
 								}
 								.overlap .pagebreak_right_img {
-									float: right;
 									width: 60%;
 									position: relative;
 									z-index: 1;

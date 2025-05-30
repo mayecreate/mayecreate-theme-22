@@ -1,5 +1,7 @@
+<?php global $paged; ?>
 <?php $optional_title = esc_html(get_field("optional_title")); ?>
 <?php $post_category = esc_html(get_field("post_category")); ?>
+<?php $number_of_posts_to_show = esc_html(get_field("number_of_posts_to_show")); ?>
 <?php $optional_button_link = esc_html(get_field("optional_button_link")); ?>
 <?php $optional_button_link_text = esc_html(get_field("optional_button_link_text")); ?>
 <?php $load_more_button_alignment = esc_html(get_field("optional_button_alignment")); ?>
@@ -42,21 +44,17 @@
 
 	<?php if ('one' == get_field('number_of_columns')) {
 		$bootstrap_columns = "col-md-12";
-		$post_number = "1";
 	} elseif ('two' == get_field('number_of_columns')) {
 		$bootstrap_columns = "col-md-6";
-		$post_number = "2";
 	} elseif ('three' == get_field('number_of_columns')) {
 		$bootstrap_columns = "col-md-6 col-lg-4";
-		$post_number = "3";
 	} elseif ('four' == get_field('number_of_columns')) {
 		$bootstrap_columns = "col-md-6 col-lg-3";
-		$post_number = "4";
 	} ?>
 	<div class="row justify-content-center">
 		<?php // args
 		$args = array(
-		'posts_per_page'	=> $post_number,
+		'posts_per_page'	=> $number_of_posts_to_show,
 		'orderby' => 'meta_value_num',
 		'meta_key'	=> 'event_start_date',
 		'order'	=> 'ASC',

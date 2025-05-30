@@ -1,3 +1,4 @@
+<?php global $paged; ?>
 <?php
 $news_options = get_field('news_options', 'option');
 if($news_options) { ?>

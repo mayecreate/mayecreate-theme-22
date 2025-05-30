@@ -1,3 +1,4 @@
+<?php global $paged; ?>
 <?php
 $resource_options = get_field('resource_options', 'option');
 if($resource_options) { ?>

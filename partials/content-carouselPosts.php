@@ -84,10 +84,10 @@
 							if ($slideTitle || $slideText) {
 								echo '<div class="slideDesc"><div class="slideDesc_inner '. $slide_content_text_alignment_class .'">';
 									if($slideTitle){
-										echo '<h2 class="slideTitle">' .$slideTitle. '</h2>';
+										echo '<span class="slideTitle">' .$slideTitle. '</span>';
 									}
 									if($slideText){
-										echo '<p class="slideText">' .$slideText. '</p>';
+										echo '<span class="slideText">' .$slideText. '</span>';
 									}
 
 									if ($link_w_button && $slideURL && $link_text){

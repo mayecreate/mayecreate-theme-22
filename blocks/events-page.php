@@ -1,3 +1,4 @@
+<?php global $paged; ?>
 <?php
 $event_options = get_field('event_options', 'option');
 if($event_options) { ?>

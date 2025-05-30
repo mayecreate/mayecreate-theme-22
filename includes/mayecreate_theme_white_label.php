@@ -75,16 +75,16 @@ function mayecreate_custom_login_logo() {
 		margin-top: 0;
 		border:0 none;
 	}
-	.login label {
+	.login label, .login p, .login * {
 		color: '.$login_page_text_color.';
 	}	
 	.login form .forgetmenot label {
 		color: '.$login_page_text_color.';
 	}
-	.login a:link, .login a:visited {
+	.login a:link, .login a:visited, .wp-core-ui .button-link {
 		color: '.$login_page_link_color.' !important;
 	}
-	.login a:hover, .login a:active {
+	.login a:hover, .login a:active, .wp-core-ui .button-link:hover {
 		color: '.$login_page_link_hover_color.' !important;
 	}
 	input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus{

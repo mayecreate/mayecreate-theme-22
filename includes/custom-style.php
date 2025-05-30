@@ -335,6 +335,18 @@ if ($pagebreak_padding_bottom) {
 } else {
 	$pagebreak_padding_bottom = $pagebreak_padding_top;
 }
+$pagebreak_padding_top_mobile = (get_field('pagebreak_padding_top_mobile', 'option'));
+if ($pagebreak_padding_top_mobile) {
+	$pagebreak_padding_top_mobile = $pagebreak_padding_top_mobile;
+} else {
+	$pagebreak_padding_top_mobile = $pagebreak_padding_top;
+}
+$pagebreak_padding_bottom_mobile = (get_field('pagebreak_padding_bottom_mobile', 'option'));
+if ($pagebreak_padding_bottom_mobile) {
+	$pagebreak_padding_bottom_mobile = $pagebreak_padding_bottom_mobile;
+} else {
+	$pagebreak_padding_bottom_mobile = $pagebreak_padding_bottom;
+}
 
 $ul_li_bullet = (get_field('ul_li_bullet', 'option'));
 if ($ul_li_bullet) {
@@ -881,7 +893,7 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--top_nav_dropdown_background_color: <?php echo $top_nav_dropdown_background_color; ?>;
 	--top_nav_link_padding_top: <?php echo $top_nav_link_padding_top; ?>;
 	--top_nav_link_padding_bottom: <?php echo $top_nav_link_padding_bottom; ?>;
-	--top_nav_link_margin_bottom: -<?php echo $top_nav_link_margin_bottom; ?>px;
+	--top_nav_link_margin_bottom: <?php echo $top_nav_link_margin_bottom; ?>px;
 
 	--main_navbar_padding: <?php echo $main_navbar_padding; ?>px;
 	--main_nav_background_color: <?php echo $main_nav_background_color; ?>;
@@ -1034,6 +1046,8 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--pagebreak_button_hover_background_image: url("<?php echo $pagebreak_button_hover_background_image; ?>") center center no-repeat;
 	--pagebreak_padding_top: <?php echo $pagebreak_padding_top; ?>px;
 	--pagebreak_padding_bottom: <?php echo $pagebreak_padding_bottom; ?>px;
+	--pagebreak_padding_top_mobile: <?php echo $pagebreak_padding_top_mobile; ?>px;
+	--pagebreak_padding_bottom_mobile: <?php echo $pagebreak_padding_bottom_mobile; ?>px;
 
 	--ul_li_bullet: <?php echo $ul_li_bullet; ?>;
 	--pagebreak_ul_li_bullet: <?php echo $pagebreak_ul_li_bullet; ?>;

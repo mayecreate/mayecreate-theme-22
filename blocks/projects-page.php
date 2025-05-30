@@ -1,3 +1,4 @@
+<?php global $paged; ?>
 <?php
 $projects_options = get_field('projects_options', 'option');
 if($projects_options) { ?>

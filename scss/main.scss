@@ -660,6 +660,7 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 }
 .video_outer_outer {
     max-height: 230px;
+	display: none;
 }
 #video_wrapper iframe {
     box-sizing: border-box;
@@ -1331,6 +1332,12 @@ img {
 }
 .right {
 	text-align: right !important;
+}
+.left {
+	text-align: left !important;
+}
+.desk_left, .desk_right {
+	text-align: center !important;
 }
 .pagebreak {
 	padding: vars.$pagebreak_padding_top_mobile 0 vars.$pagebreak_padding_bottom_mobile 0;
@@ -2256,6 +2263,9 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 .margin_bottom_30 {
 	margin-bottom: 30px !important;
 }
+.margin_bottom_0 {
+	margin-bottom: 0px !important;
+}
 .topless {
 	padding-top: 0 !important;
 	margin-top: 0 !important;
@@ -2318,7 +2328,43 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 #lightSlider_custom_outer {
     position: relative; 
 }
-
+/* LOGIN FORM
+====================================  */
+.login-submit #wp-submit {
+    background: vars.$button_background_color;
+    border: 1px solid vars.$button_background_color;
+    display: block;
+    padding: 10px 35px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    border-radius: vars.$button_border_radius;
+    line-height: 120%;
+    height: auto;
+    cursor: pointer;
+    color: vars.$button_color;
+    outline: none;
+    width: auto;
+}
+.login-submit  #wp-submit:hover {
+    background: vars.$button_hover_background_color;
+    border: 1px solid vars.$button_hover_background_color;
+    color: vars.$button_hover_color;
+    outline: none;
+}
+p.login-username, p.login-password, p.login-remember {
+    font-size: 2rem;
+    display: grid;
+    font-weight: 500;
+    max-width: 80%;
+    margin: 20px auto;
+}
+p.login-username input, p.login-password input {
+    font-size: 2rem;
+    display: grid;
+    border-radius: vars.$button_border_radius; 
+    border: 1px solid vars.$button_hover_background_color;
+    font-weight: 500;
+}
 /* ANIMATIONS
 ====================================  */
 .left_slide {
@@ -2488,6 +2534,12 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 
 				/* Large devices (desktops, 992px and up). This is anything labeled "lg" in bootstrap. */
 				@media (min-width: 992px) {
+					.desk_left { 
+						text-align: left !important;
+					}
+					.desk_right {
+						text-align: right !important;
+					}
 					.mobile_show {
 						height: 0;
 						overflow: hidden;
@@ -2564,6 +2616,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 					}
 					.video_outer_outer {
 						max-height: 500px;
+						display: block;
 					}				    
 
 				    /* TOP NAVIGATION

@@ -68,7 +68,7 @@
 				<?php $image_alt = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true ); ?>
 				<?php if ($image_alt) { $image_alt = $image_alt; } else { $image_alt = "No alt tag provided"; } ?>
                 <div class="carousel-item item <?php echo $active_class; ?>" style="background-image: url('<?php echo $image[0]; ?>')">
-			  		<h2 class="sr-only sr-only-focusable">This carousel slider image is an image of: <?php echo $image_alt; ?></h2>
+			  		<h2 class="visually-hidden-focusable">This carousel slider image is an image of: <?php echo $image_alt; ?></h2>
                 	<?php 
 						$slideTitle = get_field('custom_slide_title');
 						$slideText 	= get_field('text_for_slide');

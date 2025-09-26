@@ -18,11 +18,11 @@
 	/* Print the <title> tag based on what is being viewed. */
 	global $page, $paged;
 	
-	wp_title( '|', true, 'right' );
-
-	// Add the blog name.
-	bloginfo( 'name' );
-
+	wp_title( '-', true, 'right' );
+	if ( is_plugin_active( 'wordpress-seo/wp-seo.php' ) ) {} else {//Check if Yoast is active
+		// Add the blog name. 
+		bloginfo( 'name' );
+	}
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
@@ -42,12 +42,11 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <!-- Fonts -->
-	
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous" async></script>
-
+<?php $use_font_awesome = (get_field('use_font_awesome', 'option')); ?>
+<?php if ($use_font_awesome == "Yes") { ?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous" async></script>
+<?php } ?>
 <?php $google_font_embed_links = (get_field('google_font_embed_links', 'option')); ?>
 <?php if ($google_font_embed_links) {
 	echo $google_font_embed_links;
@@ -69,7 +68,6 @@ echo $ga_tag;
 <?php global $containerWidth; ?> 
 
 <body <?php body_class(); ?>>
-<div id="skip"><a href="#content">Skip to Main Content</a></div>
 <div id="pagewrapper">
 <a id="top"></a>
 <?php $navbar_style_fixed = ('fixed' == get_field('navbar_style', 'option')); ?>
@@ -82,6 +80,7 @@ echo $ga_tag;
 	$navbar_style = "static";
 } ?>
 <header>
+<div id="skip"><a href="#content">Skip to Main Content</a></div>
 <div id="navigation" class="<?php echo $navbar_style; ?>">
 	<?php get_template_part('partials/nav'); ?>	
 </div>	

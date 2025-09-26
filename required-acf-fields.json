@@ -20,7 +20,8 @@
                 "display_format": "m\/d\/Y",
                 "return_format": "m\/d\/Y",
                 "first_day": 0,
-                "allow_in_bindings": 0
+                "allow_in_bindings": 0,
+                "default_to_current_date": 0
             },
             {
                 "key": "field_673f89b50e096",
@@ -39,7 +40,8 @@
                 "display_format": "m\/d\/Y",
                 "return_format": "m\/d\/Y",
                 "first_day": 0,
-                "allow_in_bindings": 0
+                "allow_in_bindings": 0,
+                "default_to_current_date": 0
             },
             {
                 "key": "field_673fabc340a1c",
@@ -58,7 +60,8 @@
                 "display_format": "m\/d\/Y",
                 "return_format": "Ymd",
                 "first_day": 0,
-                "allow_in_bindings": 0
+                "allow_in_bindings": 0,
+                "default_to_current_date": 0
             },
             {
                 "key": "field_673f89c50e097",
@@ -3863,12 +3866,12 @@
                 "delay": 0
             },
             {
-                "key": "field_62156190a5488",
-                "label": "Social Media",
-                "name": "social_media",
+                "key": "field_68d6f9694a534",
+                "label": "Use Font Awesome",
+                "name": "use_font_awesome",
                 "aria-label": "",
-                "type": "repeater",
-                "instructions": "Add as many or as few social media links as you need.",
+                "type": "radio",
+                "instructions": "If you are going to use font awesome, turn this option to yes. If not, save the load time and leave it off. You will need to turn this option on to use the social media options.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -3876,10 +3879,45 @@
                     "class": "",
                     "id": ""
                 },
-                "collapsed": "",
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_62156190a5488",
+                "label": "Social Media",
+                "name": "social_media",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add as many or as few social media links as you need.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68d6f9694a534",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
                 "min": 0,
                 "max": 10,
-                "layout": "block",
+                "collapsed": "",
                 "button_label": "Add Social Link",
                 "rows_per_page": 20,
                 "sub_fields": [

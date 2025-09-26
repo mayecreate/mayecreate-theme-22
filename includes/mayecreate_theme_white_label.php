@@ -93,6 +93,22 @@ function mayecreate_custom_login_logo() {
 		-webkit-box-shadow: 0 0 12px rgba(0,0,0,.25);
 		box-shadow: 0 0 12px rgba(0,0,0,.25);
 	}
+	.login form .input, .login form input[type=checkbox], .login input[type=text] {
+		background: '.$login_screen_background_color.' !important;
+		color: '.$login_page_text_color.' !important;
+		border-color: '.$login_page_link_color.' !important;
+	}
+	.login form .input:autofill, .login form input[type=checkbox]:autofill, .login input[type=text]:autofill, .login form input:-internal-autofill-selected {
+		background: '.$login_screen_background_color.' !important;
+		color: '.$login_page_text_color.' !important;
+		border-color: '.$login_page_link_color.' !important;
+	}
+	.login form .input:focus, .login form input[type=checkbox]:focus, .login input[type=text]:focus {
+		border-color: '.$login_page_link_hover_color.' !important;
+	}
+	.login .button.wp-hide-pw .dashicons {
+		color: '.$login_page_text_color.' !important;
+	}
 	.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large{
 		padding: 18px 40px;
 		line-height: 0;

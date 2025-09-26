@@ -86,7 +86,7 @@ echo $ga_tag;
         <div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
-			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
+			  	<h2 class="visually-hidden-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
@@ -101,7 +101,7 @@ echo $ga_tag;
                         </div>
                     </div>
                 </div>
-			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
+			  	<h2 class="visually-hidden-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
@@ -112,7 +112,7 @@ echo $ga_tag;
 						<h1 class="entry-title">Search Results for: <span><?php  echo get_search_query(); ?></span></h1>
 					</div>
 				</div>
-			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
+			  	<h2 class="visually-hidden-focusable">The header image is the default header image for the site.</h2>
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
@@ -163,7 +163,7 @@ echo $ga_tag;
 						</h1>
 					</div>
 				</div>
-			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
+			  	<h2 class="visually-hidden-focusable">The header image is the default header image for the site.</h2>
 			</div>
 		</div>	
 <?php } else { ?>
@@ -175,14 +175,14 @@ echo $ga_tag;
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
               <?php mayecreate_page_title();?>
-			  <h2 class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></h2>
+			  <h2 class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></h2>
             </div>
         </div>
 	<?php } else { ?>
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
-			  	<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
+			  	<h2 class="visually-hidden-focusable">The header image is the default header image for the site.</h2>
             </div>
         </div>
     <?php } ?>

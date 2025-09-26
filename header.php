@@ -135,7 +135,7 @@ echo $ga_tag;
         <div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
 <?php } elseif (is_404()) { ?>
@@ -150,7 +150,7 @@ echo $ga_tag;
                         </div>
                     </div>
                 </div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
 <?php } elseif (is_search()) { ?>
@@ -161,7 +161,7 @@ echo $ga_tag;
 						<h1 class="entry-title">Search Results for: <span><?php  echo get_search_query(); ?></span></h1>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
 			</div>
 		</div>
 <?php } elseif (is_archive()) { ?>
@@ -212,7 +212,7 @@ echo $ga_tag;
 						</h1>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
 			</div>
 		</div>	
 <?php } elseif(is_page_template( 'page-reading.php' )) { ?>
@@ -234,7 +234,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_project_name; ?></span>
 					</div>
 				</div>
-			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+			  <span class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
@@ -245,7 +245,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_project_name; ?></span>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
     <?php } ?>
@@ -267,7 +267,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_resources_name; ?></span>
 					</div>
 				</div>
-			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+			  <span class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
@@ -278,7 +278,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_resources_name; ?></span>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
     <?php } ?>
@@ -300,7 +300,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_events_name; ?></span>
 					</div>
 				</div>
-			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+			  <span class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
@@ -311,7 +311,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_events_name; ?></span>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
     <?php } ?>
@@ -333,7 +333,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_post_name; ?></span>
 					</div>
 				</div>
-			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+			  <span class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
@@ -344,7 +344,7 @@ echo $ga_tag;
 						<span class="entry-title h1"><?php echo $alt_post_name; ?></span>
 					</div>
 				</div>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
     <?php } ?>
@@ -357,14 +357,14 @@ echo $ga_tag;
 		<div class="pagehead" id="internalfeatured" style="max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $image[0]; ?>')">
             <div class="container">
               <?php mayecreate_page_title();?>
-			  <span class="sr-only sr-only-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
+			  <span class="visually-hidden-focusable">Header image for this page is an image of: <?php echo $image_alt; ?></span>
             </div>
         </div>
 	<?php } else { ?>
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-attachment:<?php echo $header_image_fixed; ?>; background-image: url('<?php echo $default_header_image; ?>')">
             <div class="container">
                 <?php mayecreate_page_title();?>
-			  	<span class="sr-only sr-only-focusable">The header image is the default header image for the site.</span>
+			  	<span class="visually-hidden-focusable">The header image is the default header image for the site.</span>
             </div>
         </div>
     <?php } ?>

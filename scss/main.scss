@@ -220,7 +220,7 @@ a:hover, a:active, a:focus{
 }
 .pagehead {
     height: 30vh;
-	margin-bottom: 40px;
+	margin-bottom: vars.$pagebreak_padding_top_mobile;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
@@ -423,9 +423,11 @@ ol, ul {
 ul {
 	list-style-type: none;
 	list-style-position:outside;
+	margin-bottom: vars.$paragraph_margin_bottom;
 }
 ol {
 	list-style-position:outside; 
+	margin-bottom: vars.$paragraph_margin_bottom;
 }
 li ol, li ul {
 	margin:10px 0 10px 30px;
@@ -435,11 +437,14 @@ li {
 	margin:10px 0;
 	padding:0;
 }
-ul li {
+ul.wp-block-list li {
 	list-style: vars.$ul_li_bullet;
 }
-.pagebreak ul li {
+.pagebreak ul.wp-block-list li {
 	list-style: vars.$pagebreak_ul_li_bullet;
+}
+.cmplz-cookiebanner ul li {
+	list-style: none !important;
 }
 
 
@@ -457,7 +462,7 @@ ul li {
 	border-left: vars.$button_border_thickness solid vars.$button_border_color_left;
 	display: block;
 	padding: vars.$button_padding_top vars.$button_padding_right vars.$button_padding_bottom vars.$button_padding_left;
-	margin:0 auto 20px auto;
+	margin:0 auto vars.$paragraph_margin_bottom auto;
 	text-align: center; 
 	line-height: 120%;
 	height: auto;
@@ -541,6 +546,10 @@ span.btn-mayecreate {
 div#homefeatured {
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: vars.$pagebreak_padding_top_mobile;
+}
+div#homefeatured.no_slider {
+	margin-bottom: 0 !important;
 }
 div#homefeatured #myCarousel {
 	box-shadow: none;
@@ -845,8 +854,11 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 .mm-listview>ul>li.active>a {
 	color: vars.$white;
 }
+.mm-listview .mm-next:after {
+	border-color: vars.$base_color !important;
+}
 .mm-menu .mm-listview>li.active .mm-arrow:after, .mm-menu .mm-listview>li.active .mm-next:after {
-	border-color: vars.$white;
+	border-color: vars.$white !important;
 }
 
 /* NAVIGATION:: Slide Out Drawer Searcch Box
@@ -1400,13 +1412,13 @@ img {
 	color: vars.$pagebreak_link_hover_color;
 	background: vars.$pagebreak_link_background_color_hover;
 }
-.pagebreak .btn-mayecreate, .pagebreak .btn-mayecreate:link, .pagebreak .btn-mayecreate:visited {
+.pagebreak .btn-mayecreate, .pagebreak .btn-mayecreate:link, .pagebreak .btn-mayecreate:visited, .pagebreak .btn-mayecreate.large, .pagebreak .btn-mayecreate.large:link, .pagebreak .btn-mayecreate.large:visited {
 	background: vars.$pagebreak_button_background_image;
 	background-size: 100% 100%;
 	background-color: vars.$pagebreak_button_background_color;
 	color: vars.$pagebreak_button_text_color;
 }
-.pagebreak .btn-mayecreate:hover, .pagebreak .btn-mayecreate:active, .pagebreak .btn-mayecreate:focus {
+.pagebreak .btn-mayecreate:hover, .pagebreak .btn-mayecreate:active, .pagebreak .btn-mayecreate:focus, .pagebreak .btn-mayecreate.large:hover, .pagebreak .btn-mayecreate.large:active, .pagebreak .btn-mayecreate.large:focus {
 	background: vars.$pagebreak_button_hover_background_image;
 	background-size: 100% 100%;
 	background-color: vars.$pagebreak_button_background_hover_color;
@@ -1587,6 +1599,7 @@ img {
 	background-color: vars.$team_expand_button_background;
 	border: 0 none;
 	margin-bottom: 0;
+	text-transform: capitalize;
 }
 .team_block_wrapper .btn-mayecreate:hover, .team_block_wrapper .btn-mayecreate:active {
 	color: vars.$team_expand_button_color_hover;
@@ -2568,7 +2581,7 @@ p.login-username input, p.login-password input {
 					.btn-mayecreate, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button, .wp-block-button.large, span.btn-mayecreate {
 						display: table;
 						width: fit-content;
-						margin: 0 15px 20px 0;
+						margin: 0 15px vars.$paragraph_margin_bottom 0;
 					}
 					.col-md-4 a.btn-mayecreate.large:link, .col-md-4 a.btn-mayecreate.large:visited, .col-md-4 a.btn-mayecreate:link, .col-md-4 a.btn-mayecreate:visited, .col-md-3 a.btn-mayecreate.large:link, .col-md-3 a.btn-mayecreate.large:visited, .col-md-3 a.btn-mayecreate:link, .col-md-3 a.btn-mayecreate:visited, .col-md-4 .wp-block-button, .col-md-3 .wp-block-button  {
 						margin-left: auto !important;
@@ -2906,8 +2919,14 @@ p.login-username input, p.login-password input {
 					
 					/* PAGEBREAKS
 					====================================  */
+					div#homefeatured {
+						margin-bottom: vars.$pagebreak_padding_top;
+					}
+					.pagehead {
+						margin-bottom: vars.$pagebreak_padding_top;
+					}
 					.pagebreak { 
-						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
+						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0; 
 					}
 					.pagebreak_left, .pagebreak_right {
 						padding: 0;  

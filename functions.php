@@ -163,6 +163,7 @@ function prefix_meta_desc() {
 */
 
 remove_action('wp_head', 'wp_generator');
+add_theme_support('responsive-embeds');
 
 /**
  * Enqueue block editor JavaScript and CSS

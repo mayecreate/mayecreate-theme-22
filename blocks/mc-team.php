@@ -39,10 +39,11 @@ $thumb = $image['sizes'][ $size ];
     $phone_icon = '';
     $mail_icon = '';
 } ?>
+<?php $trimmed_name = strtolower(explode(' ', $name, 2)[0]); ?>
 <?php if ($expand_button_text) { 
     $expand_button_text = $expand_button_text;
 } else {
-    $expand_button_text = "Read More";
+    $expand_button_text = "Read More About ".$trimmed_name."";
 } ?>
 <?php if ($vertical_alignment == "Middle") { 
     $vertical_alignment = "align-items-center";

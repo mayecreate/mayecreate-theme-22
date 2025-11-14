@@ -79,20 +79,20 @@ echo $ga_tag;
 } else {
 	$navbar_style = "static";
 } ?>
-<header>
+<header aria-label="Site Navigation"> 
 <div id="skip"><a href="#content">Skip to Main Content</a></div>
 <div id="navigation" class="<?php echo $navbar_style; ?>">
 	<?php get_template_part('partials/nav'); ?>	
 </div>	
 
+</header>
+
+<main id="content">
 <?php if (is_front_page()) { ?>
-		<div id="homeContentWrap">
+	<div id="homeContentWrap">
 <?php } else { ?>
-		<div id="contentwrap">
+	<div id="contentwrap">
 <?php } ?>	
-
-
-<div class="clear"></div>
 <?php $default_header_image = get_field('default_header_image', 'option'); ?>
 <?php if ($default_header_image) {
 	$default_header_image = $default_header_image;
@@ -107,9 +107,12 @@ echo $ga_tag;
 } ?>
 
 <?php  if (is_front_page()){ ?>
-
-	<div id="homefeatured">
-		<?php $homepage_header_type = get_field('homepage_header_type', 'option'); ?>
+	<?php $homepage_header_type = get_field('homepage_header_type', 'option'); ?>
+	<?php if ($homepage_header_type == "none") { ?>
+	<div id="homefeatured" class="no_slider">
+	<?php } else { ?>
+	<div id="homefeatured"> 
+	<?php } ?> 
 		<?php $video_embed_link = get_field('video_embed_link', 'option'); ?>
 		<?php $video_height = get_field('video_height', 'option'); ?>
 		<?php if (($homepage_header_type == "video") || ($homepage_header_type == "both")) { ?>
@@ -371,12 +374,12 @@ echo $ga_tag;
            
 <?php } ?>
 </div>
-</header>
 
-<main id="content">
 <div id="page"> <!--Begin Page -->
-<div class="pagebreak_fix">
-<?php if(is_page_template( 'page-no-container.php' )) {} else { ?>
+
+<?php if(is_page_template( 'page-no-container.php' )) {} elseif (($homepage_header_type == "none") && is_front_page()) { ?>
+<div class="hfeed site">
+<?php } else { ?>
 <div class="hfeed site <?php echo $containerWidth; ?>">
 <?php } ?>
 

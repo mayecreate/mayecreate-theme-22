@@ -6,6 +6,6 @@
 		</div>
 	</div>
 
-<div class="pagebreak_fix"><div class="container"><div class="row"><div class="col-md-12">
+<div class="pagebreak_fix <?php echo $block['className']; ?>"><div class="container"><div class="row"><div class="col-md-12">
 	
 <?php } ?>

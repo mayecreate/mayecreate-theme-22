@@ -9,7 +9,7 @@ html {
 body { 
 	font-family: vars.$main_font; 
 	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
-	font-weight: 400; /* normal */
+	font-weight: 400;
 	color: vars.$base_color;
 	margin:0;
 	padding:0;
@@ -82,12 +82,6 @@ iframe {
     max-width: 100% !important;
     margin: 0 auto 20px auto !important;
 }
-/*@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-/* IE10+ CSS styles go here */
-    /*#drawer-menu {
-        display: none !important;
-    } 
-}*/ 
 
 /* COOKIE NOTICE
 ========================================== */
@@ -194,8 +188,7 @@ form {
     padding: 20px 30px;
 } 
 
-/* LINKS: Change the colors of your links here.  These will change he navigation as well.
-* To override these color in navigation change the colors in the style-tablet.css file.
+/* LINKS
 ==========================================	*/
 a, a:link, a:visited {
 	color: vars.$link_color;
@@ -209,7 +202,7 @@ a, a:link, a:visited {
 a:hover, a:active, a:focus{
 	color: vars.$link_hover_color;
 	background: vars.$link_background_color_hover;
-	text-decoration: vars.$underline_hyperlinks;  /* change to none if you don't want links to be underlined when hovered */
+	text-decoration: vars.$underline_hyperlinks;
 }
 
 /* TYPOGRAPHY: HEADINGS
@@ -259,34 +252,34 @@ h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
 	color: vars.$secondary_color;
 }
 h1, h1.entry-title, .h1 {
-	font-size: clamp(4.5rem, 4rem + 1vw, vars.$header_1_font_size);
+	font-size: clamp(4rem, 3.5rem + 1vw, vars.$header_1_font_size);
 	font-family: vars.$header_1_font;
 	color: vars.$heading_1_color;
 	font-weight: vars.$heading_1_font_weight;
 }
 h2, .h2 {
-	font-size: clamp(3.5rem, 3.2rem + 1vw, vars.$header_2_font_size);
+	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size);
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
 	font-weight: vars.$heading_2_font_weight;
 	margin-bottom: vars.$heading_2_margin_bottom;
 }
 h3, .h3 {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_3_font_size);
+	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size);
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
 	font-weight: vars.$heading_3_font_weight;
 	margin-bottom: vars.$heading_3_margin_bottom;
 } 
 h4, .h4 {
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_4_font_size);
+	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size);
 	font-family: vars.$header_4_font;
 	color: vars.$heading_4_color;
 	font-weight: vars.$heading_4_font_weight;
 	margin-bottom: vars.$heading_4_margin_bottom;
 }
 h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_5_font_size);
+	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size);
 	font-family: vars.$header_5_font;
 }
 h5, .h5 {
@@ -295,7 +288,7 @@ h5, .h5 {
 	margin-bottom: vars.$heading_5_margin_bottom;
 }
 h6, .h6 {
-	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_6_font_size);
+	font-size: clamp(2rem, 1.8rem + 1vw, vars.$header_6_font_size);
 	font-family: vars.$header_6_font;
 	color: vars.$heading_6_color;
 	font-weight: vars.$heading_6_font_weight;
@@ -330,7 +323,7 @@ h6, .h6 {
 /* TYPOGRAPHY: PARAGRAPHS
 ==========================================  */
 p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
-	font-size: clamp(2rem, 1.6rem + 1vw, vars.$body_font_size);
+	font-size: clamp(1.8rem, 1.6rem + 1vw, vars.$body_font_size);
 	margin:0 0 20px 0;
 }
 p {
@@ -416,6 +409,9 @@ p {
 
 /* TYPOGRAPHY: LIST ITEMS
 ==========================================  */
+ul li, ol li {
+    font-size: clamp(1.8rem, 1.6rem + 1vw, vars.$body_font_size);
+}
 ol, ul {
 	margin-left: 40px;
 	padding:0;
@@ -447,6 +443,11 @@ ul.wp-block-list li {
 	list-style: none !important;
 }
 
+/* TYPOGRAPHY: FONT SIZE OVERRIDES
+==========================================  */
+.has-medium-font-size {
+	font-size: 1.8rem !important;
+}
 
 /* BUTTONS: Styles for Custom Button Block
 ==========================================  */
@@ -910,8 +911,6 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	background: none;
 }
 #navigation.affix {
-	/*animation: affixFadeIn 2s  ease-in;
-	-webkit-animation: affixFadeIn 2s;*/
 	z-index: 100;
 	width: 100%;
 	position: absolute;
@@ -1177,7 +1176,7 @@ img {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000;
 }
 
 /* Responsive Videos
@@ -2378,6 +2377,14 @@ p.login-username input, p.login-password input {
     border: 1px solid vars.$button_hover_background_color;
     font-weight: 500;
 }
+@media (max-width: 992px) {
+    .mobile_topless {
+        padding-top: 0 !important;
+    }
+    .mobile_bottomless {
+        padding-bottom: 0 !important;
+    }
+}
 /* ANIMATIONS
 ====================================  */
 .left_slide {
@@ -2703,25 +2710,24 @@ p.login-username input, p.login-password input {
 						background: vars.$top_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: 1.7rem; 
+				    	font-size: clamp(1.7rem, 1rem + 1vw, vars.$top_nav_font_size); 
 				    	padding: vars.$top_nav_link_padding_top 10px vars.$top_nav_link_padding_bottom;
-				    	text-transform: uppercase;
 				    	color: vars.$top_nav_link_color;
-				    	font-weight: 400;
+				    	font-weight: vars.$top_nav_font_weight;
 						margin-bottom: vars.$top_nav_link_margin_bottom;
-				    	/* if you have different color for Nav links, change it here */
+						text-transform: vars.$top_nav_text_transformation;
 				    }
 				    #top_nav a:hover, #top_nav a:active, #top_nav a:focus, #top_nav > ul > li.active > a {
 				    	color: vars.$top_nav_link_hover_color;
 						background: vars.$top_nav_link_background_hover_color;
 				    	text-decoration:none;
-				    	/* if you have different color for Nav link hover state, change it here */
 				    }  					
 					#top_nav ul ul li a:link, #top_nav ul ul li a:visited {
 						text-align: left;		
 						display: block;	
 						line-height: 120%;
-				    	padding: 10px 15px;		
+				    	padding: 10px 15px;	
+				    	font-size: 1.7rem; 	
 					}					
 					#top_nav ul ul li a:hover, #top_nav ul ul li a:active {
 						text-align: left;
@@ -2794,12 +2800,12 @@ p.login-username input, p.login-password input {
 						background: vars.$main_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: 1.7rem;
+				    	font-size: clamp(1.7rem, 1rem + 1vw, vars.$main_nav_font_size);
 				    	padding: vars.$main_nav_link_padding_top 10px vars.$main_nav_link_padding_bottom;
-				    	text-transform: uppercase;
 				    	color: vars.$main_nav_link_color;
-				    	font-weight: 100;
+				    	font-weight: vars.$main_nav_font_weight;
 						margin-bottom: vars.$main_nav_link_margin_bottom;
+						text-transform: vars.$main_nav_text_transformation;
 					}
 					#main_nav a:hover, #main_nav a:active, #main_nav a:focus, #main_nav > ul > li.active > a {
 				    	color: vars.$main_nav_link_hover_color;
@@ -2811,6 +2817,7 @@ p.login-username input, p.login-password input {
 				    	width: 100%;
 						display: block;
 						line-height: 120%;
+				    	font-size: 1.7rem; 
 				    } 
 					#mobile_menu {
 				    	display: none;
@@ -2875,8 +2882,6 @@ p.login-username input, p.login-password input {
 						font-weight: 400;
 						text-transform: none;
 					}
-					/*.affix-top #main_nav > ul > .wide-drop > ul ul a:hover, .affix-top #main_nav > ul > .wide-drop > ul ul a:active {
-					}*/
 
 				    /* FOOTER NAVIGATION
 				    ==========================================  */
@@ -2974,6 +2979,11 @@ p.login-username input, p.login-password input {
 					}
 					.col-12 .img_wrapper {
 						margin-bottom: 20px;
+					}
+					/* TYPOGRAPHY: FONT SIZE OVERRIDES
+					====================================  */
+					.has-medium-font-size {
+						font-size: 2.1rem !important;
 					}
 				}
 						/* Larger-er devices (desktops, 1024px and up). This is NOT a breakpoint in bootstrap. */
@@ -3077,10 +3087,6 @@ p.login-username input, p.login-password input {
 								}
 
 
-								/* PAGE ITEMS
-								====================================  */
-
-
 							}
 								/* Xtra-Xtra-Large devices (desktops, 1400px and up). This is anything labeled "xxl" in bootstrap. */
 								@media (min-width: 1400px) {
@@ -3115,6 +3121,15 @@ p.login-username input, p.login-password input {
 										}
 										p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
 											font-size: vars.$body_font_size;
+										}
+										ul li, ol li {
+											font-size: vars.$body_font_size;
+										}
+										#top_nav a:link, #top_nav a:visited {
+											font-size: vars.$top_nav_font_size;
+										}
+										#main_nav a:link, #main_nav a:visited {
+											font-size: vars.$main_nav_font_size;
 										}
 										.post_link_wrapper h3 {
 											font-size: vars.$news_title_font_size;
@@ -3167,10 +3182,11 @@ p.login-username input, p.login-password input {
 										.page-template-page-reading h6, .page-template-page-reading .h6 { 
 											font-size: vars.$header_6_font_size_reading;
 										}
-
-										/* Place to add stylesheets if you want to target monitors 
-										bigger than a desktop. */
-										
+										/* TYPOGRAPHY: FONT SIZE OVERRIDES
+										====================================  */
+										.has-medium-font-size {
+											font-size: 2.5rem !important;
+										}										
 										.pagehead {
 											height: 45vh;
 											background-position: center center;

@@ -146,6 +146,19 @@ if ($main_nav_tab_style_navigation == "yes") { $main_nav_link_margin_bottom = $m
 
 $main_navbar_padding = (get_field('main_navbar_padding', 'option'));
 
+$top_nav_font_size = (get_field('top_nav_font_size', 'option'));
+$main_nav_font_size = (get_field('main_nav_font_size', 'option'));
+$top_nav_font_weight = (get_field('top_nav_font_weight', 'option'));
+$main_nav_font_weight = (get_field('main_nav_font_weight', 'option'));
+
+if($top_nav_font_size) { $top_nav_font_size = $top_nav_font_size; } else { $top_nav_font_size = "20"; }
+$top_nav_font_size_use = $top_nav_font_size / 10;
+if($main_nav_font_size) { $main_nav_font_size = $main_nav_font_size; } else { $main_nav_font_size = "20"; }
+$main_nav_font_size_use = $main_nav_font_size / 10;
+
+$top_nav_text_transformation = (get_field('top_nav_text_transformation', 'option'));
+$main_nav_text_transformation = (get_field('main_nav_text_transformation', 'option'));
+
 $footer_background_color = (get_field('footer_background_color', 'option'));
 $footer_text_color = (get_field('footer_text_color', 'option'));
 $footer_link_color = (get_field('footer_link_color', 'option'));
@@ -894,6 +907,8 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--top_nav_link_padding_top: <?php echo $top_nav_link_padding_top; ?>;
 	--top_nav_link_padding_bottom: <?php echo $top_nav_link_padding_bottom; ?>;
 	--top_nav_link_margin_bottom: <?php echo $top_nav_link_margin_bottom; ?>px;
+	--top_nav_font_weight: <?php echo $top_nav_font_weight; ?>;
+	--top_nav_text_transformation: <?php echo $top_nav_text_transformation; ?>;
 
 	--main_navbar_padding: <?php echo $main_navbar_padding; ?>px;
 	--main_nav_background_color: <?php echo $main_nav_background_color; ?>;
@@ -905,6 +920,8 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--main_nav_link_padding_top: <?php echo $main_nav_link_padding_top; ?>;
 	--main_nav_link_padding_bottom: <?php echo $main_nav_link_padding_bottom; ?>;
 	--main_nav_link_margin_bottom: -<?php echo $main_nav_link_margin_bottom; ?>px;
+	--main_nav_font_weight: <?php echo $main_nav_font_weight; ?>;
+	--main_nav_text_transformation: <?php echo $main_nav_text_transformation; ?>;
 	
 	--header_image_color_overlay: <?php echo $header_image_color_overlay; ?>;
 
@@ -973,6 +990,9 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--heading_4_font_size: <?php echo $heading_4_font_size_use; ?>rem;
 	--heading_5_font_size: <?php echo $heading_5_font_size_use; ?>rem;
 	--heading_6_font_size: <?php echo $heading_6_font_size_use; ?>rem;
+
+	--top_nav_font_size: <?php echo $top_nav_font_size_use; ?>rem;
+	--main_nav_font_size: <?php echo $main_nav_font_size_use; ?>rem;
 
 	--body_font_size_admin: <?php echo $body_font_size; ?>px;
 	--heading_1_font_size_admin: <?php echo $heading_1_font_size; ?>px;

@@ -374,6 +374,21 @@ function mc_theme_add_template_class($classes)
 }
 add_filter('admin_body_class', 'mc_theme_add_template_class');
 
+/*
+ * Add 'Manage Patterns' menu item.
+ */
+add_action('admin_menu', 'mc_custom_menu_page');
+function mc_custom_menu_page() {
+    add_menu_page(
+        'Patterns',     // Page title
+        'Manage Patterns',           // Menu title
+        'edit_others_pages',        // Capability
+        'edit.php?post_type=wp_block',      // Menu slug
+        '',  // Callback function
+        'dashicons-welcome-widgets-menus',  // Icon URL (can use dashicons)
+        11                      // Position
+    );
+}
 
 function mc_load_more() {
 	$news_options = get_field('news_options', 'option');

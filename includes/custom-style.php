@@ -210,6 +210,50 @@ $heading_6_font_size = (get_field('heading_6_font_size', 'option'));
 if($heading_6_font_size) { $heading_6_font_size = $heading_6_font_size; } else { $heading_6_font_size = "28"; }
 $heading_6_font_size_use = $heading_6_font_size / 10;
 
+$body_font_size_mobile = (get_field('body_font_size_mobile', 'option')); 
+if($body_font_size_mobile) { $body_font_size_mobile = $body_font_size_mobile; } else { $body_font_size_mobile = $body_font_size; }
+$body_font_size_use_mobile = $body_font_size_mobile / 10; 
+$heading_1_font_size_mobile = (get_field('heading_1_font_size_mobile', 'option')); 
+if($heading_1_font_size_mobile) { $heading_1_font_size_mobile = $heading_1_font_size_mobile; } else { $heading_1_font_size_mobile = $heading_1_font_size; }
+$heading_1_font_size_use_mobile = $heading_1_font_size_mobile / 10;
+$heading_2_font_size_mobile = (get_field('heading_2_font_size_mobile', 'option')); 
+if($heading_2_font_size_mobile) { $heading_2_font_size_mobile = $heading_2_font_size_mobile; } else { $heading_2_font_size_mobile = $heading_2_font_size; }
+$heading_2_font_size_use_mobile = $heading_2_font_size_mobile / 10;
+$heading_3_font_size_mobile = (get_field('heading_3_font_size_mobile', 'option')); 
+if($heading_3_font_size_mobile) { $heading_3_font_size_mobile = $heading_3_font_size_mobile; } else { $heading_3_font_size_mobile = $heading_3_font_size; }
+$heading_3_font_size_use_mobile = $heading_3_font_size_mobile / 10;
+$heading_4_font_size_mobile = (get_field('heading_4_font_size_mobile', 'option')); 
+if($heading_4_font_size_mobile) { $heading_4_font_size_mobile = $heading_4_font_size_mobile; } else { $heading_4_font_size_mobile = $heading_4_font_size; }
+$heading_4_font_size_use_mobile = $heading_4_font_size_mobile / 10;
+$heading_5_font_size_mobile = (get_field('heading_5_font_size_mobile', 'option')); 
+if($heading_5_font_size_mobile) { $heading_5_font_size_mobile = $heading_5_font_size_mobile; } else { $heading_5_font_size_mobile = $heading_5_font_size; }
+$heading_5_font_size_use_mobile = $heading_5_font_size_mobile / 10;
+$heading_6_font_size_mobile = (get_field('heading_6_font_size_mobile', 'option')); 
+if($heading_6_font_size_mobile) { $heading_6_font_size_mobile = $heading_6_font_size_mobile; } else { $heading_6_font_size_mobile = $heading_6_font_size; }
+$heading_6_font_size_use_mobile = $heading_6_font_size_mobile / 10;
+
+$body_font_size_tablet = (get_field('body_font_size_tablet', 'option')); 
+if($body_font_size_tablet) { $body_font_size_tablet = $body_font_size_tablet; } else { $body_font_size_tablet = $body_font_size; }
+$body_font_size_use_tablet = $body_font_size_tablet / 10; 
+$heading_1_font_size_tablet = (get_field('heading_1_font_size_tablet', 'option')); 
+if($heading_1_font_size_tablet) { $heading_1_font_size_tablet = $heading_1_font_size_tablet; } else { $heading_1_font_size_tablet = $heading_1_font_size; }
+$heading_1_font_size_use_tablet = $heading_1_font_size_tablet / 10;
+$heading_2_font_size_tablet = (get_field('heading_2_font_size_tablet', 'option')); 
+if($heading_2_font_size_tablet) { $heading_2_font_size_tablet = $heading_2_font_size_tablet; } else { $heading_2_font_size_tablet = $heading_2_font_size; }
+$heading_2_font_size_use_tablet = $heading_2_font_size_tablet / 10;
+$heading_3_font_size_tablet = (get_field('heading_3_font_size_tablet', 'option')); 
+if($heading_3_font_size_tablet) { $heading_3_font_size_tablet = $heading_3_font_size_tablet; } else { $heading_3_font_size_tablet = $heading_3_font_size; }
+$heading_3_font_size_use_tablet = $heading_3_font_size_tablet / 10;
+$heading_4_font_size_tablet = (get_field('heading_4_font_size_tablet', 'option')); 
+if($heading_4_font_size_tablet) { $heading_4_font_size_tablet = $heading_4_font_size_tablet; } else { $heading_4_font_size_tablet = $heading_4_font_size; }
+$heading_4_font_size_use_tablet = $heading_4_font_size_tablet / 10;
+$heading_5_font_size_tablet = (get_field('heading_5_font_size_tablet', 'option')); 
+if($heading_5_font_size_tablet) { $heading_5_font_size_tablet = $heading_5_font_size_tablet; } else { $heading_5_font_size_tablet = $heading_5_font_size; }
+$heading_5_font_size_use_tablet = $heading_5_font_size_tablet / 10;
+$heading_6_font_size_tablet = (get_field('heading_6_font_size_tablet', 'option')); 
+if($heading_6_font_size_tablet) { $heading_6_font_size_tablet = $heading_6_font_size_tablet; } else { $heading_6_font_size_tablet = $heading_6_font_size; }
+$heading_6_font_size_use_tablet = $heading_6_font_size_tablet / 10;
+
 $body_font_size_reading = (get_field('body_font_size_reading', 'option')); 
 if($body_font_size_reading) { $body_font_size_reading = $body_font_size_reading; } else { $body_font_size_reading = $body_font_size; }
 $body_font_size_use_reading = $body_font_size_reading / 10; 
@@ -244,6 +288,32 @@ $heading_5_margin_bottom = (get_field('heading_5_margin_bottom', 'option'));
 if($heading_5_margin_bottom) { $heading_5_margin_bottom = $heading_5_margin_bottom; } else { $heading_5_margin_bottom = '20'; }
 $heading_6_margin_bottom = (get_field('heading_6_margin_bottom', 'option')); 
 if($heading_6_margin_bottom) { $heading_6_margin_bottom = $heading_6_margin_bottom; } else { $heading_6_margin_bottom = '20'; }
+
+$paragraph_margin_bottom_mobile = (get_field('paragraph_margin_bottom_mobile', 'option')); 
+if($paragraph_margin_bottom_mobile) { $paragraph_margin_bottom_mobile = $paragraph_margin_bottom_mobile; } else { $paragraph_margin_bottom_mobile = $paragraph_margin_bottom; }
+$heading_2_margin_bottom_mobile = (get_field('heading_2_margin_bottom_mobile', 'option')); 
+if($heading_2_margin_bottom_mobile) { $heading_2_margin_bottom_mobile = $heading_2_margin_bottom_mobile; } else { $heading_2_margin_bottom_mobile = $heading_2_margin_bottom; }
+$heading_3_margin_bottom_mobile = (get_field('heading_3_margin_bottom_mobile', 'option')); 
+if($heading_3_margin_bottom_mobile) { $heading_3_margin_bottom_mobile = $heading_3_margin_bottom_mobile; } else { $heading_3_margin_bottom_mobile = $heading_3_margin_bottom; }
+$heading_4_margin_bottom_mobile = (get_field('heading_4_margin_bottom_mobile', 'option')); 
+if($heading_4_margin_bottom_mobile) { $heading_4_margin_bottom_mobile = $heading_4_margin_bottom_mobile; } else { $heading_4_margin_bottom_mobile = $heading_4_margin_bottom; }
+$heading_5_margin_bottom_mobile = (get_field('heading_5_margin_bottom_mobile', 'option')); 
+if($heading_5_margin_bottom_mobile) { $heading_5_margin_bottom_mobile = $heading_5_margin_bottom_mobile; } else { $heading_5_margin_bottom_mobile = $heading_5_margin_bottom; }
+$heading_6_margin_bottom_mobile = (get_field('heading_6_margin_bottom_mobile', 'option')); 
+if($heading_6_margin_bottom_mobile) { $heading_6_margin_bottom_mobile = $heading_6_margin_bottom_mobile; } else { $heading_6_margin_bottom_mobile = $heading_6_margin_bottom; }
+
+$paragraph_margin_bottom_tablet = (get_field('paragraph_margin_bottom_tablet', 'option')); 
+if($paragraph_margin_bottom_tablet) { $paragraph_margin_bottom_tablet = $paragraph_margin_bottom_tablet; } else { $paragraph_margin_bottom_tablet = $paragraph_margin_bottom; }
+$heading_2_margin_bottom_tablet = (get_field('heading_2_margin_bottom_tablet', 'option')); 
+if($heading_2_margin_bottom_tablet) { $heading_2_margin_bottom_tablet = $heading_2_margin_bottom_tablet; } else { $heading_2_margin_bottom_tablet = $heading_2_margin_bottom; }
+$heading_3_margin_bottom_tablet = (get_field('heading_3_margin_bottom_tablet', 'option')); 
+if($heading_3_margin_bottom_tablet) { $heading_3_margin_bottom_tablet = $heading_3_margin_bottom_tablet; } else { $heading_3_margin_bottom_tablet = $heading_3_margin_bottom; }
+$heading_4_margin_bottom_tablet = (get_field('heading_4_margin_bottom_tablet', 'option')); 
+if($heading_4_margin_bottom_tablet) { $heading_4_margin_bottom_tablet = $heading_4_margin_bottom_tablet; } else { $heading_4_margin_bottom_tablet = $heading_4_margin_bottom; }
+$heading_5_margin_bottom_tablet = (get_field('heading_5_margin_bottom_tablet', 'option')); 
+if($heading_5_margin_bottom_tablet) { $heading_5_margin_bottom_tablet = $heading_5_margin_bottom_tablet; } else { $heading_5_margin_bottom_tablet = $heading_5_margin_bottom; }
+$heading_6_margin_bottom_tablet = (get_field('heading_6_margin_bottom_tablet', 'option')); 
+if($heading_6_margin_bottom_tablet) { $heading_6_margin_bottom_tablet = $heading_6_margin_bottom_tablet; } else { $heading_6_margin_bottom_tablet = $heading_6_margin_bottom; }
 
 $paragraph_max_width = (get_field('paragraph_max_width', 'option')); 
 if($paragraph_max_width) { $paragraph_max_width = $paragraph_max_width; } else { $paragraph_max_width = '99999'; }
@@ -983,6 +1053,22 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--heading_5_font: <?php echo $heading_5_font; ?>;
 	--heading_6_font: <?php echo $heading_6_font; ?>;
 
+	--body_font_size_mobile: <?php echo $body_font_size_use_mobile; ?>rem; /* 10 ÷ $rembase */
+	--heading_1_font_size_mobile: <?php echo $heading_1_font_size_use_mobile; ?>rem;
+	--heading_2_font_size_mobile: <?php echo $heading_2_font_size_use_mobile; ?>rem;
+	--heading_3_font_size_mobile: <?php echo $heading_3_font_size_use_mobile; ?>rem;
+	--heading_4_font_size_mobile: <?php echo $heading_4_font_size_use_mobile; ?>rem;
+	--heading_5_font_size_mobile: <?php echo $heading_5_font_size_use_mobile; ?>rem;
+	--heading_6_font_size_mobile: <?php echo $heading_6_font_size_use_mobile; ?>rem;
+
+	--body_font_size_tablet: <?php echo $body_font_size_use_tablet; ?>rem; /* 10 ÷ $rembase */
+	--heading_1_font_size_tablet: <?php echo $heading_1_font_size_use_tablet; ?>rem;
+	--heading_2_font_size_tablet: <?php echo $heading_2_font_size_use_tablet; ?>rem;
+	--heading_3_font_size_tablet: <?php echo $heading_3_font_size_use_tablet; ?>rem;
+	--heading_4_font_size_tablet: <?php echo $heading_4_font_size_use_tablet; ?>rem;
+	--heading_5_font_size_tablet: <?php echo $heading_5_font_size_use_tablet; ?>rem;
+	--heading_6_font_size_tablet: <?php echo $heading_6_font_size_use_tablet; ?>rem;
+
 	--body_font_size: <?php echo $body_font_size_use; ?>rem; /* 10 ÷ $rembase */
 	--heading_1_font_size: <?php echo $heading_1_font_size_use; ?>rem;
 	--heading_2_font_size: <?php echo $heading_2_font_size_use; ?>rem;
@@ -1001,6 +1087,20 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--heading_4_font_size_admin: <?php echo $heading_4_font_size; ?>px;
 	--heading_5_font_size_admin: <?php echo $heading_5_font_size; ?>px;
 	--heading_6_font_size_admin: <?php echo $heading_6_font_size; ?>px;
+	
+	--paragraph_margin_bottom_mobile: <?php echo $paragraph_margin_bottom_mobile; ?>px;
+	--heading_2_margin_bottom_mobile: <?php echo $heading_2_margin_bottom_mobile; ?>px;
+	--heading_3_margin_bottom_mobile: <?php echo $heading_3_margin_bottom_mobile; ?>px;
+	--heading_4_margin_bottom_mobile: <?php echo $heading_4_margin_bottom_mobile; ?>px;
+	--heading_5_margin_bottom_mobile: <?php echo $heading_5_margin_bottom_mobile; ?>px;
+	--heading_6_margin_bottom_mobile: <?php echo $heading_6_margin_bottom_mobile; ?>px;
+	
+	--paragraph_margin_bottom_tablet: <?php echo $paragraph_margin_bottom_tablet; ?>px;
+	--heading_2_margin_bottom_tablet: <?php echo $heading_2_margin_bottom_tablet; ?>px;
+	--heading_3_margin_bottom_tablet: <?php echo $heading_3_margin_bottom_tablet; ?>px;
+	--heading_4_margin_bottom_tablet: <?php echo $heading_4_margin_bottom_tablet; ?>px;
+	--heading_5_margin_bottom_tablet: <?php echo $heading_5_margin_bottom_tablet; ?>px;
+	--heading_6_margin_bottom_tablet: <?php echo $heading_6_margin_bottom_tablet; ?>px;
 	
 	--paragraph_margin_bottom: <?php echo $paragraph_margin_bottom; ?>px;
 	--heading_2_margin_bottom: <?php echo $heading_2_margin_bottom; ?>px;

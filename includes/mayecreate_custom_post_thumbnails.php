@@ -53,12 +53,18 @@ function wpdocs_theme_setup() {
 	if ($pagebreak_image_width) { $pagebreak_image_width = $pagebreak_image_width; } else { $pagebreak_image_width = "1920"; }
 	if ($pagebreak_image_height) { $pagebreak_image_height = $pagebreak_image_height; } else { $pagebreak_image_height = "750"; }
 
+	$pagebreak_mobile_image_width = (get_field('pagebreak_mobile_image_width', 'option'));
+	$pagebreak_mobile_image_height = (get_field('pagebreak_mobile_image_height', 'option'));
+	if ($pagebreak_mobile_image_width) { $pagebreak_mobile_image_width = $pagebreak_mobile_image_width; } else { $pagebreak_mobile_image_width = "450"; }
+	if ($pagebreak_mobile_image_height) { $pagebreak_mobile_image_height = $pagebreak_mobile_image_height; } else { $pagebreak_mobile_image_height = "450"; }
+
     add_image_size('blog', $featured_image_width, $featured_image_height, true); // (cropped)
 	add_image_size('team', $image_size, $image_size, array('center','top')); // (cropped)
     add_image_size('project', $project_featured_image_width, $project_featured_image_height, true); // (cropped)
     add_image_size('resource', $resource_featured_image_width, $resource_featured_image_height, true); // (cropped)
     add_image_size('event', $event_featured_image_width, $event_featured_image_height, true); // (cropped)
 	add_image_size('pbimage', $pagebreak_image_width, $pagebreak_image_height, true); // (cropped)
+	add_image_size('mobile_pbimage', $pagebreak_mobile_image_width, $pagebreak_mobile_image_height, true); // (cropped)
 	add_image_size('schmedium', 600, 600); // (cropped)
 	add_image_size('slider', 1920, 750, true); // (cropped)
 	add_image_size('header', 1920, 450, true); // (cropped)

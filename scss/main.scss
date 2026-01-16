@@ -8,7 +8,7 @@ html {
 }
 body { 
 	font-family: vars.$main_font; 
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size);
+	font-size: vars.$body_font_size_mobile;
 	font-weight: 400;
 	color: vars.$base_color;
 	margin:0;
@@ -77,11 +77,25 @@ body.page-template-page-reading {
 #cookie-notice .cn-button.bootstrap:hover {
 	background: vars.$grey;
 	color: vars.$white;
-}
+} 
 iframe {
     max-width: 100% !important;
     margin: 0 auto 20px auto !important;
 }
+.responsive-video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+	height: 0;
+	overflow: hidden; 
+}
+.responsive-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 
 /* COOKIE NOTICE
 ========================================== */
@@ -252,47 +266,47 @@ h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
 	color: vars.$secondary_color;
 }
 h1, h1.entry-title, .h1 {
-	font-size: clamp(4rem, 3.5rem + 1vw, vars.$header_1_font_size);
+	font-size: vars.$header_1_font_size_mobile;
 	font-family: vars.$header_1_font;
 	color: vars.$heading_1_color;
 	font-weight: vars.$heading_1_font_weight;
 }
 h2, .h2 {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size);
+	font-size: vars.$header_2_font_size_mobile;
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
 	font-weight: vars.$heading_2_font_weight;
-	margin-bottom: vars.$heading_2_margin_bottom;
+	margin-bottom: vars.$heading_2_margin_bottom_mobile;
 }
 h3, .h3 {
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
 	font-weight: vars.$heading_3_font_weight;
-	margin-bottom: vars.$heading_3_margin_bottom;
+	margin-bottom: vars.$heading_3_margin_bottom_mobile;
 } 
 h4, .h4 {
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size);
+	font-size: vars.$header_4_font_size_mobile;
 	font-family: vars.$header_4_font;
 	color: vars.$heading_4_color;
 	font-weight: vars.$heading_4_font_weight;
-	margin-bottom: vars.$heading_4_margin_bottom;
+	margin-bottom: vars.$heading_4_margin_bottom_mobile;
 }
 h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
-	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size);
+	font-size: vars.$header_5_font_size_mobile;
 	font-family: vars.$header_5_font;
 }
 h5, .h5 {
 	color: vars.$heading_5_color;
 	font-weight: vars.$heading_5_font_weight;
-	margin-bottom: vars.$heading_5_margin_bottom;
+	margin-bottom: vars.$heading_5_margin_bottom_mobile;
 }
 h6, .h6 {
-	font-size: clamp(2rem, 1.8rem + 1vw, vars.$header_6_font_size);
+	font-size: vars.$header_6_font_size_mobile;
 	font-family: vars.$header_6_font;
 	color: vars.$heading_6_color;
 	font-weight: vars.$heading_6_font_weight;
-	margin-bottom: vars.$heading_6_margin_bottom;
+	margin-bottom: vars.$heading_6_margin_bottom_mobile;
 }
 .page-template-page-reading h1, .page-template-page-reading h1.entry-title, .page-template-page-reading .h1 {
 	font-size: clamp(3.5rem, 3rem + 1vw, vars.$header_1_font_size_reading);
@@ -323,11 +337,11 @@ h6, .h6 {
 /* TYPOGRAPHY: PARAGRAPHS
 ==========================================  */
 p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
-	font-size: clamp(1.8rem, 1.6rem + 1vw, vars.$body_font_size);
+	font-size: vars.$body_font_size_mobile;
 	margin:0 0 20px 0;
 }
 p {
-	margin-bottom: vars.$paragraph_margin_bottom;
+	margin-bottom: vars.$paragraph_margin_bottom_mobile;
 	max-width: vars.$paragraph_max_width;
 }
 .page-template-page-reading p {
@@ -410,7 +424,7 @@ p {
 /* TYPOGRAPHY: LIST ITEMS
 ==========================================  */
 ul li, ol li {
-    font-size: clamp(1.8rem, 1.6rem + 1vw, vars.$body_font_size);
+    font-size: vars.$body_font_size_mobile;
 }
 ol, ul {
 	margin-left: 40px;
@@ -2124,13 +2138,13 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     padding: 0;
 }
 #tribe-events #legend li, .tribe-events #legend li {
-    font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size); 
+    font-size: vars.$body_font_size_mobile; 
     background: none;   
 }
 #tribe-events #legend li a:link, #tribe-events #legend li a:visited, .tribe-events #legend li a:link, .tribe-events #legend li a:visited {
     text-align: center;
     font-weight: 400;
-    font-size: vars.$body_font_size;
+    font-size: vars.$body_font_size_mobile;
     text-decoration: none;
     border-radius: vars.$button_border_radius;
     border: vars.$button_border_thickness solid vars.$button_border_color;
@@ -2209,7 +2223,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     background: vars.$button_background_color;
     text-align: center;
     font-weight: 400;
-    font-size: vars.$body_font_size;
+    font-size: vars.$body_font_size_mobile;
     text-decoration: none;
 	border-radius: vars.$button_border_radius;
 	border: vars.$button_border_thickness solid vars.$button_border_color;
@@ -2363,7 +2377,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     color: vars.$button_hover_color;
     outline: none;
 }
-p.login-username, p.login-password, p.login-remember {
+p.login-username, p.login-password, p.login-remember, p.login-submit {
     font-size: 2rem;
     display: grid;
     font-weight: 500;
@@ -2554,6 +2568,50 @@ p.login-username input, p.login-password input {
 
 				/* Large devices (desktops, 992px and up). This is anything labeled "lg" in bootstrap. */
 				@media (min-width: 992px) {
+					
+					/* TYPOGRAPHY
+					===========================================  */
+					body {
+						font-size: vars.$body_font_size_tablet;
+					}
+					h1, h1.entry-title, .h1 {
+						font-size: vars.$header_1_font_size_tablet;
+					}
+					h2, .h2 {
+						font-size: vars.$header_2_font_size_tablet;
+						margin-bottom: vars.$heading_2_margin_bottom_tablet;
+					}
+					h3, .h3 {
+						font-size: vars.$header_3_font_size_tablet;
+						margin-bottom: vars.$heading_3_margin_bottom_tablet;
+					}
+					h4, .h4 {
+						font-size: vars.$header_4_font_size_tablet;
+						margin-bottom: vars.$heading_4_margin_bottom_tablet;
+					}
+					h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
+						font-size: vars.$header_5_font_size_tablet;
+						margin-bottom: vars.$heading_5_margin_bottom_tablet;
+					}
+					h6, .h6 { 
+						font-size: vars.$header_6_font_size_tablet;
+						margin-bottom: vars.$heading_6_margin_bottom_tablet;
+					}
+					p {
+						font-size: vars.$body_font_size_tablet;
+						margin-bottom: vars.$paragraph_margin_bottom_tablet;
+					}
+					.btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
+						font-size: vars.$body_font_size_tablet;
+						margin-bottom: vars.$paragraph_margin_bottom_tablet;
+					}
+					ul li, ol li {
+						font-size: vars.$body_font_size_tablet;
+						margin-bottom: vars.$paragraph_margin_bottom_tablet;
+					}
+					
+					/* ADDITIONAL CLASSES
+					===========================================  */
 					.desk_left { 
 						text-align: left !important;
 					}
@@ -3106,24 +3164,31 @@ p.login-username input, p.login-password input {
 										}
 										h2, .h2 {
 											font-size: vars.$header_2_font_size;
+											margin-bottom: vars.$heading_2_margin_bottom; 
 										}
 										h3, .h3 {
 											font-size: vars.$header_3_font_size;
+											margin-bottom: vars.$heading_3_margin_bottom;
 										}
 										h4, .h4 {
 											font-size: vars.$header_4_font_size;
+											margin-bottom: vars.$heading_4_margin_bottom;
 										}
 										h5, .h5, .btn-mayecreate.large, a.btn-mayecreate.large:link, a.btn-mayecreate.large:visited, .wp-block-button.large a:link, .wp-block-button.large a:visited {
 											font-size: vars.$header_5_font_size;
+											margin-bottom: vars.$heading_5_margin_bottom;
 										}
 										h6, .h6 { 
 											font-size: vars.$header_6_font_size;
+											margin-bottom: vars.$heading_6_margin_bottom;
 										}
 										p, .btn-mayecreate, a.btn-mayecreate:link, a.btn-mayecreate:visited, .wp-block-button a:link, .wp-block-button a:visited {
 											font-size: vars.$body_font_size;
+											margin-bottom: vars.$paragraph_margin_bottom;
 										}
 										ul li, ol li {
 											font-size: vars.$body_font_size;
+											margin-bottom: vars.$paragraph_margin_bottom;
 										}
 										#top_nav a:link, #top_nav a:visited {
 											font-size: vars.$top_nav_font_size;

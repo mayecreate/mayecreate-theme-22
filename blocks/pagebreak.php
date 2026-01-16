@@ -9,17 +9,19 @@ if ($page_break_background) {
 	// Thumbnail size attributes.
 	$size = 'pbimage';
 	$pb_thumb = $page_break_background['sizes'][ $size ];
+	$size_mobile_backup = 'mobile_pbimage';
+	$pb_thumb_mobile_backup = $page_break_background['sizes'][ $size_mobile_backup ];
 }
 ?>			
 <?php $page_break_background_mobile = get_field("page_break_background_mobile"); ?>
 <?php
 if ($page_break_background_mobile) {
 	// Thumbnail size attributes.
-	$size = 'large';
-	$pb_thumb_mobile = $page_break_background_mobile['sizes'][ $size ];
+	$size_mobile = 'mobile_pbimage';
+	$pb_thumb_mobile = $page_break_background_mobile['sizes'][ $size_mobile ];
 }
 ?>		
-<?php if ($pb_thumb_mobile) { $pb_thumb_mobile = $pb_thumb_mobile; } else { $pb_thumb_mobile = $pb_thumb; } ?>
+<?php if ($pb_thumb_mobile) { $pb_thumb_mobile = $pb_thumb_mobile; } else { $pb_thumb_mobile = $pb_thumb_mobile_backup; } ?>
 
 <?php $additional_pagebreak_classes = get_field("additional_pagebreak_classes"); ?>
 

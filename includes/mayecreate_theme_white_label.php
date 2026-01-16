@@ -130,6 +130,21 @@ function mayecreate_custom_login_logo() {
 		box-shadow: none;
 		color: '.$button_hover_color.';
 	}
+	.login .message, .login .notice, .login .success {
+		background: #fff !important;
+		color: #000 !important;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+	.login .message *, .login .notice *, .login .success * {
+		color: #000 !important;
+	}
+	.login .message a, .login .notice a, .login .success a {
+		color: #0B5D83 !important;
+	}
+	.login .message a:hover, .login .notice a:hover, .login .success a:hover {
+		color: #000 !important;
+	}
 	
 </style>';
 }

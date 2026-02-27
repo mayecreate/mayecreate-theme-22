@@ -9,7 +9,7 @@
 function mayecreate_wp_bootstrap_scripts_styles() {
 	
     // Loads Bootstrap minified JavaScript file.
-	wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', false ,'5.1', array('in_footer' => true,'strategy'  => 'async',));
+	wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js', false ,'5.3.8', array('in_footer' => true,'strategy'  => 'async',));
 	// Loads the LightSlider javascript for the featured image slider
 	wp_enqueue_script('featuredSlider', get_template_directory_uri() . '/js/lightslider.js', array('jquery'),'1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
 	// Loads the MayeCreate custom scripts.
@@ -17,7 +17,7 @@ function mayecreate_wp_bootstrap_scripts_styles() {
 	// Loads Javascript file for the  drawer menu
 	wp_enqueue_script('drawerMenu', get_template_directory_uri() . '/js/jquery.mmenu.all.min.js', array('jquery'),'1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
 	// Loads Bootstrap minified CSS file.
-	wp_enqueue_style('bootstrapwp', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', false ,'5.1');	
+	wp_enqueue_style('bootstrapwp', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css', false ,'5.3.8');	
 	// Loads the main stylesheet for the featured image slider
 	wp_enqueue_style('featuredSliderStyle', get_template_directory_uri() . '/css/lightslider.min.css', array('bootstrapwp') ,'1.0');
 	// Loads the stylesheet for the slideout menu.

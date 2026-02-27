@@ -14543,6 +14543,52 @@
         "display_title": ""
     },
     {
+        "key": "group_69a20fbacbda1",
+        "title": "Not Found Page",
+        "fields": [
+            {
+                "key": "field_69a20fbd790a6",
+                "label": "404 Page Content",
+                "name": "not_found_page_content",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "allow_in_bindings": 0,
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 10,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": ""
+    },
+    {
         "key": "group_62e976160d436",
         "title": "Posts Page Block",
         "fields": [

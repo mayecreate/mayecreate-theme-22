@@ -455,7 +455,7 @@ ul.wp-block-list li {
 }
 .cmplz-cookiebanner ul li {
 	list-style: none !important;
-}
+} 
 
 /* TYPOGRAPHY: FONT SIZE OVERRIDES
 ==========================================  */
@@ -683,19 +683,19 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 	z-index: 2;
 }
 .video_outer_outer {
-    max-height: 230px;
-	display: none;
+    max-height: 250px;
+	display: block;
 }
 #video_wrapper iframe {
     box-sizing: border-box;
     height: 56.25vw;
-    left: 50%;
+    left: 0;
     min-height: 100%;
     min-width: 100%;
-    transform: translate(-50%, -50%);
     position: absolute;
-    top: 50%;
+	bottom: 0;
     width: 177.77777778vh;
+	margin-bottom: 0 !important;
 }
 
 
@@ -3043,6 +3043,14 @@ p.login-username input, p.login-password input {
 					.has-medium-font-size {
 						font-size: 2.1rem !important;
 					}
+					/* LIST COLUMN CLASSES
+					====================================  */
+					.column_2, .column_3, .column_4 {
+						columns: 2;
+					}
+					.column_2 li, .column_3 li, .column_4 li {
+						margin-top: 0;
+					}
 				}
 						/* Larger-er devices (desktops, 1024px and up). This is NOT a breakpoint in bootstrap. */
 						@media (min-width: 1024px) { 
@@ -3142,6 +3150,11 @@ p.login-username input, p.login-password input {
 									position: relative;
 									z-index: 1;
 									margin-left: -10%;
+								}
+								/* LIST COLUMN CLASSES
+								====================================  */
+								.column_3, .column_4 {
+									columns: 3;
 								}
 
 
@@ -3267,6 +3280,14 @@ p.login-username input, p.login-password input {
 
 										div#homefeatured #myCarousel, div#homefeatured .carousel, div#homefeatured .carousel-inner {
 											max-height: 750px;
+										}
+										.video_outer_outer {
+											max-height: 100%;
+										}
+										/* LIST COLUMN CLASSES
+										====================================  */
+										.column_4 {
+											columns: 4;
 										}
 										
 									}

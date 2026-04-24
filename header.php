@@ -60,7 +60,10 @@
 <?php if ($ga_tag) {
 echo $ga_tag;
 } ?>  
-    
+<?php $no_index_option = get_field("no_index_option", $post->ID, false); ?>
+<?php if (($no_index_option) || (str_contains( $_SERVER['REQUEST_URI'], '?' )) || (is_author())) { ?>
+	<meta name="robots" content="noindex">
+<?php } ?> 
 </head>
 
 

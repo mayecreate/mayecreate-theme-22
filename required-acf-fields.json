@@ -272,7 +272,62 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_69ebc3f083f04",
+        "title": "No Index Page Option",
+        "fields": [
+            {
+                "key": "field_69ebc3f1886e3",
+                "label": "No Index Option",
+                "name": "no_index_option",
+                "aria-label": "",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "noindex": "Do Not Index This Page"
+                },
+                "default_value": [],
+                "return_format": "value",
+                "allow_custom": 0,
+                "allow_in_bindings": 0,
+                "layout": "vertical",
+                "toggle": 0,
+                "save_custom": 0,
+                "custom_choice_button_text": "Add new choice"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620e6ddb212be",
@@ -741,7 +796,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620eb6a70234a",
@@ -2090,7 +2147,9 @@
         "active": true,
         "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620ece8100338",
@@ -2882,7 +2941,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_696aa91db9069",
@@ -3505,7 +3566,9 @@
         "active": true,
         "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_65e230f08a799",
@@ -3860,7 +3923,9 @@
         "active": true,
         "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620e74e59d50a",
@@ -4377,7 +4442,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_621575865c14f",
@@ -4675,7 +4742,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620eb65024d73",
@@ -5025,7 +5094,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_621571a82ff9f",
@@ -5244,7 +5315,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f71758cabc",
@@ -7141,7 +7214,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_62cf0cd04c298",
@@ -9035,7 +9110,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f6ce7353ff",
@@ -11031,7 +11108,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f6cdfee177",
@@ -12925,7 +13004,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f6cce4962d",
@@ -13954,7 +14035,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_620e99e17c6fa",
@@ -14350,7 +14433,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_62e1a3b72cbcf",
@@ -14540,7 +14625,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_69a20fbacbda1",
@@ -14586,7 +14673,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_62e976160d436",
@@ -14677,7 +14766,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_62fc0fefd6a3b",
@@ -14768,7 +14859,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f87d958c4a",
@@ -14859,7 +14952,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_633f059f95249",
@@ -14950,7 +15045,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_60cba81326d85",
@@ -15147,7 +15244,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_62fc10205e407",
@@ -15344,7 +15443,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_673f8867352c3",
@@ -15543,7 +15644,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_633f04e046db2",
@@ -15740,7 +15843,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_5b9fb962d3984",
@@ -15856,7 +15961,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_5d2389a5cb599",
@@ -16225,7 +16332,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_5b9fb963116c1",
@@ -16267,7 +16376,9 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     },
     {
         "key": "group_5d239353d61d2",
@@ -16804,6 +16915,8 @@
         "active": true,
         "description": "",
         "show_in_rest": 0,
-        "display_title": ""
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
     }
 ]

@@ -227,10 +227,11 @@ a:hover, a:active, a:focus{
 }
 .pagehead {
     height: 30vh;
-	margin-bottom: vars.$pagebreak_padding_top_mobile;
+	margin-bottom: 0;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
+	min-height: 250px;
 }
 .pagehead:before {
 	background: vars.$header_image_color_overlay;
@@ -249,8 +250,9 @@ a:hover, a:active, a:focus{
 	height: 30vh;
 	position: relative;
 	z-index: 2;
+	min-height: 250px;
 }
- .pagehead .page-header .entry-title{
+ .pagehead .page-header .entry-title {
 	position: absolute;
 	top: 40%;
 	color: vars.$heading_1_color;
@@ -561,7 +563,6 @@ span.btn-mayecreate {
 div#homefeatured {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: vars.$pagebreak_padding_top_mobile;
 }
 div#homefeatured.no_slider {
 	margin-bottom: 0 !important;
@@ -973,9 +974,13 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 
 /* CONTENT SECTIONS
 ==========================================	*/
-#contentWrap, #page {
+#contentWrap {
 	padding-top: 0px;
 	padding-bottom: 0px;
+}
+#page {
+	padding-top: vars.$pagebreak_padding_top_mobile;
+	padding-bottom: vars.$pagebreak_padding_bottom_mobile
 }
 #homeContentWrap.scroll, #contentwrap.scroll{
 	padding-top:240px;
@@ -2303,6 +2308,9 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
 .caps {
 	text-transform: uppercase !important;
 }
+.balance {
+    text-wrap: balance !important;
+}
 .title_font {
 	font-family: vars.$header_font !important;
 }
@@ -2985,16 +2993,13 @@ p.login-username input, p.login-password input {
 					div#homefeatured {
 						margin-bottom: vars.$pagebreak_padding_top;
 					}
-					.pagehead {
-						margin-bottom: vars.$pagebreak_padding_top;
-					}
 					.pagebreak { 
 						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0; 
 					}
 					.pagebreak_left, .pagebreak_right {
 						padding: 0;  
 					} 
-					.pagebreak_fix {
+					.pagebreak_fix, #page {
 						padding: vars.$pagebreak_padding_top 0 vars.$pagebreak_padding_bottom 0;
 					}
 					.pagebreak_right_content, .pagebreak_left_content {

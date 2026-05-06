@@ -687,12 +687,3 @@ if ($navigation_overlapping_the_content == 'no') { ?>
 	</script>
 <?php }
 }
-
-function mc_posts_change_blog_links($post_link, $id=0){
-    $post = get_post($id);
-    if( is_object($post) && $post->post_type == 'post'){
-        return home_url('/blog/'. $post->post_name.'/');
-    }
-    return $post_link;
-}
-add_filter('post_link', 'mc_posts_change_blog_links', 1, 3);

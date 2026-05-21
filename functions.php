@@ -151,6 +151,37 @@ function mc_theme_iframe_styles() {
 }
 add_action( 'enqueue_block_assets', 'mc_theme_iframe_styles' );
 
+function load_editor_google_fonts() {
+    $input = trim( get_field( 'google_font_embed_links', 'option' ) );
+    $font_url = '';
+    // If user pasted full embed code
+    if ( strpos( $input, '<link' ) !== false ) {
+        preg_match_all(
+            '/href=["\']([^"\']+)["\']/i',
+            $input,
+            $matches
+        );
+        if ( ! empty( $matches[1] ) ) {
+            foreach ( $matches[1] as $url ) {
+                // Only use the actual stylesheet URL
+                if ( strpos( $url, 'fonts.googleapis.com/css' ) !== false ) {
+                    $font_url = $url;
+                    break;
+                }
+            }
+        }
+    // If user pasted only the URL
+    } elseif ( filter_var( $input, FILTER_VALIDATE_URL ) ) {
+        $font_url = $input;
+    }
+    // Fallback
+    if ( empty( $font_url ) ) {
+        $font_url = 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap';
+    }
+    wp_enqueue_style('custom-editor-google-fonts', $font_url, array(), null);
+}
+add_action( 'enqueue_block_assets', 'load_editor_google_fonts' );
+
 
 function containerWidth() {
 	global $containerWidth;

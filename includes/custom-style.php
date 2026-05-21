@@ -1,9 +1,3 @@
-<?php $google_font_embed_links = (get_field('google_font_embed_links', 'option')); ?>
-<?php if ($google_font_embed_links) {
-	echo $google_font_embed_links;
-} else {
-	echo '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">';
-} ?>
 <style>
 /* Colors From Site Theme Options */
 <?php

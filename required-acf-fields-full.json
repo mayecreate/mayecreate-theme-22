@@ -44,31 +44,11 @@
                 "default_to_current_date": 0
             },
             {
-                "key": "field_673fabc340a1c",
-                "label": "Event Expiration Date",
-                "name": "event_expiration_date",
-                "aria-label": "",
-                "type": "date_picker",
-                "instructions": "This is the date that the website will automatically set the event to draft.",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "display_format": "m\/d\/Y",
-                "return_format": "Ymd",
-                "first_day": 0,
-                "allow_in_bindings": 0,
-                "default_to_current_date": 0
-            },
-            {
                 "key": "field_673f89c50e097",
                 "label": "Event Start Time",
                 "name": "event_start_time",
                 "aria-label": "",
-                "type": "time_picker",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -77,16 +57,19 @@
                     "class": "",
                     "id": ""
                 },
-                "display_format": "g:i a",
-                "return_format": "g:i a",
-                "allow_in_bindings": 0
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_673f89d80e098",
                 "label": "Event End Time",
                 "name": "event_end_time",
                 "aria-label": "",
-                "type": "time_picker",
+                "type": "text",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -95,9 +78,12 @@
                     "class": "",
                     "id": ""
                 },
-                "display_format": "g:i a",
-                "return_format": "g:i a",
-                "allow_in_bindings": 0
+                "default_value": "",
+                "maxlength": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
             },
             {
                 "key": "field_673f89e10e099",
@@ -5037,7 +5023,7 @@
                         "name": "social_icon",
                         "aria-label": "",
                         "type": "text",
-                        "instructions": "You can find your icon options <a href=\"https:\/\/fontawesome.com\/v6\/search\">here.<\/a> Just find the icon you want and paste the text for that icon here.",
+                        "instructions": "You can find your icon options <a href=\"https:\/\/fontawesome.com\/search\" target=\"_blank\">here.<\/a> Just find the icon you want and paste the text for that icon here.",
                         "required": 1,
                         "conditional_logic": 0,
                         "wrapper": {
@@ -5047,6 +5033,7 @@
                         },
                         "default_value": "",
                         "maxlength": "",
+                        "allow_in_bindings": 1,
                         "placeholder": "",
                         "prepend": "",
                         "append": "",

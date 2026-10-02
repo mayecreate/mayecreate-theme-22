@@ -44,8 +44,7 @@
 <!-- Fonts -->
 <?php $use_font_awesome = (get_field('use_font_awesome', 'option')); ?>
 <?php if ($use_font_awesome == "Yes") { ?>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous" async></script>
+	<script src="https://kit.fontawesome.com/539078998e.js" crossorigin="anonymous"></script>
 <?php } ?>
 <?php $google_font_embed_links = (get_field('google_font_embed_links', 'option')); ?>
 <?php if ($google_font_embed_links) {
@@ -61,7 +60,7 @@
 echo $ga_tag;
 } ?>  
 <?php $no_index_option = get_field("no_index_option", $post->ID, false); ?>
-<?php if (($no_index_option) || (str_contains( $_SERVER['REQUEST_URI'], '?' )) || (is_author())) { ?>
+<?php if (($no_index_option) || (str_contains( $_SERVER['REQUEST_URI'], '?' )) || (is_author()) || (is_attachment())) { ?>
 	<meta name="robots" content="noindex">
 <?php } ?> 
 </head>

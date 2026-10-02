@@ -1,0 +1,5391 @@
+[
+    {
+        "key": "group_620e6ddb212be",
+        "title": "Theme Options - General",
+        "fields": [
+            {
+                "key": "field_620e6f933e165",
+                "label": "Container Width",
+                "name": "container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here. The width will be set to 1640px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bd17e4ed",
+                "label": "Home Container Width",
+                "name": "home_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width on the homepage in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_63127bfbe0317",
+                "label": "Header\/Footer Container Width",
+                "name": "headerfooter_container_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in the header and footer in pixels. If this is not filled in, it will default to the main container width above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620e6fca3e166",
+                "label": "Site Logo",
+                "name": "site_logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_620e7c22fda7b",
+                "label": "Show Breadcrumb Nav",
+                "name": "show_breadcrumb_nav",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e7ab22a809",
+                "label": "Facebook Opengraph Image",
+                "name": "facebook_opengraph_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the default image used in the facebook open graph code.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "mailchimp",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6219591c9cbca",
+                "label": "Fixed Pagebreak Background",
+                "name": "fixed_pagebreak_background",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "Do you want to set ALL pagebreak backgrounds as position fixed? NOTE: This can be overwritten on an individual level per pagebreak.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_628bebeddad4a",
+                "label": "ul li bullet",
+                "name": "ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_65207682250f7",
+                "label": "Underline Hyperlinks",
+                "name": "underline_hyperlinks",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_62ed42a82ce8a",
+                "label": "GA Tag",
+                "name": "ga_tag",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_63a2246e80020",
+                "label": "Pagebreak Padding Top",
+                "name": "pagebreak_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to 50px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63a224c080021",
+                "label": "Pagebreak Padding Bottom",
+                "name": "pagebreak_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pxs that will apply to the padding TOP of page breaks and page break fix divs. If nothing is filled in, this will default to the padding-top setting.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6839eb8aaaa35",
+                "label": "Pagebreak Padding Top - Mobile",
+                "name": "pagebreak_padding_top_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this field will default to the Pagebreak Padding Top field above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6839ebacaaa36",
+                "label": "Pagebreak Padding Bottom - Mobile",
+                "name": "pagebreak_padding_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this field will default to the Pagebreak Padding Bottom field above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673798d56f7be",
+                "label": "Pagebreak Image Width",
+                "name": "pagebreak_image_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 1920px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_673799136f7bf",
+                "label": "Pagebreak Image Height",
+                "name": "pagebreak_image_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 750px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa82a906c6",
+                "label": "Pagebreak Mobile Image Width",
+                "name": "pagebreak_mobile_image_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the width of the pagebreak image size the site will use. If nothing is filled in it will be set to 450px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa82c906c7",
+                "label": "Pagebreak Mobile Image Height",
+                "name": "pagebreak_mobile_image_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the height of the pagebreak image size the site will use. If nothing is filled in it will be set to 450px",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_67379cbc39aa0",
+                "label": "Pagebreak ul li bullet",
+                "name": "pagebreak_ul_li_bullet",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This should be around 10px by 10px at the most. If nothing is filled in, it will default to the ul li above.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_620eb6a70234a",
+        "title": "Theme Options - Colors",
+        "fields": [
+            {
+                "key": "field_62155ab9132c4",
+                "label": "Body Background Color",
+                "name": "body_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620eb6b691f7e",
+                "label": "Primary Site Color",
+                "name": "primary_site_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the primary text color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620eb72891f7f",
+                "label": "Secondary Color",
+                "name": "secondary_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the secondary color for the website. By default this is the color that the headings on the site are set to.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#6c9d30",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6373fc884af23",
+                "label": "Additional Theme Color 1",
+                "name": "additional_theme_color_1",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6373fcb74af24",
+                "label": "Additional Theme Color 2",
+                "name": "additional_theme_color_2",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6373fcba4af25",
+                "label": "Additional Theme Color 3",
+                "name": "additional_theme_color_3",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6373fcbc4af26",
+                "label": "Additional Theme Color 4",
+                "name": "additional_theme_color_4",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620eb75691f80",
+                "label": "Link Color",
+                "name": "link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#21759b",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620eb76b91f81",
+                "label": "Link Hover Color",
+                "name": "link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#6c9d30",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6375062179e99",
+                "label": "Link Background Color",
+                "name": "link_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6375063579e9a",
+                "label": "Link Background Color Hover",
+                "name": "link_background_color_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620ec7f6a0349",
+                "label": "Button Text Color",
+                "name": "button_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620ec805a034a",
+                "label": "Button Background Color",
+                "name": "button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(51,51,51,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_637516dff6860",
+                "label": "Button Background Image",
+                "name": "button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_620ec81aa034b",
+                "label": "Button Text Hover Color",
+                "name": "button_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color on hover.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620ecb95a034c",
+                "label": "Button Hover Background Color",
+                "name": "button_hover_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(102,102,102,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63751776f6861",
+                "label": "Button Hover Background Image",
+                "name": "button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6737a39bd970f",
+                "label": "Big Button Text Color",
+                "name": "big_button_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the big button text color, it will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6737a3d5d9710",
+                "label": "Big Button Background Color",
+                "name": "big_button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6737a3f4d9711",
+                "label": "Big Button Background Image",
+                "name": "big_button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6737a411d9712",
+                "label": "Big Button Text Hover Color",
+                "name": "big_button_text_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color on hover. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6737a423d9713",
+                "label": "Big Button Hover Background Color",
+                "name": "big_button_hover_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6737a435d9714",
+                "label": "Big Button Hover Background Image",
+                "name": "big_button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_63f671f36b60a",
+                "label": "Button Border Radius",
+                "name": "button_border_radius",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63f6724d6b60b",
+                "label": "Button Border Thickness",
+                "name": "button_border_thickness",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63f6728a6b60c",
+                "label": "Button Border Color",
+                "name": "button_border_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f673366b60d",
+                "label": "Button Border Color - Top",
+                "name": "button_border_color_top",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f673416b60e",
+                "label": "Button Border Color - Right",
+                "name": "button_border_color_right",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f673596b60f",
+                "label": "Button Border Color - Bottom",
+                "name": "button_border_color_bottom",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f673656b610",
+                "label": "Button Border Color - Left",
+                "name": "button_border_color_left",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f676de89539",
+                "label": "Button Border Color Hover",
+                "name": "button_border_color_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f676ea8953a",
+                "label": "Button Border Color - Top Hover",
+                "name": "button_border_color_top_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f676ff8953b",
+                "label": "Button Border Color - Right Hover",
+                "name": "button_border_color_right_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f6770c8953c",
+                "label": "Button Border Color - Bottom Hover",
+                "name": "button_border_color_bottom_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63f677178953d",
+                "label": "Button Border Color - Left Hover",
+                "name": "button_border_color_left_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_640a5c723b4f9",
+                "label": "Button Padding Top",
+                "name": "button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5c9f3b4fa",
+                "label": "Button Padding Right",
+                "name": "button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5ca63b4fb",
+                "label": "Button Padding Bottom",
+                "name": "button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5cae3b4fc",
+                "label": "Button Padding Left",
+                "name": "button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5cc43b4fd",
+                "label": "Big Button Padding Top",
+                "name": "big_button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d093b4fe",
+                "label": "Big Button Padding Right",
+                "name": "big_button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d113b4ff",
+                "label": "Big Button Padding Bottom",
+                "name": "big_button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_640a5d193b500",
+                "label": "Big Button Padding Left",
+                "name": "big_button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_620ecca22e5ff",
+                "label": "Divider Color",
+                "name": "divider_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62194e7ed6a53",
+                "label": "Pagebreak Background Color",
+                "name": "pagebreak_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#eeeeee",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62194ea3d6a54",
+                "label": "Pagebreak Heading Color",
+                "name": "pagebreak_heading_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621950ddab040",
+                "label": "Pagebreak Text Color",
+                "name": "pagebreak_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62194f6cd6a55",
+                "label": "Pagebreak Link Color",
+                "name": "pagebreak_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62194f7cd6a56",
+                "label": "Pagebreak Link Hover Color",
+                "name": "pagebreak_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63750d43a0afe",
+                "label": "Pagebreak Link Background Color",
+                "name": "pagebreak_link_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63750d58a0aff",
+                "label": "Pagebreak Link Background Color Hover",
+                "name": "pagebreak_link_background_color_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62195307f2afd",
+                "label": "Pagebreak Button Text Color",
+                "name": "pagebreak_button_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6219532bf2aff",
+                "label": "Pagebreak Button Background Color",
+                "name": "pagebreak_button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63753f9e335aa",
+                "label": "Pagebreak Button Background Image",
+                "name": "pagebreak_button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6219531ff2afe",
+                "label": "Pagebreak Button Text Hover Color",
+                "name": "pagebreak_button_text_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6219533bf2b00",
+                "label": "Pagebreak Button Background Hover Color",
+                "name": "pagebreak_button_background_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63753fa9335ab",
+                "label": "Pagebreak Button Hover Background Image",
+                "name": "pagebreak_button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_628beda5ddfd1",
+                "label": "Login Screen Background Color",
+                "name": "login_screen_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here this color will default to the body BG color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_67cb466957ce1",
+                "label": "Login Page Text Color",
+                "name": "login_page_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page text lighter if you have a dark login page. If nothing is filled in, the text color will default to the body font color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_67cb46f602ec2",
+                "label": "Login Page Link Color",
+                "name": "login_page_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page link color lighter if you have a dark login page. If nothing is filled in, the color will default to the normal link color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_67cb470d02ec3",
+                "label": "Login Page Link Hover Color",
+                "name": "login_page_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "Use this field to make the login page link hover color lighter if you have a dark login page. If nothing is filled in, the color will default to the normal link hover color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 0,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "There's no need to add black, white, or grey. The theme already has #ccc and #666 built in. These colors are set to variables in the _vars.scss file. These values can be overwritten in the main.scss or _vars.scss file in the child theme.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_620ece8100338",
+        "title": "Theme Options - Fonts",
+        "fields": [
+            {
+                "key": "field_620ece8bc2b2f",
+                "label": "Google Font embed Link(s)",
+                "name": "google_font_embed_links",
+                "aria-label": "",
+                "type": "textarea",
+                "instructions": "This is the \"link\" option in google webfonts. Just paste that whole box of stuff here. This will add your desired google webfont into the site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "<link rel=\"preconnect\" href=\"https:\/\/fonts.googleapis.com\">\r\n<link rel=\"preconnect\" href=\"https:\/\/fonts.gstatic.com\" crossorigin>\r\n<link href=\"https:\/\/fonts.googleapis.com\/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_620ed067c2b30",
+                "label": "Primary Font",
+                "name": "primary_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "'Roboto', sans-serif",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6216900a2e51f",
+                "label": "Body Font Size",
+                "name": "body_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 18,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620ed0d75391d",
+                "label": "Main Heading Font",
+                "name": "main_heading_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "If you want to use the same font for all headings, paste it here. This is JUST the font string. DO NOT include the \"font-family:\" portion.\r\nEach individual heading font can be overwritten with the following fields.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "'Roboto', sans-serif",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_620ed09fc2b31",
+                "label": "Heading 1 Font",
+                "name": "heading_1_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc134614b",
+                "label": "Heading 1 Color",
+                "name": "heading_1_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_640a59751002f",
+                "label": "Heading 1 Shadow Color",
+                "name": "heading_1_shadow_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6216908de0bc6",
+                "label": "Heading 1 Font Size",
+                "name": "heading_1_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 70,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef6d7f31d",
+                "label": "Heading 1 Font Weight",
+                "name": "heading_1_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_620ed137c0d32",
+                "label": "Heading 2 Font",
+                "name": "heading_2_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc5fb00a8",
+                "label": "Heading 2 Color",
+                "name": "heading_2_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6216909fe0bc7",
+                "label": "Heading 2 Font Size",
+                "name": "heading_2_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 40,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef922eae2",
+                "label": "Heading 2 Font Weight",
+                "name": "heading_2_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_662183eac32e6",
+                "label": "Heading 2 Margin Bottom",
+                "name": "heading_2_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed146c0d33",
+                "label": "Heading 3 Font",
+                "name": "heading_3_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc63b00a9",
+                "label": "Heading 3 Color",
+                "name": "heading_3_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621690a8e0bc8",
+                "label": "Heading 3 Font Size",
+                "name": "heading_3_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 35,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628bef9e2eae3",
+                "label": "Heading 3 Font Weight",
+                "name": "heading_3_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621842bc32e7",
+                "label": "Heading 3 Margin Bottom",
+                "name": "heading_3_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14ac0d34",
+                "label": "Heading 4 Font",
+                "name": "heading_4_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc64b00aa",
+                "label": "Heading 4 Color",
+                "name": "heading_4_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621690b4e0bc9",
+                "label": "Heading 4 Font Size",
+                "name": "heading_4_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 30,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befa82eae4",
+                "label": "Heading 4 Font Weight",
+                "name": "heading_4_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621843dc32e8",
+                "label": "Heading 4 Margin Bottom",
+                "name": "heading_4_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14bc0d35",
+                "label": "Heading 5 Font",
+                "name": "heading_5_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc65b00ab",
+                "label": "Heading 5 Color",
+                "name": "heading_5_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621690bfe0bca",
+                "label": "Heading 5 Font Size",
+                "name": "heading_5_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 28,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befb32eae5",
+                "label": "Heading 5 Font Weight",
+                "name": "heading_5_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621844bc32e9",
+                "label": "Heading 5 Margin Bottom",
+                "name": "heading_5_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_620ed14dc0d36",
+                "label": "Heading 6 Font",
+                "name": "heading_6_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "This is JUST the font string. DO NOT include the \"font-family:\" portion.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6217dc66b00ac",
+                "label": "Heading 6 Color",
+                "name": "heading_6_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is entered here then this will default back to the Secondary Color set in the General Settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621690cae0bcb",
+                "label": "Heading 6 Font Size",
+                "name": "heading_6_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 22,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_628befbc2eae6",
+                "label": "Heading 6 Font Weight",
+                "name": "heading_6_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_6621845dc32ea",
+                "label": "Heading 6 Margin Bottom",
+                "name": "heading_6_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_662186c97d6a3",
+                "label": "Paragraph Margin Bottom",
+                "name": "paragraph_margin_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in, this will default to 20px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            },
+            {
+                "key": "field_6622cdea8c694",
+                "label": "Paragraph Max Width",
+                "name": "paragraph_max_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If you want to set a max width on paragraph tags you can do that here. If nothing is filled in here paragraphs will act normal and be 100% width of whatever div they are in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": "px"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_696aa91db9069",
+        "title": "Theme Options – Additional Font Options",
+        "fields": [
+            {
+                "key": "field_696aa982f32f4",
+                "label": "Body Font Size - Mobile",
+                "name": "body_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb86b",
+                "label": "Body Font Size - Tablet",
+                "name": "body_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb8a3",
+                "label": "Paragraph Margin Bottom - Mobile",
+                "name": "paragraph_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa964f32f3",
+                "label": "Paragraph Margin Bottom - Tablet",
+                "name": "paragraph_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb8db",
+                "label": "Heading 1 Font Size - Mobile",
+                "name": "heading_1_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa99af32f5",
+                "label": "Heading 1 Font Size - Tablet",
+                "name": "heading_1_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb94b",
+                "label": "Heading 2 Font Size - Mobile",
+                "name": "heading_2_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa01f32f7",
+                "label": "Heading 2 Font Size - Tablet",
+                "name": "heading_2_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb983",
+                "label": "Heading 2 Margin Bottom - Mobile",
+                "name": "heading_2_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa18f32f8",
+                "label": "Heading 2 Margin Bottom - Tablet",
+                "name": "heading_2_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb9bb",
+                "label": "Heading 3 Font Size - Mobile",
+                "name": "heading_3_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa49f32f9",
+                "label": "Heading 3 Font Size - Tablet",
+                "name": "heading_3_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbb9f3",
+                "label": "Heading 3 Margin Bottom - Mobile",
+                "name": "heading_3_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa5cf32fa",
+                "label": "Heading 3 Margin Bottom - Tablet",
+                "name": "heading_3_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbba2b",
+                "label": "Heading 4 Font Size - Mobile",
+                "name": "heading_4_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa70f32fb",
+                "label": "Heading 4 Font Size - Tablet",
+                "name": "heading_4_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbba63",
+                "label": "Heading 4 Margin Bottom - Mobile",
+                "name": "heading_4_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa8af32fc",
+                "label": "Heading 4 Margin Bottom - Tablet",
+                "name": "heading_4_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbba9b",
+                "label": "Heading 5 Font Size - Mobile",
+                "name": "heading_5_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaa9cf32fd",
+                "label": "Heading 5 Font Size - Tablet",
+                "name": "heading_5_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbbad2",
+                "label": "Heading 5 Margin Bottom - Mobile",
+                "name": "heading_5_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaab0f32fe",
+                "label": "Heading 5 Margin Bottom - Tablet",
+                "name": "heading_5_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbbb0a",
+                "label": "Heading 6 Font Size - Mobile",
+                "name": "heading_6_font_size_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaac3f32ff",
+                "label": "Heading 6 Font Size - Tablet",
+                "name": "heading_6_font_size_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aa91dbbb42",
+                "label": "Heading 6 Margin Bottom - Mobile",
+                "name": "heading_6_margin_bottom_mobile",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_696aaad9f3300",
+                "label": "Heading 6 Margin Bottom - Tablet",
+                "name": "heading_6_margin_bottom_tablet",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 1,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_65e230f08a799",
+        "title": "Theme Options – Reading Page",
+        "fields": [
+            {
+                "key": "field_65e247012774d",
+                "label": "Max Content Width",
+                "name": "max_content_width",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the container MAX width in pixels. If nothing is set here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231ff4322d",
+                "label": "Body Font Size",
+                "name": "body_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2460727746",
+                "label": "Paragraph Margin Bottom",
+                "name": "paragraph_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e230f1dbfe2",
+                "label": "Heading 1 Font Size",
+                "name": "heading_1_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2463627747",
+                "label": "Heading 1 Margin Bottom",
+                "name": "heading_1_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2318043228",
+                "label": "Heading 2 Font Size",
+                "name": "heading_2_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465127748",
+                "label": "Heading 2 Margin Bottom",
+                "name": "heading_2_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2319043229",
+                "label": "Heading 3 Font Size",
+                "name": "heading_3_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465327749",
+                "label": "Heading 3 Margin Bottom",
+                "name": "heading_3_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2319f4322a",
+                "label": "Heading 4 Font Size",
+                "name": "heading_4_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e246592774a",
+                "label": "Heading 4 Margin Bottom",
+                "name": "heading_4_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231ab4322b",
+                "label": "Heading 5 Font Size",
+                "name": "heading_5_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465c2774b",
+                "label": "Heading 5 Margin Bottom",
+                "name": "heading_5_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e231f34322c",
+                "label": "Heading 6 Font Size",
+                "name": "heading_6_font_size_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is the max size that will be used on full width screens.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_65e2465e2774c",
+                "label": "Heading 6 Margin Bottom",
+                "name": "heading_6_margin_bottom_reading",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-general-settings"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "All font sizes in this section will be active on the \"Reading Font Size\" page template.",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_620e74e59d50a",
+        "title": "Theme Options - Header",
+        "fields": [
+            {
+                "key": "field_620e74f823e81",
+                "label": "Show Top Navbar",
+                "name": "show_top_navbar",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e757423e82",
+                "label": "Navbar Style",
+                "name": "navbar_style",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fixed": "Fixed (Sticky Nav)",
+                    "static": "Static"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e82b61168f",
+                "label": "Default Header Image",
+                "name": "default_header_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is the default header image if there is no featured image on the page or post. This is also the header image for the index, archive, 404, and search pages.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "header",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6815196ceef95",
+                "label": "Header Image Fixed",
+                "name": "header_image_fixed",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "Should the header image background be fixed position?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Static": "Static",
+                    "Fixed": "Fixed"
+                },
+                "default_value": "Static",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_6926062c712ca",
+                "label": "Top Nav Font Size",
+                "name": "top_nav_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_69260e2187cdd",
+                "label": "Top Nav Font Weight",
+                "name": "top_nav_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375675ec4ce9",
+                "label": "Top Navbar Padding",
+                "name": "top_navbar_padding",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is optional top and bottom padding on the top navbar.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 15,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_637560f3852ea",
+                "label": "Top Nav Link Padding - Top",
+                "name": "top_nav_link_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375618f852eb",
+                "label": "Top Nav Link Padding - Bottom",
+                "name": "top_nav_link_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375634516323",
+                "label": "Top Nav - Tab Style Navigation",
+                "name": "top_nav_tab_style_navigation",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_6926109d8f632",
+                "label": "Top Nav Text Transformation",
+                "name": "top_nav_text_transformation",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e74f823e81",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "none": "None",
+                    "uppercase": "All Caps"
+                },
+                "default_value": "none",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 1,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_69260644712cb",
+                "label": "Main Nav Font Size",
+                "name": "main_nav_font_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_69260e3187cde",
+                "label": "Main Nav Font Weight",
+                "name": "main_nav_font_weight",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "allow_in_bindings": 0,
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63756790c4cea",
+                "label": "Main Navbar Padding",
+                "name": "main_navbar_padding",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is optional top and bottom padding on the top navbar.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 15,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375619c852ec",
+                "label": "Main Nav Link Padding - Top",
+                "name": "main_nav_link_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_637561a9852ed",
+                "label": "Main Nav Link Padding - Bottom",
+                "name": "main_nav_link_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6375639e16324",
+                "label": "Main Nav - Tab Style Navigation",
+                "name": "main_nav_tab_style_navigation",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_692610c38f633",
+                "label": "Main Nav Text Transformation",
+                "name": "main_nav_text_transformation",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If this setting is set to \"Yes\" your navigation will have a negative margin-bottom equal to your bottom padding minus 10px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "none": "None",
+                    "uppercase": "All Caps"
+                },
+                "default_value": "none",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 1,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_63765c6e2b8cb",
+                "label": "Navigation Overlapping the Content",
+                "name": "navigation_overlapping_the_content",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If this option is set to YES, the content will move up under the nav. This will look weird if the nav doesn't have a transparent background.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_621575865c14f",
+        "title": "Theme Options - Header Colors",
+        "fields": [
+            {
+                "key": "field_6215759639da0",
+                "label": "Top Nav Background Color",
+                "name": "top_nav_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(102,102,102,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6441accc5e779",
+                "label": "Top Nav Dropdown Background Color",
+                "name": "top_nav_dropdown_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here, the dropdown background color will default to the top nav background color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621575cb39da1",
+                "label": "Top Nav Link Color",
+                "name": "top_nav_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63755f78903e8",
+                "label": "Top Nav Link Background Color",
+                "name": "top_nav_link_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621575eb39da2",
+                "label": "Top Nav Link Hover Color",
+                "name": "top_nav_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63755f86903e9",
+                "label": "Top Nav Link Background Hover Color",
+                "name": "top_nav_link_background_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6215762e7a829",
+                "label": "Main Nav Background Color",
+                "name": "main_nav_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(255,255,255,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6441acae5e778",
+                "label": "Main Nav Dropdown Background Color",
+                "name": "main_nav_dropdown_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is selected here, the dropdown background color will default to the main nav background color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6215763c7a82a",
+                "label": "Main Nav Link Color",
+                "name": "main_nav_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63755ecdaf007",
+                "label": "Main Nav Link Background Color",
+                "name": "main_nav_link_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621576487a82b",
+                "label": "Main Nav Link Hover Color",
+                "name": "main_nav_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#cccccc",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63755ee7af008",
+                "label": "Main Nav Link Background Hover Color",
+                "name": "main_nav_link_background_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_640a59183bdda",
+                "label": "Header Image Color Overlay",
+                "name": "header_image_color_overlay",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-header"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_620eb65024d73",
+        "title": "Theme Options - Footer",
+        "fields": [
+            {
+                "key": "field_62156af9c7e69",
+                "label": "Optional Footer Logo",
+                "name": "optional_footer_logo",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "This is optional. If nothing is uploaded to this field the footer logo will default to the Site Logo. Set in the general site settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62155f0608891",
+                "label": "Number of Footer Widgets",
+                "name": "number_of_footer_widgets",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_621565bc6a236",
+                "label": "Footer Widget One",
+                "name": "footer_widget_one",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "4"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "3"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "2"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_621565f3ecda8",
+                "label": "Footer Widget Two",
+                "name": "footer_widget_two",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "4"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "3"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_621565f2ecda7",
+                "label": "Footer Widget Three",
+                "name": "footer_widget_three",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "4"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "3"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_621565f1ecda6",
+                "label": "Footer Widget Four",
+                "name": "footer_widget_four",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_62155f0608891",
+                            "operator": "==",
+                            "value": "4"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_68d6f9694a534",
+                "label": "Use Font Awesome",
+                "name": "use_font_awesome",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "If you are going to use font awesome, turn this option to yes. If not, save the load time and leave it off. You will need to turn this option on to use the social media options.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "No": "No",
+                    "Yes": "Yes"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 0,
+                "layout": "horizontal",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_62156190a5488",
+                "label": "Social Media",
+                "name": "social_media",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "Add as many or as few social media links as you need.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_68d6f9694a534",
+                            "operator": "==",
+                            "value": "Yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 0,
+                "max": 10,
+                "collapsed": "",
+                "button_label": "Add Social Link",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_621561a0a548b",
+                        "label": "Social Site",
+                        "name": "social_site",
+                        "aria-label": "",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "parent_repeater": "field_62156190a5488"
+                    },
+                    {
+                        "key": "field_621561ada548c",
+                        "label": "Social Icon",
+                        "name": "social_icon",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "You can find your icon options <a href=\"https:\/\/fontawesome.com\/search\" target=\"_blank\">here.<\/a> Just find the icon you want and paste the text for that icon here.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_62156190a5488"
+                    },
+                    {
+                        "key": "field_6441af24e010b",
+                        "label": "Social Title",
+                        "name": "social_title",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "This is for ADA purposes.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_62156190a5488"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-footer"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_621571a82ff9f",
+        "title": "Theme Options - Footer Colors",
+        "fields": [
+            {
+                "key": "field_621571bc5518b",
+                "label": "Footer Background Color",
+                "name": "footer_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(221,221,221,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621572f223574",
+                "label": "Footer Text Color",
+                "name": "footer_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621571d4ee455",
+                "label": "Footer Link Color",
+                "name": "footer_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#21759b",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_621571e4ee456",
+                "label": "Footer Link Hover Color",
+                "name": "footer_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#6c9d30",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62157414902ad",
+                "label": "Credits Background Color",
+                "name": "credits_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(51,51,51,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62157422902ae",
+                "label": "Credits Text Color",
+                "name": "credits_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_62157432902af",
+                "label": "Credits Link Color",
+                "name": "credits_link_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6215743e902b0",
+                "label": "Credits Link Hover Color",
+                "name": "credits_link_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#6c9d30",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_63751265116c5",
+                "label": "Credits Text Alignment",
+                "name": "credits_text_alignment",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Left": "Left",
+                    "Right": "Right"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "layout": "vertical"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-footer"
+                }
+            ]
+        ],
+        "menu_order": 6,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
+        "key": "group_620e99e17c6fa",
+        "title": "Theme Options - Carousel",
+        "fields": [
+            {
+                "key": "field_63769aa6c79ed",
+                "label": "Homepage Header Type",
+                "name": "homepage_header_type",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "NOTE: Selecting \"Video\" will make all the slider options have no effect on the site.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "slider": "Slider",
+                    "video": "Video",
+                    "both": "Video with Slider Content",
+                    "none": "No Slider or Video"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "allow_in_bindings": 1,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_63769b2bc79ee",
+                "label": "Video Embed Link",
+                "name": "video_embed_link",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_63769b8dc79ef",
+                "label": "Video Height",
+                "name": "video_height",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a percentage of the screen you want the video height to be (1-100)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": 1,
+                "max": 100,
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_620e9d27e1547",
+                "label": "Show Indicator Dots?",
+                "name": "show_indicator_dots",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_620e9dd3f81b4",
+                "label": "Show Direction Arrows?",
+                "name": "show_direction_arrows",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_637679d12b2af",
+                "label": "Slide Navigation Background Color",
+                "name": "slide_navigation_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "These will default to the primary site color if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_620e9dd3f81b4",
+                            "operator": "==",
+                            "value": "yes"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_620eaa20650d5",
+                "label": "Slide Linking",
+                "name": "slide_linking",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "How would you like the slides to link?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no_link": "No Link",
+                    "whole_slide": "Whole Slide",
+                    "link_w_button": "Link With A Button"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "default_value": "",
+                "layout": "vertical",
+                "return_format": "value",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_637691e365443",
+                "label": "Slide Content Placement",
+                "name": "slide_content_placement",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Top": "Top",
+                    "Bottom": "Bottom"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_6376735c089fb",
+                "label": "Slide Content Text Alignment",
+                "name": "slide_content_text_alignment",
+                "aria-label": "",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Center": "Center",
+                    "Left": "Left",
+                    "Right": "Right"
+                },
+                "default_value": "",
+                "return_format": "value",
+                "allow_null": 0,
+                "other_choice": 0,
+                "layout": "vertical",
+                "save_other_choice": 0
+            },
+            {
+                "key": "field_637673b0089fc",
+                "label": "Slide Content Overlay Color",
+                "name": "slide_content_overlay_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, this color will default to the secondary color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_637673db089fd",
+                "label": "Slide Header Font",
+                "name": "slide_header_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "If nothing is filled in here. The font will default to the H2 font.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767408089fe",
+                "label": "Slide Header Size",
+                "name": "slide_header_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in here. The font size will default to the H2 font size. This measurement is in px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767647122e1",
+                "label": "Slide Header Color",
+                "name": "slide_header_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, the color will default to white.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6376743c089ff",
+                "label": "Slide Content Font",
+                "name": "slide_content_font",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "If nothing is filled in here. The font will default to the main body font.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6376745708a00",
+                "label": "Slide Content Size",
+                "name": "slide_content_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "If nothing is filled in here. The font size will default to the body font size. This measurement is in px.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_63767689122e2",
+                "label": "Slide Content Color",
+                "name": "slide_content_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "If nothing is filled in here, the color will default to white.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-carousel-slider"
+                }
+            ]
+        ],
+        "menu_order": 8,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    }
+]

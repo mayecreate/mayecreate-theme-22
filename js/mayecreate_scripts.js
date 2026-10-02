@@ -93,14 +93,38 @@ $( "#myCarousel .active .slideDesc" ).each(function() {
 	$this.height( newHeight );
 });		
 
-var maxHeight = 0;
+equalheight = function (container) {
+  var currentRow = { cols: [], h: 0 };
+  var topPostion = -1;
+  $(container).each(function () {
+       var $el = $(this);
+       $($el).height('auto')
+       if (topPostion != $el.position().top) {
+            for (var j = 0; j < currentRow.cols.length; j++) {
+                currentRow.cols[j].height(currentRow.h);
+            }
+            topPostion = $el.position().top;
+            currentRow = { cols: [], h: 0 };
+        }
+        currentRow.cols.push($el);
+        if ($el.height() > currentRow.h) {
+            currentRow.h = $el.height();
+        }
 
-$(".equal_height").each(function(){
-	if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+  });
+  for (var j = 0; j < currentRow.cols.length; j++) {
+       currentRow.cols[j].height(currentRow.h);
+  }
+}
+$(window).load(function() {
+     equalheight('.equal_height');
+     equalheight('.equal_height_two');
 });
 
-$(".equal_height").height(maxHeight);
-	
+$(window).resize(function(){
+     equalheight('.equal_height');
+     equalheight('.equal_height_two');
+});  
 
 
 $(window).scroll(function() {
@@ -123,14 +147,6 @@ $(window).resize(function() {
 		});
 		$this.height( newHeight );
 	});	
-	
-	var maxHeight = 0;
-
-	$(".equal_height").each(function(){
-		if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
-	});
-
-	$(".equal_height").height(maxHeight);
 	
 }).resize();
 

@@ -17,7 +17,7 @@ body {
 	background-color: vars.$body_background_color; 
 } 
 body.page-template-page-reading {
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size_reading);
+	font-size: vars.$body_font_size_mobile;
 }
 .container {
 	max-width: vars.$container_width;
@@ -95,7 +95,12 @@ iframe {
 	width: 100%;
 	height: 100%;
 }
-
+strong, b, .b {
+	font-weight: 700 !important;
+}
+.semi {
+	font-weight: 600 !important;
+}
 
 /* COOKIE NOTICE
 ========================================== */
@@ -311,28 +316,28 @@ h6, .h6 {
 	margin-bottom: vars.$heading_6_margin_bottom_mobile;
 }
 .page-template-page-reading h1, .page-template-page-reading h1.entry-title, .page-template-page-reading .h1 {
-	font-size: clamp(3.5rem, 3rem + 1vw, vars.$header_1_font_size_reading);
+	font-size: vars.$header_1_font_size_mobile;
 	color: vars.$heading_2_color;
 	margin-bottom: vars.$heading_1_margin_bottom_reading;
 }
 .page-template-page-reading h2, .page-template-page-reading .h2 {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size_reading);
+	font-size: vars.$header_2_font_size_mobile;
 	margin-bottom: vars.$heading_2_margin_bottom_reading;
 }
 .page-template-page-reading h3, .page-template-page-reading .h3 {
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$header_3_font_size_reading);
+	font-size: vars.$header_3_font_size_mobile;
 	margin-bottom: vars.$heading_3_margin_bottom_reading;
 }
 .page-template-page-reading h4, .page-template-page-reading .h4 {
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$header_4_font_size_reading);
+	font-size: vars.$header_4_font_size_mobile;
 	margin-bottom: vars.$heading_4_margin_bottom_reading;
 }
 .page-template-page-reading h5, .page-template-page-reading .h5 {
-	font-size: clamp(2.2rem, 2rem + 1vw, vars.$header_5_font_size_reading);
+	font-size: vars.$header_5_font_size_mobile;
 	margin-bottom: vars.$heading_5_margin_bottom_reading;
 }
 .page-template-page-reading h6, .page-template-page-reading .h6 {
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$header_6_font_size_reading);
+	font-size: vars.$header_6_font_size_mobile;
 	margin-bottom: vars.$heading_6_margin_bottom_reading;
 }
 
@@ -347,7 +352,7 @@ p {
 	max-width: vars.$paragraph_max_width;
 }
 .page-template-page-reading p {
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$body_font_size_reading);
+	font-size: vars.$body_font_size_mobile;
 	margin-bottom: vars.$paragraph_margin_bottom_reading; 
 }
 
@@ -447,12 +452,16 @@ li ol, li ul {
 }
 li {
 	margin:10px 0;
-	padding:0;
+	padding:0; 
 }
 ul.wp-block-list li {
 	list-style: vars.$ul_li_bullet;
+	padding-left: 10px;
 }
-.pagebreak ul.wp-block-list li {
+ol.wp-block-list li {
+	padding-left: 10px;
+}
+.pagebreak ul.wp-block-list li { 
 	list-style: vars.$pagebreak_ul_li_bullet;
 }
 .cmplz-cookiebanner ul li {
@@ -636,13 +645,13 @@ div#homefeatured .slideDesc .slideDesc_inner {
 div#homefeatured .slideDesc .slideTitle {
 	display: block;
 	font-family: vars.$slide_header_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$slide_header_size);
+	font-size: vars.$header_1_font_size_mobile;
 	color: vars.$slide_header_color; 
 }
 div#homefeatured .slideDesc .slideText {
 	display: block;
 	font-family: vars.$slide_content_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$slide_content_size);
+	font-size: vars.$body_font_size_mobile;
 	color: vars.$slide_content_color; 
 }			
 div#homefeatured .slideDesc .btn.btn-mayecreate {
@@ -1664,7 +1673,7 @@ a.post_link_wrapper:hover, .post_link_wrapper:active {
 	padding-bottom: 10px;
 	color: vars.$news_title_color;
 	font-family: vars.$news_title_font;
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$news_title_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	border-bottom: vars.$news_title_border_bottom_width solid vars.$news_title_border_bottom_color;
 }
 a.post_link_wrapper:hover .post_loop_title {
@@ -1673,7 +1682,7 @@ a.post_link_wrapper:hover .post_loop_title {
 .post_link_wrapper .post_loop_date {
 	color: vars.$news_post_date_color;
 	font-family: vars.$news_post_date_font;
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$news_post_date_size); 
+	font-size: vars.$header_6_font_size_mobile;
 }
 a.post_link_wrapper:hover .post_loop_date {
 	color: vars.$news_post_date_hover_color;
@@ -1681,7 +1690,7 @@ a.post_link_wrapper:hover .post_loop_date {
 .post_link_wrapper .post_loop_cats {
 	color: vars.$news_list_categories_color;
 	font-family: vars.$news_list_categories_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$news_list_categories_size);
+	font-size: vars.$header_6_font_size_mobile;
 }
 a.post_link_wrapper:hover .post_loop_cats {
 	color: vars.$news_list_categories_hover_color;
@@ -1689,7 +1698,7 @@ a.post_link_wrapper:hover .post_loop_cats {
 .post_link_wrapper p {
 	color: vars.$news_content_color;
 	font-family: vars.$news_content_font;
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$news_content_font_size);
+	font-size: vars.$body_font_size_mobile;
 }
 a.post_link_wrapper:hover p {
 	color: vars.$news_content_hover_color;
@@ -1774,7 +1783,7 @@ a.project_link_wrapper:hover, .project_link_wrapper:active {
 	padding-bottom: 10px;
 	color: vars.$projects_title_color;
 	font-family: vars.$projects_title_font;
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$projects_title_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	border-bottom: vars.$projects_title_border_bottom_width solid vars.$projects_title_border_bottom_color;
 }
 a.project_link_wrapper:hover .post_loop_title {
@@ -1783,7 +1792,7 @@ a.project_link_wrapper:hover .post_loop_title {
 .project_link_wrapper .post_loop_date {
 	color: vars.$projects_post_date_color;
 	font-family: vars.$projects_post_date_font;
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$projects_post_date_size); 
+	font-size: vars.$header_6_font_size_mobile; 
 }
 a.project_link_wrapper:hover .post_loop_date {
 	color: vars.$projects_post_date_hover_color;
@@ -1791,7 +1800,7 @@ a.project_link_wrapper:hover .post_loop_date {
 .project_link_wrapper .post_loop_cats {
 	color: vars.$projects_list_categories_color;
 	font-family: vars.$projects_list_categories_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$projects_list_categories_size);
+	font-size: vars.$header_6_font_size_mobile;
 }
 a.project_link_wrapper:hover .post_loop_cats {
 	color: vars.$projects_list_categories_hover_color;
@@ -1799,7 +1808,7 @@ a.project_link_wrapper:hover .post_loop_cats {
 .project_link_wrapper p {
 	color: vars.$projects_content_color;
 	font-family: vars.$projects_content_font;
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$projects_content_font_size);
+	font-size: vars.$body_font_size_mobile;
 }
 a.project_link_wrapper:hover p {
 	color: vars.$projects_content_hover_color;
@@ -1901,7 +1910,7 @@ a.resource_link_wrapper:hover, .resource_link_wrapper:active {
 	padding-bottom: 10px;
 	color: vars.$resource_title_color;
 	font-family: vars.$resource_title_font;
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$resource_title_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	border-bottom: vars.$resource_title_border_bottom_width solid vars.$resource_title_border_bottom_color;
 }
 a.resource_link_wrapper:hover .post_loop_title {
@@ -1910,7 +1919,7 @@ a.resource_link_wrapper:hover .post_loop_title {
 .resource_link_wrapper .post_loop_date {
 	color: vars.$resource_post_date_color;
 	font-family: vars.$resource_post_date_font;
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$resource_post_date_size); 
+	font-size: vars.$header_6_font_size_mobile; 
 }
 a.resource_link_wrapper:hover .post_loop_date {
 	color: vars.$resource_post_date_hover_color;
@@ -1918,7 +1927,7 @@ a.resource_link_wrapper:hover .post_loop_date {
 .resource_link_wrapper .post_loop_cats {
 	color: vars.$resource_list_categories_color;
 	font-family: vars.$resource_list_categories_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$resource_list_categories_size);
+	font-size: vars.$header_6_font_size_mobile;
 }
 a.resource_link_wrapper:hover .post_loop_cats {
 	color: vars.$resource_list_categories_hover_color;
@@ -1926,7 +1935,7 @@ a.resource_link_wrapper:hover .post_loop_cats {
 .resource_link_wrapper p {
 	color: vars.$resource_content_color;
 	font-family: vars.$resource_content_font;
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$resource_content_font_size);
+	font-size: vars.$body_font_size_mobile;
 }
 a.resource_link_wrapper:hover p {
 	color: vars.$resource_content_hover_color;
@@ -2012,7 +2021,7 @@ a.event_link_wrapper:hover, .event_link_wrapper:active {
 	padding-bottom: 10px;
 	color: vars.$event_title_color;
 	font-family: vars.$event_title_font;
-	font-size: clamp(2.8rem, 2.5rem + 1vw, vars.$event_title_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	border-bottom: vars.$event_title_border_bottom_width solid vars.$event_title_border_bottom_color;
 }
 a.event_link_wrapper:hover .post_loop_title {
@@ -2021,7 +2030,7 @@ a.event_link_wrapper:hover .post_loop_title {
 .event_link_wrapper .post_loop_date {
 	color: vars.$event_post_date_color;
 	font-family: vars.$event_post_date_font;
-	font-size: clamp(2.5rem, 2.2rem + 1vw, vars.$event_post_date_size); 
+	font-size: vars.$header_6_font_size_mobile; 
 }
 a.event_link_wrapper:hover .post_loop_date {
 	color: vars.$event_post_date_hover_color;
@@ -2029,7 +2038,7 @@ a.event_link_wrapper:hover .post_loop_date {
 .event_link_wrapper .post_loop_cats {
 	color: vars.$event_list_categories_color;
 	font-family: vars.$event_list_categories_font;
-	font-size: clamp(2.0rem, 1.8rem + 1vw, vars.$event_list_categories_size);
+	font-size: vars.$header_6_font_size_mobile;
 }
 a.event_link_wrapper:hover .post_loop_cats {
 	color: vars.$event_list_categories_hover_color;
@@ -2037,7 +2046,7 @@ a.event_link_wrapper:hover .post_loop_cats {
 .event_link_wrapper p {
 	color: vars.$event_content_color;
 	font-family: vars.$event_content_font;
-	font-size: clamp(1.8rem, 1rem + 1vw, vars.$event_content_font_size);
+	font-size: vars.$body_font_size_mobile;
 }
 a.event_link_wrapper:hover p {
 	color: vars.$event_content_hover_color;
@@ -2172,7 +2181,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     font-family: "Montserrat", sans-serif;
 }
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-header__title h1.tribe-events-header__title-text {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_2_font_size);
+	font-size: vars.$header_2_font_size_mobile;
 	font-family: vars.$header_2_font;
 	color: vars.$heading_2_color;
 	font-weight: vars.$heading_2_font_weight;
@@ -2187,7 +2196,7 @@ a.event_link_wrapper:hover .event_img_wrapper:after {
     color: vars.$secondary_color;
 }
 .single-tribe_events .tribe-blocks-editor .tribe-events-schedule .tribe-events-schedule__datetime {
-	font-size: clamp(3.0rem, 2.8rem + 1vw, vars.$header_3_font_size);
+	font-size: vars.$header_3_font_size_mobile;
 	font-family: vars.$header_3_font;
 	color: vars.$heading_3_color;
 	font-weight: vars.$heading_3_font_weight;
@@ -2776,7 +2785,7 @@ p.login-username input, p.login-password input {
 						background: vars.$top_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: clamp(1.7rem, 1rem + 1vw, vars.$top_nav_font_size); 
+				    	font-size: 1.6rem; 
 				    	padding: vars.$top_nav_link_padding_top 10px vars.$top_nav_link_padding_bottom;
 				    	color: vars.$top_nav_link_color;
 				    	font-weight: vars.$top_nav_font_weight;
@@ -2866,7 +2875,7 @@ p.login-username input, p.login-password input {
 						background: vars.$main_nav_link_background_color;
 				    	margin: 0;
 				    	text-decoration: none;
-				    	font-size: clamp(1.7rem, 1rem + 1vw, vars.$main_nav_font_size);
+				    	font-size: 1.6rem;
 				    	padding: vars.$main_nav_link_padding_top 10px vars.$main_nav_link_padding_bottom;
 				    	color: vars.$main_nav_link_color;
 				    	font-weight: vars.$main_nav_font_weight;
@@ -3052,9 +3061,60 @@ p.login-username input, p.login-password input {
 					====================================  */
 					.column_2, .column_3, .column_4 {
 						columns: 2;
+						column-gap: 60px
 					}
 					.column_2 li, .column_3 li, .column_4 li {
 						margin-top: 0;
+					}
+					/* POSTS FONT SIZES
+					====================================  */
+					.post_link_wrapper .post_loop_title {
+						font-size: vars.$header_3_font_size_tablet;
+					}
+					.post_link_wrapper .post_loop_date {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.post_link_wrapper .post_loop_cats {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.post_link_wrapper p {
+						font-size: vars.$body_font_size_tablet;
+					}
+					.project_link_wrapper .post_loop_title {
+						font-size: vars.$header_3_font_size_tablet;
+					}
+					.project_link_wrapper .post_loop_date {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.project_link_wrapper .post_loop_cats {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.project_link_wrapper p {
+						font-size: vars.$body_font_size_tablet;
+					}
+					.resource_link_wrapper .post_loop_title {
+						font-size: vars.$header_3_font_size_tablet;
+					}
+					.resource_link_wrapper .post_loop_date {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.resource_link_wrapper .post_loop_cats {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.resource_link_wrapper p {
+						font-size: vars.$body_font_size_tablet;
+					}
+					.event_link_wrapper .post_loop_title {
+						font-size: vars.$header_3_font_size_tablet;
+					}
+					.event_link_wrapper .post_loop_date {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.event_link_wrapper .post_loop_cats {
+						font-size: vars.$header_6_font_size_tablet;
+					}
+					.event_link_wrapper p {
+						font-size: vars.$body_font_size_tablet;
 					}
 				}
 						/* Larger-er devices (desktops, 1024px and up). This is NOT a breakpoint in bootstrap. */
@@ -3214,30 +3274,6 @@ p.login-username input, p.login-password input {
 										#main_nav a:link, #main_nav a:visited {
 											font-size: vars.$main_nav_font_size;
 										}
-										.post_link_wrapper h3 {
-											font-size: vars.$news_title_font_size;
-										}
-										.post_link_wrapper h4 {
-											font-size: vars.$news_post_date_size;
-										}
-										.post_link_wrapper h5 {
-											font-size: vars.$news_list_categories_size;
-										}
-										.post_link_wrapper p {
-											font-size: vars.$news_content_font_size;
-										}
-										.project_link_wrapper h3 {
-											font-size: vars.$projects_title_font_size;
-										}
-										.project_link_wrapper h4 {
-											font-size: vars.$projects_post_date_size;
-										}
-										.project_link_wrapper h5 {
-											font-size: vars.$projects_list_categories_size;
-										}
-										.project_link_wrapper p {
-											font-size: vars.$projects_content_font_size;
-										}
 										div#homefeatured .slideDesc .slideTitle {
 											font-size: vars.$slide_header_size;
 										}
@@ -3264,6 +3300,56 @@ p.login-username input, p.login-password input {
 										}
 										.page-template-page-reading h6, .page-template-page-reading .h6 { 
 											font-size: vars.$header_6_font_size_reading;
+										}
+										/* POSTS FONT SIZES
+										====================================  */
+										.post_link_wrapper .post_loop_title {
+											font-size: vars.$news_title_font_size;
+										}
+										.post_link_wrapper .post_loop_date {
+											font-size: vars.$news_post_date_size;
+										}
+										.post_link_wrapper .post_loop_cats {
+											font-size: vars.$news_list_categories_size;
+										}
+										.post_link_wrapper p {
+											font-size: vars.$news_content_font_size;
+										}
+										.project_link_wrapper .post_loop_title {
+											font-size: vars.$projects_title_font_size;
+										}
+										.project_link_wrapper .post_loop_date {
+											font-size: vars.$projects_post_date_size;
+										}
+										.project_link_wrapper .post_loop_cats {
+											font-size: vars.$projects_list_categories_size;
+										}
+										.project_link_wrapper p {
+											font-size: vars.$projects_content_font_size;
+										}
+										.resource_link_wrapper .post_loop_title {
+											font-size: vars.$resource_title_font_size;
+										}
+										.resource_link_wrapper .post_loop_date {
+											font-size: vars.$resource_post_date_size;
+										}
+										.resource_link_wrapper .post_loop_cats {
+											font-size: vars.$resource_list_categories_size;
+										}
+										.resource_link_wrapper p {
+											font-size: vars.$resource_content_font_size;
+										}
+										.event_link_wrapper .post_loop_title {
+											font-size: vars.$event_title_font_size;
+										}
+										.event_link_wrapper .post_loop_date {
+											font-size: vars.$event_post_date_size;
+										}
+										.event_link_wrapper .post_loop_cats {
+											font-size: vars.$event_list_categories_size;
+										}
+										.event_link_wrapper p {
+											font-size: vars.$event_content_font_size;
 										}
 										/* TYPOGRAPHY: FONT SIZE OVERRIDES
 										====================================  */

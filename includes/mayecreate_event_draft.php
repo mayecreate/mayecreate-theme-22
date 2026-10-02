@@ -1,7 +1,7 @@
 <?php
 
 // expire offer posts on date field.
-if (!wp_next_scheduled('expire_posts')){
+/*if (!wp_next_scheduled('expire_posts')){
     wp_schedule_event(time(), 'hourly', 'expire_posts'); // this can be hourly, twicedaily, or daily
   }
   
@@ -27,4 +27,4 @@ if (!wp_next_scheduled('expire_posts')){
               }
           }
       }
-  }
+  }*/

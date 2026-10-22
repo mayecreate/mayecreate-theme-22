@@ -15,8 +15,14 @@ if($projects_options) { ?>
         <?php $display_title_over_image = $projects_options['display_title_over_image']; ?>
         <?php $show_content = $projects_options['show_content']; ?>
         <?php $text_alignment = $projects_options['text_alignment']; ?>
+        <?php $padding_style = $projects_options['padding_style']; ?>
 
 <?php } ?>
+<?php if ($padding_style == "content") {  
+    $padding_class = "content_padding";
+} else {
+    $padding_class = "full_padding";
+} ?>
 <?php if ($vertical_alignment == "Middle") { 
     $vertical_alignment = "align-items-center";
 } else {
@@ -44,19 +50,19 @@ if($projects_options) { ?>
 	$featured_image_placement_class_2 = "col-lg-8 order-lg-1";
 } elseif ($featured_image_placement == "Center" && $show_a_featured_image == "Yes") {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } else {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } ?>
 <?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 
 <?php if (is_admin()) { ?>
-<span class="post_link_wrapper wide <?php echo $text_alignment; ?>">
+<span class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
 <?php } elseif ('' == get_post()->post_content) { ?>
-<span class="project_link_wrapper wide <?php echo $text_alignment; ?>">
+<span class="project_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
 <?php } else { ?>
-<a href="<?php the_permalink(); ?>" class="project_link_wrapper wide <?php echo $text_alignment; ?>">
+<a href="<?php the_permalink(); ?>" class="project_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
 <?php } ?>
 	<div class="row g-5 <?php echo $vertical_alignment; ?>">
 	<?php if ($show_a_featured_image == "Yes" && has_post_thumbnail()) { ?>

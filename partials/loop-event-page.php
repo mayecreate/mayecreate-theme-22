@@ -14,8 +14,14 @@ if($event_options) { ?>
         <?php $button_text = $event_options['button_text']; ?>
 		<?php $number_of_columns = $event_options['post_page_block_number_of_columns']; ?>
         <?php $text_alignment = $event_options['text_alignment']; ?>
+        <?php $padding_style = $event_options['padding_style']; ?>
 
 <?php } ?>
+<?php if ($padding_style == "content") {  
+    $padding_class = "content_padding";
+} else {
+    $padding_class = "full_padding";
+} ?>
 <?php if ($number_of_columns == 'one') {
 		$bootstrap_columns = "col-md-12";
 	} elseif ($number_of_columns == 'two') {
@@ -49,10 +55,10 @@ if($event_options) { ?>
 	$featured_image_placement_class_2 = "col-lg-8 order-lg-1";
 } elseif ($featured_image_placement == "Center" && $show_a_featured_image == "Yes") {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } else {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } ?>
 <?php $registration_link = esc_html(get_field("registration_link", $post->ID)); ?>
 <?php $event_start_date = esc_html(get_field("event_start_date", $post->ID)); ?>
@@ -62,9 +68,9 @@ if($event_options) { ?>
 <?php $event_location = esc_html(get_field("event_location", $post->ID)); ?>
 <div class="<?php echo $bootstrap_columns; ?>">
     <?php if ($registration_link && ('' == get_post()->post_content)) { ?>
-    <a href="<?php echo $registration_link; ?>" class="event_link_wrapper wide <?php echo $text_alignment; ?>" target="_blank">
+    <a href="<?php echo $registration_link; ?>" class="event_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>" target="_blank">
     <?php } else { ?>
-    <a href="<?php the_permalink(); ?>" class="event_link_wrapper wide <?php echo $text_alignment; ?>">
+    <a href="<?php the_permalink(); ?>" class="event_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
     <?php } ?>
         <div class="row g-5 <?php echo $vertical_alignment; ?>">
         <?php if ($show_a_featured_image == "Yes" && has_post_thumbnail()) { ?>

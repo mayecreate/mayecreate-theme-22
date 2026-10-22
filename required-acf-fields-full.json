@@ -787,6 +787,871 @@
         "ai_description": ""
     },
     {
+        "key": "group_6ada68da7dede",
+        "title": "Theme Options - Button Options",
+        "fields": [
+            {
+                "key": "field_6ada68da839c7",
+                "label": "Button Text Color",
+                "name": "button_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83a03",
+                "label": "Button Background Color",
+                "name": "button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(51,51,51,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83a47",
+                "label": "Button Background Image",
+                "name": "button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ada68da83a5e",
+                "label": "Button Text Hover Color",
+                "name": "button_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color on hover.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ffffff",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83a99",
+                "label": "Button Hover Background Color",
+                "name": "button_hover_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "rgba(102,102,102,1)",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83ad5",
+                "label": "Button Hover Background Image",
+                "name": "button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ada68da83b12",
+                "label": "Big Button Text Color",
+                "name": "big_button_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the big button text color, it will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83b50",
+                "label": "Big Button Background Color",
+                "name": "big_button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83b8d",
+                "label": "Big Button Background Image",
+                "name": "big_button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ada68da83bca",
+                "label": "Big Button Text Hover Color",
+                "name": "big_button_text_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button text color on hover. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83c05",
+                "label": "Big Button Hover Background Color",
+                "name": "big_button_hover_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "allow_in_bindings": 1,
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83c41",
+                "label": "Big Button Hover Background Image",
+                "name": "big_button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "allow_in_bindings": 1,
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ada68da83c7e",
+                "label": "Button Border Radius",
+                "name": "button_border_radius",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da83cbb",
+                "label": "Button Border Thickness",
+                "name": "button_border_thickness",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da83cf6",
+                "label": "Button Border Color",
+                "name": "button_border_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83d32",
+                "label": "Button Border Color - Top",
+                "name": "button_border_color_top",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83d6d",
+                "label": "Button Border Color - Right",
+                "name": "button_border_color_right",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83da9",
+                "label": "Button Border Color - Bottom",
+                "name": "button_border_color_bottom",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83de3",
+                "label": "Button Border Color - Left",
+                "name": "button_border_color_left",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83e1f",
+                "label": "Button Border Color Hover",
+                "name": "button_border_color_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83e46",
+                "label": "Button Border Color - Top Hover",
+                "name": "button_border_color_top_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83e83",
+                "label": "Button Border Color - Right Hover",
+                "name": "button_border_color_right_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83ebe",
+                "label": "Button Border Color - Bottom Hover",
+                "name": "button_border_color_bottom_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83efa",
+                "label": "Button Border Color - Left Hover",
+                "name": "button_border_color_left_hover",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da83f36",
+                "label": "Button Padding Top",
+                "name": "button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da83f72",
+                "label": "Button Padding Right",
+                "name": "button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da83faf",
+                "label": "Button Padding Bottom",
+                "name": "button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da83feb",
+                "label": "Button Padding Left",
+                "name": "button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da84027",
+                "label": "Big Button Padding Top",
+                "name": "big_button_padding_top",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da84062",
+                "label": "Big Button Padding Right",
+                "name": "big_button_padding_right",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da8409f",
+                "label": "Big Button Padding Bottom",
+                "name": "big_button_padding_bottom",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da840dd",
+                "label": "Big Button Padding Left",
+                "name": "big_button_padding_left",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6ada68da842e5",
+                "label": "Pagebreak Button Text Color",
+                "name": "pagebreak_button_text_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da84321",
+                "label": "Pagebreak Button Background Color",
+                "name": "pagebreak_button_background_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da8435c",
+                "label": "Pagebreak Button Background Image",
+                "name": "pagebreak_button_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6ada68da84399",
+                "label": "Pagebreak Button Text Hover Color",
+                "name": "pagebreak_button_text_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da843d6",
+                "label": "Pagebreak Button Background Hover Color",
+                "name": "pagebreak_button_background_hover_color",
+                "aria-label": "",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 0,
+                "return_format": "string",
+                "custom_palette_source": "",
+                "palette_colors": "",
+                "show_color_wheel": true
+            },
+            {
+                "key": "field_6ada68da84413",
+                "label": "Pagebreak Button Hover Background Image",
+                "name": "pagebreak_button_hover_background_image",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-buttons"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0,
+        "display_title": "",
+        "allow_ai_access": false,
+        "ai_description": ""
+    },
+    {
         "key": "group_620eb6a70234a",
         "title": "Theme Options - Colors",
         "fields": [
@@ -1022,710 +1887,6 @@
                 "show_color_wheel": true
             },
             {
-                "key": "field_620ec7f6a0349",
-                "label": "Button Text Color",
-                "name": "button_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button text color.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#ffffff",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_620ec805a034a",
-                "label": "Button Background Color",
-                "name": "button_background_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "rgba(51,51,51,1)",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_637516dff6860",
-                "label": "Button Background Image",
-                "name": "button_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_620ec81aa034b",
-                "label": "Button Text Hover Color",
-                "name": "button_hover_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button text color on hover.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#ffffff",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_620ecb95a034c",
-                "label": "Button Hover Background Color",
-                "name": "button_hover_background_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "rgba(102,102,102,1)",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63751776f6861",
-                "label": "Button Hover Background Image",
-                "name": "button_hover_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_6737a39bd970f",
-                "label": "Big Button Text Color",
-                "name": "big_button_text_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the big button text color, it will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "allow_in_bindings": 1,
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6737a3d5d9710",
-                "label": "Big Button Background Color",
-                "name": "big_button_background_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button background color. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "allow_in_bindings": 1,
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6737a3f4d9711",
-                "label": "Big Button Background Image",
-                "name": "big_button_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "allow_in_bindings": 1,
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_6737a411d9712",
-                "label": "Big Button Text Hover Color",
-                "name": "big_button_text_hover_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button text color on hover. This will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "allow_in_bindings": 1,
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6737a423d9713",
-                "label": "Big Button Hover Background Color",
-                "name": "big_button_hover_background_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "This is the button background color on hover. This is also the color used on the button border by default. This can be overwritten in the child theme. This will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "allow_in_bindings": 1,
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6737a435d9714",
-                "label": "Big Button Hover Background Image",
-                "name": "big_button_hover_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image. This will default to the normal button settings if nothing is filled in.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "allow_in_bindings": 1,
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_63f671f36b60a",
-                "label": "Button Border Radius",
-                "name": "button_border_radius",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 0,
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_63f6724d6b60b",
-                "label": "Button Border Thickness",
-                "name": "button_border_thickness",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 0,
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_63f6728a6b60c",
-                "label": "Button Border Color",
-                "name": "button_border_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f673366b60d",
-                "label": "Button Border Color - Top",
-                "name": "button_border_color_top",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f673416b60e",
-                "label": "Button Border Color - Right",
-                "name": "button_border_color_right",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f673596b60f",
-                "label": "Button Border Color - Bottom",
-                "name": "button_border_color_bottom",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f673656b610",
-                "label": "Button Border Color - Left",
-                "name": "button_border_color_left",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f676de89539",
-                "label": "Button Border Color Hover",
-                "name": "button_border_color_hover",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f676ea8953a",
-                "label": "Button Border Color - Top Hover",
-                "name": "button_border_color_top_hover",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f676ff8953b",
-                "label": "Button Border Color - Right Hover",
-                "name": "button_border_color_right_hover",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f6770c8953c",
-                "label": "Button Border Color - Bottom Hover",
-                "name": "button_border_color_bottom_hover",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63f677178953d",
-                "label": "Button Border Color - Left Hover",
-                "name": "button_border_color_left_hover",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 1,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_640a5c723b4f9",
-                "label": "Button Padding Top",
-                "name": "button_padding_top",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5c9f3b4fa",
-                "label": "Button Padding Right",
-                "name": "button_padding_right",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5ca63b4fb",
-                "label": "Button Padding Bottom",
-                "name": "button_padding_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5cae3b4fc",
-                "label": "Button Padding Left",
-                "name": "button_padding_left",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to 10.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5cc43b4fd",
-                "label": "Big Button Padding Top",
-                "name": "big_button_padding_top",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5d093b4fe",
-                "label": "Big Button Padding Right",
-                "name": "big_button_padding_right",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5d113b4ff",
-                "label": "Big Button Padding Bottom",
-                "name": "big_button_padding_bottom",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_640a5d193b500",
-                "label": "Big Button Padding Left",
-                "name": "big_button_padding_left",
-                "aria-label": "",
-                "type": "number",
-                "instructions": "This is a number in pixels. If nothing is filled in, this will default to the button padding settings.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "placeholder": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
                 "key": "field_620ecca22e5ff",
                 "label": "Divider Color",
                 "name": "divider_color",
@@ -1894,140 +2055,6 @@
                 "show_color_wheel": true
             },
             {
-                "key": "field_62195307f2afd",
-                "label": "Pagebreak Button Text Color",
-                "name": "pagebreak_button_text_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6219532bf2aff",
-                "label": "Pagebreak Button Background Color",
-                "name": "pagebreak_button_background_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63753f9e335aa",
-                "label": "Pagebreak Button Background Image",
-                "name": "pagebreak_button_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "preview_size": "medium"
-            },
-            {
-                "key": "field_6219531ff2afe",
-                "label": "Pagebreak Button Text Hover Color",
-                "name": "pagebreak_button_text_hover_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_6219533bf2b00",
-                "label": "Pagebreak Button Background Hover Color",
-                "name": "pagebreak_button_background_hover_color",
-                "aria-label": "",
-                "type": "color_picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "enable_opacity": 0,
-                "return_format": "string",
-                "custom_palette_source": "",
-                "palette_colors": "",
-                "show_color_wheel": true
-            },
-            {
-                "key": "field_63753fa9335ab",
-                "label": "Pagebreak Button Hover Background Image",
-                "name": "pagebreak_button_hover_background_image",
-                "aria-label": "",
-                "type": "image",
-                "instructions": "Please Note: this will NOT overwrite the button background color. They work in tandem. So set your button background to transparent if you don't want a background color behind your image.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "return_format": "url",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": "",
-                "preview_size": "medium"
-            },
-            {
                 "key": "field_628beda5ddfd1",
                 "label": "Login Screen Background Color",
                 "name": "login_screen_background_color",
@@ -2120,7 +2147,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "theme-general-settings"
+                    "value": "acf-options-colors"
                 }
             ]
         ],
@@ -2914,7 +2941,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "theme-general-settings"
+                    "value": "acf-options-fonts"
                 }
             ]
         ],
@@ -3539,7 +3566,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "theme-general-settings"
+                    "value": "acf-options-fonts"
                 }
             ]
         ],
@@ -3896,7 +3923,7 @@
                 {
                     "param": "options_page",
                     "operator": "==",
-                    "value": "theme-general-settings"
+                    "value": "acf-options-fonts"
                 }
             ]
         ],
@@ -5483,6 +5510,32 @@
                         "save_other_choice": 0
                     },
                     {
+                        "key": "field_6ada7284cb64d",
+                        "label": "Padding Style",
+                        "name": "padding_style",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "full": "Around Full Post",
+                            "content": "Just around the post content (not the image)"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 1,
+                        "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
                         "key": "field_673f7175948f9",
                         "label": "Post Padding",
                         "name": "post_padding",
@@ -6174,6 +6227,68 @@
                         "append": ""
                     },
                     {
+                        "key": "field_6ada72bccb64e",
+                        "label": "Post Date Size - Tablet",
+                        "name": "post_date_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f717594e07",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada72c6cb64f",
+                        "label": "Post Date Size - Mobile",
+                        "name": "post_date_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f717594e07",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f717594eb6",
                         "label": "Post Date Text",
                         "name": "post_date_text",
@@ -6365,6 +6480,68 @@
                         "default_value": "",
                         "min": "",
                         "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada72d1cb650",
+                        "label": "List Categories Size - Tablet",
+                        "name": "list_categories_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f717594fa2",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada72dccb651",
+                        "label": "List Categories Size - Mobile",
+                        "name": "list_categories_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f717594fa2",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
                         "placeholder": "",
                         "step": "",
                         "prepend": "",
@@ -6640,6 +6817,52 @@
                         "append": ""
                     },
                     {
+                        "key": "field_6ada72e8cb652",
+                        "label": "Title Font Size - Tablet",
+                        "name": "title_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada72f1cb653",
+                        "label": "Title Font Size - Mobile",
+                        "name": "title_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f71759529a",
                         "label": "Title Color",
                         "name": "title_color",
@@ -6768,6 +6991,52 @@
                         "default_value": "",
                         "min": "",
                         "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada72fecb654",
+                        "label": "Content Font Size - Tablet",
+                        "name": "content_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada730acb655",
+                        "label": "Content Font Size - Mobile",
+                        "name": "content_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
                         "placeholder": "",
                         "step": "",
                         "prepend": "",
@@ -7378,6 +7647,32 @@
                         "default_value": "",
                         "layout": "horizontal",
                         "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_6ada6b2b3afc8",
+                        "label": "Padding Style",
+                        "name": "padding_style",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "full": "Around Full Post",
+                            "content": "Just around the post content (not the image)"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 1,
+                        "layout": "horizontal",
                         "save_other_choice": 0
                     },
                     {
@@ -8072,6 +8367,68 @@
                         "step": ""
                     },
                     {
+                        "key": "field_6ada6a7f3afbf",
+                        "label": "Post Date Size - Tablet",
+                        "name": "post_date_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada6a8d3afc0",
+                        "label": "Post Date Size - Mobile",
+                        "name": "post_date_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6296fc11",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_62e95133fcf96",
                         "label": "Post Date Text",
                         "name": "post_date_text",
@@ -8267,6 +8624,68 @@
                         "min": "",
                         "max": "",
                         "step": ""
+                    },
+                    {
+                        "key": "field_6ada6aa33afc1",
+                        "label": "List Categories Size - Tablet",
+                        "name": "list_categories_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6456fc12",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada6ab13afc2",
+                        "label": "List Categories Size - Mobile",
+                        "name": "list_categories_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_62e2f6456fc12",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_62ec43295488b",
@@ -8538,6 +8957,52 @@
                         "step": ""
                     },
                     {
+                        "key": "field_6ada6abf3afc3",
+                        "label": "Title Font Size - Tablet",
+                        "name": "title_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada6aca3afc4",
+                        "label": "Title Font Size - Mobile",
+                        "name": "title_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_62e3086f0e9ef",
                         "label": "Title Color",
                         "name": "title_color",
@@ -8670,6 +9135,52 @@
                         "min": "",
                         "max": "",
                         "step": ""
+                    },
+                    {
+                        "key": "field_6ada6aef3afc5",
+                        "label": "Content Font Size - Tablet",
+                        "name": "content_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada6afb3afc6",
+                        "label": "Content Font Size - Mobile",
+                        "name": "content_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_62ec4654034a4",
@@ -9275,6 +9786,32 @@
                         "default_value": "",
                         "layout": "horizontal",
                         "return_format": "value",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_6ada71eceb3e7",
+                        "label": "Padding Style",
+                        "name": "padding_style",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "full": "Around Full Post",
+                            "content": "Just around the post content (not the image)"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 1,
+                        "layout": "horizontal",
                         "save_other_choice": 0
                     },
                     {
@@ -10004,6 +10541,68 @@
                         "step": ""
                     },
                     {
+                        "key": "field_6ada71ffeb3e8",
+                        "label": "Post Date Size - Tablet",
+                        "name": "post_date_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80f98a",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7209eb3e9",
+                        "label": "Post Date Size - Mobile",
+                        "name": "post_date_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80f98a",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f6ce80fa39",
                         "label": "Post Date Text",
                         "name": "post_date_text",
@@ -10199,6 +10798,68 @@
                         "min": "",
                         "max": "",
                         "step": ""
+                    },
+                    {
+                        "key": "field_6ada7218eb3ea",
+                        "label": "List Categories Size - Tablet",
+                        "name": "list_categories_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80fb24",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7222eb3eb",
+                        "label": "List Categories Size - Mobile",
+                        "name": "list_categories_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80fb24",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_673f6ce80fbd3",
@@ -10470,6 +11131,52 @@
                         "step": ""
                     },
                     {
+                        "key": "field_6ada7232eb3ec",
+                        "label": "Title Font Size - Tablet",
+                        "name": "title_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada723ceb3ed",
+                        "label": "Title Font Size - Mobile",
+                        "name": "title_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f6ce80fe1d",
                         "label": "Title Color",
                         "name": "title_color",
@@ -10644,6 +11351,68 @@
                         "min": "",
                         "max": "",
                         "step": ""
+                    },
+                    {
+                        "key": "field_6ada7248eb3ee",
+                        "label": "Content Font Size - Tablet",
+                        "name": "content_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80ff06",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7251eb3ef",
+                        "label": "Content Font Size - Mobile",
+                        "name": "content_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce80ff06",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
                     },
                     {
                         "key": "field_673f6ce80ffb5",
@@ -11271,6 +12040,32 @@
                         "return_format": "value",
                         "allow_null": 0,
                         "other_choice": 0,
+                        "layout": "horizontal",
+                        "save_other_choice": 0
+                    },
+                    {
+                        "key": "field_6ada7131046b0",
+                        "label": "Padding Style",
+                        "name": "padding_style",
+                        "aria-label": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "full": "Around Full Post",
+                            "content": "Just around the post content (not the image)"
+                        },
+                        "default_value": "",
+                        "return_format": "value",
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "allow_in_bindings": 1,
                         "layout": "horizontal",
                         "save_other_choice": 0
                     },
@@ -11966,6 +12761,68 @@
                         "append": ""
                     },
                     {
+                        "key": "field_6ada7152046b1",
+                        "label": "Post Date Size - Tablet",
+                        "name": "post_date_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce15cce3",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7161046b2",
+                        "label": "Post Date Size - Mobile",
+                        "name": "post_date_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce15cce3",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f6ce15cd92",
                         "label": "Post Date Text",
                         "name": "post_date_text",
@@ -12157,6 +13014,68 @@
                         "default_value": "",
                         "min": "",
                         "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7173046b3",
+                        "label": "List Categories Size - Tablet",
+                        "name": "list_categories_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce15ce7c",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7180046b4",
+                        "label": "List Categories Size - Mobile",
+                        "name": "list_categories_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H6 size.",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_673f6ce15ce7c",
+                                    "operator": "==",
+                                    "value": "Yes"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
                         "placeholder": "",
                         "step": "",
                         "prepend": "",
@@ -12432,6 +13351,52 @@
                         "append": ""
                     },
                     {
+                        "key": "field_6ada718c046b5",
+                        "label": "Title Font Size - Tablet",
+                        "name": "title_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada7197046b6",
+                        "label": "Title Font Size - Mobile",
+                        "name": "title_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the H3 size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
                         "key": "field_673f6ce15d176",
                         "label": "Title Color",
                         "name": "title_color",
@@ -12560,6 +13525,52 @@
                         "default_value": "",
                         "min": "",
                         "max": "",
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada71a1046b7",
+                        "label": "Content Font Size - Tablet",
+                        "name": "content_font_size_tablet",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
+                        "placeholder": "",
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_6ada71af046b8",
+                        "label": "Content Font Size - Mobile",
+                        "name": "content_font_size_mobile",
+                        "aria-label": "",
+                        "type": "number",
+                        "instructions": "This is a number in pixels. If left blank it will default to the P size.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": "",
+                        "max": "",
+                        "allow_in_bindings": 1,
                         "placeholder": "",
                         "step": "",
                         "prepend": "",
@@ -16351,6 +17362,13 @@
                     "param": "post_type",
                     "operator": "==",
                     "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "mc-resources"
                 }
             ]
         ],

@@ -380,6 +380,27 @@ if( function_exists('acf_add_options_page') ) {
 	));
 	
 	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Color Options',
+		'menu_title'	=> 'Colors',
+		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Font Options',
+		'menu_title'	=> 'Fonts',
+		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Button Options',
+		'menu_title'	=> 'Buttons',
+		'parent_slug'	=> 'theme-general-settings',
+        'capability' => 'manage_options',
+	));
+	
+	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Header Settings',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'theme-general-settings',

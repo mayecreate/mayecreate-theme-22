@@ -13,8 +13,14 @@ if($news_options) { ?>
         <?php $show_a_button_in_the_post_loop = $news_options['show_a_button_in_the_post_loop']; ?>
         <?php $button_text = $news_options['button_text']; ?>
         <?php $text_alignment = $news_options['text_alignment']; ?>
+        <?php $padding_style = $news_options['padding_style']; ?>
 
 <?php } ?>
+<?php if ($padding_style == "content") {  
+    $padding_class = "content_padding";
+} else {
+    $padding_class = "full_padding";
+} ?>
 <?php if ($vertical_alignment == "Middle") { 
     $vertical_alignment = "align-items-center";
 } else {
@@ -39,19 +45,19 @@ if($news_options) { ?>
 	$featured_image_placement_class_2 = "col-lg-8 order-lg-1";
 } elseif ($featured_image_placement == "Center" && $show_a_featured_image == "Yes") {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } else {
 	$featured_image_placement_class_1 = "col-12";
-	$featured_image_placement_class_2 = "col-12";
+	$featured_image_placement_class_2 = "col-12 mt-0";
 } ?>
 <?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 
 <?php if (is_admin()) { ?>
-<span class="post_link_wrapper wide <?php echo $text_alignment; ?>">
+<span class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
 <?php } elseif ($alternate_link && ('' == get_post()->post_content)) { ?>
-<a href="<?php echo $alternate_link; ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?>" target="_blank">
+<a href="<?php echo $alternate_link; ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>" target="_blank">
 <?php } else { ?>
-<a href="<?php the_permalink(); ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?>">
+<a href="<?php the_permalink(); ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
 <?php } ?>
 	<div class="row g-5 <?php echo $vertical_alignment; ?>">
 	<?php if ($show_a_featured_image == "Yes" && has_post_thumbnail()) { ?>

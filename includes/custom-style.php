@@ -570,11 +570,22 @@ if($news_options) {
 	$news_list_categories_hover_color = $news_options['list_categories_hover_color'];
 
 	$news_post_date_font = $news_options['post_date_font'];
-	$news_post_date_size = $news_options['post_date_size'];
 	$news_list_categories_font = $news_options['list_categories_font'];
-	$news_list_categories_size = $news_options['list_categories_size'];
+
 	$news_title_font_size = $news_options['title_font_size'];
 	$news_content_font_size = $news_options['content_font_size'];
+	$news_post_date_size = $news_options['post_date_size'];
+	$news_list_categories_size = $news_options['list_categories_size'];
+	
+	$news_title_font_size_tablet = $news_options['title_font_size_tablet'];
+	$news_content_font_size_tablet = $news_options['content_font_size_tablet'];
+	$news_post_date_size_tablet = $news_options['post_date_size_tablet'];
+	$news_list_categories_size_tablet = $news_options['list_categories_size_tablet'];
+	
+	$news_title_font_size_mobile = $news_options['title_font_size_mobile'];
+	$news_content_font_size_mobile = $news_options['content_font_size_mobile'];
+	$news_post_date_size_mobile = $news_options['post_date_size_mobile'];
+	$news_list_categories_size_mobile = $news_options['list_categories_size_mobile'];
 
 }
 
@@ -633,6 +644,24 @@ $news_post_date_size_use = $news_post_date_size / 10;
 if ($news_list_categories_size) { $news_list_categories_size_use = $news_list_categories_size; $news_list_categories_size = $news_list_categories_size; } else { $news_list_categories_size_use = $heading_6_font_size; $news_list_categories_size = $heading_6_font_size; }
 $news_list_categories_size_use = $news_list_categories_size / 10;
 
+if ($news_title_font_size_tablet) { $news_title_font_size_tablet_use = $news_title_font_size_tablet; $news_title_font_size_tablet = $news_title_font_size_tablet; } else { $news_title_font_size_tablet_use = $heading_3_font_size_tablet; $news_title_font_size_tablet = $heading_3_font_size_tablet; }
+$news_title_font_size_tablet_use = $news_title_font_size_tablet / 10;
+if ($news_content_font_size_tablet) { $news_content_font_size_tablet_use = $news_content_font_size_tablet; $news_content_font_size_tablet = $news_content_font_size_tablet; } else { $news_content_font_size_tablet_use = $body_font_size_tablet; $news_content_font_size_tablet = $body_font_size_tablet; }
+$news_content_font_size_tablet_use = $news_content_font_size_tablet / 10;
+if ($news_post_date_size_tablet) { $news_post_date_size_tablet_use = $news_post_date_size_tablet; $news_post_date_size_tablet = $news_post_date_size_tablet; } else { $news_post_date_size_use_tablet = $heading_4_font_size_tablet; $news_post_date_size_tablet = $heading_4_font_size_tablet; }
+$news_post_date_size_tablet_use = $news_post_date_size_tablet / 10;
+if ($news_list_categories_size_tablet) { $news_list_categories_size_tablet_use = $news_list_categories_size_tablet; $news_list_categories_size_tablet = $news_list_categories_size_tablet; } else { $news_list_categories_size_tablet_use = $heading_6_font_size_tablet; $news_list_categories_size_tablet = $heading_6_font_size_tablet; }
+$news_list_categories_size_tablet_use = $news_list_categories_size_tablet / 10;
+
+if ($news_title_font_size_mobile) { $news_title_font_size_mobile_use = $news_title_font_size_mobile; $news_title_font_size_mobile = $news_title_font_size_mobile; } else { $news_title_font_size_mobile_use = $heading_3_font_size_mobile; $news_title_font_size_mobile = $heading_3_font_size_mobile; }
+$news_title_font_size_mobile_use = $news_title_font_size_mobile / 10;
+if ($news_content_font_size_mobile) { $news_content_font_size_mobile_use = $news_content_font_size_mobile; $news_content_font_size_mobile = $news_content_font_size_mobile; } else { $news_content_font_size_mobile_use = $body_font_size_mobile; $news_content_font_size_mobile = $body_font_size_mobile; }
+$news_content_font_size_mobile_use = $news_content_font_size_mobile / 10;
+if ($news_post_date_size_mobile) { $news_post_date_size_mobile_use = $news_post_date_size_mobile; $news_post_date_size_mobile = $news_post_date_size_mobile; } else { $news_post_date_size_mobile_use = $heading_4_font_size_mobile; $news_post_date_size_mobile = $heading_4_font_size_mobile; }
+$news_post_date_size_mobile_use = $news_post_date_size_mobile / 10;
+if ($news_list_categories_size_mobile) { $news_list_categories_size_mobile_use = $news_list_categories_size_mobile; $news_list_categories_size_mobile = $news_list_categories_size_mobile; } else { $news_list_categories_size_mobile_use = $heading_6_font_size_mobile; $news_list_categories_size_mobile = $heading_6_font_size_mobile; }
+$news_list_categories_size_mobile_use = $news_list_categories_size_mobile / 10;
+
 $projects_options = get_field('projects_options', 'option');
 if($projects_options) {
 
@@ -679,6 +708,16 @@ if($projects_options) {
 	$projects_list_categories_size = $projects_options['list_categories_size'];
 	$projects_title_font_size = $projects_options['title_font_size'];
 	$projects_content_font_size = $projects_options['content_font_size'];
+
+	$projects_post_date_size_tablet = $projects_options['post_date_size_tablet'];
+	$projects_list_categories_size_tablet = $projects_options['list_categories_size_tablet'];
+	$projects_title_font_size_tablet = $projects_options['title_font_size_tablet'];
+	$projects_content_font_size_tablet = $projects_options['content_font_size_tablet'];
+
+	$projects_post_date_size_mobile = $projects_options['post_date_size_mobile'];
+	$projects_list_categories_size_mobile = $projects_options['list_categories_size_mobile'];
+	$projects_title_font_size_mobile = $projects_options['title_font_size_mobile'];
+	$projects_content_font_size_mobile = $projects_options['content_font_size_mobile'];
 
 }
 
@@ -737,6 +776,24 @@ $projects_post_date_size_use = $projects_post_date_size / 10;
 if ($projects_list_categories_size) { $projects_list_categories_size_use = $projects_list_categories_size; $projects_list_categories_size = $projects_list_categories_size; } else { $projects_list_categories_size_use = $heading_6_font_size; $projects_list_categories_size = $heading_6_font_size; }
 $projects_list_categories_size_use = $projects_list_categories_size / 10;
 
+if ($projects_title_font_size_tablet) { $projects_title_font_size_tablet_use = $projects_title_font_size_tablet; $projects_title_font_size_tablet = $projects_title_font_size_tablet; } else { $projects_title_font_size_tablet_use = $heading_3_font_size_tablet; $projects_title_font_size_tablet = $heading_3_font_size_tablet; }
+$projects_title_font_size_tablet_use = $projects_title_font_size_tablet / 10;
+if ($projects_content_font_size_tablet) { $projects_content_font_size_tablet_use = $projects_content_font_size_tablet; $projects_content_font_size_tablet = $projects_content_font_size_tablet; } else { $projects_content_font_size_tablet_use = $body_font_size_tablet; $projects_content_font_size_tablet = $body_font_size_tablet; }
+$projects_content_font_size_tablet_use = $projects_content_font_size_tablet / 10;
+if ($projects_post_date_size_tablet) { $projects_post_date_size_tablet_use = $projects_post_date_size_tablet; $projects_post_date_size_tablet = $projects_post_date_size_tablet; } else { $projects_post_date_size_tablet_use = $heading_4_font_size_tablet; $projects_post_date_size_tablet = $heading_4_font_size_tablet; }
+$projects_post_date_size_tablet_use = $projects_post_date_size_tablet / 10;
+if ($projects_list_categories_size_tablet) { $projects_list_categories_size_tablet_use = $projects_list_categories_size_tablet; $projects_list_categories_size_tablet = $projects_list_categories_size_tablet; } else { $projects_list_categories_size_tablet_use = $heading_6_font_size_tablet; $projects_list_categories_size_tablet = $heading_6_font_size_tablet; }
+$projects_list_categories_size_tablet_use = $projects_list_categories_size_tablet / 10;
+
+if ($projects_title_font_size_mobile) { $projects_title_font_size_mobile_use = $projects_title_font_size_mobile; $projects_title_font_size_mobile = $projects_title_font_size_mobile; } else { $projects_title_font_size_mobile_use = $heading_3_font_size_mobile; $projects_title_font_size_mobile = $heading_3_font_size_mobile; }
+$projects_title_font_size_mobile_use = $projects_title_font_size_mobile / 10;
+if ($projects_content_font_size_mobile) { $projects_content_font_size_mobile_use = $projects_content_font_size_mobile; $projects_content_font_size_mobile = $projects_content_font_size_mobile; } else { $projects_content_font_size_mobile_use = $body_font_size_mobile; $projects_content_font_size_mobile = $body_font_size_mobile; }
+$projects_content_font_size_mobile_use = $projects_content_font_size_mobile / 10;
+if ($projects_post_date_size_mobile) { $projects_post_date_size_mobile_use = $projects_post_date_size_mobile; $projects_post_date_size_mobile = $projects_post_date_size_mobile; } else { $projects_post_date_size_mobile_use = $heading_4_font_size_mobile; $projects_post_date_size_mobile = $heading_4_font_size_mobile; }
+$projects_post_date_size_mobile_use = $projects_post_date_size_mobile / 10;
+if ($projects_list_categories_size_mobile) { $projects_list_categories_size_mobile_use = $projects_list_categories_size_mobile; $projects_list_categories_size_mobile = $projects_list_categories_size_mobile; } else { $projects_list_categories_size_mobile_use = $heading_6_font_size_mobile; $projects_list_categories_size_mobile = $heading_6_font_size_mobile; }
+$projects_list_categories_size_mobile_use = $projects_list_categories_size_mobile / 10;
+
 $resource_options = get_field('resource_options', 'option');
 if($resource_options) {
 
@@ -783,6 +840,16 @@ if($resource_options) {
 	$resource_list_categories_size = $resource_options['list_categories_size'];
 	$resource_title_font_size = $resource_options['title_font_size'];
 	$resource_content_font_size = $resource_options['content_font_size'];
+
+	$resource_post_date_size_tablet = $resource_options['post_date_size_tablet'];
+	$resource_list_categories_size_tablet = $resource_options['list_categories_size_tablet'];
+	$resource_title_font_size_tablet = $resource_options['title_font_size_tablet'];
+	$resource_content_font_size_tablet = $resource_options['content_font_size_tablet'];
+	
+	$resource_post_date_size_mobile = $resource_options['post_date_size_mobile'];
+	$resource_list_categories_size_mobile = $resource_options['list_categories_size_mobile'];
+	$resource_title_font_size_mobile = $resource_options['title_font_size_mobile'];
+	$resource_content_font_size_mobile = $resource_options['content_font_size_mobile'];
 
 }
 
@@ -841,6 +908,24 @@ $resource_post_date_size_use = $resource_post_date_size / 10;
 if ($resource_list_categories_size) { $resource_list_categories_size_use = $resource_list_categories_size; $resource_list_categories_size = $resource_list_categories_size; } else { $resource_list_categories_size_use = $heading_6_font_size; $resource_list_categories_size = $heading_6_font_size; }
 $resource_list_categories_size_use = $resource_list_categories_size / 10;
 
+if ($resource_title_font_size_tablet) { $resource_title_font_size_tablet_use = $resource_title_font_size_tablet; $resource_title_font_size_tablet = $resource_title_font_size_tablet; } else { $resource_title_font_size_tablet_use = $heading_3_font_size_tablet; $resource_title_font_size_tablet = $heading_3_font_size_tablet; }
+$resource_title_font_size_tablet_use = $resource_title_font_size_tablet / 10;
+if ($resource_content_font_size_tablet) { $resource_content_font_size_tablet_use = $resource_content_font_size_tablet; $resource_content_font_size_tablet = $resource_content_font_size_tablet; } else { $resource_content_font_size_tablet_use = $body_font_size_tablet; $resource_content_font_size_tablet = $body_font_size_tablet; }
+$resource_content_font_size_tablet_use = $resource_content_font_size_tablet / 10;
+if ($resource_post_date_size_tablet) { $resource_post_date_size_tablet_use = $resource_post_date_size_tablet; $resource_post_date_size_tablet = $resource_post_date_size_tablet; } else { $resource_post_date_size_tablet_use = $heading_4_font_size_tablet; $resource_post_date_size_tablet = $heading_4_font_size_tablet; }
+$resource_post_date_size_tablet_use = $resource_post_date_size_tablet / 10;
+if ($resource_list_categories_size_tablet) { $resource_list_categories_size_tablet_use = $resource_list_categories_size_tablet; $resource_list_categories_size_tablet = $resource_list_categories_size_tablet; } else { $resource_list_categories_size_tablet_use = $heading_6_font_size_tablet; $resource_list_categories_size_tablet = $heading_6_font_size_tablet; }
+$resource_list_categories_size_tablet_use = $resource_list_categories_size_tablet / 10;
+
+if ($resource_title_font_size_mobile) { $resource_title_font_size_mobile_use = $resource_title_font_size_mobile; $resource_title_font_size_mobile = $resource_title_font_size_mobile; } else { $resource_title_font_size_mobile_use = $heading_3_font_size_mobile; $resource_title_font_size_mobile = $heading_3_font_size_mobile; }
+$resource_title_font_size_mobile_use = $resource_title_font_size_mobile / 10;
+if ($resource_content_font_size_mobile) { $resource_content_font_size_mobile_use = $resource_content_font_size_mobile; $resource_content_font_size_mobile = $resource_content_font_size_mobile; } else { $resource_content_font_size_mobile_use = $body_font_size_mobile; $resource_content_font_size_mobile = $body_font_size_mobile; }
+$resource_content_font_size_mobile_use = $resource_content_font_size_mobile / 10;
+if ($resource_post_date_size_mobile) { $resource_post_date_size_mobile_use = $resource_post_date_size_mobile; $resource_post_date_size_mobile = $resource_post_date_size_mobile; } else { $resource_post_date_size_mobile_use = $heading_4_font_size_mobile; $resource_post_date_size_mobile = $heading_4_font_size_mobile; }
+$resource_post_date_size_mobile_use = $resource_post_date_size_mobile / 10;
+if ($resource_list_categories_size_mobile) { $resource_list_categories_size_mobile_use = $resource_list_categories_size_mobile; $resource_list_categories_size_mobile = $resource_list_categories_size_mobile; } else { $resource_list_categories_size_mobile_use = $heading_6_font_size_mobile; $resource_list_categories_size_mobile = $heading_6_font_size_mobile; }
+$resource_list_categories_size_mobile_use = $resource_list_categories_size_mobile / 10;
+
 $event_options = get_field('event_options', 'option');
 if($event_options) {
 
@@ -887,6 +972,16 @@ if($event_options) {
 	$event_list_categories_size = $event_options['list_categories_size'];
 	$event_title_font_size = $event_options['title_font_size'];
 	$event_content_font_size = $event_options['content_font_size'];
+	 
+	$event_post_date_size_tablet = $event_options['post_date_size_tablet'];
+	$event_list_categories_size_tablet = $event_options['list_categories_size_tablet'];
+	$event_title_font_size_tablet = $event_options['title_font_size_tablet'];
+	$event_content_font_size_tablet = $event_options['content_font_size_tablet'];
+	
+	$event_post_date_size_mobile = $event_options['post_date_size_mobile'];
+	$event_list_categories_size_mobile = $event_options['list_categories_size_mobile'];
+	$event_title_font_size_mobile = $event_options['title_font_size_mobile'];
+	$event_content_font_size_mobile = $event_options['content_font_size_mobile'];
 
 }
 
@@ -944,6 +1039,24 @@ if ($event_post_date_size) { $event_post_date_size_use = $event_post_date_size; 
 $event_post_date_size_use = $event_post_date_size / 10;
 if ($event_list_categories_size) { $event_list_categories_size_use = $event_list_categories_size; $event_list_categories_size = $event_list_categories_size; } else { $event_list_categories_size_use = $heading_6_font_size; $event_list_categories_size = $heading_6_font_size; }
 $event_list_categories_size_use = $event_list_categories_size / 10;
+
+if ($event_title_font_size_tablet) { $event_title_font_size_tablet_use = $event_title_font_size_tablet; $event_title_font_size_tablet = $event_title_font_size_tablet; } else { $event_title_font_size_tablet_use = $heading_3_font_size_tablet; $event_title_font_size_tablet = $heading_3_font_size_tablet; }
+$event_title_font_size_tablet_use = $event_title_font_size_tablet / 10;
+if ($event_content_font_size_tablet) { $event_content_font_size_tablet_use = $event_content_font_size_tablet; $event_content_font_size_tablet = $event_content_font_size_tablet; } else { $event_content_font_size_tablet_use = $body_font_size_tablet; $event_content_font_size_tablet = $body_font_size_tablet; }
+$event_content_font_size_tablet_use = $event_content_font_size_tablet / 10;
+if ($event_post_date_size_tablet) { $event_post_date_size_tablet_use = $event_post_date_size_tablet; $event_post_date_size_tablet = $event_post_date_size_tablet; } else { $event_post_date_size_tablet_use = $heading_4_font_size_tablet; $event_post_date_size_tablet = $heading_4_font_size_tablet; }
+$event_post_date_size_tablet_use = $event_post_date_size_tablet / 10;
+if ($event_list_categories_size_tablet) { $event_list_categories_size_tablet_use = $event_list_categories_size_tablet; $event_list_categories_size_tablet = $event_list_categories_size_tablet; } else { $event_list_categories_size_tablet_use = $heading_6_font_size_tablet; $event_list_categories_size_tablet = $heading_6_font_size_tablet; }
+$event_list_categories_size_tablet_use = $event_list_categories_size_tablet / 10;
+
+if ($event_title_font_size_mobile) { $event_title_font_size_mobile_use = $event_title_font_size_mobile; $event_title_font_size_mobile = $event_title_font_size_mobile; } else { $event_title_font_size_mobile_use = $heading_3_font_size_mobile; $event_title_font_size_mobile = $heading_3_font_size_mobile; }
+$event_title_font_size_mobile_use = $event_title_font_size_mobile / 10;
+if ($event_content_font_size_mobile) { $event_content_font_size_mobile_use = $event_content_font_size_mobile; $event_content_font_size_mobile = $event_content_font_size_mobile; } else { $event_content_font_size_mobile_use = $body_font_size_mobile; $event_content_font_size_mobile = $body_font_size_mobile; }
+$event_content_font_size_mobile_use = $event_content_font_size_mobile / 10;
+if ($event_post_date_size_mobile) { $event_post_date_size_mobile_use = $event_post_date_size_mobile; $event_post_date_size_mobile = $event_post_date_size_mobile; } else { $event_post_date_size_mobile_use = $heading_4_font_size_mobile; $event_post_date_size_mobile = $heading_4_font_size_mobile; }
+$event_post_date_size_mobile_use = $event_post_date_size_mobile / 10;
+if ($event_list_categories_size_mobile) { $event_list_categories_size_mobile_use = $event_list_categories_size_mobile; $event_list_categories_size_mobile = $event_list_categories_size_mobile; } else { $event_list_categories_size_mobile_use = $heading_6_font_size_mobile; $event_list_categories_size_mobile = $heading_6_font_size_mobile; }
+$event_list_categories_size_mobile_use = $event_list_categories_size_mobile / 10;
 		
 ?>
 :root {
@@ -1250,6 +1363,16 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--news_list_categories_size: <?php echo $news_list_categories_size_use; ?>rem;
 	--news_list_categories_size_admin: <?php echo $news_list_categories_size; ?>px;
 
+	--news_title_font_size_tablet: <?php echo $news_title_font_size_tablet_use; ?>rem;
+	--news_content_font_size_tablet: <?php echo $news_content_font_size_tablet_use; ?>rem;
+	--news_post_date_size_tablet: <?php echo $news_post_date_size_tablet_use; ?>rem;
+	--news_list_categories_size_tablet: <?php echo $news_list_categories_size_tablet_use; ?>rem;
+
+	--news_title_font_size_mobile: <?php echo $news_title_font_size_mobile_use; ?>rem;
+	--news_content_font_size_mobile: <?php echo $news_content_font_size_mobile_use; ?>rem;
+	--news_post_date_size_mobile: <?php echo $news_post_date_size_mobile_use; ?>rem;
+	--news_list_categories_size_mobile: <?php echo $news_list_categories_size_mobile_use; ?>rem;
+
 	--news_post_date_font: <?php echo $news_post_date_font; ?>;
 	--news_list_categories_font: <?php echo $news_list_categories_font; ?>;
 	
@@ -1303,6 +1426,16 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--projects_post_date_size_admin: <?php echo $projects_post_date_size; ?>px;
 	--projects_list_categories_size: <?php echo $projects_list_categories_size_use; ?>rem;
 	--projects_list_categories_size_admin: <?php echo $projects_list_categories_size; ?>px;
+
+	--projects_title_font_size_tablet: <?php echo $projects_title_font_size_tablet_use; ?>rem;
+	--projects_content_font_size_tablet: <?php echo $projects_content_font_size_tablet_use; ?>rem;
+	--projects_post_date_size_tablet: <?php echo $projects_post_date_size_tablet_use; ?>rem;
+	--projects_list_categories_size_tablet: <?php echo $projects_list_categories_size_tablet_use; ?>rem;
+
+	--projects_title_font_size_mobile: <?php echo $projects_title_font_size_mobile_use; ?>rem;
+	--projects_content_font_size_mobile: <?php echo $projects_content_font_size_mobile_use; ?>rem;
+	--projects_post_date_size_mobile: <?php echo $projects_post_date_size_mobile_use; ?>rem;
+	--projects_list_categories_size_mobile: <?php echo $projects_list_categories_size_mobile_use; ?>rem;
 
 	--projects_post_date_font: <?php echo $projects_post_date_font; ?>;
 	--projects_list_categories_font: <?php echo $projects_list_categories_font; ?>;
@@ -1363,6 +1496,16 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--resource_list_categories_size: <?php echo $resource_list_categories_size_use; ?>rem;
 	--resource_list_categories_size_admin: <?php echo $resource_list_categories_size; ?>px;
 
+	--resource_title_font_size_tablet: <?php echo $resource_title_font_size_tablet_use; ?>rem;
+	--resource_content_font_size_tablet: <?php echo $resource_content_font_size_tablet_use; ?>rem;
+	--resource_post_date_size_tablet: <?php echo $resource_post_date_size_tablet_use; ?>rem;
+	--resource_list_categories_size_tablet: <?php echo $resource_list_categories_size_tablet_use; ?>rem;
+
+	--resource_title_font_size_mobile: <?php echo $resource_title_font_size_mobile_use; ?>rem;
+	--resource_content_font_size_mobile: <?php echo $resource_content_font_size_mobile_use; ?>rem;
+	--resource_post_date_size_mobile: <?php echo $resource_post_date_size_mobile_use; ?>rem;
+	--resource_list_categories_size_mobile: <?php echo $resource_list_categories_size_mobile_use; ?>rem;
+
 	--resource_post_date_font: <?php echo $resource_post_date_font; ?>;
 	--resource_list_categories_font: <?php echo $resource_list_categories_font; ?>;
 	
@@ -1416,6 +1559,16 @@ $event_list_categories_size_use = $event_list_categories_size / 10;
 	--event_post_date_size_admin: <?php echo $event_post_date_size; ?>px;
 	--event_list_categories_size: <?php echo $event_list_categories_size_use; ?>rem;
 	--event_list_categories_size_admin: <?php echo $event_list_categories_size; ?>px;
+
+	--event_title_font_size_tablet: <?php echo $event_title_font_size_tablet_use; ?>rem;
+	--event_content_font_size_tablet: <?php echo $event_content_font_size_tablet_use; ?>rem;
+	--event_post_date_size_tablet: <?php echo $event_post_date_size_tablet_use; ?>rem;
+	--event_list_categories_size_tablet: <?php echo $event_list_categories_size_tablet_use; ?>rem;
+
+	--event_title_font_size_mobile: <?php echo $event_title_font_size_mobile_use; ?>rem;
+	--event_content_font_size_mobile: <?php echo $event_content_font_size_mobile_use; ?>rem;
+	--event_post_date_size_mobile: <?php echo $event_post_date_size_mobile_use; ?>rem;
+	--event_list_categories_size_mobile: <?php echo $event_list_categories_size_mobile_use; ?>rem;
 
 	--event_post_date_font: <?php echo $event_post_date_font; ?>;
 	--event_list_categories_font: <?php echo $event_list_categories_font; ?>;

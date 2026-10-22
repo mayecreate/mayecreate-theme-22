@@ -14,8 +14,14 @@ if($news_options) { ?>
         <?php $button_text = $news_options['button_text']; ?>
 		<?php $number_of_columns = $news_options['post_page_block_number_of_columns']; ?>
         <?php $text_alignment = $news_options['text_alignment']; ?>
+        <?php $padding_style = $news_options['padding_style']; ?>
 
 <?php } ?>
+<?php if ($padding_style == "content") {  
+    $padding_class = "content_padding";
+} else {
+    $padding_class = "full_padding";
+} ?>
 <?php if ($number_of_columns == 'one') {
 		$bootstrap_columns = "col-md-12";
 	} elseif ($number_of_columns == 'two') {
@@ -57,9 +63,9 @@ if($news_options) { ?>
 <?php $alternate_link = esc_html(get_field("alternate_link", $post->ID)); ?>
 <div class="<?php echo $bootstrap_columns; ?>">
     <?php if ($alternate_link && ('' == get_post()->post_content)) { ?>
-    <a href="<?php echo $alternate_link; ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?>" target="_blank">
+    <a href="<?php echo $alternate_link; ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>" target="_blank">
     <?php } else { ?>
-    <a href="<?php the_permalink(); ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?>">
+    <a href="<?php the_permalink(); ?>" class="post_link_wrapper wide <?php echo $text_alignment; ?> <?php echo $padding_class; ?>">
     <?php } ?>
         <div class="row g-5 <?php echo $vertical_alignment; ?>">
         <?php if ($show_a_featured_image == "Yes" && has_post_thumbnail()) { ?>

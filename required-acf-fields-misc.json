@@ -2243,6 +2243,13 @@
                     "operator": "==",
                     "value": "post"
                 }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "mc-resources"
+                }
             ]
         ],
         "menu_order": 18,

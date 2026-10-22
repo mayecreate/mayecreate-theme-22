@@ -119,11 +119,15 @@ equalheight = function (container) {
 $(window).load(function() {
      equalheight('.equal_height');
      equalheight('.equal_height_two');
+     equalheight('.equal_height_three');
+     equalheight('.equal_height_four');
 });
 
 $(window).resize(function(){
      equalheight('.equal_height');
      equalheight('.equal_height_two');
+     equalheight('.equal_height_three');
+     equalheight('.equal_height_four');
 });  
 
 

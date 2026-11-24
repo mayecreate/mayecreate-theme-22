@@ -84,7 +84,7 @@
 							if ($slideTitle || $slideText) {
 								echo '<div class="slideDesc"><div class="slideDesc_inner '. $slide_content_text_alignment_class .'">';
 									if($slideTitle){
-										echo '<span class="slideTitle">' .$slideTitle. '</span>';
+										echo '<span class="slideTitle h1">' .$slideTitle. '</span>';
 									}
 									if($slideText){
 										echo '<span class="slideText">' .$slideText. '</span>';

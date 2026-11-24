@@ -10,22 +10,26 @@ function mayecreate_wp_bootstrap_scripts_styles() {
 	
     // Loads Bootstrap minified JavaScript file.
 	wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js', false ,'5.3.8', array('in_footer' => true,'strategy'  => 'async',));
-	// Loads the LightSlider javascript for the featured image slider
-	wp_enqueue_script('featuredSlider', get_template_directory_uri() . '/js/lightslider.js', array('jquery'),'1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
 	// Loads the MayeCreate custom scripts.
 	wp_register_script('mayecreatejs', get_template_directory_uri() . '/js/mayecreate_scripts.js', array('jquery'), '1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
 	// Loads Javascript file for the  drawer menu
 	wp_enqueue_script('drawerMenu', get_template_directory_uri() . '/js/jquery.mmenu.all.min.js', array('jquery'),'1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
 	// Loads Bootstrap minified CSS file.
 	wp_enqueue_style('bootstrapwp', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css', false ,'5.3.8');	
-	// Loads the main stylesheet for the featured image slider
-	wp_enqueue_style('featuredSliderStyle', get_template_directory_uri() . '/css/lightslider.min.css', array('bootstrapwp') ,'1.0');
 	// Loads the stylesheet for the slideout menu.
 	wp_enqueue_style('drawerMenuStyle', get_template_directory_uri() . '/css/jquery.mmenu.all.css', array('bootstrapwp') ,'1.0');
 	// Loads the additional stylesheet for the slideout menu for shadow
 	wp_enqueue_style('drawerMenuShadow', get_template_directory_uri() . '/css/jquery.mmenu.pageshadow.css', array('bootstrapwp') ,'1.0');
 	// Loads the additional stylesheet for the slideout menu left / right drawer positioning
-	wp_enqueue_style('drawerMenuPosition', get_template_directory_uri() . '/css/jquery.mmenu.positioning.css', array('bootstrapwp') ,'1.0');		
+	wp_enqueue_style('drawerMenuPosition', get_template_directory_uri() . '/css/jquery.mmenu.positioning.css', array('bootstrapwp') ,'1.0');
+	
+	
+	// Loads the LightSlider javascript for the featured image slider. IF YOU NEED THIS FOR SOME REASON TAKE THESE LINES AND USE THEM IN THE CHILD THEME FUNCTIONS.
+	//wp_enqueue_script('featuredSlider', get_template_directory_uri() . '/js/lightslider.js', array('jquery'),'1.0.0', array('in_footer' => true,'strategy'  => 'async',) );
+	// Loads the main stylesheet for the featured image slider. IF YOU NEED THIS FOR SOME REASON TAKE THESE LINES AND USE THEM IN THE CHILD THEME FUNCTIONS.
+	//wp_enqueue_style('featuredSliderStyle', get_template_directory_uri() . '/css/lightslider.min.css', array('bootstrapwp') ,'1.0');
+
+
 	// Loads our main stylesheet.
 	wp_register_style('style', get_template_directory_uri() . '/style.css', array('bootstrapwp') ,'1.0');
 	wp_register_style('style_compiled', get_template_directory_uri() . '/css/main.min.css', array('bootstrapwp') ,'1.0');

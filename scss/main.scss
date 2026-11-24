@@ -885,6 +885,9 @@ div#homefeatured .slideDesc .btn.btn-mayecreate {
 .mm-menu .mm-listview>li.active .mm-arrow:after, .mm-menu .mm-listview>li.active .mm-next:after {
 	border-color: vars.$white !important;
 }
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
+    color: vars.$base_color !important;
+}
 
 /* NAVIGATION:: Slide Out Drawer Searcch Box
 ==========================================  */

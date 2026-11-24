@@ -11,7 +11,6 @@
 <?php $large_button = ('Large' == get_field('button_type')); ?>
 <?php $_blank = ('_blank' == get_field('target')); ?>
 <?php $extra_class = get_field('additional_class_options'); ?>
-
 <?php $custom_text_color = esc_html(get_field("custom_text_color")); ?>
 <?php $custom_background_color = esc_html(get_field("custom_background_color")); ?>
 <?php $custom_text_hover_color = esc_html(get_field("custom_text_hover_color")); ?>
@@ -86,10 +85,13 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
+<?php $aria_label = esc_html(get_field("aria-label")); ?>
+<?php if ($aria_label) { $aria_label = $aria_label; } else { $aria_label = $button_text; } ?>
+
 <?php if (is_admin()) { ?>
     <span class="btn-mayecreate<?php if ($large_button) { ?> large<?php } ?><?php if ($extra_class && in_array('block', $extra_class)) { ?> block<?php } ?><?php if ($extra_class && in_array('center', $extra_class)) { ?> center<?php } ?> <?php echo $custom_color_class; ?> <?php echo $custom_margin_class; ?> <?php echo $custom_padding_class; ?> <?php echo $block['className']; ?>">
 <?php } else { ?>
-    <a class="btn-mayecreate<?php if ($large_button) { ?> large<?php } ?><?php if ($extra_class && in_array('block', $extra_class)) { ?> block<?php } ?><?php if ($extra_class && in_array('center', $extra_class)) { ?> center<?php } ?> <?php echo $custom_color_class; ?> <?php echo $custom_margin_class; ?> <?php echo $custom_padding_class; ?> <?php echo $block['className']; ?>" href="<?php echo $button_link; ?>" <?php if ($_blank) { ?> target="_blank" title="This links out to <?php echo $button_link; ?>" <?php } else { ?> title="This button links to <?php echo $button_link; ?>" <?php } ?>>
+    <a class="btn-mayecreate<?php if ($large_button) { ?> large<?php } ?><?php if ($extra_class && in_array('block', $extra_class)) { ?> block<?php } ?><?php if ($extra_class && in_array('center', $extra_class)) { ?> center<?php } ?> <?php echo $custom_color_class; ?> <?php echo $custom_margin_class; ?> <?php echo $custom_padding_class; ?> <?php echo $block['className']; ?>" href="<?php echo $button_link; ?>" <?php if ($_blank) { ?> target="_blank"<?php } ?> aria-label="<?php echo $aria_label; ?>">
 <?php } ?>
     <span><?php echo $button_text; ?></span> 
 <?php if (is_admin()) { ?>

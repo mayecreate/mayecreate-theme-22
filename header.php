@@ -122,7 +122,7 @@ echo $ga_tag;
 				<div style="position:absolute; overflow:hidden;height: 100%;width:100%;z-index:1;" class="video_outer_wrapper">
 					<div id="video_outer" style="position:absolute;width:100%;height:100%;">
 						<div id="video_wrapper">
-							<div class='embed-container'><iframe id="slider_video" src='<?php echo $video_embed_link; ?>' allow="autoplay; fullscreen" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow=fullscreen allow=autoplay></iframe></div>
+							<div class='embed-container'><iframe id="slider_video" src='<?php echo $video_embed_link; ?>' allow="autoplay; fullscreen" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow=fullscreen allow=autoplay title="Decorative background video for homepage."></iframe></div>
 						</div>
 					</div>
 				</div>

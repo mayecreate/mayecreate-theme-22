@@ -33,7 +33,8 @@ jQuery(document).ready(function($) {  // Opening jQuery this way allows for the 
 
 
 $(document.links).filter(function() {
-  return this.hostname != window.location.hostname;
+  return (this.protocol === 'http:' || this.protocol === 'https:') &&
+         this.hostname !== window.location.hostname;
 }).attr('target', '_blank');
   
 
@@ -273,14 +274,11 @@ $('#load-more-event').on('click', function(){
 });
 
   /* 
-  *  Function calls the javascript and establishes settings for the featured image slider.
-  * 
-  *  Credit to Sachin N. at http://sachinchoolur.github.io/lightslider/ for the cool slider for posts
-  *  For documentation of all of the different settings that you can use visit http://sachinchoolur.github.io/lightslider/settings.html
+  *  This section is the OLD lightslider stuff. Uncomment it if you need it.
   *
   */
 
-if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var slider = $('#lightSlider').lightSlider({
         pause: 6000,
         autoWidth: false,
@@ -320,7 +318,7 @@ if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.u
     });
     $('#goToNextSlide').on('click', function () {
         slider.goToNextSlide();
-    });
+    });*/
 
     //Add/remove a class to labels with checkboxes and radio buttons and style them
 	$('label input[type=radio], label input[type=checkbox]').click(function() {
